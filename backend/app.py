@@ -25,7 +25,7 @@ load_dotenv()
 app = FastAPI()
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["http://localhost:5173"],  # Vite dev URL
+    allow_origins=["http://localhost:5173", "https://dnsnavigator-frjwabci2-chandrus-projects-4341ac9b.vercel.app"],
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
