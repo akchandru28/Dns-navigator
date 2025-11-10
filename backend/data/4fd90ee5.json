@@ -1,0 +1,2352 @@
+{
+  "run_id": "4fd90ee5",
+  "options": {
+    "domain": "nic.cz",
+    "resolvers": [
+      "1.1.1.1",
+      "8.8.8.8",
+      "9.9.9.9",
+      "authoritative"
+    ],
+    "record_types": [
+      "A",
+      "AAAA",
+      "CNAME",
+      "MX",
+      "TXT",
+      "NS",
+      "SOA"
+    ],
+    "dnssec": {
+      "do": true,
+      "strict_alg_match": false,
+      "expiry_threshold_hours": 48
+    },
+    "rate_limits": {
+      "max_qps": 20.0,
+      "timeout_sec": 4.0,
+      "retries": 1
+    },
+    "enable_axfr": false,
+    "axfr_timeout_sec": 8.0
+  },
+  "phase": "Reporting",
+  "progress": 85,
+  "meta": {
+    "started_at": 1762760085.4348586,
+    "auth_ns": [
+      [
+        "a.ns.nic.cz",
+        "194.0.12.1"
+      ],
+      [
+        "a.ns.nic.cz",
+        "2001:678:f::1"
+      ],
+      [
+        "b.ns.nic.cz",
+        "194.0.13.1"
+      ],
+      [
+        "b.ns.nic.cz",
+        "2001:678:10::1"
+      ],
+      [
+        "d.ns.nic.cz",
+        "193.29.206.1"
+      ],
+      [
+        "d.ns.nic.cz",
+        "2001:678:1::1"
+      ]
+    ],
+    "variance_explainer": "Variance across public resolvers is common for large CDNs. Confirm authoritatives agree.",
+    "run_verdict": "WARN",
+    "axfr_summary": null
+  },
+  "overview": {
+    "grid": [
+      {
+        "name": "nic.cz",
+        "rtype": "A",
+        "resolver_id": "1.1.1.1",
+        "ttl": 1800,
+        "answers": [
+          "217.31.205.50"
+        ],
+        "status": "OK",
+        "error": null,
+        "diagnostics": {
+          "transport": "udp",
+          "edns": 1232,
+          "rcode": 0,
+          "rcode_name": "NOERROR",
+          "flags": 33152,
+          "retries": 0,
+          "attempts": [
+            {
+              "transport": "udp",
+              "edns": 1232,
+              "error": false,
+              "elapsed_ms": 87.98
+            }
+          ],
+          "elapsed_ms": 87.98,
+          "fallback_used": false
+        }
+      },
+      {
+        "name": "nic.cz",
+        "rtype": "AAAA",
+        "resolver_id": "1.1.1.1",
+        "ttl": 1800,
+        "answers": [
+          "2001:1488:0:3::2"
+        ],
+        "status": "OK",
+        "error": null,
+        "diagnostics": {
+          "transport": "udp",
+          "edns": 1232,
+          "rcode": 0,
+          "rcode_name": "NOERROR",
+          "flags": 33152,
+          "retries": 0,
+          "attempts": [
+            {
+              "transport": "udp",
+              "edns": 1232,
+              "error": false,
+              "elapsed_ms": 82.18
+            }
+          ],
+          "elapsed_ms": 82.18,
+          "fallback_used": false
+        }
+      },
+      {
+        "name": "nic.cz",
+        "rtype": "CNAME",
+        "resolver_id": "1.1.1.1",
+        "ttl": null,
+        "answers": [],
+        "status": "NODATA",
+        "error": null,
+        "diagnostics": {
+          "transport": "udp",
+          "edns": 1232,
+          "rcode": 0,
+          "rcode_name": "NOERROR",
+          "flags": 33152,
+          "retries": 0,
+          "attempts": [
+            {
+              "transport": "udp",
+              "edns": 1232,
+              "error": false,
+              "elapsed_ms": 86.3
+            }
+          ],
+          "elapsed_ms": 86.3,
+          "fallback_used": false
+        }
+      },
+      {
+        "name": "nic.cz",
+        "rtype": "MX",
+        "resolver_id": "1.1.1.1",
+        "ttl": 1800,
+        "answers": [
+          "10 mail.nic.cz.",
+          "20 mx.nic.cz."
+        ],
+        "status": "OK",
+        "error": null,
+        "diagnostics": {
+          "transport": "udp",
+          "edns": 1232,
+          "rcode": 0,
+          "rcode_name": "NOERROR",
+          "flags": 33152,
+          "retries": 0,
+          "attempts": [
+            {
+              "transport": "udp",
+              "edns": 1232,
+              "error": false,
+              "elapsed_ms": 88.9
+            }
+          ],
+          "elapsed_ms": 88.9,
+          "fallback_used": false
+        }
+      },
+      {
+        "name": "nic.cz",
+        "rtype": "NS",
+        "resolver_id": "1.1.1.1",
+        "ttl": 1800,
+        "answers": [
+          "a.ns.nic.cz.",
+          "b.ns.nic.cz.",
+          "d.ns.nic.cz."
+        ],
+        "status": "OK",
+        "error": null,
+        "diagnostics": {
+          "transport": "udp",
+          "edns": 1232,
+          "rcode": 0,
+          "rcode_name": "NOERROR",
+          "flags": 33152,
+          "retries": 0,
+          "attempts": [
+            {
+              "transport": "udp",
+              "edns": 1232,
+              "error": false,
+              "elapsed_ms": 91.12
+            }
+          ],
+          "elapsed_ms": 91.12,
+          "fallback_used": false
+        }
+      },
+      {
+        "name": "nic.cz",
+        "rtype": "SOA",
+        "resolver_id": "1.1.1.1",
+        "ttl": 1800,
+        "answers": [
+          "a.ns.nic.cz. hostmaster.nic.cz. 1762759203 14400 3600 1209600 7200"
+        ],
+        "status": "OK",
+        "error": null,
+        "diagnostics": {
+          "transport": "udp",
+          "edns": 1232,
+          "rcode": 0,
+          "rcode_name": "NOERROR",
+          "flags": 33152,
+          "retries": 0,
+          "attempts": [
+            {
+              "transport": "udp",
+              "edns": 1232,
+              "error": false,
+              "elapsed_ms": 93.95
+            }
+          ],
+          "elapsed_ms": 93.95,
+          "fallback_used": false
+        }
+      },
+      {
+        "name": "nic.cz",
+        "rtype": "TXT",
+        "resolver_id": "1.1.1.1",
+        "ttl": 1800,
+        "answers": [
+          "\"MS=92011E91562E6FD18FF9C5FA1F053F90DD5B1892\"",
+          "\"v=spf1 include:_v4nets.nic.cz include:_v6nets.nic.cz include:_spf.network.cz ~all\""
+        ],
+        "status": "OK",
+        "error": null,
+        "diagnostics": {
+          "transport": "udp",
+          "edns": 1232,
+          "rcode": 0,
+          "rcode_name": "NOERROR",
+          "flags": 33152,
+          "retries": 0,
+          "attempts": [
+            {
+              "transport": "udp",
+              "edns": 1232,
+              "error": false,
+              "elapsed_ms": 88.94
+            }
+          ],
+          "elapsed_ms": 88.94,
+          "fallback_used": false
+        }
+      },
+      {
+        "name": "nic.cz",
+        "rtype": "A",
+        "resolver_id": "8.8.8.8",
+        "ttl": 1800,
+        "answers": [
+          "217.31.205.50"
+        ],
+        "status": "OK",
+        "error": null,
+        "diagnostics": {
+          "transport": "udp",
+          "edns": 1232,
+          "rcode": 0,
+          "rcode_name": "NOERROR",
+          "flags": 33152,
+          "retries": 0,
+          "attempts": [
+            {
+              "transport": "udp",
+              "edns": 1232,
+              "error": false,
+              "elapsed_ms": 172.57
+            }
+          ],
+          "elapsed_ms": 172.57,
+          "fallback_used": false
+        }
+      },
+      {
+        "name": "nic.cz",
+        "rtype": "AAAA",
+        "resolver_id": "8.8.8.8",
+        "ttl": 633,
+        "answers": [
+          "2001:1488:0:3::2"
+        ],
+        "status": "OK",
+        "error": null,
+        "diagnostics": {
+          "transport": "udp",
+          "edns": 1232,
+          "rcode": 0,
+          "rcode_name": "NOERROR",
+          "flags": 33152,
+          "retries": 0,
+          "attempts": [
+            {
+              "transport": "udp",
+              "edns": 1232,
+              "error": false,
+              "elapsed_ms": 48.42
+            }
+          ],
+          "elapsed_ms": 48.42,
+          "fallback_used": false
+        }
+      },
+      {
+        "name": "nic.cz",
+        "rtype": "CNAME",
+        "resolver_id": "8.8.8.8",
+        "ttl": null,
+        "answers": [],
+        "status": "NODATA",
+        "error": null,
+        "diagnostics": {
+          "transport": "udp",
+          "edns": 1232,
+          "rcode": 0,
+          "rcode_name": "NOERROR",
+          "flags": 33152,
+          "retries": 0,
+          "attempts": [
+            {
+              "transport": "udp",
+              "edns": 1232,
+              "error": false,
+              "elapsed_ms": 49.8
+            }
+          ],
+          "elapsed_ms": 49.8,
+          "fallback_used": false
+        }
+      },
+      {
+        "name": "nic.cz",
+        "rtype": "MX",
+        "resolver_id": "8.8.8.8",
+        "ttl": 1292,
+        "answers": [
+          "10 mail.nic.cz.",
+          "20 mx.nic.cz."
+        ],
+        "status": "OK",
+        "error": null,
+        "diagnostics": {
+          "transport": "udp",
+          "edns": 1232,
+          "rcode": 0,
+          "rcode_name": "NOERROR",
+          "flags": 33152,
+          "retries": 0,
+          "attempts": [
+            {
+              "transport": "udp",
+              "edns": 1232,
+              "error": false,
+              "elapsed_ms": 36.68
+            }
+          ],
+          "elapsed_ms": 36.68,
+          "fallback_used": false
+        }
+      },
+      {
+        "name": "nic.cz",
+        "rtype": "NS",
+        "resolver_id": "8.8.8.8",
+        "ttl": 873,
+        "answers": [
+          "a.ns.nic.cz.",
+          "b.ns.nic.cz.",
+          "d.ns.nic.cz."
+        ],
+        "status": "OK",
+        "error": null,
+        "diagnostics": {
+          "transport": "udp",
+          "edns": 1232,
+          "rcode": 0,
+          "rcode_name": "NOERROR",
+          "flags": 33152,
+          "retries": 0,
+          "attempts": [
+            {
+              "transport": "udp",
+              "edns": 1232,
+              "error": false,
+              "elapsed_ms": 34.94
+            }
+          ],
+          "elapsed_ms": 34.94,
+          "fallback_used": false
+        }
+      },
+      {
+        "name": "nic.cz",
+        "rtype": "SOA",
+        "resolver_id": "8.8.8.8",
+        "ttl": 1800,
+        "answers": [
+          "a.ns.nic.cz. hostmaster.nic.cz. 1762759203 14400 3600 1209600 7200"
+        ],
+        "status": "OK",
+        "error": null,
+        "diagnostics": {
+          "transport": "udp",
+          "edns": 1232,
+          "rcode": 0,
+          "rcode_name": "NOERROR",
+          "flags": 33152,
+          "retries": 0,
+          "attempts": [
+            {
+              "transport": "udp",
+              "edns": 1232,
+              "error": false,
+              "elapsed_ms": 123.77
+            }
+          ],
+          "elapsed_ms": 123.77,
+          "fallback_used": false
+        }
+      },
+      {
+        "name": "nic.cz",
+        "rtype": "TXT",
+        "resolver_id": "8.8.8.8",
+        "ttl": 512,
+        "answers": [
+          "\"MS=92011E91562E6FD18FF9C5FA1F053F90DD5B1892\"",
+          "\"v=spf1 include:_v4nets.nic.cz include:_v6nets.nic.cz include:_spf.network.cz ~all\""
+        ],
+        "status": "OK",
+        "error": null,
+        "diagnostics": {
+          "transport": "udp",
+          "edns": 1232,
+          "rcode": 0,
+          "rcode_name": "NOERROR",
+          "flags": 33152,
+          "retries": 0,
+          "attempts": [
+            {
+              "transport": "udp",
+              "edns": 1232,
+              "error": false,
+              "elapsed_ms": 47.03
+            }
+          ],
+          "elapsed_ms": 47.03,
+          "fallback_used": false
+        }
+      },
+      {
+        "name": "nic.cz",
+        "rtype": "A",
+        "resolver_id": "9.9.9.9",
+        "ttl": 1450,
+        "answers": [
+          "217.31.205.50"
+        ],
+        "status": "OK",
+        "error": null,
+        "diagnostics": {
+          "transport": "udp",
+          "edns": 1232,
+          "rcode": 0,
+          "rcode_name": "NOERROR",
+          "flags": 33152,
+          "retries": 0,
+          "attempts": [
+            {
+              "transport": "udp",
+              "edns": 1232,
+              "error": false,
+              "elapsed_ms": 619.23
+            }
+          ],
+          "elapsed_ms": 619.23,
+          "fallback_used": false
+        }
+      },
+      {
+        "name": "nic.cz",
+        "rtype": "AAAA",
+        "resolver_id": "9.9.9.9",
+        "ttl": 1800,
+        "answers": [
+          "2001:1488:0:3::2"
+        ],
+        "status": "OK",
+        "error": null,
+        "diagnostics": {
+          "transport": "udp",
+          "edns": 1232,
+          "rcode": 0,
+          "rcode_name": "NOERROR",
+          "flags": 33152,
+          "retries": 0,
+          "attempts": [
+            {
+              "transport": "udp",
+              "edns": 1232,
+              "error": false,
+              "elapsed_ms": 720.1
+            }
+          ],
+          "elapsed_ms": 720.1,
+          "fallback_used": false
+        }
+      },
+      {
+        "name": "nic.cz",
+        "rtype": "CNAME",
+        "resolver_id": "9.9.9.9",
+        "ttl": null,
+        "answers": [],
+        "status": "NODATA",
+        "error": null,
+        "diagnostics": {
+          "transport": "udp",
+          "edns": 1232,
+          "rcode": 0,
+          "rcode_name": "NOERROR",
+          "flags": 33152,
+          "retries": 0,
+          "attempts": [
+            {
+              "transport": "udp",
+              "edns": 1232,
+              "error": false,
+              "elapsed_ms": 746.45
+            }
+          ],
+          "elapsed_ms": 746.45,
+          "fallback_used": false
+        }
+      },
+      {
+        "name": "nic.cz",
+        "rtype": "MX",
+        "resolver_id": "9.9.9.9",
+        "ttl": 1800,
+        "answers": [
+          "10 mail.nic.cz.",
+          "20 mx.nic.cz."
+        ],
+        "status": "OK",
+        "error": null,
+        "diagnostics": {
+          "transport": "udp",
+          "edns": 1232,
+          "rcode": 0,
+          "rcode_name": "NOERROR",
+          "flags": 33152,
+          "retries": 0,
+          "attempts": [
+            {
+              "transport": "udp",
+              "edns": 1232,
+              "error": false,
+              "elapsed_ms": 722.68
+            }
+          ],
+          "elapsed_ms": 722.68,
+          "fallback_used": false
+        }
+      },
+      {
+        "name": "nic.cz",
+        "rtype": "NS",
+        "resolver_id": "9.9.9.9",
+        "ttl": 1800,
+        "answers": [
+          "a.ns.nic.cz.",
+          "b.ns.nic.cz.",
+          "d.ns.nic.cz."
+        ],
+        "status": "OK",
+        "error": null,
+        "diagnostics": {
+          "transport": "udp",
+          "edns": 1232,
+          "rcode": 0,
+          "rcode_name": "NOERROR",
+          "flags": 33152,
+          "retries": 0,
+          "attempts": [
+            {
+              "transport": "udp",
+              "edns": 1232,
+              "error": false,
+              "elapsed_ms": 747.94
+            }
+          ],
+          "elapsed_ms": 747.94,
+          "fallback_used": false
+        }
+      },
+      {
+        "name": "nic.cz",
+        "rtype": "SOA",
+        "resolver_id": "9.9.9.9",
+        "ttl": 1800,
+        "answers": [
+          "a.ns.nic.cz. hostmaster.nic.cz. 1762759203 14400 3600 1209600 7200"
+        ],
+        "status": "OK",
+        "error": null,
+        "diagnostics": {
+          "transport": "udp",
+          "edns": 1232,
+          "rcode": 0,
+          "rcode_name": "NOERROR",
+          "flags": 33152,
+          "retries": 0,
+          "attempts": [
+            {
+              "transport": "udp",
+              "edns": 1232,
+              "error": false,
+              "elapsed_ms": 706.74
+            }
+          ],
+          "elapsed_ms": 706.74,
+          "fallback_used": false
+        }
+      },
+      {
+        "name": "nic.cz",
+        "rtype": "TXT",
+        "resolver_id": "9.9.9.9",
+        "ttl": 1800,
+        "answers": [
+          "\"MS=92011E91562E6FD18FF9C5FA1F053F90DD5B1892\"",
+          "\"v=spf1 include:_v4nets.nic.cz include:_v6nets.nic.cz include:_spf.network.cz ~all\""
+        ],
+        "status": "OK",
+        "error": null,
+        "diagnostics": {
+          "transport": "udp",
+          "edns": 1232,
+          "rcode": 0,
+          "rcode_name": "NOERROR",
+          "flags": 33152,
+          "retries": 0,
+          "attempts": [
+            {
+              "transport": "udp",
+              "edns": 1232,
+              "error": false,
+              "elapsed_ms": 314.33
+            }
+          ],
+          "elapsed_ms": 314.33,
+          "fallback_used": false
+        }
+      },
+      {
+        "name": "nic.cz",
+        "rtype": "A",
+        "resolver_id": "auth:a.ns.nic.cz@194.0.12.1",
+        "ttl": 1800,
+        "answers": [
+          "217.31.205.50"
+        ],
+        "status": "OK",
+        "error": null,
+        "diagnostics": {
+          "transport": "udp",
+          "edns": 1232,
+          "rcode": 0,
+          "rcode_name": "NOERROR",
+          "flags": 33792,
+          "retries": 0,
+          "attempts": [
+            {
+              "transport": "udp",
+              "edns": 1232,
+              "error": false,
+              "elapsed_ms": 324.41
+            }
+          ],
+          "elapsed_ms": 324.41,
+          "fallback_used": false
+        }
+      },
+      {
+        "name": "nic.cz",
+        "rtype": "AAAA",
+        "resolver_id": "auth:a.ns.nic.cz@194.0.12.1",
+        "ttl": 1800,
+        "answers": [
+          "2001:1488:0:3::2"
+        ],
+        "status": "OK",
+        "error": null,
+        "diagnostics": {
+          "transport": "udp",
+          "edns": 1232,
+          "rcode": 0,
+          "rcode_name": "NOERROR",
+          "flags": 33792,
+          "retries": 0,
+          "attempts": [
+            {
+              "transport": "udp",
+              "edns": 1232,
+              "error": false,
+              "elapsed_ms": 317.15
+            }
+          ],
+          "elapsed_ms": 317.15,
+          "fallback_used": false
+        }
+      },
+      {
+        "name": "nic.cz",
+        "rtype": "CNAME",
+        "resolver_id": "auth:a.ns.nic.cz@194.0.12.1",
+        "ttl": null,
+        "answers": [],
+        "status": "NODATA",
+        "error": null,
+        "diagnostics": {
+          "transport": "udp",
+          "edns": 1232,
+          "rcode": 0,
+          "rcode_name": "NOERROR",
+          "flags": 33792,
+          "retries": 0,
+          "attempts": [
+            {
+              "transport": "udp",
+              "edns": 1232,
+              "error": false,
+              "elapsed_ms": 337.29
+            }
+          ],
+          "elapsed_ms": 337.29,
+          "fallback_used": false
+        }
+      },
+      {
+        "name": "nic.cz",
+        "rtype": "MX",
+        "resolver_id": "auth:a.ns.nic.cz@194.0.12.1",
+        "ttl": 1800,
+        "answers": [
+          "10 mail.nic.cz.",
+          "20 mx.nic.cz."
+        ],
+        "status": "OK",
+        "error": null,
+        "diagnostics": {
+          "transport": "udp",
+          "edns": 1232,
+          "rcode": 0,
+          "rcode_name": "NOERROR",
+          "flags": 33792,
+          "retries": 0,
+          "attempts": [
+            {
+              "transport": "udp",
+              "edns": 1232,
+              "error": false,
+              "elapsed_ms": 335.79
+            }
+          ],
+          "elapsed_ms": 335.79,
+          "fallback_used": false
+        }
+      },
+      {
+        "name": "nic.cz",
+        "rtype": "NS",
+        "resolver_id": "auth:a.ns.nic.cz@194.0.12.1",
+        "ttl": 1800,
+        "answers": [
+          "a.ns.nic.cz.",
+          "b.ns.nic.cz.",
+          "d.ns.nic.cz."
+        ],
+        "status": "OK",
+        "error": null,
+        "diagnostics": {
+          "transport": "udp",
+          "edns": 1232,
+          "rcode": 0,
+          "rcode_name": "NOERROR",
+          "flags": 33792,
+          "retries": 0,
+          "attempts": [
+            {
+              "transport": "udp",
+              "edns": 1232,
+              "error": false,
+              "elapsed_ms": 328.43
+            }
+          ],
+          "elapsed_ms": 328.43,
+          "fallback_used": false
+        }
+      },
+      {
+        "name": "nic.cz",
+        "rtype": "SOA",
+        "resolver_id": "auth:a.ns.nic.cz@194.0.12.1",
+        "ttl": 1800,
+        "answers": [
+          "a.ns.nic.cz. hostmaster.nic.cz. 1762759203 14400 3600 1209600 7200"
+        ],
+        "status": "OK",
+        "error": null,
+        "diagnostics": {
+          "transport": "udp",
+          "edns": 1232,
+          "rcode": 0,
+          "rcode_name": "NOERROR",
+          "flags": 33792,
+          "retries": 0,
+          "attempts": [
+            {
+              "transport": "udp",
+              "edns": 1232,
+              "error": false,
+              "elapsed_ms": 322.03
+            }
+          ],
+          "elapsed_ms": 322.03,
+          "fallback_used": false
+        }
+      },
+      {
+        "name": "nic.cz",
+        "rtype": "TXT",
+        "resolver_id": "auth:a.ns.nic.cz@194.0.12.1",
+        "ttl": 1800,
+        "answers": [
+          "\"MS=92011E91562E6FD18FF9C5FA1F053F90DD5B1892\"",
+          "\"v=spf1 include:_v4nets.nic.cz include:_v6nets.nic.cz include:_spf.network.cz ~all\""
+        ],
+        "status": "OK",
+        "error": null,
+        "diagnostics": {
+          "transport": "udp",
+          "edns": 1232,
+          "rcode": 0,
+          "rcode_name": "NOERROR",
+          "flags": 33792,
+          "retries": 0,
+          "attempts": [
+            {
+              "transport": "udp",
+              "edns": 1232,
+              "error": false,
+              "elapsed_ms": 328.03
+            }
+          ],
+          "elapsed_ms": 328.03,
+          "fallback_used": false
+        }
+      },
+      {
+        "name": "nic.cz",
+        "rtype": "A",
+        "resolver_id": "auth:a.ns.nic.cz@2001:678:f::1",
+        "ttl": 1800,
+        "answers": [
+          "217.31.205.50"
+        ],
+        "status": "OK",
+        "error": null,
+        "diagnostics": {
+          "transport": "udp",
+          "edns": 1232,
+          "rcode": 0,
+          "rcode_name": "NOERROR",
+          "flags": 33792,
+          "retries": 0,
+          "attempts": [
+            {
+              "transport": "udp",
+              "edns": 1232,
+              "error": false,
+              "elapsed_ms": 190.91
+            }
+          ],
+          "elapsed_ms": 190.91,
+          "fallback_used": false
+        }
+      },
+      {
+        "name": "nic.cz",
+        "rtype": "AAAA",
+        "resolver_id": "auth:a.ns.nic.cz@2001:678:f::1",
+        "ttl": 1800,
+        "answers": [
+          "2001:1488:0:3::2"
+        ],
+        "status": "OK",
+        "error": null,
+        "diagnostics": {
+          "transport": "udp",
+          "edns": 1232,
+          "rcode": 0,
+          "rcode_name": "NOERROR",
+          "flags": 33792,
+          "retries": 0,
+          "attempts": [
+            {
+              "transport": "udp",
+              "edns": 1232,
+              "error": false,
+              "elapsed_ms": 191.11
+            }
+          ],
+          "elapsed_ms": 191.11,
+          "fallback_used": false
+        }
+      },
+      {
+        "name": "nic.cz",
+        "rtype": "CNAME",
+        "resolver_id": "auth:a.ns.nic.cz@2001:678:f::1",
+        "ttl": null,
+        "answers": [],
+        "status": "NODATA",
+        "error": null,
+        "diagnostics": {
+          "transport": "udp",
+          "edns": 1232,
+          "rcode": 0,
+          "rcode_name": "NOERROR",
+          "flags": 33792,
+          "retries": 0,
+          "attempts": [
+            {
+              "transport": "udp",
+              "edns": 1232,
+              "error": false,
+              "elapsed_ms": 181.93
+            }
+          ],
+          "elapsed_ms": 181.93,
+          "fallback_used": false
+        }
+      },
+      {
+        "name": "nic.cz",
+        "rtype": "MX",
+        "resolver_id": "auth:a.ns.nic.cz@2001:678:f::1",
+        "ttl": 1800,
+        "answers": [
+          "10 mail.nic.cz.",
+          "20 mx.nic.cz."
+        ],
+        "status": "OK",
+        "error": null,
+        "diagnostics": {
+          "transport": "udp",
+          "edns": 1232,
+          "rcode": 0,
+          "rcode_name": "NOERROR",
+          "flags": 33792,
+          "retries": 0,
+          "attempts": [
+            {
+              "transport": "udp",
+              "edns": 1232,
+              "error": false,
+              "elapsed_ms": 195.95
+            }
+          ],
+          "elapsed_ms": 195.95,
+          "fallback_used": false
+        }
+      },
+      {
+        "name": "nic.cz",
+        "rtype": "NS",
+        "resolver_id": "auth:a.ns.nic.cz@2001:678:f::1",
+        "ttl": 1800,
+        "answers": [
+          "a.ns.nic.cz.",
+          "b.ns.nic.cz.",
+          "d.ns.nic.cz."
+        ],
+        "status": "OK",
+        "error": null,
+        "diagnostics": {
+          "transport": "udp",
+          "edns": 1232,
+          "rcode": 0,
+          "rcode_name": "NOERROR",
+          "flags": 33792,
+          "retries": 0,
+          "attempts": [
+            {
+              "transport": "udp",
+              "edns": 1232,
+              "error": false,
+              "elapsed_ms": 179.38
+            }
+          ],
+          "elapsed_ms": 179.38,
+          "fallback_used": false
+        }
+      },
+      {
+        "name": "nic.cz",
+        "rtype": "SOA",
+        "resolver_id": "auth:a.ns.nic.cz@2001:678:f::1",
+        "ttl": 1800,
+        "answers": [
+          "a.ns.nic.cz. hostmaster.nic.cz. 1762759203 14400 3600 1209600 7200"
+        ],
+        "status": "OK",
+        "error": null,
+        "diagnostics": {
+          "transport": "udp",
+          "edns": 1232,
+          "rcode": 0,
+          "rcode_name": "NOERROR",
+          "flags": 33792,
+          "retries": 0,
+          "attempts": [
+            {
+              "transport": "udp",
+              "edns": 1232,
+              "error": false,
+              "elapsed_ms": 182.93
+            }
+          ],
+          "elapsed_ms": 182.93,
+          "fallback_used": false
+        }
+      },
+      {
+        "name": "nic.cz",
+        "rtype": "TXT",
+        "resolver_id": "auth:a.ns.nic.cz@2001:678:f::1",
+        "ttl": 1800,
+        "answers": [
+          "\"MS=92011E91562E6FD18FF9C5FA1F053F90DD5B1892\"",
+          "\"v=spf1 include:_v4nets.nic.cz include:_v6nets.nic.cz include:_spf.network.cz ~all\""
+        ],
+        "status": "OK",
+        "error": null,
+        "diagnostics": {
+          "transport": "udp",
+          "edns": 1232,
+          "rcode": 0,
+          "rcode_name": "NOERROR",
+          "flags": 33792,
+          "retries": 0,
+          "attempts": [
+            {
+              "transport": "udp",
+              "edns": 1232,
+              "error": false,
+              "elapsed_ms": 181.59
+            }
+          ],
+          "elapsed_ms": 181.59,
+          "fallback_used": false
+        }
+      },
+      {
+        "name": "nic.cz",
+        "rtype": "A",
+        "resolver_id": "auth:b.ns.nic.cz@194.0.13.1",
+        "ttl": 1800,
+        "answers": [
+          "217.31.205.50"
+        ],
+        "status": "OK",
+        "error": null,
+        "diagnostics": {
+          "transport": "udp",
+          "edns": 1232,
+          "rcode": 0,
+          "rcode_name": "NOERROR",
+          "flags": 33792,
+          "retries": 0,
+          "attempts": [
+            {
+              "transport": "udp",
+              "edns": 1232,
+              "error": false,
+              "elapsed_ms": 95.88
+            }
+          ],
+          "elapsed_ms": 95.88,
+          "fallback_used": false
+        }
+      },
+      {
+        "name": "nic.cz",
+        "rtype": "AAAA",
+        "resolver_id": "auth:b.ns.nic.cz@194.0.13.1",
+        "ttl": 1800,
+        "answers": [
+          "2001:1488:0:3::2"
+        ],
+        "status": "OK",
+        "error": null,
+        "diagnostics": {
+          "transport": "udp",
+          "edns": 1232,
+          "rcode": 0,
+          "rcode_name": "NOERROR",
+          "flags": 33792,
+          "retries": 0,
+          "attempts": [
+            {
+              "transport": "udp",
+              "edns": 1232,
+              "error": false,
+              "elapsed_ms": 72.46
+            }
+          ],
+          "elapsed_ms": 72.46,
+          "fallback_used": false
+        }
+      },
+      {
+        "name": "nic.cz",
+        "rtype": "CNAME",
+        "resolver_id": "auth:b.ns.nic.cz@194.0.13.1",
+        "ttl": null,
+        "answers": [],
+        "status": "NODATA",
+        "error": null,
+        "diagnostics": {
+          "transport": "udp",
+          "edns": 1232,
+          "rcode": 0,
+          "rcode_name": "NOERROR",
+          "flags": 33792,
+          "retries": 0,
+          "attempts": [
+            {
+              "transport": "udp",
+              "edns": 1232,
+              "error": false,
+              "elapsed_ms": 74.55
+            }
+          ],
+          "elapsed_ms": 74.55,
+          "fallback_used": false
+        }
+      },
+      {
+        "name": "nic.cz",
+        "rtype": "MX",
+        "resolver_id": "auth:b.ns.nic.cz@194.0.13.1",
+        "ttl": 1800,
+        "answers": [
+          "10 mail.nic.cz.",
+          "20 mx.nic.cz."
+        ],
+        "status": "OK",
+        "error": null,
+        "diagnostics": {
+          "transport": "udp",
+          "edns": 1232,
+          "rcode": 0,
+          "rcode_name": "NOERROR",
+          "flags": 33792,
+          "retries": 0,
+          "attempts": [
+            {
+              "transport": "udp",
+              "edns": 1232,
+              "error": false,
+              "elapsed_ms": 105.98
+            }
+          ],
+          "elapsed_ms": 105.98,
+          "fallback_used": false
+        }
+      },
+      {
+        "name": "nic.cz",
+        "rtype": "NS",
+        "resolver_id": "auth:b.ns.nic.cz@194.0.13.1",
+        "ttl": 1800,
+        "answers": [
+          "a.ns.nic.cz.",
+          "b.ns.nic.cz.",
+          "d.ns.nic.cz."
+        ],
+        "status": "OK",
+        "error": null,
+        "diagnostics": {
+          "transport": "udp",
+          "edns": 1232,
+          "rcode": 0,
+          "rcode_name": "NOERROR",
+          "flags": 33792,
+          "retries": 0,
+          "attempts": [
+            {
+              "transport": "udp",
+              "edns": 1232,
+              "error": false,
+              "elapsed_ms": 108.49
+            }
+          ],
+          "elapsed_ms": 108.49,
+          "fallback_used": false
+        }
+      },
+      {
+        "name": "nic.cz",
+        "rtype": "SOA",
+        "resolver_id": "auth:b.ns.nic.cz@194.0.13.1",
+        "ttl": 1800,
+        "answers": [
+          "a.ns.nic.cz. hostmaster.nic.cz. 1762759203 14400 3600 1209600 7200"
+        ],
+        "status": "OK",
+        "error": null,
+        "diagnostics": {
+          "transport": "udp",
+          "edns": 1232,
+          "rcode": 0,
+          "rcode_name": "NOERROR",
+          "flags": 33792,
+          "retries": 0,
+          "attempts": [
+            {
+              "transport": "udp",
+              "edns": 1232,
+              "error": false,
+              "elapsed_ms": 109.2
+            }
+          ],
+          "elapsed_ms": 109.2,
+          "fallback_used": false
+        }
+      },
+      {
+        "name": "nic.cz",
+        "rtype": "TXT",
+        "resolver_id": "auth:b.ns.nic.cz@194.0.13.1",
+        "ttl": 1800,
+        "answers": [
+          "\"MS=92011E91562E6FD18FF9C5FA1F053F90DD5B1892\"",
+          "\"v=spf1 include:_v4nets.nic.cz include:_v6nets.nic.cz include:_spf.network.cz ~all\""
+        ],
+        "status": "OK",
+        "error": null,
+        "diagnostics": {
+          "transport": "udp",
+          "edns": 1232,
+          "rcode": 0,
+          "rcode_name": "NOERROR",
+          "flags": 33792,
+          "retries": 0,
+          "attempts": [
+            {
+              "transport": "udp",
+              "edns": 1232,
+              "error": false,
+              "elapsed_ms": 106.54
+            }
+          ],
+          "elapsed_ms": 106.54,
+          "fallback_used": false
+        }
+      },
+      {
+        "name": "nic.cz",
+        "rtype": "A",
+        "resolver_id": "auth:b.ns.nic.cz@2001:678:10::1",
+        "ttl": 1800,
+        "answers": [
+          "217.31.205.50"
+        ],
+        "status": "OK",
+        "error": null,
+        "diagnostics": {
+          "transport": "udp",
+          "edns": 1232,
+          "rcode": 0,
+          "rcode_name": "NOERROR",
+          "flags": 33792,
+          "retries": 0,
+          "attempts": [
+            {
+              "transport": "udp",
+              "edns": 1232,
+              "error": false,
+              "elapsed_ms": 93.23
+            }
+          ],
+          "elapsed_ms": 93.23,
+          "fallback_used": false
+        }
+      },
+      {
+        "name": "nic.cz",
+        "rtype": "AAAA",
+        "resolver_id": "auth:b.ns.nic.cz@2001:678:10::1",
+        "ttl": 1800,
+        "answers": [
+          "2001:1488:0:3::2"
+        ],
+        "status": "OK",
+        "error": null,
+        "diagnostics": {
+          "transport": "udp",
+          "edns": 1232,
+          "rcode": 0,
+          "rcode_name": "NOERROR",
+          "flags": 33792,
+          "retries": 0,
+          "attempts": [
+            {
+              "transport": "udp",
+              "edns": 1232,
+              "error": false,
+              "elapsed_ms": 99.18
+            }
+          ],
+          "elapsed_ms": 99.18,
+          "fallback_used": false
+        }
+      },
+      {
+        "name": "nic.cz",
+        "rtype": "CNAME",
+        "resolver_id": "auth:b.ns.nic.cz@2001:678:10::1",
+        "ttl": null,
+        "answers": [],
+        "status": "NODATA",
+        "error": null,
+        "diagnostics": {
+          "transport": "udp",
+          "edns": 1232,
+          "rcode": 0,
+          "rcode_name": "NOERROR",
+          "flags": 33792,
+          "retries": 0,
+          "attempts": [
+            {
+              "transport": "udp",
+              "edns": 1232,
+              "error": false,
+              "elapsed_ms": 93.96
+            }
+          ],
+          "elapsed_ms": 93.96,
+          "fallback_used": false
+        }
+      },
+      {
+        "name": "nic.cz",
+        "rtype": "MX",
+        "resolver_id": "auth:b.ns.nic.cz@2001:678:10::1",
+        "ttl": 1800,
+        "answers": [
+          "10 mail.nic.cz.",
+          "20 mx.nic.cz."
+        ],
+        "status": "OK",
+        "error": null,
+        "diagnostics": {
+          "transport": "udp",
+          "edns": 1232,
+          "rcode": 0,
+          "rcode_name": "NOERROR",
+          "flags": 33792,
+          "retries": 0,
+          "attempts": [
+            {
+              "transport": "udp",
+              "edns": 1232,
+              "error": false,
+              "elapsed_ms": 95.18
+            }
+          ],
+          "elapsed_ms": 95.18,
+          "fallback_used": false
+        }
+      },
+      {
+        "name": "nic.cz",
+        "rtype": "NS",
+        "resolver_id": "auth:b.ns.nic.cz@2001:678:10::1",
+        "ttl": 1800,
+        "answers": [
+          "a.ns.nic.cz.",
+          "b.ns.nic.cz.",
+          "d.ns.nic.cz."
+        ],
+        "status": "OK",
+        "error": null,
+        "diagnostics": {
+          "transport": "udp",
+          "edns": 1232,
+          "rcode": 0,
+          "rcode_name": "NOERROR",
+          "flags": 33792,
+          "retries": 0,
+          "attempts": [
+            {
+              "transport": "udp",
+              "edns": 1232,
+              "error": false,
+              "elapsed_ms": 86.21
+            }
+          ],
+          "elapsed_ms": 86.21,
+          "fallback_used": false
+        }
+      },
+      {
+        "name": "nic.cz",
+        "rtype": "SOA",
+        "resolver_id": "auth:b.ns.nic.cz@2001:678:10::1",
+        "ttl": 1800,
+        "answers": [
+          "a.ns.nic.cz. hostmaster.nic.cz. 1762759203 14400 3600 1209600 7200"
+        ],
+        "status": "OK",
+        "error": null,
+        "diagnostics": {
+          "transport": "udp",
+          "edns": 1232,
+          "rcode": 0,
+          "rcode_name": "NOERROR",
+          "flags": 33792,
+          "retries": 0,
+          "attempts": [
+            {
+              "transport": "udp",
+              "edns": 1232,
+              "error": false,
+              "elapsed_ms": 80.49
+            }
+          ],
+          "elapsed_ms": 80.49,
+          "fallback_used": false
+        }
+      },
+      {
+        "name": "nic.cz",
+        "rtype": "TXT",
+        "resolver_id": "auth:b.ns.nic.cz@2001:678:10::1",
+        "ttl": 1800,
+        "answers": [
+          "\"MS=92011E91562E6FD18FF9C5FA1F053F90DD5B1892\"",
+          "\"v=spf1 include:_v4nets.nic.cz include:_v6nets.nic.cz include:_spf.network.cz ~all\""
+        ],
+        "status": "OK",
+        "error": null,
+        "diagnostics": {
+          "transport": "udp",
+          "edns": 1232,
+          "rcode": 0,
+          "rcode_name": "NOERROR",
+          "flags": 33792,
+          "retries": 0,
+          "attempts": [
+            {
+              "transport": "udp",
+              "edns": 1232,
+              "error": false,
+              "elapsed_ms": 77.64
+            }
+          ],
+          "elapsed_ms": 77.64,
+          "fallback_used": false
+        }
+      },
+      {
+        "name": "nic.cz",
+        "rtype": "A",
+        "resolver_id": "auth:d.ns.nic.cz@193.29.206.1",
+        "ttl": 1800,
+        "answers": [
+          "217.31.205.50"
+        ],
+        "status": "OK",
+        "error": null,
+        "diagnostics": {
+          "transport": "udp",
+          "edns": 1232,
+          "rcode": 0,
+          "rcode_name": "NOERROR",
+          "flags": 33792,
+          "retries": 0,
+          "attempts": [
+            {
+              "transport": "udp",
+              "edns": 1232,
+              "error": false,
+              "elapsed_ms": 78.5
+            }
+          ],
+          "elapsed_ms": 78.5,
+          "fallback_used": false
+        }
+      },
+      {
+        "name": "nic.cz",
+        "rtype": "AAAA",
+        "resolver_id": "auth:d.ns.nic.cz@193.29.206.1",
+        "ttl": 1800,
+        "answers": [
+          "2001:1488:0:3::2"
+        ],
+        "status": "OK",
+        "error": null,
+        "diagnostics": {
+          "transport": "udp",
+          "edns": 1232,
+          "rcode": 0,
+          "rcode_name": "NOERROR",
+          "flags": 33792,
+          "retries": 0,
+          "attempts": [
+            {
+              "transport": "udp",
+              "edns": 1232,
+              "error": false,
+              "elapsed_ms": 79.6
+            }
+          ],
+          "elapsed_ms": 79.6,
+          "fallback_used": false
+        }
+      },
+      {
+        "name": "nic.cz",
+        "rtype": "CNAME",
+        "resolver_id": "auth:d.ns.nic.cz@193.29.206.1",
+        "ttl": null,
+        "answers": [],
+        "status": "NODATA",
+        "error": null,
+        "diagnostics": {
+          "transport": "udp",
+          "edns": 1232,
+          "rcode": 0,
+          "rcode_name": "NOERROR",
+          "flags": 33792,
+          "retries": 0,
+          "attempts": [
+            {
+              "transport": "udp",
+              "edns": 1232,
+              "error": false,
+              "elapsed_ms": 76.11
+            }
+          ],
+          "elapsed_ms": 76.11,
+          "fallback_used": false
+        }
+      },
+      {
+        "name": "nic.cz",
+        "rtype": "MX",
+        "resolver_id": "auth:d.ns.nic.cz@193.29.206.1",
+        "ttl": 1800,
+        "answers": [
+          "10 mail.nic.cz.",
+          "20 mx.nic.cz."
+        ],
+        "status": "OK",
+        "error": null,
+        "diagnostics": {
+          "transport": "udp",
+          "edns": 1232,
+          "rcode": 0,
+          "rcode_name": "NOERROR",
+          "flags": 33792,
+          "retries": 0,
+          "attempts": [
+            {
+              "transport": "udp",
+              "edns": 1232,
+              "error": false,
+              "elapsed_ms": 94.81
+            }
+          ],
+          "elapsed_ms": 94.81,
+          "fallback_used": false
+        }
+      },
+      {
+        "name": "nic.cz",
+        "rtype": "NS",
+        "resolver_id": "auth:d.ns.nic.cz@193.29.206.1",
+        "ttl": 1800,
+        "answers": [
+          "a.ns.nic.cz.",
+          "b.ns.nic.cz.",
+          "d.ns.nic.cz."
+        ],
+        "status": "OK",
+        "error": null,
+        "diagnostics": {
+          "transport": "udp",
+          "edns": 1232,
+          "rcode": 0,
+          "rcode_name": "NOERROR",
+          "flags": 33792,
+          "retries": 0,
+          "attempts": [
+            {
+              "transport": "udp",
+              "edns": 1232,
+              "error": false,
+              "elapsed_ms": 80.49
+            }
+          ],
+          "elapsed_ms": 80.49,
+          "fallback_used": false
+        }
+      },
+      {
+        "name": "nic.cz",
+        "rtype": "SOA",
+        "resolver_id": "auth:d.ns.nic.cz@193.29.206.1",
+        "ttl": 1800,
+        "answers": [
+          "a.ns.nic.cz. hostmaster.nic.cz. 1762759203 14400 3600 1209600 7200"
+        ],
+        "status": "OK",
+        "error": null,
+        "diagnostics": {
+          "transport": "udp",
+          "edns": 1232,
+          "rcode": 0,
+          "rcode_name": "NOERROR",
+          "flags": 33792,
+          "retries": 0,
+          "attempts": [
+            {
+              "transport": "udp",
+              "edns": 1232,
+              "error": false,
+              "elapsed_ms": 79.41
+            }
+          ],
+          "elapsed_ms": 79.41,
+          "fallback_used": false
+        }
+      },
+      {
+        "name": "nic.cz",
+        "rtype": "TXT",
+        "resolver_id": "auth:d.ns.nic.cz@193.29.206.1",
+        "ttl": 1800,
+        "answers": [
+          "\"MS=92011E91562E6FD18FF9C5FA1F053F90DD5B1892\"",
+          "\"v=spf1 include:_v4nets.nic.cz include:_v6nets.nic.cz include:_spf.network.cz ~all\""
+        ],
+        "status": "OK",
+        "error": null,
+        "diagnostics": {
+          "transport": "udp",
+          "edns": 1232,
+          "rcode": 0,
+          "rcode_name": "NOERROR",
+          "flags": 33792,
+          "retries": 0,
+          "attempts": [
+            {
+              "transport": "udp",
+              "edns": 1232,
+              "error": false,
+              "elapsed_ms": 77.07
+            }
+          ],
+          "elapsed_ms": 77.07,
+          "fallback_used": false
+        }
+      },
+      {
+        "name": "nic.cz",
+        "rtype": "A",
+        "resolver_id": "auth:d.ns.nic.cz@2001:678:1::1",
+        "ttl": 1800,
+        "answers": [
+          "217.31.205.50"
+        ],
+        "status": "OK",
+        "error": null,
+        "diagnostics": {
+          "transport": "udp",
+          "edns": 1232,
+          "rcode": 0,
+          "rcode_name": "NOERROR",
+          "flags": 33792,
+          "retries": 0,
+          "attempts": [
+            {
+              "transport": "udp",
+              "edns": 1232,
+              "error": false,
+              "elapsed_ms": 124.5
+            }
+          ],
+          "elapsed_ms": 124.5,
+          "fallback_used": false
+        }
+      },
+      {
+        "name": "nic.cz",
+        "rtype": "AAAA",
+        "resolver_id": "auth:d.ns.nic.cz@2001:678:1::1",
+        "ttl": 1800,
+        "answers": [
+          "2001:1488:0:3::2"
+        ],
+        "status": "OK",
+        "error": null,
+        "diagnostics": {
+          "transport": "udp",
+          "edns": 1232,
+          "rcode": 0,
+          "rcode_name": "NOERROR",
+          "flags": 33792,
+          "retries": 0,
+          "attempts": [
+            {
+              "transport": "udp",
+              "edns": 1232,
+              "error": false,
+              "elapsed_ms": 115.33
+            }
+          ],
+          "elapsed_ms": 115.33,
+          "fallback_used": false
+        }
+      },
+      {
+        "name": "nic.cz",
+        "rtype": "CNAME",
+        "resolver_id": "auth:d.ns.nic.cz@2001:678:1::1",
+        "ttl": null,
+        "answers": [],
+        "status": "NODATA",
+        "error": null,
+        "diagnostics": {
+          "transport": "udp",
+          "edns": 1232,
+          "rcode": 0,
+          "rcode_name": "NOERROR",
+          "flags": 33792,
+          "retries": 0,
+          "attempts": [
+            {
+              "transport": "udp",
+              "edns": 1232,
+              "error": false,
+              "elapsed_ms": 121.18
+            }
+          ],
+          "elapsed_ms": 121.18,
+          "fallback_used": false
+        }
+      },
+      {
+        "name": "nic.cz",
+        "rtype": "MX",
+        "resolver_id": "auth:d.ns.nic.cz@2001:678:1::1",
+        "ttl": 1800,
+        "answers": [
+          "10 mail.nic.cz.",
+          "20 mx.nic.cz."
+        ],
+        "status": "OK",
+        "error": null,
+        "diagnostics": {
+          "transport": "udp",
+          "edns": 1232,
+          "rcode": 0,
+          "rcode_name": "NOERROR",
+          "flags": 33792,
+          "retries": 0,
+          "attempts": [
+            {
+              "transport": "udp",
+              "edns": 1232,
+              "error": false,
+              "elapsed_ms": 126.64
+            }
+          ],
+          "elapsed_ms": 126.64,
+          "fallback_used": false
+        }
+      },
+      {
+        "name": "nic.cz",
+        "rtype": "NS",
+        "resolver_id": "auth:d.ns.nic.cz@2001:678:1::1",
+        "ttl": 1800,
+        "answers": [
+          "a.ns.nic.cz.",
+          "b.ns.nic.cz.",
+          "d.ns.nic.cz."
+        ],
+        "status": "OK",
+        "error": null,
+        "diagnostics": {
+          "transport": "udp",
+          "edns": 1232,
+          "rcode": 0,
+          "rcode_name": "NOERROR",
+          "flags": 33792,
+          "retries": 0,
+          "attempts": [
+            {
+              "transport": "udp",
+              "edns": 1232,
+              "error": false,
+              "elapsed_ms": 112.63
+            }
+          ],
+          "elapsed_ms": 112.63,
+          "fallback_used": false
+        }
+      },
+      {
+        "name": "nic.cz",
+        "rtype": "SOA",
+        "resolver_id": "auth:d.ns.nic.cz@2001:678:1::1",
+        "ttl": 1800,
+        "answers": [
+          "a.ns.nic.cz. hostmaster.nic.cz. 1762759203 14400 3600 1209600 7200"
+        ],
+        "status": "OK",
+        "error": null,
+        "diagnostics": {
+          "transport": "udp",
+          "edns": 1232,
+          "rcode": 0,
+          "rcode_name": "NOERROR",
+          "flags": 33792,
+          "retries": 0,
+          "attempts": [
+            {
+              "transport": "udp",
+              "edns": 1232,
+              "error": false,
+              "elapsed_ms": 124.43
+            }
+          ],
+          "elapsed_ms": 124.43,
+          "fallback_used": false
+        }
+      },
+      {
+        "name": "nic.cz",
+        "rtype": "TXT",
+        "resolver_id": "auth:d.ns.nic.cz@2001:678:1::1",
+        "ttl": 1800,
+        "answers": [
+          "\"MS=92011E91562E6FD18FF9C5FA1F053F90DD5B1892\"",
+          "\"v=spf1 include:_v4nets.nic.cz include:_v6nets.nic.cz include:_spf.network.cz ~all\""
+        ],
+        "status": "OK",
+        "error": null,
+        "diagnostics": {
+          "transport": "udp",
+          "edns": 1232,
+          "rcode": 0,
+          "rcode_name": "NOERROR",
+          "flags": 33792,
+          "retries": 0,
+          "attempts": [
+            {
+              "transport": "udp",
+              "edns": 1232,
+              "error": false,
+              "elapsed_ms": 112.24
+            }
+          ],
+          "elapsed_ms": 112.24,
+          "fallback_used": false
+        }
+      }
+    ],
+    "consistency": {
+      "nic.cz A": "CONSISTENT",
+      "nic.cz AAAA": "CONSISTENT",
+      "nic.cz CNAME": "CONSISTENT",
+      "nic.cz MX": "CONSISTENT",
+      "nic.cz NS": "DRIFT",
+      "nic.cz SOA": "CONSISTENT",
+      "nic.cz TXT": "CONSISTENT"
+    },
+    "weak_ttl": [
+      "nic.cz NS"
+    ],
+    "per_rr_verdict": {
+      "nic.cz A": "PASS",
+      "nic.cz AAAA": "PASS",
+      "nic.cz CNAME": "PASS",
+      "nic.cz MX": "PASS",
+      "nic.cz NS": "WARN",
+      "nic.cz SOA": "PASS",
+      "nic.cz TXT": "PASS"
+    },
+    "variance_note": "Variance across public resolvers is common for large CDNs. Confirm authoritatives agree.",
+    "auth_ttl_by_rr": {
+      "nic.cz A": 1800,
+      "nic.cz AAAA": 1800,
+      "nic.cz CNAME": null,
+      "nic.cz MX": 1800,
+      "nic.cz NS": 1800,
+      "nic.cz SOA": 1800,
+      "nic.cz TXT": 1800
+    },
+    "auth_union_present": true,
+    "auth_union_by_rr": {
+      "nic.cz A": [
+        "217.31.205.50"
+      ],
+      "nic.cz AAAA": [
+        "2001:1488:0:3::2"
+      ],
+      "nic.cz MX": [
+        "10 mail.nic.cz.",
+        "20 mx.nic.cz."
+      ],
+      "nic.cz TXT": [
+        "\"MS=92011E91562E6FD18FF9C5FA1F053F90DD5B1892\"",
+        "\"v=spf1 include:_v4nets.nic.cz include:_v6nets.nic.cz include:_spf.network.cz ~all\""
+      ],
+      "nic.cz NS": [
+        "a.ns.nic.cz.",
+        "b.ns.nic.cz.",
+        "d.ns.nic.cz."
+      ],
+      "nic.cz SOA": [
+        "a.ns.nic.cz. hostmaster.nic.cz. 1762759203 14400 3600 1209600 7200"
+      ]
+    },
+    "auth_union_size_by_rr": {
+      "nic.cz A": 1,
+      "nic.cz AAAA": 1,
+      "nic.cz MX": 2,
+      "nic.cz TXT": 2,
+      "nic.cz NS": 3,
+      "nic.cz SOA": 1
+    },
+    "nxdomain_hotspots": [
+      {
+        "label": "nic.cz",
+        "rtype": "CNAME",
+        "resolver_id": "1.1.1.1",
+        "count": 1,
+        "last_rcode": "NODATA",
+        "last_seen_ts": 1762760093.0725648
+      },
+      {
+        "label": "nic.cz",
+        "rtype": "CNAME",
+        "resolver_id": "8.8.8.8",
+        "count": 1,
+        "last_rcode": "NODATA",
+        "last_seen_ts": 1762760093.0725648
+      },
+      {
+        "label": "nic.cz",
+        "rtype": "CNAME",
+        "resolver_id": "9.9.9.9",
+        "count": 1,
+        "last_rcode": "NODATA",
+        "last_seen_ts": 1762760093.0725648
+      },
+      {
+        "label": "nic.cz",
+        "rtype": "CNAME",
+        "resolver_id": "auth:a.ns.nic.cz@194.0.12.1",
+        "count": 1,
+        "last_rcode": "NODATA",
+        "last_seen_ts": 1762760093.0725648
+      },
+      {
+        "label": "nic.cz",
+        "rtype": "CNAME",
+        "resolver_id": "auth:a.ns.nic.cz@2001:678:f::1",
+        "count": 1,
+        "last_rcode": "NODATA",
+        "last_seen_ts": 1762760093.0725648
+      },
+      {
+        "label": "nic.cz",
+        "rtype": "CNAME",
+        "resolver_id": "auth:b.ns.nic.cz@194.0.13.1",
+        "count": 1,
+        "last_rcode": "NODATA",
+        "last_seen_ts": 1762760093.0725648
+      },
+      {
+        "label": "nic.cz",
+        "rtype": "CNAME",
+        "resolver_id": "auth:b.ns.nic.cz@2001:678:10::1",
+        "count": 1,
+        "last_rcode": "NODATA",
+        "last_seen_ts": 1762760093.0725648
+      },
+      {
+        "label": "nic.cz",
+        "rtype": "CNAME",
+        "resolver_id": "auth:d.ns.nic.cz@193.29.206.1",
+        "count": 1,
+        "last_rcode": "NODATA",
+        "last_seen_ts": 1762760093.0725648
+      },
+      {
+        "label": "nic.cz",
+        "rtype": "CNAME",
+        "resolver_id": "auth:d.ns.nic.cz@2001:678:1::1",
+        "count": 1,
+        "last_rcode": "NODATA",
+        "last_seen_ts": 1762760093.0725648
+      }
+    ]
+  },
+  "dnssec": {
+    "ds_present": true,
+    "ds_match": true,
+    "dnskey_rrsig_valid": true,
+    "rrsig_expiry_hours": 317.85083333333336,
+    "nsec_present": false,
+    "issues": [
+      "Advisory: negative proof (NSEC/NSEC3) not observed in synthetic NXDOMAIN probe."
+    ],
+    "state": "SIGNED_VALID",
+    "summary": "PASS",
+    "probe_log": [
+      {
+        "ns_ip": "2001:678:1::1",
+        "transport": "udp",
+        "edns": true,
+        "edns_bufsize": 1232,
+        "do": true,
+        "rcode": "NOERROR",
+        "tc": false,
+        "flags": [
+          "aa",
+          "qr"
+        ],
+        "elapsed_ms": 112,
+        "attempt_no": 1,
+        "exception": null
+      }
+    ]
+  },
+  "drift": {
+    "score": 2,
+    "added": {
+      "nic.cz A": [
+        "217.31.205.50"
+      ],
+      "nic.cz AAAA": [
+        "2001:1488:0:3::2"
+      ],
+      "nic.cz CNAME": [],
+      "nic.cz MX": [
+        "10 mail.nic.cz.",
+        "20 mx.nic.cz."
+      ],
+      "nic.cz NS": [
+        "a.ns.nic.cz.",
+        "b.ns.nic.cz.",
+        "d.ns.nic.cz."
+      ],
+      "nic.cz SOA": [
+        "a.ns.nic.cz. hostmaster.nic.cz. 1762759203 14400 3600 1209600 7200"
+      ],
+      "nic.cz TXT": [
+        "\"MS=92011E91562E6FD18FF9C5FA1F053F90DD5B1892\"",
+        "\"v=spf1 include:_v4nets.nic.cz include:_v6nets.nic.cz include:_spf.network.cz ~all\""
+      ]
+    },
+    "removed": {},
+    "modified": {},
+    "diff_rows": [
+      {
+        "rr_key": "nic.cz NS",
+        "resolver_id": "auth:a.ns.nic.cz@194.0.12.1",
+        "role": "authoritative",
+        "answers": [
+          "a.ns.nic.cz.",
+          "b.ns.nic.cz.",
+          "d.ns.nic.cz."
+        ],
+        "matches_authoritative": true,
+        "dig_cmd": "dig +norecurse @194.0.12.1 nic.cz NS"
+      },
+      {
+        "rr_key": "nic.cz NS",
+        "resolver_id": "auth:a.ns.nic.cz@2001:678:f::1",
+        "role": "authoritative",
+        "answers": [
+          "a.ns.nic.cz.",
+          "b.ns.nic.cz.",
+          "d.ns.nic.cz."
+        ],
+        "matches_authoritative": true,
+        "dig_cmd": "dig +norecurse @2001:678:f::1 nic.cz NS"
+      },
+      {
+        "rr_key": "nic.cz NS",
+        "resolver_id": "auth:b.ns.nic.cz@194.0.13.1",
+        "role": "authoritative",
+        "answers": [
+          "a.ns.nic.cz.",
+          "b.ns.nic.cz.",
+          "d.ns.nic.cz."
+        ],
+        "matches_authoritative": true,
+        "dig_cmd": "dig +norecurse @194.0.13.1 nic.cz NS"
+      },
+      {
+        "rr_key": "nic.cz NS",
+        "resolver_id": "auth:b.ns.nic.cz@2001:678:10::1",
+        "role": "authoritative",
+        "answers": [
+          "a.ns.nic.cz.",
+          "b.ns.nic.cz.",
+          "d.ns.nic.cz."
+        ],
+        "matches_authoritative": true,
+        "dig_cmd": "dig +norecurse @2001:678:10::1 nic.cz NS"
+      },
+      {
+        "rr_key": "nic.cz NS",
+        "resolver_id": "auth:d.ns.nic.cz@193.29.206.1",
+        "role": "authoritative",
+        "answers": [
+          "a.ns.nic.cz.",
+          "b.ns.nic.cz.",
+          "d.ns.nic.cz."
+        ],
+        "matches_authoritative": true,
+        "dig_cmd": "dig +norecurse @193.29.206.1 nic.cz NS"
+      },
+      {
+        "rr_key": "nic.cz NS",
+        "resolver_id": "auth:d.ns.nic.cz@2001:678:1::1",
+        "role": "authoritative",
+        "answers": [
+          "a.ns.nic.cz.",
+          "b.ns.nic.cz.",
+          "d.ns.nic.cz."
+        ],
+        "matches_authoritative": true,
+        "dig_cmd": "dig +norecurse @2001:678:1::1 nic.cz NS"
+      },
+      {
+        "rr_key": "nic.cz NS",
+        "resolver_id": "1.1.1.1",
+        "role": "public",
+        "answers": [
+          "a.ns.nic.cz.",
+          "b.ns.nic.cz.",
+          "d.ns.nic.cz."
+        ],
+        "matches_authoritative": true,
+        "dig_cmd": "dig +norecurse @1.1.1.1 nic.cz NS"
+      },
+      {
+        "rr_key": "nic.cz NS",
+        "resolver_id": "8.8.8.8",
+        "role": "public",
+        "answers": [
+          "a.ns.nic.cz.",
+          "b.ns.nic.cz.",
+          "d.ns.nic.cz."
+        ],
+        "matches_authoritative": true,
+        "dig_cmd": "dig +norecurse @8.8.8.8 nic.cz NS"
+      },
+      {
+        "rr_key": "nic.cz NS",
+        "resolver_id": "9.9.9.9",
+        "role": "public",
+        "answers": [
+          "a.ns.nic.cz.",
+          "b.ns.nic.cz.",
+          "d.ns.nic.cz."
+        ],
+        "matches_authoritative": true,
+        "dig_cmd": "dig +norecurse @9.9.9.9 nic.cz NS"
+      }
+    ]
+  },
+  "ns_health": {
+    "ns": [
+      {
+        "ns_name": "a.ns.nic.cz",
+        "ip": "2001:678:f::1",
+        "family": "IPv6",
+        "health_score": 100.0,
+        "latency_ms_p95": 194.5,
+        "error_rate": 0.0,
+        "fallback_used": false
+      },
+      {
+        "ns_name": "b.ns.nic.cz",
+        "ip": "194.0.13.1",
+        "family": "IPv4",
+        "health_score": 100.0,
+        "latency_ms_p95": 109.0,
+        "error_rate": 0.0,
+        "fallback_used": false
+      },
+      {
+        "ns_name": "b.ns.nic.cz",
+        "ip": "2001:678:10::1",
+        "family": "IPv6",
+        "health_score": 100.0,
+        "latency_ms_p95": 98.0,
+        "error_rate": 0.0,
+        "fallback_used": false
+      },
+      {
+        "ns_name": "d.ns.nic.cz",
+        "ip": "193.29.206.1",
+        "family": "IPv4",
+        "health_score": 100.0,
+        "latency_ms_p95": 90.5,
+        "error_rate": 0.0,
+        "fallback_used": false
+      },
+      {
+        "ns_name": "d.ns.nic.cz",
+        "ip": "2001:678:1::1",
+        "family": "IPv6",
+        "health_score": 100.0,
+        "latency_ms_p95": 126.0,
+        "error_rate": 0.0,
+        "fallback_used": false
+      },
+      {
+        "ns_name": "a.ns.nic.cz",
+        "ip": "194.0.12.1",
+        "family": "IPv4",
+        "health_score": 72.6,
+        "latency_ms_p95": 336.8,
+        "error_rate": 0.0,
+        "fallback_used": false
+      }
+    ]
+  },
+  "summary": {
+    "pass_count": 7,
+    "warn_count": 1,
+    "fail_count": 0,
+    "started_at": 1762760085.4348586,
+    "duration_sec": 7.700008392333984,
+    "resolver_count": 9,
+    "records_scanned": 63
+  },
+  "errors": [],
+  "axfr_results": [],
+  "schema_version": "1.3",
+  "generator": "dns-navigator",
+  "run": {
+    "domain": "nic.cz",
+    "timestamp_utc": "2025-11-10T07:34:53Z",
+    "resolvers": [
+      "1.1.1.1",
+      "8.8.8.8",
+      "9.9.9.9",
+      "authoritative"
+    ],
+    "record_types": [
+      "A",
+      "AAAA",
+      "CNAME",
+      "MX",
+      "TXT",
+      "NS",
+      "SOA"
+    ],
+    "dnssec": {
+      "do": true,
+      "strict_alg": false
+    },
+    "timeouts": {
+      "connect_ms": 500,
+      "read_ms": 1500
+    },
+    "retries": 1,
+    "feature": {
+      "auth_union": true
+    },
+    "policy": {
+      "min_ttl": {
+        "A": 300,
+        "AAAA": 300,
+        "MX": 600,
+        "TXT": 300,
+        "NS": 86400,
+        "SOA": 300
+      },
+      "weights": {
+        "A": 2,
+        "AAAA": 2,
+        "SOA": 2,
+        "MX": 1,
+        "TXT": 1,
+        "NS": 1
+      },
+      "warn_labels": {
+        "weak_ttl": true,
+        "cdn_variance": true
+      }
+    },
+    "axfr": {
+      "enabled": false,
+      "timeout_sec": 8.0
+    }
+  }
+}

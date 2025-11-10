@@ -1,0 +1,2853 @@
+{
+  "run_id": "fe95afb7",
+  "options": {
+    "domain": "google.com",
+    "resolvers": [
+      "1.1.1.1",
+      "8.8.8.8",
+      "9.9.9.9",
+      "authoritative"
+    ],
+    "record_types": [
+      "A",
+      "AAAA",
+      "CNAME",
+      "MX",
+      "TXT",
+      "NS",
+      "SOA"
+    ],
+    "dnssec": {
+      "do": true,
+      "strict_alg_match": false,
+      "expiry_threshold_hours": 48
+    },
+    "rate_limits": {
+      "max_qps": 20.0,
+      "timeout_sec": 4.0,
+      "retries": 1
+    }
+  },
+  "phase": "Reporting",
+  "progress": 85,
+  "meta": {
+    "started_at": 1762742596.6717432,
+    "auth_ns": [
+      [
+        "ns1.google.com",
+        "216.239.32.10"
+      ],
+      [
+        "ns1.google.com",
+        "2001:4860:4802:32::a"
+      ],
+      [
+        "ns2.google.com",
+        "216.239.34.10"
+      ],
+      [
+        "ns2.google.com",
+        "2001:4860:4802:34::a"
+      ],
+      [
+        "ns3.google.com",
+        "216.239.36.10"
+      ],
+      [
+        "ns3.google.com",
+        "2001:4860:4802:36::a"
+      ],
+      [
+        "ns4.google.com",
+        "216.239.38.10"
+      ],
+      [
+        "ns4.google.com",
+        "2001:4860:4802:38::a"
+      ]
+    ],
+    "variance_explainer": "One or more public answers don't match any authoritative response.",
+    "run_verdict": "FAIL"
+  },
+  "overview": {
+    "grid": [
+      {
+        "name": "google.com",
+        "rtype": "A",
+        "resolver_id": "1.1.1.1",
+        "ttl": 300,
+        "answers": [
+          "142.250.183.174"
+        ],
+        "status": "OK",
+        "error": null,
+        "diagnostics": {
+          "transport": "udp",
+          "edns": 1232,
+          "rcode": 0,
+          "flags": 33152,
+          "retries": 0,
+          "attempts": [
+            {
+              "transport": "udp",
+              "edns": 1232,
+              "error": false
+            }
+          ],
+          "elapsed_ms": 0.0
+        }
+      },
+      {
+        "name": "google.com",
+        "rtype": "AAAA",
+        "resolver_id": "1.1.1.1",
+        "ttl": 40,
+        "answers": [
+          "2404:6800:4007:815::200e"
+        ],
+        "status": "OK",
+        "error": null,
+        "diagnostics": {
+          "transport": "udp",
+          "edns": 1232,
+          "rcode": 0,
+          "flags": 33152,
+          "retries": 0,
+          "attempts": [
+            {
+              "transport": "udp",
+              "edns": 1232,
+              "error": false
+            }
+          ],
+          "elapsed_ms": 0.0
+        }
+      },
+      {
+        "name": "google.com",
+        "rtype": "CNAME",
+        "resolver_id": "1.1.1.1",
+        "ttl": null,
+        "answers": [],
+        "status": "NODATA",
+        "error": null,
+        "diagnostics": {
+          "transport": "udp",
+          "edns": 1232,
+          "rcode": 0,
+          "flags": 33152,
+          "retries": 0,
+          "attempts": [
+            {
+              "transport": "udp",
+              "edns": 1232,
+              "error": false
+            }
+          ],
+          "elapsed_ms": 0.0
+        }
+      },
+      {
+        "name": "google.com",
+        "rtype": "MX",
+        "resolver_id": "1.1.1.1",
+        "ttl": 300,
+        "answers": [
+          "10 smtp.google.com."
+        ],
+        "status": "OK",
+        "error": null,
+        "diagnostics": {
+          "transport": "udp",
+          "edns": 1232,
+          "rcode": 0,
+          "flags": 33152,
+          "retries": 0,
+          "attempts": [
+            {
+              "transport": "udp",
+              "edns": 1232,
+              "error": false
+            }
+          ],
+          "elapsed_ms": 0.0
+        }
+      },
+      {
+        "name": "google.com",
+        "rtype": "NS",
+        "resolver_id": "1.1.1.1",
+        "ttl": 338170,
+        "answers": [
+          "ns1.google.com.",
+          "ns2.google.com.",
+          "ns3.google.com.",
+          "ns4.google.com."
+        ],
+        "status": "OK",
+        "error": null,
+        "diagnostics": {
+          "transport": "udp",
+          "edns": 1232,
+          "rcode": 0,
+          "flags": 33152,
+          "retries": 0,
+          "attempts": [
+            {
+              "transport": "udp",
+              "edns": 1232,
+              "error": false
+            }
+          ],
+          "elapsed_ms": 0.0
+        }
+      },
+      {
+        "name": "google.com",
+        "rtype": "SOA",
+        "resolver_id": "1.1.1.1",
+        "ttl": 44,
+        "answers": [
+          "ns1.google.com. dns-admin.google.com. 829379815 900 900 1800 60"
+        ],
+        "status": "OK",
+        "error": null,
+        "diagnostics": {
+          "transport": "udp",
+          "edns": 1232,
+          "rcode": 0,
+          "flags": 33152,
+          "retries": 0,
+          "attempts": [
+            {
+              "transport": "udp",
+              "edns": 1232,
+              "error": false
+            }
+          ],
+          "elapsed_ms": 0.0
+        }
+      },
+      {
+        "name": "google.com",
+        "rtype": "TXT",
+        "resolver_id": "1.1.1.1",
+        "ttl": 3600,
+        "answers": [
+          "\"MS=E4A68B9AB2BB9670BCE15412F62916164C0B20BB\"",
+          "\"apple-domain-verification=30afIBcvSuDV2PLX\"",
+          "\"cisco-ci-domain-verification=47c38bc8c4b74b7233e9053220c1bbe76bcc1cd33c7acf7acd36cd6a5332004b\"",
+          "\"docusign=05958488-4752-4ef2-95eb-aa7ba8a3bd0e\"",
+          "\"docusign=1b0a6754-49b1-4db5-8540-d2c12664b289\"",
+          "\"facebook-domain-verification=22rm551cu4k0ab0bxsw536tlds4h95\"",
+          "\"globalsign-smime-dv=CDYX+XFHUw2wml6/Gb8+59BsH31KzUr6c1l2BPvqKX8=\"",
+          "\"google-site-verification=4ibFUgB-wXLQ_S7vsXVomSTVamuOXBiVAzpR5IZ87D0\"",
+          "\"google-site-verification=TV9-DBe4R80X4v0M4U_bd_J9cpOJM0nikft0jAgjmsQ\"",
+          "\"google-site-verification=wD8N7i1JTNTkezJ49swvWW48f8_9xveREV4oB-0Hf5o\"",
+          "\"onetrust-domain-verification=de01ed21f2fa4d8781cbc3ffb89cf4ef\"",
+          "\"v=spf1 include:_spf.google.com ~all\""
+        ],
+        "status": "OK",
+        "error": null,
+        "diagnostics": {
+          "transport": "udp",
+          "edns": 1232,
+          "rcode": 0,
+          "flags": 33152,
+          "retries": 0,
+          "attempts": [
+            {
+              "transport": "udp",
+              "edns": 1232,
+              "error": false
+            }
+          ],
+          "elapsed_ms": 0.0
+        }
+      },
+      {
+        "name": "google.com",
+        "rtype": "A",
+        "resolver_id": "8.8.8.8",
+        "ttl": 79,
+        "answers": [
+          "172.217.24.14"
+        ],
+        "status": "OK",
+        "error": null,
+        "diagnostics": {
+          "transport": "udp",
+          "edns": 1232,
+          "rcode": 0,
+          "flags": 33152,
+          "retries": 0,
+          "attempts": [
+            {
+              "transport": "udp",
+              "edns": 1232,
+              "error": false
+            }
+          ],
+          "elapsed_ms": 0.0
+        }
+      },
+      {
+        "name": "google.com",
+        "rtype": "AAAA",
+        "resolver_id": "8.8.8.8",
+        "ttl": 300,
+        "answers": [
+          "2404:6800:4007:83b::200e"
+        ],
+        "status": "OK",
+        "error": null,
+        "diagnostics": {
+          "transport": "udp",
+          "edns": 1232,
+          "rcode": 0,
+          "flags": 33152,
+          "retries": 0,
+          "attempts": [
+            {
+              "transport": "udp",
+              "edns": 1232,
+              "error": false
+            }
+          ],
+          "elapsed_ms": 0.0
+        }
+      },
+      {
+        "name": "google.com",
+        "rtype": "CNAME",
+        "resolver_id": "8.8.8.8",
+        "ttl": null,
+        "answers": [],
+        "status": "NODATA",
+        "error": null,
+        "diagnostics": {
+          "transport": "udp",
+          "edns": 1232,
+          "rcode": 0,
+          "flags": 33152,
+          "retries": 0,
+          "attempts": [
+            {
+              "transport": "udp",
+              "edns": 1232,
+              "error": false
+            }
+          ],
+          "elapsed_ms": 0.0
+        }
+      },
+      {
+        "name": "google.com",
+        "rtype": "MX",
+        "resolver_id": "8.8.8.8",
+        "ttl": 160,
+        "answers": [
+          "10 smtp.google.com."
+        ],
+        "status": "OK",
+        "error": null,
+        "diagnostics": {
+          "transport": "udp",
+          "edns": 1232,
+          "rcode": 0,
+          "flags": 33152,
+          "retries": 0,
+          "attempts": [
+            {
+              "transport": "udp",
+              "edns": 1232,
+              "error": false
+            }
+          ],
+          "elapsed_ms": 0.0
+        }
+      },
+      {
+        "name": "google.com",
+        "rtype": "NS",
+        "resolver_id": "8.8.8.8",
+        "ttl": 4600,
+        "answers": [
+          "ns1.google.com.",
+          "ns2.google.com.",
+          "ns3.google.com.",
+          "ns4.google.com."
+        ],
+        "status": "OK",
+        "error": null,
+        "diagnostics": {
+          "transport": "udp",
+          "edns": 1232,
+          "rcode": 0,
+          "flags": 33152,
+          "retries": 0,
+          "attempts": [
+            {
+              "transport": "udp",
+              "edns": 1232,
+              "error": false
+            }
+          ],
+          "elapsed_ms": 0.0
+        }
+      },
+      {
+        "name": "google.com",
+        "rtype": "SOA",
+        "resolver_id": "8.8.8.8",
+        "ttl": 36,
+        "answers": [
+          "ns1.google.com. dns-admin.google.com. 829379815 900 900 1800 60"
+        ],
+        "status": "OK",
+        "error": null,
+        "diagnostics": {
+          "transport": "udp",
+          "edns": 1232,
+          "rcode": 0,
+          "flags": 33152,
+          "retries": 0,
+          "attempts": [
+            {
+              "transport": "udp",
+              "edns": 1232,
+              "error": false
+            }
+          ],
+          "elapsed_ms": 0.0
+        }
+      },
+      {
+        "name": "google.com",
+        "rtype": "TXT",
+        "resolver_id": "8.8.8.8",
+        "ttl": 3600,
+        "answers": [
+          "\"MS=E4A68B9AB2BB9670BCE15412F62916164C0B20BB\"",
+          "\"apple-domain-verification=30afIBcvSuDV2PLX\"",
+          "\"cisco-ci-domain-verification=47c38bc8c4b74b7233e9053220c1bbe76bcc1cd33c7acf7acd36cd6a5332004b\"",
+          "\"docusign=05958488-4752-4ef2-95eb-aa7ba8a3bd0e\"",
+          "\"docusign=1b0a6754-49b1-4db5-8540-d2c12664b289\"",
+          "\"facebook-domain-verification=22rm551cu4k0ab0bxsw536tlds4h95\"",
+          "\"globalsign-smime-dv=CDYX+XFHUw2wml6/Gb8+59BsH31KzUr6c1l2BPvqKX8=\"",
+          "\"google-site-verification=4ibFUgB-wXLQ_S7vsXVomSTVamuOXBiVAzpR5IZ87D0\"",
+          "\"google-site-verification=TV9-DBe4R80X4v0M4U_bd_J9cpOJM0nikft0jAgjmsQ\"",
+          "\"google-site-verification=wD8N7i1JTNTkezJ49swvWW48f8_9xveREV4oB-0Hf5o\"",
+          "\"onetrust-domain-verification=de01ed21f2fa4d8781cbc3ffb89cf4ef\"",
+          "\"v=spf1 include:_spf.google.com ~all\""
+        ],
+        "status": "OK",
+        "error": null,
+        "diagnostics": {
+          "transport": "udp",
+          "edns": 1232,
+          "rcode": 0,
+          "flags": 33152,
+          "retries": 0,
+          "attempts": [
+            {
+              "transport": "udp",
+              "edns": 1232,
+              "error": false
+            }
+          ],
+          "elapsed_ms": 0.0
+        }
+      },
+      {
+        "name": "google.com",
+        "rtype": "A",
+        "resolver_id": "9.9.9.9",
+        "ttl": 161,
+        "answers": [
+          "142.251.222.110"
+        ],
+        "status": "OK",
+        "error": null,
+        "diagnostics": {
+          "transport": "udp",
+          "edns": 1232,
+          "rcode": 0,
+          "flags": 33152,
+          "retries": 0,
+          "attempts": [
+            {
+              "transport": "udp",
+              "edns": 1232,
+              "error": false
+            }
+          ],
+          "elapsed_ms": 0.0
+        }
+      },
+      {
+        "name": "google.com",
+        "rtype": "AAAA",
+        "resolver_id": "9.9.9.9",
+        "ttl": 198,
+        "answers": [
+          "2404:6800:4009:810::200e"
+        ],
+        "status": "OK",
+        "error": null,
+        "diagnostics": {
+          "transport": "udp",
+          "edns": 1232,
+          "rcode": 0,
+          "flags": 33152,
+          "retries": 0,
+          "attempts": [
+            {
+              "transport": "udp",
+              "edns": 1232,
+              "error": false
+            }
+          ],
+          "elapsed_ms": 0.0
+        }
+      },
+      {
+        "name": "google.com",
+        "rtype": "CNAME",
+        "resolver_id": "9.9.9.9",
+        "ttl": null,
+        "answers": [],
+        "status": "NODATA",
+        "error": null,
+        "diagnostics": {
+          "transport": "udp",
+          "edns": 1232,
+          "rcode": 0,
+          "flags": 33152,
+          "retries": 0,
+          "attempts": [
+            {
+              "transport": "udp",
+              "edns": 1232,
+              "error": false
+            }
+          ],
+          "elapsed_ms": 0.0
+        }
+      },
+      {
+        "name": "google.com",
+        "rtype": "MX",
+        "resolver_id": "9.9.9.9",
+        "ttl": 30,
+        "answers": [
+          "10 smtp.google.com."
+        ],
+        "status": "OK",
+        "error": null,
+        "diagnostics": {
+          "transport": "udp",
+          "edns": 1232,
+          "rcode": 0,
+          "flags": 33152,
+          "retries": 0,
+          "attempts": [
+            {
+              "transport": "udp",
+              "edns": 1232,
+              "error": false
+            }
+          ],
+          "elapsed_ms": 0.0
+        }
+      },
+      {
+        "name": "google.com",
+        "rtype": "NS",
+        "resolver_id": "9.9.9.9",
+        "ttl": 5945,
+        "answers": [
+          "ns1.google.com.",
+          "ns2.google.com.",
+          "ns3.google.com.",
+          "ns4.google.com."
+        ],
+        "status": "OK",
+        "error": null,
+        "diagnostics": {
+          "transport": "udp",
+          "edns": 1232,
+          "rcode": 0,
+          "flags": 33152,
+          "retries": 0,
+          "attempts": [
+            {
+              "transport": "udp",
+              "edns": 1232,
+              "error": false
+            }
+          ],
+          "elapsed_ms": 0.0
+        }
+      },
+      {
+        "name": "google.com",
+        "rtype": "SOA",
+        "resolver_id": "9.9.9.9",
+        "ttl": 12,
+        "answers": [
+          "ns1.google.com. dns-admin.google.com. 829379815 900 900 1800 60"
+        ],
+        "status": "OK",
+        "error": null,
+        "diagnostics": {
+          "transport": "udp",
+          "edns": 1232,
+          "rcode": 0,
+          "flags": 33152,
+          "retries": 0,
+          "attempts": [
+            {
+              "transport": "udp",
+              "edns": 1232,
+              "error": false
+            }
+          ],
+          "elapsed_ms": 0.0
+        }
+      },
+      {
+        "name": "google.com",
+        "rtype": "TXT",
+        "resolver_id": "9.9.9.9",
+        "ttl": 30,
+        "answers": [
+          "\"MS=E4A68B9AB2BB9670BCE15412F62916164C0B20BB\"",
+          "\"apple-domain-verification=30afIBcvSuDV2PLX\"",
+          "\"cisco-ci-domain-verification=47c38bc8c4b74b7233e9053220c1bbe76bcc1cd33c7acf7acd36cd6a5332004b\"",
+          "\"docusign=05958488-4752-4ef2-95eb-aa7ba8a3bd0e\"",
+          "\"docusign=1b0a6754-49b1-4db5-8540-d2c12664b289\"",
+          "\"facebook-domain-verification=22rm551cu4k0ab0bxsw536tlds4h95\"",
+          "\"globalsign-smime-dv=CDYX+XFHUw2wml6/Gb8+59BsH31KzUr6c1l2BPvqKX8=\"",
+          "\"google-site-verification=4ibFUgB-wXLQ_S7vsXVomSTVamuOXBiVAzpR5IZ87D0\"",
+          "\"google-site-verification=TV9-DBe4R80X4v0M4U_bd_J9cpOJM0nikft0jAgjmsQ\"",
+          "\"google-site-verification=wD8N7i1JTNTkezJ49swvWW48f8_9xveREV4oB-0Hf5o\"",
+          "\"onetrust-domain-verification=de01ed21f2fa4d8781cbc3ffb89cf4ef\"",
+          "\"v=spf1 include:_spf.google.com ~all\""
+        ],
+        "status": "OK",
+        "error": null,
+        "diagnostics": {
+          "transport": "udp",
+          "edns": 1232,
+          "rcode": 0,
+          "flags": 33152,
+          "retries": 0,
+          "attempts": [
+            {
+              "transport": "udp",
+              "edns": 1232,
+              "error": false
+            }
+          ],
+          "elapsed_ms": 0.0
+        }
+      },
+      {
+        "name": "google.com",
+        "rtype": "A",
+        "resolver_id": "auth:ns1.google.com@2001:4860:4802:32::a",
+        "ttl": 300,
+        "answers": [
+          "142.251.221.110"
+        ],
+        "status": "OK",
+        "error": null,
+        "diagnostics": {
+          "transport": "udp",
+          "edns": 1232,
+          "rcode": 0,
+          "flags": 33792,
+          "retries": 0,
+          "attempts": [
+            {
+              "transport": "udp",
+              "edns": 1232,
+              "error": false
+            }
+          ],
+          "elapsed_ms": 0.0
+        }
+      },
+      {
+        "name": "google.com",
+        "rtype": "AAAA",
+        "resolver_id": "auth:ns1.google.com@2001:4860:4802:32::a",
+        "ttl": 300,
+        "answers": [
+          "2404:6800:4007:836::200e"
+        ],
+        "status": "OK",
+        "error": null,
+        "diagnostics": {
+          "transport": "udp",
+          "edns": 1232,
+          "rcode": 0,
+          "flags": 33792,
+          "retries": 0,
+          "attempts": [
+            {
+              "transport": "udp",
+              "edns": 1232,
+              "error": false
+            }
+          ],
+          "elapsed_ms": 0.0
+        }
+      },
+      {
+        "name": "google.com",
+        "rtype": "CNAME",
+        "resolver_id": "auth:ns1.google.com@2001:4860:4802:32::a",
+        "ttl": null,
+        "answers": [],
+        "status": "NODATA",
+        "error": null,
+        "diagnostics": {
+          "transport": "udp",
+          "edns": 1232,
+          "rcode": 0,
+          "flags": 33792,
+          "retries": 0,
+          "attempts": [
+            {
+              "transport": "udp",
+              "edns": 1232,
+              "error": false
+            }
+          ],
+          "elapsed_ms": 0.0
+        }
+      },
+      {
+        "name": "google.com",
+        "rtype": "MX",
+        "resolver_id": "auth:ns1.google.com@2001:4860:4802:32::a",
+        "ttl": 300,
+        "answers": [
+          "10 smtp.google.com."
+        ],
+        "status": "OK",
+        "error": null,
+        "diagnostics": {
+          "transport": "udp",
+          "edns": 1232,
+          "rcode": 0,
+          "flags": 33792,
+          "retries": 0,
+          "attempts": [
+            {
+              "transport": "udp",
+              "edns": 1232,
+              "error": false
+            }
+          ],
+          "elapsed_ms": 0.0
+        }
+      },
+      {
+        "name": "google.com",
+        "rtype": "NS",
+        "resolver_id": "auth:ns1.google.com@2001:4860:4802:32::a",
+        "ttl": 345600,
+        "answers": [
+          "ns1.google.com.",
+          "ns2.google.com.",
+          "ns3.google.com.",
+          "ns4.google.com."
+        ],
+        "status": "OK",
+        "error": null,
+        "diagnostics": {
+          "transport": "udp",
+          "edns": 1232,
+          "rcode": 0,
+          "flags": 33792,
+          "retries": 0,
+          "attempts": [
+            {
+              "transport": "udp",
+              "edns": 1232,
+              "error": false
+            }
+          ],
+          "elapsed_ms": 0.0
+        }
+      },
+      {
+        "name": "google.com",
+        "rtype": "SOA",
+        "resolver_id": "auth:ns1.google.com@2001:4860:4802:32::a",
+        "ttl": 60,
+        "answers": [
+          "ns1.google.com. dns-admin.google.com. 829379815 900 900 1800 60"
+        ],
+        "status": "OK",
+        "error": null,
+        "diagnostics": {
+          "transport": "udp",
+          "edns": 1232,
+          "rcode": 0,
+          "flags": 33792,
+          "retries": 0,
+          "attempts": [
+            {
+              "transport": "udp",
+              "edns": 1232,
+              "error": false
+            }
+          ],
+          "elapsed_ms": 0.0
+        }
+      },
+      {
+        "name": "google.com",
+        "rtype": "TXT",
+        "resolver_id": "auth:ns1.google.com@2001:4860:4802:32::a",
+        "ttl": 3600,
+        "answers": [
+          "\"MS=E4A68B9AB2BB9670BCE15412F62916164C0B20BB\"",
+          "\"apple-domain-verification=30afIBcvSuDV2PLX\"",
+          "\"cisco-ci-domain-verification=47c38bc8c4b74b7233e9053220c1bbe76bcc1cd33c7acf7acd36cd6a5332004b\"",
+          "\"docusign=05958488-4752-4ef2-95eb-aa7ba8a3bd0e\"",
+          "\"docusign=1b0a6754-49b1-4db5-8540-d2c12664b289\"",
+          "\"facebook-domain-verification=22rm551cu4k0ab0bxsw536tlds4h95\"",
+          "\"globalsign-smime-dv=CDYX+XFHUw2wml6/Gb8+59BsH31KzUr6c1l2BPvqKX8=\"",
+          "\"google-site-verification=4ibFUgB-wXLQ_S7vsXVomSTVamuOXBiVAzpR5IZ87D0\"",
+          "\"google-site-verification=TV9-DBe4R80X4v0M4U_bd_J9cpOJM0nikft0jAgjmsQ\"",
+          "\"google-site-verification=wD8N7i1JTNTkezJ49swvWW48f8_9xveREV4oB-0Hf5o\"",
+          "\"onetrust-domain-verification=de01ed21f2fa4d8781cbc3ffb89cf4ef\"",
+          "\"v=spf1 include:_spf.google.com ~all\""
+        ],
+        "status": "OK",
+        "error": null,
+        "diagnostics": {
+          "transport": "udp",
+          "edns": 1232,
+          "rcode": 0,
+          "flags": 33792,
+          "retries": 0,
+          "attempts": [
+            {
+              "transport": "udp",
+              "edns": 1232,
+              "error": false
+            }
+          ],
+          "elapsed_ms": 0.0
+        }
+      },
+      {
+        "name": "google.com",
+        "rtype": "A",
+        "resolver_id": "auth:ns1.google.com@216.239.32.10",
+        "ttl": 300,
+        "answers": [
+          "142.250.205.142"
+        ],
+        "status": "OK",
+        "error": null,
+        "diagnostics": {
+          "transport": "udp",
+          "edns": 1232,
+          "rcode": 0,
+          "flags": 33792,
+          "retries": 0,
+          "attempts": [
+            {
+              "transport": "udp",
+              "edns": 1232,
+              "error": false
+            }
+          ],
+          "elapsed_ms": 0.0
+        }
+      },
+      {
+        "name": "google.com",
+        "rtype": "AAAA",
+        "resolver_id": "auth:ns1.google.com@216.239.32.10",
+        "ttl": 300,
+        "answers": [
+          "2404:6800:4007:80b::200e"
+        ],
+        "status": "OK",
+        "error": null,
+        "diagnostics": {
+          "transport": "udp",
+          "edns": 1232,
+          "rcode": 0,
+          "flags": 33792,
+          "retries": 0,
+          "attempts": [
+            {
+              "transport": "udp",
+              "edns": 1232,
+              "error": false
+            }
+          ],
+          "elapsed_ms": 0.0
+        }
+      },
+      {
+        "name": "google.com",
+        "rtype": "CNAME",
+        "resolver_id": "auth:ns1.google.com@216.239.32.10",
+        "ttl": null,
+        "answers": [],
+        "status": "NODATA",
+        "error": null,
+        "diagnostics": {
+          "transport": "udp",
+          "edns": 1232,
+          "rcode": 0,
+          "flags": 33792,
+          "retries": 0,
+          "attempts": [
+            {
+              "transport": "udp",
+              "edns": 1232,
+              "error": false
+            }
+          ],
+          "elapsed_ms": 0.0
+        }
+      },
+      {
+        "name": "google.com",
+        "rtype": "MX",
+        "resolver_id": "auth:ns1.google.com@216.239.32.10",
+        "ttl": 300,
+        "answers": [
+          "10 smtp.google.com."
+        ],
+        "status": "OK",
+        "error": null,
+        "diagnostics": {
+          "transport": "udp",
+          "edns": 1232,
+          "rcode": 0,
+          "flags": 33792,
+          "retries": 0,
+          "attempts": [
+            {
+              "transport": "udp",
+              "edns": 1232,
+              "error": false
+            }
+          ],
+          "elapsed_ms": 0.0
+        }
+      },
+      {
+        "name": "google.com",
+        "rtype": "NS",
+        "resolver_id": "auth:ns1.google.com@216.239.32.10",
+        "ttl": 345600,
+        "answers": [
+          "ns1.google.com.",
+          "ns2.google.com.",
+          "ns3.google.com.",
+          "ns4.google.com."
+        ],
+        "status": "OK",
+        "error": null,
+        "diagnostics": {
+          "transport": "udp",
+          "edns": 1232,
+          "rcode": 0,
+          "flags": 33792,
+          "retries": 0,
+          "attempts": [
+            {
+              "transport": "udp",
+              "edns": 1232,
+              "error": false
+            }
+          ],
+          "elapsed_ms": 0.0
+        }
+      },
+      {
+        "name": "google.com",
+        "rtype": "SOA",
+        "resolver_id": "auth:ns1.google.com@216.239.32.10",
+        "ttl": 60,
+        "answers": [
+          "ns1.google.com. dns-admin.google.com. 829379815 900 900 1800 60"
+        ],
+        "status": "OK",
+        "error": null,
+        "diagnostics": {
+          "transport": "udp",
+          "edns": 1232,
+          "rcode": 0,
+          "flags": 33792,
+          "retries": 0,
+          "attempts": [
+            {
+              "transport": "udp",
+              "edns": 1232,
+              "error": false
+            }
+          ],
+          "elapsed_ms": 0.0
+        }
+      },
+      {
+        "name": "google.com",
+        "rtype": "TXT",
+        "resolver_id": "auth:ns1.google.com@216.239.32.10",
+        "ttl": 3600,
+        "answers": [
+          "\"MS=E4A68B9AB2BB9670BCE15412F62916164C0B20BB\"",
+          "\"apple-domain-verification=30afIBcvSuDV2PLX\"",
+          "\"cisco-ci-domain-verification=47c38bc8c4b74b7233e9053220c1bbe76bcc1cd33c7acf7acd36cd6a5332004b\"",
+          "\"docusign=05958488-4752-4ef2-95eb-aa7ba8a3bd0e\"",
+          "\"docusign=1b0a6754-49b1-4db5-8540-d2c12664b289\"",
+          "\"facebook-domain-verification=22rm551cu4k0ab0bxsw536tlds4h95\"",
+          "\"globalsign-smime-dv=CDYX+XFHUw2wml6/Gb8+59BsH31KzUr6c1l2BPvqKX8=\"",
+          "\"google-site-verification=4ibFUgB-wXLQ_S7vsXVomSTVamuOXBiVAzpR5IZ87D0\"",
+          "\"google-site-verification=TV9-DBe4R80X4v0M4U_bd_J9cpOJM0nikft0jAgjmsQ\"",
+          "\"google-site-verification=wD8N7i1JTNTkezJ49swvWW48f8_9xveREV4oB-0Hf5o\"",
+          "\"onetrust-domain-verification=de01ed21f2fa4d8781cbc3ffb89cf4ef\"",
+          "\"v=spf1 include:_spf.google.com ~all\""
+        ],
+        "status": "OK",
+        "error": null,
+        "diagnostics": {
+          "transport": "udp",
+          "edns": 1232,
+          "rcode": 0,
+          "flags": 33792,
+          "retries": 0,
+          "attempts": [
+            {
+              "transport": "udp",
+              "edns": 1232,
+              "error": false
+            }
+          ],
+          "elapsed_ms": 0.0
+        }
+      },
+      {
+        "name": "google.com",
+        "rtype": "A",
+        "resolver_id": "auth:ns2.google.com@2001:4860:4802:34::a",
+        "ttl": 300,
+        "answers": [
+          "142.251.221.110"
+        ],
+        "status": "OK",
+        "error": null,
+        "diagnostics": {
+          "transport": "udp",
+          "edns": 1232,
+          "rcode": 0,
+          "flags": 33792,
+          "retries": 0,
+          "attempts": [
+            {
+              "transport": "udp",
+              "edns": 1232,
+              "error": false
+            }
+          ],
+          "elapsed_ms": 0.0
+        }
+      },
+      {
+        "name": "google.com",
+        "rtype": "AAAA",
+        "resolver_id": "auth:ns2.google.com@2001:4860:4802:34::a",
+        "ttl": 300,
+        "answers": [
+          "2404:6800:4007:836::200e"
+        ],
+        "status": "OK",
+        "error": null,
+        "diagnostics": {
+          "transport": "udp",
+          "edns": 1232,
+          "rcode": 0,
+          "flags": 33792,
+          "retries": 0,
+          "attempts": [
+            {
+              "transport": "udp",
+              "edns": 1232,
+              "error": false
+            }
+          ],
+          "elapsed_ms": 0.0
+        }
+      },
+      {
+        "name": "google.com",
+        "rtype": "CNAME",
+        "resolver_id": "auth:ns2.google.com@2001:4860:4802:34::a",
+        "ttl": null,
+        "answers": [],
+        "status": "NODATA",
+        "error": null,
+        "diagnostics": {
+          "transport": "udp",
+          "edns": 1232,
+          "rcode": 0,
+          "flags": 33792,
+          "retries": 0,
+          "attempts": [
+            {
+              "transport": "udp",
+              "edns": 1232,
+              "error": false
+            }
+          ],
+          "elapsed_ms": 0.0
+        }
+      },
+      {
+        "name": "google.com",
+        "rtype": "MX",
+        "resolver_id": "auth:ns2.google.com@2001:4860:4802:34::a",
+        "ttl": 300,
+        "answers": [
+          "10 smtp.google.com."
+        ],
+        "status": "OK",
+        "error": null,
+        "diagnostics": {
+          "transport": "udp",
+          "edns": 1232,
+          "rcode": 0,
+          "flags": 33792,
+          "retries": 0,
+          "attempts": [
+            {
+              "transport": "udp",
+              "edns": 1232,
+              "error": false
+            }
+          ],
+          "elapsed_ms": 0.0
+        }
+      },
+      {
+        "name": "google.com",
+        "rtype": "NS",
+        "resolver_id": "auth:ns2.google.com@2001:4860:4802:34::a",
+        "ttl": 345600,
+        "answers": [
+          "ns1.google.com.",
+          "ns2.google.com.",
+          "ns3.google.com.",
+          "ns4.google.com."
+        ],
+        "status": "OK",
+        "error": null,
+        "diagnostics": {
+          "transport": "udp",
+          "edns": 1232,
+          "rcode": 0,
+          "flags": 33792,
+          "retries": 0,
+          "attempts": [
+            {
+              "transport": "udp",
+              "edns": 1232,
+              "error": false
+            }
+          ],
+          "elapsed_ms": 0.0
+        }
+      },
+      {
+        "name": "google.com",
+        "rtype": "SOA",
+        "resolver_id": "auth:ns2.google.com@2001:4860:4802:34::a",
+        "ttl": 60,
+        "answers": [
+          "ns1.google.com. dns-admin.google.com. 829379815 900 900 1800 60"
+        ],
+        "status": "OK",
+        "error": null,
+        "diagnostics": {
+          "transport": "udp",
+          "edns": 1232,
+          "rcode": 0,
+          "flags": 33792,
+          "retries": 0,
+          "attempts": [
+            {
+              "transport": "udp",
+              "edns": 1232,
+              "error": false
+            }
+          ],
+          "elapsed_ms": 0.0
+        }
+      },
+      {
+        "name": "google.com",
+        "rtype": "TXT",
+        "resolver_id": "auth:ns2.google.com@2001:4860:4802:34::a",
+        "ttl": 3600,
+        "answers": [
+          "\"MS=E4A68B9AB2BB9670BCE15412F62916164C0B20BB\"",
+          "\"apple-domain-verification=30afIBcvSuDV2PLX\"",
+          "\"cisco-ci-domain-verification=47c38bc8c4b74b7233e9053220c1bbe76bcc1cd33c7acf7acd36cd6a5332004b\"",
+          "\"docusign=05958488-4752-4ef2-95eb-aa7ba8a3bd0e\"",
+          "\"docusign=1b0a6754-49b1-4db5-8540-d2c12664b289\"",
+          "\"facebook-domain-verification=22rm551cu4k0ab0bxsw536tlds4h95\"",
+          "\"globalsign-smime-dv=CDYX+XFHUw2wml6/Gb8+59BsH31KzUr6c1l2BPvqKX8=\"",
+          "\"google-site-verification=4ibFUgB-wXLQ_S7vsXVomSTVamuOXBiVAzpR5IZ87D0\"",
+          "\"google-site-verification=TV9-DBe4R80X4v0M4U_bd_J9cpOJM0nikft0jAgjmsQ\"",
+          "\"google-site-verification=wD8N7i1JTNTkezJ49swvWW48f8_9xveREV4oB-0Hf5o\"",
+          "\"onetrust-domain-verification=de01ed21f2fa4d8781cbc3ffb89cf4ef\"",
+          "\"v=spf1 include:_spf.google.com ~all\""
+        ],
+        "status": "OK",
+        "error": null,
+        "diagnostics": {
+          "transport": "udp",
+          "edns": 1232,
+          "rcode": 0,
+          "flags": 33792,
+          "retries": 0,
+          "attempts": [
+            {
+              "transport": "udp",
+              "edns": 1232,
+              "error": false
+            }
+          ],
+          "elapsed_ms": 0.0
+        }
+      },
+      {
+        "name": "google.com",
+        "rtype": "A",
+        "resolver_id": "auth:ns2.google.com@216.239.34.10",
+        "ttl": 300,
+        "answers": [
+          "142.250.205.142"
+        ],
+        "status": "OK",
+        "error": null,
+        "diagnostics": {
+          "transport": "udp",
+          "edns": 1232,
+          "rcode": 0,
+          "flags": 33792,
+          "retries": 0,
+          "attempts": [
+            {
+              "transport": "udp",
+              "edns": 1232,
+              "error": false
+            }
+          ],
+          "elapsed_ms": 0.0
+        }
+      },
+      {
+        "name": "google.com",
+        "rtype": "AAAA",
+        "resolver_id": "auth:ns2.google.com@216.239.34.10",
+        "ttl": 300,
+        "answers": [
+          "2404:6800:4007:80b::200e"
+        ],
+        "status": "OK",
+        "error": null,
+        "diagnostics": {
+          "transport": "udp",
+          "edns": 1232,
+          "rcode": 0,
+          "flags": 33792,
+          "retries": 0,
+          "attempts": [
+            {
+              "transport": "udp",
+              "edns": 1232,
+              "error": false
+            }
+          ],
+          "elapsed_ms": 0.0
+        }
+      },
+      {
+        "name": "google.com",
+        "rtype": "CNAME",
+        "resolver_id": "auth:ns2.google.com@216.239.34.10",
+        "ttl": null,
+        "answers": [],
+        "status": "NODATA",
+        "error": null,
+        "diagnostics": {
+          "transport": "udp",
+          "edns": 1232,
+          "rcode": 0,
+          "flags": 33792,
+          "retries": 0,
+          "attempts": [
+            {
+              "transport": "udp",
+              "edns": 1232,
+              "error": false
+            }
+          ],
+          "elapsed_ms": 0.0
+        }
+      },
+      {
+        "name": "google.com",
+        "rtype": "MX",
+        "resolver_id": "auth:ns2.google.com@216.239.34.10",
+        "ttl": 300,
+        "answers": [
+          "10 smtp.google.com."
+        ],
+        "status": "OK",
+        "error": null,
+        "diagnostics": {
+          "transport": "udp",
+          "edns": 1232,
+          "rcode": 0,
+          "flags": 33792,
+          "retries": 0,
+          "attempts": [
+            {
+              "transport": "udp",
+              "edns": 1232,
+              "error": false
+            }
+          ],
+          "elapsed_ms": 0.0
+        }
+      },
+      {
+        "name": "google.com",
+        "rtype": "NS",
+        "resolver_id": "auth:ns2.google.com@216.239.34.10",
+        "ttl": 345600,
+        "answers": [
+          "ns1.google.com.",
+          "ns2.google.com.",
+          "ns3.google.com.",
+          "ns4.google.com."
+        ],
+        "status": "OK",
+        "error": null,
+        "diagnostics": {
+          "transport": "udp",
+          "edns": 1232,
+          "rcode": 0,
+          "flags": 33792,
+          "retries": 0,
+          "attempts": [
+            {
+              "transport": "udp",
+              "edns": 1232,
+              "error": false
+            }
+          ],
+          "elapsed_ms": 0.0
+        }
+      },
+      {
+        "name": "google.com",
+        "rtype": "SOA",
+        "resolver_id": "auth:ns2.google.com@216.239.34.10",
+        "ttl": 60,
+        "answers": [
+          "ns1.google.com. dns-admin.google.com. 829379815 900 900 1800 60"
+        ],
+        "status": "OK",
+        "error": null,
+        "diagnostics": {
+          "transport": "udp",
+          "edns": 1232,
+          "rcode": 0,
+          "flags": 33792,
+          "retries": 0,
+          "attempts": [
+            {
+              "transport": "udp",
+              "edns": 1232,
+              "error": false
+            }
+          ],
+          "elapsed_ms": 0.0
+        }
+      },
+      {
+        "name": "google.com",
+        "rtype": "TXT",
+        "resolver_id": "auth:ns2.google.com@216.239.34.10",
+        "ttl": 3600,
+        "answers": [
+          "\"MS=E4A68B9AB2BB9670BCE15412F62916164C0B20BB\"",
+          "\"apple-domain-verification=30afIBcvSuDV2PLX\"",
+          "\"cisco-ci-domain-verification=47c38bc8c4b74b7233e9053220c1bbe76bcc1cd33c7acf7acd36cd6a5332004b\"",
+          "\"docusign=05958488-4752-4ef2-95eb-aa7ba8a3bd0e\"",
+          "\"docusign=1b0a6754-49b1-4db5-8540-d2c12664b289\"",
+          "\"facebook-domain-verification=22rm551cu4k0ab0bxsw536tlds4h95\"",
+          "\"globalsign-smime-dv=CDYX+XFHUw2wml6/Gb8+59BsH31KzUr6c1l2BPvqKX8=\"",
+          "\"google-site-verification=4ibFUgB-wXLQ_S7vsXVomSTVamuOXBiVAzpR5IZ87D0\"",
+          "\"google-site-verification=TV9-DBe4R80X4v0M4U_bd_J9cpOJM0nikft0jAgjmsQ\"",
+          "\"google-site-verification=wD8N7i1JTNTkezJ49swvWW48f8_9xveREV4oB-0Hf5o\"",
+          "\"onetrust-domain-verification=de01ed21f2fa4d8781cbc3ffb89cf4ef\"",
+          "\"v=spf1 include:_spf.google.com ~all\""
+        ],
+        "status": "OK",
+        "error": null,
+        "diagnostics": {
+          "transport": "udp",
+          "edns": 1232,
+          "rcode": 0,
+          "flags": 33792,
+          "retries": 0,
+          "attempts": [
+            {
+              "transport": "udp",
+              "edns": 1232,
+              "error": false
+            }
+          ],
+          "elapsed_ms": 0.0
+        }
+      },
+      {
+        "name": "google.com",
+        "rtype": "A",
+        "resolver_id": "auth:ns3.google.com@2001:4860:4802:36::a",
+        "ttl": 300,
+        "answers": [
+          "142.251.221.110"
+        ],
+        "status": "OK",
+        "error": null,
+        "diagnostics": {
+          "transport": "udp",
+          "edns": 1232,
+          "rcode": 0,
+          "flags": 33792,
+          "retries": 0,
+          "attempts": [
+            {
+              "transport": "udp",
+              "edns": 1232,
+              "error": false
+            }
+          ],
+          "elapsed_ms": 0.0
+        }
+      },
+      {
+        "name": "google.com",
+        "rtype": "AAAA",
+        "resolver_id": "auth:ns3.google.com@2001:4860:4802:36::a",
+        "ttl": 300,
+        "answers": [
+          "2404:6800:4007:836::200e"
+        ],
+        "status": "OK",
+        "error": null,
+        "diagnostics": {
+          "transport": "udp",
+          "edns": 1232,
+          "rcode": 0,
+          "flags": 33792,
+          "retries": 0,
+          "attempts": [
+            {
+              "transport": "udp",
+              "edns": 1232,
+              "error": false
+            }
+          ],
+          "elapsed_ms": 0.0
+        }
+      },
+      {
+        "name": "google.com",
+        "rtype": "CNAME",
+        "resolver_id": "auth:ns3.google.com@2001:4860:4802:36::a",
+        "ttl": null,
+        "answers": [],
+        "status": "NODATA",
+        "error": null,
+        "diagnostics": {
+          "transport": "udp",
+          "edns": 1232,
+          "rcode": 0,
+          "flags": 33792,
+          "retries": 0,
+          "attempts": [
+            {
+              "transport": "udp",
+              "edns": 1232,
+              "error": false
+            }
+          ],
+          "elapsed_ms": 0.0
+        }
+      },
+      {
+        "name": "google.com",
+        "rtype": "MX",
+        "resolver_id": "auth:ns3.google.com@2001:4860:4802:36::a",
+        "ttl": 300,
+        "answers": [
+          "10 smtp.google.com."
+        ],
+        "status": "OK",
+        "error": null,
+        "diagnostics": {
+          "transport": "udp",
+          "edns": 1232,
+          "rcode": 0,
+          "flags": 33792,
+          "retries": 0,
+          "attempts": [
+            {
+              "transport": "udp",
+              "edns": 1232,
+              "error": false
+            }
+          ],
+          "elapsed_ms": 0.0
+        }
+      },
+      {
+        "name": "google.com",
+        "rtype": "NS",
+        "resolver_id": "auth:ns3.google.com@2001:4860:4802:36::a",
+        "ttl": 345600,
+        "answers": [
+          "ns1.google.com.",
+          "ns2.google.com.",
+          "ns3.google.com.",
+          "ns4.google.com."
+        ],
+        "status": "OK",
+        "error": null,
+        "diagnostics": {
+          "transport": "udp",
+          "edns": 1232,
+          "rcode": 0,
+          "flags": 33792,
+          "retries": 0,
+          "attempts": [
+            {
+              "transport": "udp",
+              "edns": 1232,
+              "error": false
+            }
+          ],
+          "elapsed_ms": 0.0
+        }
+      },
+      {
+        "name": "google.com",
+        "rtype": "SOA",
+        "resolver_id": "auth:ns3.google.com@2001:4860:4802:36::a",
+        "ttl": 60,
+        "answers": [
+          "ns1.google.com. dns-admin.google.com. 829379815 900 900 1800 60"
+        ],
+        "status": "OK",
+        "error": null,
+        "diagnostics": {
+          "transport": "udp",
+          "edns": 1232,
+          "rcode": 0,
+          "flags": 33792,
+          "retries": 0,
+          "attempts": [
+            {
+              "transport": "udp",
+              "edns": 1232,
+              "error": false
+            }
+          ],
+          "elapsed_ms": 0.0
+        }
+      },
+      {
+        "name": "google.com",
+        "rtype": "TXT",
+        "resolver_id": "auth:ns3.google.com@2001:4860:4802:36::a",
+        "ttl": 3600,
+        "answers": [
+          "\"MS=E4A68B9AB2BB9670BCE15412F62916164C0B20BB\"",
+          "\"apple-domain-verification=30afIBcvSuDV2PLX\"",
+          "\"cisco-ci-domain-verification=47c38bc8c4b74b7233e9053220c1bbe76bcc1cd33c7acf7acd36cd6a5332004b\"",
+          "\"docusign=05958488-4752-4ef2-95eb-aa7ba8a3bd0e\"",
+          "\"docusign=1b0a6754-49b1-4db5-8540-d2c12664b289\"",
+          "\"facebook-domain-verification=22rm551cu4k0ab0bxsw536tlds4h95\"",
+          "\"globalsign-smime-dv=CDYX+XFHUw2wml6/Gb8+59BsH31KzUr6c1l2BPvqKX8=\"",
+          "\"google-site-verification=4ibFUgB-wXLQ_S7vsXVomSTVamuOXBiVAzpR5IZ87D0\"",
+          "\"google-site-verification=TV9-DBe4R80X4v0M4U_bd_J9cpOJM0nikft0jAgjmsQ\"",
+          "\"google-site-verification=wD8N7i1JTNTkezJ49swvWW48f8_9xveREV4oB-0Hf5o\"",
+          "\"onetrust-domain-verification=de01ed21f2fa4d8781cbc3ffb89cf4ef\"",
+          "\"v=spf1 include:_spf.google.com ~all\""
+        ],
+        "status": "OK",
+        "error": null,
+        "diagnostics": {
+          "transport": "udp",
+          "edns": 1232,
+          "rcode": 0,
+          "flags": 33792,
+          "retries": 0,
+          "attempts": [
+            {
+              "transport": "udp",
+              "edns": 1232,
+              "error": false
+            }
+          ],
+          "elapsed_ms": 0.0
+        }
+      },
+      {
+        "name": "google.com",
+        "rtype": "A",
+        "resolver_id": "auth:ns3.google.com@216.239.36.10",
+        "ttl": 300,
+        "answers": [
+          "142.250.205.142"
+        ],
+        "status": "OK",
+        "error": null,
+        "diagnostics": {
+          "transport": "udp",
+          "edns": 1232,
+          "rcode": 0,
+          "flags": 33792,
+          "retries": 0,
+          "attempts": [
+            {
+              "transport": "udp",
+              "edns": 1232,
+              "error": false
+            }
+          ],
+          "elapsed_ms": 0.0
+        }
+      },
+      {
+        "name": "google.com",
+        "rtype": "AAAA",
+        "resolver_id": "auth:ns3.google.com@216.239.36.10",
+        "ttl": 300,
+        "answers": [
+          "2404:6800:4007:80b::200e"
+        ],
+        "status": "OK",
+        "error": null,
+        "diagnostics": {
+          "transport": "udp",
+          "edns": 1232,
+          "rcode": 0,
+          "flags": 33792,
+          "retries": 0,
+          "attempts": [
+            {
+              "transport": "udp",
+              "edns": 1232,
+              "error": false
+            }
+          ],
+          "elapsed_ms": 0.0
+        }
+      },
+      {
+        "name": "google.com",
+        "rtype": "CNAME",
+        "resolver_id": "auth:ns3.google.com@216.239.36.10",
+        "ttl": null,
+        "answers": [],
+        "status": "NODATA",
+        "error": null,
+        "diagnostics": {
+          "transport": "udp",
+          "edns": 1232,
+          "rcode": 0,
+          "flags": 33792,
+          "retries": 0,
+          "attempts": [
+            {
+              "transport": "udp",
+              "edns": 1232,
+              "error": false
+            }
+          ],
+          "elapsed_ms": 0.0
+        }
+      },
+      {
+        "name": "google.com",
+        "rtype": "MX",
+        "resolver_id": "auth:ns3.google.com@216.239.36.10",
+        "ttl": 300,
+        "answers": [
+          "10 smtp.google.com."
+        ],
+        "status": "OK",
+        "error": null,
+        "diagnostics": {
+          "transport": "udp",
+          "edns": 1232,
+          "rcode": 0,
+          "flags": 33792,
+          "retries": 0,
+          "attempts": [
+            {
+              "transport": "udp",
+              "edns": 1232,
+              "error": false
+            }
+          ],
+          "elapsed_ms": 0.0
+        }
+      },
+      {
+        "name": "google.com",
+        "rtype": "NS",
+        "resolver_id": "auth:ns3.google.com@216.239.36.10",
+        "ttl": 345600,
+        "answers": [
+          "ns1.google.com.",
+          "ns2.google.com.",
+          "ns3.google.com.",
+          "ns4.google.com."
+        ],
+        "status": "OK",
+        "error": null,
+        "diagnostics": {
+          "transport": "udp",
+          "edns": 1232,
+          "rcode": 0,
+          "flags": 33792,
+          "retries": 0,
+          "attempts": [
+            {
+              "transport": "udp",
+              "edns": 1232,
+              "error": false
+            }
+          ],
+          "elapsed_ms": 0.0
+        }
+      },
+      {
+        "name": "google.com",
+        "rtype": "SOA",
+        "resolver_id": "auth:ns3.google.com@216.239.36.10",
+        "ttl": 60,
+        "answers": [
+          "ns1.google.com. dns-admin.google.com. 829379815 900 900 1800 60"
+        ],
+        "status": "OK",
+        "error": null,
+        "diagnostics": {
+          "transport": "udp",
+          "edns": 1232,
+          "rcode": 0,
+          "flags": 33792,
+          "retries": 0,
+          "attempts": [
+            {
+              "transport": "udp",
+              "edns": 1232,
+              "error": false
+            }
+          ],
+          "elapsed_ms": 0.0
+        }
+      },
+      {
+        "name": "google.com",
+        "rtype": "TXT",
+        "resolver_id": "auth:ns3.google.com@216.239.36.10",
+        "ttl": 3600,
+        "answers": [
+          "\"MS=E4A68B9AB2BB9670BCE15412F62916164C0B20BB\"",
+          "\"apple-domain-verification=30afIBcvSuDV2PLX\"",
+          "\"cisco-ci-domain-verification=47c38bc8c4b74b7233e9053220c1bbe76bcc1cd33c7acf7acd36cd6a5332004b\"",
+          "\"docusign=05958488-4752-4ef2-95eb-aa7ba8a3bd0e\"",
+          "\"docusign=1b0a6754-49b1-4db5-8540-d2c12664b289\"",
+          "\"facebook-domain-verification=22rm551cu4k0ab0bxsw536tlds4h95\"",
+          "\"globalsign-smime-dv=CDYX+XFHUw2wml6/Gb8+59BsH31KzUr6c1l2BPvqKX8=\"",
+          "\"google-site-verification=4ibFUgB-wXLQ_S7vsXVomSTVamuOXBiVAzpR5IZ87D0\"",
+          "\"google-site-verification=TV9-DBe4R80X4v0M4U_bd_J9cpOJM0nikft0jAgjmsQ\"",
+          "\"google-site-verification=wD8N7i1JTNTkezJ49swvWW48f8_9xveREV4oB-0Hf5o\"",
+          "\"onetrust-domain-verification=de01ed21f2fa4d8781cbc3ffb89cf4ef\"",
+          "\"v=spf1 include:_spf.google.com ~all\""
+        ],
+        "status": "OK",
+        "error": null,
+        "diagnostics": {
+          "transport": "udp",
+          "edns": 1232,
+          "rcode": 0,
+          "flags": 33792,
+          "retries": 0,
+          "attempts": [
+            {
+              "transport": "udp",
+              "edns": 1232,
+              "error": false
+            }
+          ],
+          "elapsed_ms": 0.0
+        }
+      },
+      {
+        "name": "google.com",
+        "rtype": "A",
+        "resolver_id": "auth:ns4.google.com@2001:4860:4802:38::a",
+        "ttl": 300,
+        "answers": [
+          "142.251.221.110"
+        ],
+        "status": "OK",
+        "error": null,
+        "diagnostics": {
+          "transport": "udp",
+          "edns": 1232,
+          "rcode": 0,
+          "flags": 33792,
+          "retries": 0,
+          "attempts": [
+            {
+              "transport": "udp",
+              "edns": 1232,
+              "error": false
+            }
+          ],
+          "elapsed_ms": 0.0
+        }
+      },
+      {
+        "name": "google.com",
+        "rtype": "AAAA",
+        "resolver_id": "auth:ns4.google.com@2001:4860:4802:38::a",
+        "ttl": 300,
+        "answers": [
+          "2404:6800:4007:836::200e"
+        ],
+        "status": "OK",
+        "error": null,
+        "diagnostics": {
+          "transport": "udp",
+          "edns": 1232,
+          "rcode": 0,
+          "flags": 33792,
+          "retries": 0,
+          "attempts": [
+            {
+              "transport": "udp",
+              "edns": 1232,
+              "error": false
+            }
+          ],
+          "elapsed_ms": 0.0
+        }
+      },
+      {
+        "name": "google.com",
+        "rtype": "CNAME",
+        "resolver_id": "auth:ns4.google.com@2001:4860:4802:38::a",
+        "ttl": null,
+        "answers": [],
+        "status": "NODATA",
+        "error": null,
+        "diagnostics": {
+          "transport": "udp",
+          "edns": 1232,
+          "rcode": 0,
+          "flags": 33792,
+          "retries": 0,
+          "attempts": [
+            {
+              "transport": "udp",
+              "edns": 1232,
+              "error": false
+            }
+          ],
+          "elapsed_ms": 0.0
+        }
+      },
+      {
+        "name": "google.com",
+        "rtype": "MX",
+        "resolver_id": "auth:ns4.google.com@2001:4860:4802:38::a",
+        "ttl": 300,
+        "answers": [
+          "10 smtp.google.com."
+        ],
+        "status": "OK",
+        "error": null,
+        "diagnostics": {
+          "transport": "udp",
+          "edns": 1232,
+          "rcode": 0,
+          "flags": 33792,
+          "retries": 0,
+          "attempts": [
+            {
+              "transport": "udp",
+              "edns": 1232,
+              "error": false
+            }
+          ],
+          "elapsed_ms": 0.0
+        }
+      },
+      {
+        "name": "google.com",
+        "rtype": "NS",
+        "resolver_id": "auth:ns4.google.com@2001:4860:4802:38::a",
+        "ttl": 345600,
+        "answers": [
+          "ns1.google.com.",
+          "ns2.google.com.",
+          "ns3.google.com.",
+          "ns4.google.com."
+        ],
+        "status": "OK",
+        "error": null,
+        "diagnostics": {
+          "transport": "udp",
+          "edns": 1232,
+          "rcode": 0,
+          "flags": 33792,
+          "retries": 0,
+          "attempts": [
+            {
+              "transport": "udp",
+              "edns": 1232,
+              "error": false
+            }
+          ],
+          "elapsed_ms": 0.0
+        }
+      },
+      {
+        "name": "google.com",
+        "rtype": "SOA",
+        "resolver_id": "auth:ns4.google.com@2001:4860:4802:38::a",
+        "ttl": 60,
+        "answers": [
+          "ns1.google.com. dns-admin.google.com. 829379815 900 900 1800 60"
+        ],
+        "status": "OK",
+        "error": null,
+        "diagnostics": {
+          "transport": "udp",
+          "edns": 1232,
+          "rcode": 0,
+          "flags": 33792,
+          "retries": 0,
+          "attempts": [
+            {
+              "transport": "udp",
+              "edns": 1232,
+              "error": false
+            }
+          ],
+          "elapsed_ms": 0.0
+        }
+      },
+      {
+        "name": "google.com",
+        "rtype": "TXT",
+        "resolver_id": "auth:ns4.google.com@2001:4860:4802:38::a",
+        "ttl": 3600,
+        "answers": [
+          "\"MS=E4A68B9AB2BB9670BCE15412F62916164C0B20BB\"",
+          "\"apple-domain-verification=30afIBcvSuDV2PLX\"",
+          "\"cisco-ci-domain-verification=47c38bc8c4b74b7233e9053220c1bbe76bcc1cd33c7acf7acd36cd6a5332004b\"",
+          "\"docusign=05958488-4752-4ef2-95eb-aa7ba8a3bd0e\"",
+          "\"docusign=1b0a6754-49b1-4db5-8540-d2c12664b289\"",
+          "\"facebook-domain-verification=22rm551cu4k0ab0bxsw536tlds4h95\"",
+          "\"globalsign-smime-dv=CDYX+XFHUw2wml6/Gb8+59BsH31KzUr6c1l2BPvqKX8=\"",
+          "\"google-site-verification=4ibFUgB-wXLQ_S7vsXVomSTVamuOXBiVAzpR5IZ87D0\"",
+          "\"google-site-verification=TV9-DBe4R80X4v0M4U_bd_J9cpOJM0nikft0jAgjmsQ\"",
+          "\"google-site-verification=wD8N7i1JTNTkezJ49swvWW48f8_9xveREV4oB-0Hf5o\"",
+          "\"onetrust-domain-verification=de01ed21f2fa4d8781cbc3ffb89cf4ef\"",
+          "\"v=spf1 include:_spf.google.com ~all\""
+        ],
+        "status": "OK",
+        "error": null,
+        "diagnostics": {
+          "transport": "udp",
+          "edns": 1232,
+          "rcode": 0,
+          "flags": 33792,
+          "retries": 0,
+          "attempts": [
+            {
+              "transport": "udp",
+              "edns": 1232,
+              "error": false
+            }
+          ],
+          "elapsed_ms": 0.0
+        }
+      },
+      {
+        "name": "google.com",
+        "rtype": "A",
+        "resolver_id": "auth:ns4.google.com@216.239.38.10",
+        "ttl": 300,
+        "answers": [
+          "142.250.205.142"
+        ],
+        "status": "OK",
+        "error": null,
+        "diagnostics": {
+          "transport": "udp",
+          "edns": 1232,
+          "rcode": 0,
+          "flags": 33792,
+          "retries": 0,
+          "attempts": [
+            {
+              "transport": "udp",
+              "edns": 1232,
+              "error": false
+            }
+          ],
+          "elapsed_ms": 0.0
+        }
+      },
+      {
+        "name": "google.com",
+        "rtype": "AAAA",
+        "resolver_id": "auth:ns4.google.com@216.239.38.10",
+        "ttl": 300,
+        "answers": [
+          "2404:6800:4007:80b::200e"
+        ],
+        "status": "OK",
+        "error": null,
+        "diagnostics": {
+          "transport": "udp",
+          "edns": 1232,
+          "rcode": 0,
+          "flags": 33792,
+          "retries": 0,
+          "attempts": [
+            {
+              "transport": "udp",
+              "edns": 1232,
+              "error": false
+            }
+          ],
+          "elapsed_ms": 0.0
+        }
+      },
+      {
+        "name": "google.com",
+        "rtype": "CNAME",
+        "resolver_id": "auth:ns4.google.com@216.239.38.10",
+        "ttl": null,
+        "answers": [],
+        "status": "NODATA",
+        "error": null,
+        "diagnostics": {
+          "transport": "udp",
+          "edns": 1232,
+          "rcode": 0,
+          "flags": 33792,
+          "retries": 0,
+          "attempts": [
+            {
+              "transport": "udp",
+              "edns": 1232,
+              "error": false
+            }
+          ],
+          "elapsed_ms": 0.0
+        }
+      },
+      {
+        "name": "google.com",
+        "rtype": "MX",
+        "resolver_id": "auth:ns4.google.com@216.239.38.10",
+        "ttl": 300,
+        "answers": [
+          "10 smtp.google.com."
+        ],
+        "status": "OK",
+        "error": null,
+        "diagnostics": {
+          "transport": "udp",
+          "edns": 1232,
+          "rcode": 0,
+          "flags": 33792,
+          "retries": 0,
+          "attempts": [
+            {
+              "transport": "udp",
+              "edns": 1232,
+              "error": false
+            }
+          ],
+          "elapsed_ms": 0.0
+        }
+      },
+      {
+        "name": "google.com",
+        "rtype": "NS",
+        "resolver_id": "auth:ns4.google.com@216.239.38.10",
+        "ttl": 345600,
+        "answers": [
+          "ns1.google.com.",
+          "ns2.google.com.",
+          "ns3.google.com.",
+          "ns4.google.com."
+        ],
+        "status": "OK",
+        "error": null,
+        "diagnostics": {
+          "transport": "udp",
+          "edns": 1232,
+          "rcode": 0,
+          "flags": 33792,
+          "retries": 0,
+          "attempts": [
+            {
+              "transport": "udp",
+              "edns": 1232,
+              "error": false
+            }
+          ],
+          "elapsed_ms": 0.0
+        }
+      },
+      {
+        "name": "google.com",
+        "rtype": "SOA",
+        "resolver_id": "auth:ns4.google.com@216.239.38.10",
+        "ttl": 60,
+        "answers": [
+          "ns1.google.com. dns-admin.google.com. 829379815 900 900 1800 60"
+        ],
+        "status": "OK",
+        "error": null,
+        "diagnostics": {
+          "transport": "udp",
+          "edns": 1232,
+          "rcode": 0,
+          "flags": 33792,
+          "retries": 0,
+          "attempts": [
+            {
+              "transport": "udp",
+              "edns": 1232,
+              "error": false
+            }
+          ],
+          "elapsed_ms": 0.0
+        }
+      },
+      {
+        "name": "google.com",
+        "rtype": "TXT",
+        "resolver_id": "auth:ns4.google.com@216.239.38.10",
+        "ttl": 3600,
+        "answers": [
+          "\"MS=E4A68B9AB2BB9670BCE15412F62916164C0B20BB\"",
+          "\"apple-domain-verification=30afIBcvSuDV2PLX\"",
+          "\"cisco-ci-domain-verification=47c38bc8c4b74b7233e9053220c1bbe76bcc1cd33c7acf7acd36cd6a5332004b\"",
+          "\"docusign=05958488-4752-4ef2-95eb-aa7ba8a3bd0e\"",
+          "\"docusign=1b0a6754-49b1-4db5-8540-d2c12664b289\"",
+          "\"facebook-domain-verification=22rm551cu4k0ab0bxsw536tlds4h95\"",
+          "\"globalsign-smime-dv=CDYX+XFHUw2wml6/Gb8+59BsH31KzUr6c1l2BPvqKX8=\"",
+          "\"google-site-verification=4ibFUgB-wXLQ_S7vsXVomSTVamuOXBiVAzpR5IZ87D0\"",
+          "\"google-site-verification=TV9-DBe4R80X4v0M4U_bd_J9cpOJM0nikft0jAgjmsQ\"",
+          "\"google-site-verification=wD8N7i1JTNTkezJ49swvWW48f8_9xveREV4oB-0Hf5o\"",
+          "\"onetrust-domain-verification=de01ed21f2fa4d8781cbc3ffb89cf4ef\"",
+          "\"v=spf1 include:_spf.google.com ~all\""
+        ],
+        "status": "OK",
+        "error": null,
+        "diagnostics": {
+          "transport": "udp",
+          "edns": 1232,
+          "rcode": 0,
+          "flags": 33792,
+          "retries": 0,
+          "attempts": [
+            {
+              "transport": "udp",
+              "edns": 1232,
+              "error": false
+            }
+          ],
+          "elapsed_ms": 0.0
+        }
+      }
+    ],
+    "consistency": {
+      "google.com A": "DRIFT",
+      "google.com AAAA": "DRIFT",
+      "google.com CNAME": "CONSISTENT",
+      "google.com MX": "DRIFT",
+      "google.com NS": "CONSISTENT",
+      "google.com SOA": "DRIFT",
+      "google.com TXT": "CONSISTENT"
+    },
+    "weak_ttl": [
+      "google.com MX",
+      "google.com SOA"
+    ],
+    "per_rr_verdict": {
+      "google.com A": "FAIL",
+      "google.com AAAA": "FAIL",
+      "google.com CNAME": "PASS",
+      "google.com MX": "WARN",
+      "google.com NS": "PASS",
+      "google.com SOA": "WARN",
+      "google.com TXT": "PASS"
+    },
+    "variance_note": "One or more public answers don't match any authoritative response.",
+    "auth_ttl_by_rr": {
+      "google.com A": 300,
+      "google.com AAAA": 300,
+      "google.com CNAME": null,
+      "google.com MX": 300,
+      "google.com NS": 345600,
+      "google.com SOA": 60,
+      "google.com TXT": 3600
+    },
+    "auth_union_present": true,
+    "auth_union_by_rr": {
+      "google.com A": [
+        "142.250.205.142",
+        "142.251.221.110"
+      ],
+      "google.com AAAA": [
+        "2404:6800:4007:80b::200e",
+        "2404:6800:4007:836::200e"
+      ],
+      "google.com MX": [
+        "10 smtp.google.com."
+      ],
+      "google.com TXT": [
+        "\"MS=E4A68B9AB2BB9670BCE15412F62916164C0B20BB\"",
+        "\"apple-domain-verification=30afIBcvSuDV2PLX\"",
+        "\"cisco-ci-domain-verification=47c38bc8c4b74b7233e9053220c1bbe76bcc1cd33c7acf7acd36cd6a5332004b\"",
+        "\"docusign=05958488-4752-4ef2-95eb-aa7ba8a3bd0e\"",
+        "\"docusign=1b0a6754-49b1-4db5-8540-d2c12664b289\"",
+        "\"facebook-domain-verification=22rm551cu4k0ab0bxsw536tlds4h95\"",
+        "\"globalsign-smime-dv=CDYX+XFHUw2wml6/Gb8+59BsH31KzUr6c1l2BPvqKX8=\"",
+        "\"google-site-verification=4ibFUgB-wXLQ_S7vsXVomSTVamuOXBiVAzpR5IZ87D0\"",
+        "\"google-site-verification=TV9-DBe4R80X4v0M4U_bd_J9cpOJM0nikft0jAgjmsQ\"",
+        "\"google-site-verification=wD8N7i1JTNTkezJ49swvWW48f8_9xveREV4oB-0Hf5o\"",
+        "\"onetrust-domain-verification=de01ed21f2fa4d8781cbc3ffb89cf4ef\"",
+        "\"v=spf1 include:_spf.google.com ~all\""
+      ],
+      "google.com NS": [
+        "ns1.google.com.",
+        "ns2.google.com.",
+        "ns3.google.com.",
+        "ns4.google.com."
+      ],
+      "google.com SOA": [
+        "ns1.google.com. dns-admin.google.com. 829379815 900 900 1800 60"
+      ]
+    },
+    "auth_union_size_by_rr": {
+      "google.com A": 2,
+      "google.com AAAA": 2,
+      "google.com MX": 1,
+      "google.com TXT": 12,
+      "google.com NS": 4,
+      "google.com SOA": 1
+    }
+  },
+  "dnssec": {
+    "ds_present": false,
+    "ds_match": false,
+    "dnskey_rrsig_valid": false,
+    "rrsig_expiry_hours": null,
+    "nsec_present": false,
+    "issues": [],
+    "state": "UNSIGNED",
+    "summary": "PASS"
+  },
+  "drift": {
+    "score": 48,
+    "added": {},
+    "removed": {},
+    "modified": {
+      "google.com A": {
+        "from": [
+          "142.250.192.110",
+          "142.250.206.14",
+          "142.251.221.206",
+          "142.251.222.206",
+          "142.251.43.78"
+        ],
+        "to": [
+          "142.250.183.174",
+          "142.250.205.142",
+          "142.251.221.110",
+          "142.251.222.110",
+          "172.217.24.14"
+        ]
+      },
+      "google.com AAAA": {
+        "from": [
+          "2404:6800:4007:80c::200e",
+          "2404:6800:4007:816::200e",
+          "2404:6800:4007:81b::200e",
+          "2404:6800:4007:831::200e",
+          "2404:6800:4007:835::200e"
+        ],
+        "to": [
+          "2404:6800:4007:80b::200e",
+          "2404:6800:4007:815::200e",
+          "2404:6800:4007:836::200e",
+          "2404:6800:4007:83b::200e",
+          "2404:6800:4009:810::200e"
+        ]
+      },
+      "google.com SOA": {
+        "from": [
+          "ns1.google.com. dns-admin.google.com. 828388013 900 900 1800 60",
+          "ns1.google.com. dns-admin.google.com. 828873403 900 900 1800 60"
+        ],
+        "to": [
+          "ns1.google.com. dns-admin.google.com. 829379815 900 900 1800 60"
+        ]
+      }
+    },
+    "diff_rows": [
+      {
+        "rr_key": "google.com A",
+        "resolver_id": "auth:ns1.google.com@2001:4860:4802:32::a",
+        "role": "authoritative",
+        "answers": [
+          "142.251.221.110"
+        ],
+        "matches_authoritative": true,
+        "dig_cmd": "dig +norecurse @2001:4860:4802:32::a google.com A"
+      },
+      {
+        "rr_key": "google.com A",
+        "resolver_id": "auth:ns1.google.com@216.239.32.10",
+        "role": "authoritative",
+        "answers": [
+          "142.250.205.142"
+        ],
+        "matches_authoritative": true,
+        "dig_cmd": "dig +norecurse @216.239.32.10 google.com A"
+      },
+      {
+        "rr_key": "google.com A",
+        "resolver_id": "auth:ns2.google.com@2001:4860:4802:34::a",
+        "role": "authoritative",
+        "answers": [
+          "142.251.221.110"
+        ],
+        "matches_authoritative": true,
+        "dig_cmd": "dig +norecurse @2001:4860:4802:34::a google.com A"
+      },
+      {
+        "rr_key": "google.com A",
+        "resolver_id": "auth:ns2.google.com@216.239.34.10",
+        "role": "authoritative",
+        "answers": [
+          "142.250.205.142"
+        ],
+        "matches_authoritative": true,
+        "dig_cmd": "dig +norecurse @216.239.34.10 google.com A"
+      },
+      {
+        "rr_key": "google.com A",
+        "resolver_id": "auth:ns3.google.com@2001:4860:4802:36::a",
+        "role": "authoritative",
+        "answers": [
+          "142.251.221.110"
+        ],
+        "matches_authoritative": true,
+        "dig_cmd": "dig +norecurse @2001:4860:4802:36::a google.com A"
+      },
+      {
+        "rr_key": "google.com A",
+        "resolver_id": "auth:ns3.google.com@216.239.36.10",
+        "role": "authoritative",
+        "answers": [
+          "142.250.205.142"
+        ],
+        "matches_authoritative": true,
+        "dig_cmd": "dig +norecurse @216.239.36.10 google.com A"
+      },
+      {
+        "rr_key": "google.com A",
+        "resolver_id": "auth:ns4.google.com@2001:4860:4802:38::a",
+        "role": "authoritative",
+        "answers": [
+          "142.251.221.110"
+        ],
+        "matches_authoritative": true,
+        "dig_cmd": "dig +norecurse @2001:4860:4802:38::a google.com A"
+      },
+      {
+        "rr_key": "google.com A",
+        "resolver_id": "auth:ns4.google.com@216.239.38.10",
+        "role": "authoritative",
+        "answers": [
+          "142.250.205.142"
+        ],
+        "matches_authoritative": true,
+        "dig_cmd": "dig +norecurse @216.239.38.10 google.com A"
+      },
+      {
+        "rr_key": "google.com A",
+        "resolver_id": "1.1.1.1",
+        "role": "public",
+        "answers": [
+          "142.250.183.174"
+        ],
+        "matches_authoritative": false,
+        "dig_cmd": "dig +norecurse @1.1.1.1 google.com A"
+      },
+      {
+        "rr_key": "google.com A",
+        "resolver_id": "8.8.8.8",
+        "role": "public",
+        "answers": [
+          "172.217.24.14"
+        ],
+        "matches_authoritative": false,
+        "dig_cmd": "dig +norecurse @8.8.8.8 google.com A"
+      },
+      {
+        "rr_key": "google.com A",
+        "resolver_id": "9.9.9.9",
+        "role": "public",
+        "answers": [
+          "142.251.222.110"
+        ],
+        "matches_authoritative": false,
+        "dig_cmd": "dig +norecurse @9.9.9.9 google.com A"
+      },
+      {
+        "rr_key": "google.com AAAA",
+        "resolver_id": "auth:ns1.google.com@2001:4860:4802:32::a",
+        "role": "authoritative",
+        "answers": [
+          "2404:6800:4007:836::200e"
+        ],
+        "matches_authoritative": true,
+        "dig_cmd": "dig +norecurse @2001:4860:4802:32::a google.com AAAA"
+      },
+      {
+        "rr_key": "google.com AAAA",
+        "resolver_id": "auth:ns1.google.com@216.239.32.10",
+        "role": "authoritative",
+        "answers": [
+          "2404:6800:4007:80b::200e"
+        ],
+        "matches_authoritative": true,
+        "dig_cmd": "dig +norecurse @216.239.32.10 google.com AAAA"
+      },
+      {
+        "rr_key": "google.com AAAA",
+        "resolver_id": "auth:ns2.google.com@2001:4860:4802:34::a",
+        "role": "authoritative",
+        "answers": [
+          "2404:6800:4007:836::200e"
+        ],
+        "matches_authoritative": true,
+        "dig_cmd": "dig +norecurse @2001:4860:4802:34::a google.com AAAA"
+      },
+      {
+        "rr_key": "google.com AAAA",
+        "resolver_id": "auth:ns2.google.com@216.239.34.10",
+        "role": "authoritative",
+        "answers": [
+          "2404:6800:4007:80b::200e"
+        ],
+        "matches_authoritative": true,
+        "dig_cmd": "dig +norecurse @216.239.34.10 google.com AAAA"
+      },
+      {
+        "rr_key": "google.com AAAA",
+        "resolver_id": "auth:ns3.google.com@2001:4860:4802:36::a",
+        "role": "authoritative",
+        "answers": [
+          "2404:6800:4007:836::200e"
+        ],
+        "matches_authoritative": true,
+        "dig_cmd": "dig +norecurse @2001:4860:4802:36::a google.com AAAA"
+      },
+      {
+        "rr_key": "google.com AAAA",
+        "resolver_id": "auth:ns3.google.com@216.239.36.10",
+        "role": "authoritative",
+        "answers": [
+          "2404:6800:4007:80b::200e"
+        ],
+        "matches_authoritative": true,
+        "dig_cmd": "dig +norecurse @216.239.36.10 google.com AAAA"
+      },
+      {
+        "rr_key": "google.com AAAA",
+        "resolver_id": "auth:ns4.google.com@2001:4860:4802:38::a",
+        "role": "authoritative",
+        "answers": [
+          "2404:6800:4007:836::200e"
+        ],
+        "matches_authoritative": true,
+        "dig_cmd": "dig +norecurse @2001:4860:4802:38::a google.com AAAA"
+      },
+      {
+        "rr_key": "google.com AAAA",
+        "resolver_id": "auth:ns4.google.com@216.239.38.10",
+        "role": "authoritative",
+        "answers": [
+          "2404:6800:4007:80b::200e"
+        ],
+        "matches_authoritative": true,
+        "dig_cmd": "dig +norecurse @216.239.38.10 google.com AAAA"
+      },
+      {
+        "rr_key": "google.com AAAA",
+        "resolver_id": "1.1.1.1",
+        "role": "public",
+        "answers": [
+          "2404:6800:4007:815::200e"
+        ],
+        "matches_authoritative": false,
+        "dig_cmd": "dig +norecurse @1.1.1.1 google.com AAAA"
+      },
+      {
+        "rr_key": "google.com AAAA",
+        "resolver_id": "8.8.8.8",
+        "role": "public",
+        "answers": [
+          "2404:6800:4007:83b::200e"
+        ],
+        "matches_authoritative": false,
+        "dig_cmd": "dig +norecurse @8.8.8.8 google.com AAAA"
+      },
+      {
+        "rr_key": "google.com AAAA",
+        "resolver_id": "9.9.9.9",
+        "role": "public",
+        "answers": [
+          "2404:6800:4009:810::200e"
+        ],
+        "matches_authoritative": false,
+        "dig_cmd": "dig +norecurse @9.9.9.9 google.com AAAA"
+      },
+      {
+        "rr_key": "google.com MX",
+        "resolver_id": "auth:ns1.google.com@2001:4860:4802:32::a",
+        "role": "authoritative",
+        "answers": [
+          "10 smtp.google.com."
+        ],
+        "matches_authoritative": true,
+        "dig_cmd": "dig +norecurse @2001:4860:4802:32::a google.com MX"
+      },
+      {
+        "rr_key": "google.com MX",
+        "resolver_id": "auth:ns1.google.com@216.239.32.10",
+        "role": "authoritative",
+        "answers": [
+          "10 smtp.google.com."
+        ],
+        "matches_authoritative": true,
+        "dig_cmd": "dig +norecurse @216.239.32.10 google.com MX"
+      },
+      {
+        "rr_key": "google.com MX",
+        "resolver_id": "auth:ns2.google.com@2001:4860:4802:34::a",
+        "role": "authoritative",
+        "answers": [
+          "10 smtp.google.com."
+        ],
+        "matches_authoritative": true,
+        "dig_cmd": "dig +norecurse @2001:4860:4802:34::a google.com MX"
+      },
+      {
+        "rr_key": "google.com MX",
+        "resolver_id": "auth:ns2.google.com@216.239.34.10",
+        "role": "authoritative",
+        "answers": [
+          "10 smtp.google.com."
+        ],
+        "matches_authoritative": true,
+        "dig_cmd": "dig +norecurse @216.239.34.10 google.com MX"
+      },
+      {
+        "rr_key": "google.com MX",
+        "resolver_id": "auth:ns3.google.com@2001:4860:4802:36::a",
+        "role": "authoritative",
+        "answers": [
+          "10 smtp.google.com."
+        ],
+        "matches_authoritative": true,
+        "dig_cmd": "dig +norecurse @2001:4860:4802:36::a google.com MX"
+      },
+      {
+        "rr_key": "google.com MX",
+        "resolver_id": "auth:ns3.google.com@216.239.36.10",
+        "role": "authoritative",
+        "answers": [
+          "10 smtp.google.com."
+        ],
+        "matches_authoritative": true,
+        "dig_cmd": "dig +norecurse @216.239.36.10 google.com MX"
+      },
+      {
+        "rr_key": "google.com MX",
+        "resolver_id": "auth:ns4.google.com@2001:4860:4802:38::a",
+        "role": "authoritative",
+        "answers": [
+          "10 smtp.google.com."
+        ],
+        "matches_authoritative": true,
+        "dig_cmd": "dig +norecurse @2001:4860:4802:38::a google.com MX"
+      },
+      {
+        "rr_key": "google.com MX",
+        "resolver_id": "auth:ns4.google.com@216.239.38.10",
+        "role": "authoritative",
+        "answers": [
+          "10 smtp.google.com."
+        ],
+        "matches_authoritative": true,
+        "dig_cmd": "dig +norecurse @216.239.38.10 google.com MX"
+      },
+      {
+        "rr_key": "google.com MX",
+        "resolver_id": "1.1.1.1",
+        "role": "public",
+        "answers": [
+          "10 smtp.google.com."
+        ],
+        "matches_authoritative": true,
+        "dig_cmd": "dig +norecurse @1.1.1.1 google.com MX"
+      },
+      {
+        "rr_key": "google.com MX",
+        "resolver_id": "8.8.8.8",
+        "role": "public",
+        "answers": [
+          "10 smtp.google.com."
+        ],
+        "matches_authoritative": true,
+        "dig_cmd": "dig +norecurse @8.8.8.8 google.com MX"
+      },
+      {
+        "rr_key": "google.com MX",
+        "resolver_id": "9.9.9.9",
+        "role": "public",
+        "answers": [
+          "10 smtp.google.com."
+        ],
+        "matches_authoritative": true,
+        "dig_cmd": "dig +norecurse @9.9.9.9 google.com MX"
+      },
+      {
+        "rr_key": "google.com SOA",
+        "resolver_id": "auth:ns1.google.com@2001:4860:4802:32::a",
+        "role": "authoritative",
+        "answers": [
+          "ns1.google.com. dns-admin.google.com. 829379815 900 900 1800 60"
+        ],
+        "matches_authoritative": true,
+        "dig_cmd": "dig +norecurse @2001:4860:4802:32::a google.com SOA"
+      },
+      {
+        "rr_key": "google.com SOA",
+        "resolver_id": "auth:ns1.google.com@216.239.32.10",
+        "role": "authoritative",
+        "answers": [
+          "ns1.google.com. dns-admin.google.com. 829379815 900 900 1800 60"
+        ],
+        "matches_authoritative": true,
+        "dig_cmd": "dig +norecurse @216.239.32.10 google.com SOA"
+      },
+      {
+        "rr_key": "google.com SOA",
+        "resolver_id": "auth:ns2.google.com@2001:4860:4802:34::a",
+        "role": "authoritative",
+        "answers": [
+          "ns1.google.com. dns-admin.google.com. 829379815 900 900 1800 60"
+        ],
+        "matches_authoritative": true,
+        "dig_cmd": "dig +norecurse @2001:4860:4802:34::a google.com SOA"
+      },
+      {
+        "rr_key": "google.com SOA",
+        "resolver_id": "auth:ns2.google.com@216.239.34.10",
+        "role": "authoritative",
+        "answers": [
+          "ns1.google.com. dns-admin.google.com. 829379815 900 900 1800 60"
+        ],
+        "matches_authoritative": true,
+        "dig_cmd": "dig +norecurse @216.239.34.10 google.com SOA"
+      },
+      {
+        "rr_key": "google.com SOA",
+        "resolver_id": "auth:ns3.google.com@2001:4860:4802:36::a",
+        "role": "authoritative",
+        "answers": [
+          "ns1.google.com. dns-admin.google.com. 829379815 900 900 1800 60"
+        ],
+        "matches_authoritative": true,
+        "dig_cmd": "dig +norecurse @2001:4860:4802:36::a google.com SOA"
+      },
+      {
+        "rr_key": "google.com SOA",
+        "resolver_id": "auth:ns3.google.com@216.239.36.10",
+        "role": "authoritative",
+        "answers": [
+          "ns1.google.com. dns-admin.google.com. 829379815 900 900 1800 60"
+        ],
+        "matches_authoritative": true,
+        "dig_cmd": "dig +norecurse @216.239.36.10 google.com SOA"
+      },
+      {
+        "rr_key": "google.com SOA",
+        "resolver_id": "auth:ns4.google.com@2001:4860:4802:38::a",
+        "role": "authoritative",
+        "answers": [
+          "ns1.google.com. dns-admin.google.com. 829379815 900 900 1800 60"
+        ],
+        "matches_authoritative": true,
+        "dig_cmd": "dig +norecurse @2001:4860:4802:38::a google.com SOA"
+      },
+      {
+        "rr_key": "google.com SOA",
+        "resolver_id": "auth:ns4.google.com@216.239.38.10",
+        "role": "authoritative",
+        "answers": [
+          "ns1.google.com. dns-admin.google.com. 829379815 900 900 1800 60"
+        ],
+        "matches_authoritative": true,
+        "dig_cmd": "dig +norecurse @216.239.38.10 google.com SOA"
+      },
+      {
+        "rr_key": "google.com SOA",
+        "resolver_id": "1.1.1.1",
+        "role": "public",
+        "answers": [
+          "ns1.google.com. dns-admin.google.com. 829379815 900 900 1800 60"
+        ],
+        "matches_authoritative": true,
+        "dig_cmd": "dig +norecurse @1.1.1.1 google.com SOA"
+      },
+      {
+        "rr_key": "google.com SOA",
+        "resolver_id": "8.8.8.8",
+        "role": "public",
+        "answers": [
+          "ns1.google.com. dns-admin.google.com. 829379815 900 900 1800 60"
+        ],
+        "matches_authoritative": true,
+        "dig_cmd": "dig +norecurse @8.8.8.8 google.com SOA"
+      },
+      {
+        "rr_key": "google.com SOA",
+        "resolver_id": "9.9.9.9",
+        "role": "public",
+        "answers": [
+          "ns1.google.com. dns-admin.google.com. 829379815 900 900 1800 60"
+        ],
+        "matches_authoritative": true,
+        "dig_cmd": "dig +norecurse @9.9.9.9 google.com SOA"
+      }
+    ]
+  },
+  "ns_health": null,
+  "summary": {
+    "pass_count": 4,
+    "warn_count": 2,
+    "fail_count": 2,
+    "started_at": 1762742596.6717432,
+    "duration_sec": 9.184305429458618,
+    "resolver_count": 11,
+    "records_scanned": 77
+  },
+  "errors": [],
+  "schema_version": "1.1",
+  "generator": "dns-navigator",
+  "run": {
+    "domain": "google.com",
+    "timestamp_utc": "2025-11-10T02:43:25Z",
+    "resolvers": [
+      "1.1.1.1",
+      "8.8.8.8",
+      "9.9.9.9",
+      "authoritative"
+    ],
+    "record_types": [
+      "A",
+      "AAAA",
+      "CNAME",
+      "MX",
+      "TXT",
+      "NS",
+      "SOA"
+    ],
+    "dnssec": {
+      "do": true,
+      "strict_alg": false
+    },
+    "timeouts": {
+      "connect_ms": 500,
+      "read_ms": 1500
+    },
+    "retries": 1,
+    "feature": {
+      "auth_union": true
+    },
+    "policy": {
+      "min_ttl": {
+        "A": 300,
+        "AAAA": 300,
+        "MX": 600,
+        "TXT": 300,
+        "NS": 86400,
+        "SOA": 300
+      },
+      "weights": {
+        "A": 2,
+        "AAAA": 2,
+        "SOA": 2,
+        "MX": 1,
+        "TXT": 1,
+        "NS": 1
+      },
+      "warn_labels": {
+        "weak_ttl": true,
+        "cdn_variance": true
+      }
+    }
+  }
+}

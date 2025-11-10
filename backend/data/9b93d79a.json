@@ -1,0 +1,46 @@
+{
+  "run_id": "9b93d79a",
+  "options": {
+    "domain": "google.com",
+    "resolvers": [
+      "1.1.1.1",
+      "8.8.8.8",
+      "9.9.9.9",
+      "authoritative"
+    ],
+    "record_types": [
+      "A",
+      "AAAA",
+      "CNAME",
+      "MX",
+      "TXT",
+      "NS",
+      "SOA"
+    ],
+    "dnssec": {
+      "do": true,
+      "strict_alg_match": false,
+      "expiry_threshold_hours": 48
+    },
+    "rate_limits": {
+      "max_qps": 20.0,
+      "timeout_sec": 4.0,
+      "retries": 1
+    },
+    "enable_axfr": false,
+    "axfr_timeout_sec": 8.0
+  },
+  "phase": "Error",
+  "progress": 70,
+  "meta": {
+    "started_at": 1762768219.189733
+  },
+  "overview": null,
+  "dnssec": null,
+  "drift": null,
+  "ns_health": null,
+  "summary": null,
+  "errors": [
+    "name 'union_answer_sets' is not defined"
+  ]
+}

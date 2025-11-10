@@ -1,0 +1,407 @@
+{
+  "run_id": "2ec7a454",
+  "options": {
+    "domain": "compasiq.com",
+    "resolvers": [
+      "1.1.1.1",
+      "8.8.8.8",
+      "9.9.9.9",
+      "authoritative"
+    ],
+    "record_types": [
+      "SOA",
+      "TXT",
+      "MX",
+      "CNAME"
+    ],
+    "dnssec": {
+      "do": false,
+      "strict_alg_match": true,
+      "expiry_threshold_hours": 48
+    },
+    "rate_limits": {
+      "max_qps": 20.0,
+      "timeout_sec": 4.0,
+      "retries": 1
+    }
+  },
+  "phase": "Reporting",
+  "progress": 85,
+  "meta": {
+    "started_at": 1762507166.644458,
+    "auth_ns": [
+      [
+        "ns51.domaincontrol.com",
+        "97.74.105.26"
+      ],
+      [
+        "ns51.domaincontrol.com",
+        "2603:5:2192::1a"
+      ],
+      [
+        "ns52.domaincontrol.com",
+        "173.201.73.26"
+      ],
+      [
+        "ns52.domaincontrol.com",
+        "2603:5:2292::1a"
+      ]
+    ]
+  },
+  "overview": {
+    "grid": [
+      {
+        "name": "compasiq.com",
+        "rtype": "SOA",
+        "resolver_id": "1.1.1.1",
+        "ttl": 3600,
+        "answers": [
+          "ns51.domaincontrol.com. dns.jomax.net. 2025091206 28800 7200 604800 600"
+        ],
+        "status": "OK",
+        "error": null
+      },
+      {
+        "name": "compasiq.com",
+        "rtype": "TXT",
+        "resolver_id": "1.1.1.1",
+        "ttl": 3600,
+        "answers": [
+          "\"NETORGFT18887650.onmicrosoft.com\"",
+          "\"v=DMARC1; p=none; pct=100; rua=mailto:vs@compasiq.com; sp=none\"",
+          "\"v=spf1 include:secureserver.net -all\""
+        ],
+        "status": "OK",
+        "error": null
+      },
+      {
+        "name": "compasiq.com",
+        "rtype": "MX",
+        "resolver_id": "1.1.1.1",
+        "ttl": 3600,
+        "answers": [
+          "0 compasiq-com.mail.protection.outlook.com."
+        ],
+        "status": "OK",
+        "error": null
+      },
+      {
+        "name": "compasiq.com",
+        "rtype": "CNAME",
+        "resolver_id": "1.1.1.1",
+        "ttl": null,
+        "answers": [],
+        "status": "NODATA",
+        "error": null
+      },
+      {
+        "name": "compasiq.com",
+        "rtype": "SOA",
+        "resolver_id": "8.8.8.8",
+        "ttl": 3600,
+        "answers": [
+          "ns51.domaincontrol.com. dns.jomax.net. 2025091206 28800 7200 604800 600"
+        ],
+        "status": "OK",
+        "error": null
+      },
+      {
+        "name": "compasiq.com",
+        "rtype": "TXT",
+        "resolver_id": "8.8.8.8",
+        "ttl": 3600,
+        "answers": [
+          "\"NETORGFT18887650.onmicrosoft.com\"",
+          "\"v=DMARC1; p=none; pct=100; rua=mailto:vs@compasiq.com; sp=none\"",
+          "\"v=spf1 include:secureserver.net -all\""
+        ],
+        "status": "OK",
+        "error": null
+      },
+      {
+        "name": "compasiq.com",
+        "rtype": "MX",
+        "resolver_id": "8.8.8.8",
+        "ttl": 3600,
+        "answers": [
+          "0 compasiq-com.mail.protection.outlook.com."
+        ],
+        "status": "OK",
+        "error": null
+      },
+      {
+        "name": "compasiq.com",
+        "rtype": "CNAME",
+        "resolver_id": "8.8.8.8",
+        "ttl": null,
+        "answers": [],
+        "status": "NODATA",
+        "error": null
+      },
+      {
+        "name": "compasiq.com",
+        "rtype": "SOA",
+        "resolver_id": "9.9.9.9",
+        "ttl": 3600,
+        "answers": [
+          "ns51.domaincontrol.com. dns.jomax.net. 2025091206 28800 7200 604800 600"
+        ],
+        "status": "OK",
+        "error": null
+      },
+      {
+        "name": "compasiq.com",
+        "rtype": "TXT",
+        "resolver_id": "9.9.9.9",
+        "ttl": 3600,
+        "answers": [
+          "\"NETORGFT18887650.onmicrosoft.com\"",
+          "\"v=DMARC1; p=none; pct=100; rua=mailto:vs@compasiq.com; sp=none\"",
+          "\"v=spf1 include:secureserver.net -all\""
+        ],
+        "status": "OK",
+        "error": null
+      },
+      {
+        "name": "compasiq.com",
+        "rtype": "MX",
+        "resolver_id": "9.9.9.9",
+        "ttl": 3600,
+        "answers": [
+          "0 compasiq-com.mail.protection.outlook.com."
+        ],
+        "status": "OK",
+        "error": null
+      },
+      {
+        "name": "compasiq.com",
+        "rtype": "CNAME",
+        "resolver_id": "9.9.9.9",
+        "ttl": null,
+        "answers": [],
+        "status": "NODATA",
+        "error": null
+      },
+      {
+        "name": "compasiq.com",
+        "rtype": "SOA",
+        "resolver_id": "auth:ns51.domaincontrol.com@97.74.105.26",
+        "ttl": 3600,
+        "answers": [
+          "ns51.domaincontrol.com. dns.jomax.net. 2025091206 28800 7200 604800 600"
+        ],
+        "status": "OK",
+        "error": null
+      },
+      {
+        "name": "compasiq.com",
+        "rtype": "TXT",
+        "resolver_id": "auth:ns51.domaincontrol.com@97.74.105.26",
+        "ttl": 3600,
+        "answers": [
+          "\"NETORGFT18887650.onmicrosoft.com\"",
+          "\"v=DMARC1; p=none; pct=100; rua=mailto:vs@compasiq.com; sp=none\"",
+          "\"v=spf1 include:secureserver.net -all\""
+        ],
+        "status": "OK",
+        "error": null
+      },
+      {
+        "name": "compasiq.com",
+        "rtype": "MX",
+        "resolver_id": "auth:ns51.domaincontrol.com@97.74.105.26",
+        "ttl": 3600,
+        "answers": [
+          "0 compasiq-com.mail.protection.outlook.com."
+        ],
+        "status": "OK",
+        "error": null
+      },
+      {
+        "name": "compasiq.com",
+        "rtype": "CNAME",
+        "resolver_id": "auth:ns51.domaincontrol.com@97.74.105.26",
+        "ttl": null,
+        "answers": [],
+        "status": "NODATA",
+        "error": null
+      },
+      {
+        "name": "compasiq.com",
+        "rtype": "SOA",
+        "resolver_id": "auth:ns51.domaincontrol.com@2603:5:2192::1a",
+        "ttl": 3600,
+        "answers": [
+          "ns51.domaincontrol.com. dns.jomax.net. 2025091206 28800 7200 604800 600"
+        ],
+        "status": "OK",
+        "error": null
+      },
+      {
+        "name": "compasiq.com",
+        "rtype": "TXT",
+        "resolver_id": "auth:ns51.domaincontrol.com@2603:5:2192::1a",
+        "ttl": 3600,
+        "answers": [
+          "\"NETORGFT18887650.onmicrosoft.com\"",
+          "\"v=DMARC1; p=none; pct=100; rua=mailto:vs@compasiq.com; sp=none\"",
+          "\"v=spf1 include:secureserver.net -all\""
+        ],
+        "status": "OK",
+        "error": null
+      },
+      {
+        "name": "compasiq.com",
+        "rtype": "MX",
+        "resolver_id": "auth:ns51.domaincontrol.com@2603:5:2192::1a",
+        "ttl": 3600,
+        "answers": [
+          "0 compasiq-com.mail.protection.outlook.com."
+        ],
+        "status": "OK",
+        "error": null
+      },
+      {
+        "name": "compasiq.com",
+        "rtype": "CNAME",
+        "resolver_id": "auth:ns51.domaincontrol.com@2603:5:2192::1a",
+        "ttl": null,
+        "answers": [],
+        "status": "NODATA",
+        "error": null
+      },
+      {
+        "name": "compasiq.com",
+        "rtype": "SOA",
+        "resolver_id": "auth:ns52.domaincontrol.com@173.201.73.26",
+        "ttl": 3600,
+        "answers": [
+          "ns51.domaincontrol.com. dns.jomax.net. 2025091206 28800 7200 604800 600"
+        ],
+        "status": "OK",
+        "error": null
+      },
+      {
+        "name": "compasiq.com",
+        "rtype": "TXT",
+        "resolver_id": "auth:ns52.domaincontrol.com@173.201.73.26",
+        "ttl": 3600,
+        "answers": [
+          "\"NETORGFT18887650.onmicrosoft.com\"",
+          "\"v=DMARC1; p=none; pct=100; rua=mailto:vs@compasiq.com; sp=none\"",
+          "\"v=spf1 include:secureserver.net -all\""
+        ],
+        "status": "OK",
+        "error": null
+      },
+      {
+        "name": "compasiq.com",
+        "rtype": "MX",
+        "resolver_id": "auth:ns52.domaincontrol.com@173.201.73.26",
+        "ttl": 3600,
+        "answers": [
+          "0 compasiq-com.mail.protection.outlook.com."
+        ],
+        "status": "OK",
+        "error": null
+      },
+      {
+        "name": "compasiq.com",
+        "rtype": "CNAME",
+        "resolver_id": "auth:ns52.domaincontrol.com@173.201.73.26",
+        "ttl": null,
+        "answers": [],
+        "status": "NODATA",
+        "error": null
+      },
+      {
+        "name": "compasiq.com",
+        "rtype": "SOA",
+        "resolver_id": "auth:ns52.domaincontrol.com@2603:5:2292::1a",
+        "ttl": 3600,
+        "answers": [
+          "ns51.domaincontrol.com. dns.jomax.net. 2025091206 28800 7200 604800 600"
+        ],
+        "status": "OK",
+        "error": null
+      },
+      {
+        "name": "compasiq.com",
+        "rtype": "TXT",
+        "resolver_id": "auth:ns52.domaincontrol.com@2603:5:2292::1a",
+        "ttl": 3600,
+        "answers": [
+          "\"NETORGFT18887650.onmicrosoft.com\"",
+          "\"v=DMARC1; p=none; pct=100; rua=mailto:vs@compasiq.com; sp=none\"",
+          "\"v=spf1 include:secureserver.net -all\""
+        ],
+        "status": "OK",
+        "error": null
+      },
+      {
+        "name": "compasiq.com",
+        "rtype": "MX",
+        "resolver_id": "auth:ns52.domaincontrol.com@2603:5:2292::1a",
+        "ttl": 3600,
+        "answers": [
+          "0 compasiq-com.mail.protection.outlook.com."
+        ],
+        "status": "OK",
+        "error": null
+      },
+      {
+        "name": "compasiq.com",
+        "rtype": "CNAME",
+        "resolver_id": "auth:ns52.domaincontrol.com@2603:5:2292::1a",
+        "ttl": null,
+        "answers": [],
+        "status": "NODATA",
+        "error": null
+      }
+    ],
+    "consistency": {
+      "compasiq.com SOA": "CONSISTENT",
+      "compasiq.com TXT": "CONSISTENT",
+      "compasiq.com MX": "CONSISTENT",
+      "compasiq.com CNAME": "CONSISTENT"
+    },
+    "weak_ttl": []
+  },
+  "dnssec": {
+    "ds_present": false,
+    "ds_match": false,
+    "dnskey_rrsig_valid": false,
+    "rrsig_expiry_hours": null,
+    "nsec_present": false,
+    "issues": [
+      "DNSKEY/RRSIG(DNSKEY) not retrievable from authoritative servers."
+    ],
+    "summary": "PASS"
+  },
+  "drift": {
+    "score": 0,
+    "added": {},
+    "removed": {
+      "compasiq.com A": [
+        "160.153.0.46"
+      ],
+      "compasiq.com AAAA": [],
+      "compasiq.com NS": [
+        "ns51.domaincontrol.com.",
+        "ns52.domaincontrol.com."
+      ]
+    },
+    "modified": {}
+  },
+  "ns_health": null,
+  "summary": {
+    "pass_count": 1,
+    "warn_count": 0,
+    "fail_count": 0,
+    "started_at": 1762507166.644458,
+    "duration_sec": 1.5138163566589355,
+    "resolver_count": 7,
+    "records_scanned": 28
+  },
+  "errors": []
+}

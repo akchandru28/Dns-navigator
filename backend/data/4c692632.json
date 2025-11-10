@@ -1,0 +1,46 @@
+{
+  "run_id": "4c692632",
+  "options": {
+    "domain": "example.com",
+    "resolvers": [
+      "1.1.1.1",
+      "8.8.8.8",
+      "9.9.9.9",
+      "authoritative"
+    ],
+    "record_types": [
+      "A",
+      "AAAA",
+      "CNAME",
+      "MX",
+      "TXT",
+      "NS",
+      "SOA"
+    ],
+    "dnssec": {
+      "do": true,
+      "strict_alg_match": true,
+      "expiry_threshold_hours": 48
+    },
+    "rate_limits": {
+      "max_qps": 20.0,
+      "timeout_sec": 4.0,
+      "retries": 1
+    },
+    "enable_axfr": false,
+    "axfr_timeout_sec": 8.0
+  },
+  "phase": "Error",
+  "progress": 40,
+  "meta": {
+    "started_at": 1762756669.7710607
+  },
+  "overview": null,
+  "dnssec": null,
+  "drift": null,
+  "ns_health": null,
+  "summary": null,
+  "errors": [
+    "'RdataType' object is not callable"
+  ]
+}

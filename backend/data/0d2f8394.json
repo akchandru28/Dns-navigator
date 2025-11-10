@@ -1,0 +1,46 @@
+{
+  "run_id": "0d2f8394",
+  "options": {
+    "domain": "dnssec-failed.org",
+    "resolvers": [
+      "1.1.1.1",
+      "8.8.8.8",
+      "9.9.9.9",
+      "authoritative"
+    ],
+    "record_types": [
+      "A",
+      "AAAA",
+      "CNAME",
+      "MX",
+      "TXT",
+      "NS",
+      "SOA"
+    ],
+    "dnssec": {
+      "do": true,
+      "strict_alg_match": false,
+      "expiry_threshold_hours": 48
+    },
+    "rate_limits": {
+      "max_qps": 20.0,
+      "timeout_sec": 4.0,
+      "retries": 1
+    },
+    "enable_axfr": false,
+    "axfr_timeout_sec": 8.0
+  },
+  "phase": "Error",
+  "progress": 70,
+  "meta": {
+    "started_at": 1762760133.8706763
+  },
+  "overview": null,
+  "dnssec": null,
+  "drift": null,
+  "ns_health": null,
+  "summary": null,
+  "errors": [
+    "21 validation errors for RecordsOverview\ngrid.0.status\n  Input should be 'OK', 'NXDOMAIN', 'NODATA' or 'ERR' [type=literal_error, input_value='SERVFAIL', input_type=str]\n    For further information visit https://errors.pydantic.dev/2.9/v/literal_error\ngrid.1.status\n  Input should be 'OK', 'NXDOMAIN', 'NODATA' or 'ERR' [type=literal_error, input_value='SERVFAIL', input_type=str]\n    For further information visit https://errors.pydantic.dev/2.9/v/literal_error\ngrid.2.status\n  Input should be 'OK', 'NXDOMAIN', 'NODATA' or 'ERR' [type=literal_error, input_value='SERVFAIL', input_type=str]\n    For further information visit https://errors.pydantic.dev/2.9/v/literal_error\ngrid.3.status\n  Input should be 'OK', 'NXDOMAIN', 'NODATA' or 'ERR' [type=literal_error, input_value='SERVFAIL', input_type=str]\n    For further information visit https://errors.pydantic.dev/2.9/v/literal_error\ngrid.4.status\n  Input should be 'OK', 'NXDOMAIN', 'NODATA' or 'ERR' [type=literal_error, input_value='SERVFAIL', input_type=str]\n    For further information visit https://errors.pydantic.dev/2.9/v/literal_error\ngrid.5.status\n  Input should be 'OK', 'NXDOMAIN', 'NODATA' or 'ERR' [type=literal_error, input_value='SERVFAIL', input_type=str]\n    For further information visit https://errors.pydantic.dev/2.9/v/literal_error\ngrid.6.status\n  Input should be 'OK', 'NXDOMAIN', 'NODATA' or 'ERR' [type=literal_error, input_value='SERVFAIL', input_type=str]\n    For further information visit https://errors.pydantic.dev/2.9/v/literal_error\ngrid.7.status\n  Input should be 'OK', 'NXDOMAIN', 'NODATA' or 'ERR' [type=literal_error, input_value='SERVFAIL', input_type=str]\n    For further information visit https://errors.pydantic.dev/2.9/v/literal_error\ngrid.8.status\n  Input should be 'OK', 'NXDOMAIN', 'NODATA' or 'ERR' [type=literal_error, input_value='SERVFAIL', input_type=str]\n    For further information visit https://errors.pydantic.dev/2.9/v/literal_error\ngrid.9.status\n  Input should be 'OK', 'NXDOMAIN', 'NODATA' or 'ERR' [type=literal_error, input_value='SERVFAIL', input_type=str]\n    For further information visit https://errors.pydantic.dev/2.9/v/literal_error\ngrid.10.status\n  Input should be 'OK', 'NXDOMAIN', 'NODATA' or 'ERR' [type=literal_error, input_value='SERVFAIL', input_type=str]\n    For further information visit https://errors.pydantic.dev/2.9/v/literal_error\ngrid.11.status\n  Input should be 'OK', 'NXDOMAIN', 'NODATA' or 'ERR' [type=literal_error, input_value='SERVFAIL', input_type=str]\n    For further information visit https://errors.pydantic.dev/2.9/v/literal_error\ngrid.12.status\n  Input should be 'OK', 'NXDOMAIN', 'NODATA' or 'ERR' [type=literal_error, input_value='SERVFAIL', input_type=str]\n    For further information visit https://errors.pydantic.dev/2.9/v/literal_error\ngrid.13.status\n  Input should be 'OK', 'NXDOMAIN', 'NODATA' or 'ERR' [type=literal_error, input_value='SERVFAIL', input_type=str]\n    For further information visit https://errors.pydantic.dev/2.9/v/literal_error\ngrid.14.status\n  Input should be 'OK', 'NXDOMAIN', 'NODATA' or 'ERR' [type=literal_error, input_value='SERVFAIL', input_type=str]\n    For further information visit https://errors.pydantic.dev/2.9/v/literal_error\ngrid.15.status\n  Input should be 'OK', 'NXDOMAIN', 'NODATA' or 'ERR' [type=literal_error, input_value='SERVFAIL', input_type=str]\n    For further information visit https://errors.pydantic.dev/2.9/v/literal_error\ngrid.16.status\n  Input should be 'OK', 'NXDOMAIN', 'NODATA' or 'ERR' [type=literal_error, input_value='SERVFAIL', input_type=str]\n    For further information visit https://errors.pydantic.dev/2.9/v/literal_error\ngrid.17.status\n  Input should be 'OK', 'NXDOMAIN', 'NODATA' or 'ERR' [type=literal_error, input_value='SERVFAIL', input_type=str]\n    For further information visit https://errors.pydantic.dev/2.9/v/literal_error\ngrid.18.status\n  Input should be 'OK', 'NXDOMAIN', 'NODATA' or 'ERR' [type=literal_error, input_value='SERVFAIL', input_type=str]\n    For further information visit https://errors.pydantic.dev/2.9/v/literal_error\ngrid.19.status\n  Input should be 'OK', 'NXDOMAIN', 'NODATA' or 'ERR' [type=literal_error, input_value='SERVFAIL', input_type=str]\n    For further information visit https://errors.pydantic.dev/2.9/v/literal_error\ngrid.20.status\n  Input should be 'OK', 'NXDOMAIN', 'NODATA' or 'ERR' [type=literal_error, input_value='SERVFAIL', input_type=str]\n    For further information visit https://errors.pydantic.dev/2.9/v/literal_error"
+  ]
+}

@@ -1,0 +1,46 @@
+{
+  "run_id": "a09da9e4",
+  "options": {
+    "domain": "cloudflare.com",
+    "resolvers": [
+      "1.1.1.1",
+      "8.8.8.8",
+      "9.9.9.9",
+      "authoritative"
+    ],
+    "record_types": [
+      "A",
+      "AAAA",
+      "CNAME",
+      "MX",
+      "TXT",
+      "NS",
+      "SOA"
+    ],
+    "dnssec": {
+      "do": true,
+      "strict_alg_match": false,
+      "expiry_threshold_hours": 48
+    },
+    "rate_limits": {
+      "max_qps": 20.0,
+      "timeout_sec": 4.0,
+      "retries": 1
+    },
+    "enable_axfr": false,
+    "axfr_timeout_sec": 8.0
+  },
+  "phase": "Error",
+  "progress": 70,
+  "meta": {
+    "started_at": 1762770069.2762551
+  },
+  "overview": null,
+  "dnssec": null,
+  "drift": null,
+  "ns_health": null,
+  "summary": null,
+  "errors": [
+    "1 validation error for RecordsOverview\nconsistency.`cloudflare.com CNAME`\n  Input should be 'CONSISTENT' or 'DRIFT' [type=literal_error, input_value='UNKNOWN', input_type=str]\n    For further information visit https://errors.pydantic.dev/2.9/v/literal_error"
+  ]
+}

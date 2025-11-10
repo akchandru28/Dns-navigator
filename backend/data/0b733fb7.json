@@ -1,0 +1,1475 @@
+{
+  "run_id": "0b733fb7",
+  "options": {
+    "domain": "google.com",
+    "resolvers": [
+      "1.1.1.1",
+      "8.8.8.8",
+      "9.9.9.9",
+      "authoritative"
+    ],
+    "record_types": [
+      "A",
+      "AAAA",
+      "CNAME",
+      "MX",
+      "TXT",
+      "NS",
+      "SOA"
+    ],
+    "dnssec": {
+      "do": true,
+      "strict_alg_match": true,
+      "expiry_threshold_hours": 48
+    },
+    "rate_limits": {
+      "max_qps": 20.0,
+      "timeout_sec": 300.0,
+      "retries": 1
+    }
+  },
+  "phase": "Reporting",
+  "progress": 85,
+  "meta": {
+    "started_at": 1762514807.11786,
+    "auth_ns": [
+      [
+        "ns1.google.com",
+        "216.239.32.10"
+      ],
+      [
+        "ns1.google.com",
+        "2001:4860:4802:32::a"
+      ],
+      [
+        "ns2.google.com",
+        "216.239.34.10"
+      ],
+      [
+        "ns2.google.com",
+        "2001:4860:4802:34::a"
+      ],
+      [
+        "ns3.google.com",
+        "216.239.36.10"
+      ],
+      [
+        "ns3.google.com",
+        "2001:4860:4802:36::a"
+      ],
+      [
+        "ns4.google.com",
+        "216.239.38.10"
+      ],
+      [
+        "ns4.google.com",
+        "2001:4860:4802:38::a"
+      ]
+    ],
+    "variance_explainer": "One or more public answers don’t match any authoritative response."
+  },
+  "overview": {
+    "grid": [
+      {
+        "name": "google.com",
+        "rtype": "A",
+        "resolver_id": "1.1.1.1",
+        "ttl": 261,
+        "answers": [
+          "142.251.43.78"
+        ],
+        "status": "OK",
+        "error": null
+      },
+      {
+        "name": "google.com",
+        "rtype": "AAAA",
+        "resolver_id": "1.1.1.1",
+        "ttl": 158,
+        "answers": [
+          "2404:6800:4007:817::200e"
+        ],
+        "status": "OK",
+        "error": null
+      },
+      {
+        "name": "google.com",
+        "rtype": "CNAME",
+        "resolver_id": "1.1.1.1",
+        "ttl": null,
+        "answers": [],
+        "status": "NODATA",
+        "error": null
+      },
+      {
+        "name": "google.com",
+        "rtype": "MX",
+        "resolver_id": "1.1.1.1",
+        "ttl": 55,
+        "answers": [
+          "10 smtp.google.com."
+        ],
+        "status": "OK",
+        "error": null
+      },
+      {
+        "name": "google.com",
+        "rtype": "TXT",
+        "resolver_id": "1.1.1.1",
+        "ttl": 431,
+        "answers": [
+          "\"MS=E4A68B9AB2BB9670BCE15412F62916164C0B20BB\"",
+          "\"apple-domain-verification=30afIBcvSuDV2PLX\"",
+          "\"cisco-ci-domain-verification=47c38bc8c4b74b7233e9053220c1bbe76bcc1cd33c7acf7acd36cd6a5332004b\"",
+          "\"docusign=05958488-4752-4ef2-95eb-aa7ba8a3bd0e\"",
+          "\"docusign=1b0a6754-49b1-4db5-8540-d2c12664b289\"",
+          "\"facebook-domain-verification=22rm551cu4k0ab0bxsw536tlds4h95\"",
+          "\"globalsign-smime-dv=CDYX+XFHUw2wml6/Gb8+59BsH31KzUr6c1l2BPvqKX8=\"",
+          "\"google-site-verification=4ibFUgB-wXLQ_S7vsXVomSTVamuOXBiVAzpR5IZ87D0\"",
+          "\"google-site-verification=TV9-DBe4R80X4v0M4U_bd_J9cpOJM0nikft0jAgjmsQ\"",
+          "\"google-site-verification=wD8N7i1JTNTkezJ49swvWW48f8_9xveREV4oB-0Hf5o\"",
+          "\"onetrust-domain-verification=de01ed21f2fa4d8781cbc3ffb89cf4ef\"",
+          "\"v=spf1 include:_spf.google.com ~all\""
+        ],
+        "status": "OK",
+        "error": null
+      },
+      {
+        "name": "google.com",
+        "rtype": "NS",
+        "resolver_id": "1.1.1.1",
+        "ttl": 334058,
+        "answers": [
+          "ns1.google.com.",
+          "ns2.google.com.",
+          "ns3.google.com.",
+          "ns4.google.com."
+        ],
+        "status": "OK",
+        "error": null
+      },
+      {
+        "name": "google.com",
+        "rtype": "SOA",
+        "resolver_id": "1.1.1.1",
+        "ttl": 32,
+        "answers": [
+          "ns1.google.com. dns-admin.google.com. 828388013 900 900 1800 60"
+        ],
+        "status": "OK",
+        "error": null
+      },
+      {
+        "name": "google.com",
+        "rtype": "A",
+        "resolver_id": "8.8.8.8",
+        "ttl": 204,
+        "answers": [
+          "142.250.205.78"
+        ],
+        "status": "OK",
+        "error": null
+      },
+      {
+        "name": "google.com",
+        "rtype": "AAAA",
+        "resolver_id": "8.8.8.8",
+        "ttl": 118,
+        "answers": [
+          "2404:6800:4007:802::200e"
+        ],
+        "status": "OK",
+        "error": null
+      },
+      {
+        "name": "google.com",
+        "rtype": "CNAME",
+        "resolver_id": "8.8.8.8",
+        "ttl": null,
+        "answers": [],
+        "status": "NODATA",
+        "error": null
+      },
+      {
+        "name": "google.com",
+        "rtype": "MX",
+        "resolver_id": "8.8.8.8",
+        "ttl": 288,
+        "answers": [
+          "10 smtp.google.com."
+        ],
+        "status": "OK",
+        "error": null
+      },
+      {
+        "name": "google.com",
+        "rtype": "TXT",
+        "resolver_id": "8.8.8.8",
+        "ttl": 3600,
+        "answers": [
+          "\"MS=E4A68B9AB2BB9670BCE15412F62916164C0B20BB\"",
+          "\"apple-domain-verification=30afIBcvSuDV2PLX\"",
+          "\"cisco-ci-domain-verification=47c38bc8c4b74b7233e9053220c1bbe76bcc1cd33c7acf7acd36cd6a5332004b\"",
+          "\"docusign=05958488-4752-4ef2-95eb-aa7ba8a3bd0e\"",
+          "\"docusign=1b0a6754-49b1-4db5-8540-d2c12664b289\"",
+          "\"facebook-domain-verification=22rm551cu4k0ab0bxsw536tlds4h95\"",
+          "\"globalsign-smime-dv=CDYX+XFHUw2wml6/Gb8+59BsH31KzUr6c1l2BPvqKX8=\"",
+          "\"google-site-verification=4ibFUgB-wXLQ_S7vsXVomSTVamuOXBiVAzpR5IZ87D0\"",
+          "\"google-site-verification=TV9-DBe4R80X4v0M4U_bd_J9cpOJM0nikft0jAgjmsQ\"",
+          "\"google-site-verification=wD8N7i1JTNTkezJ49swvWW48f8_9xveREV4oB-0Hf5o\"",
+          "\"onetrust-domain-verification=de01ed21f2fa4d8781cbc3ffb89cf4ef\"",
+          "\"v=spf1 include:_spf.google.com ~all\""
+        ],
+        "status": "OK",
+        "error": null
+      },
+      {
+        "name": "google.com",
+        "rtype": "NS",
+        "resolver_id": "8.8.8.8",
+        "ttl": 8208,
+        "answers": [
+          "ns1.google.com.",
+          "ns2.google.com.",
+          "ns3.google.com.",
+          "ns4.google.com."
+        ],
+        "status": "OK",
+        "error": null
+      },
+      {
+        "name": "google.com",
+        "rtype": "SOA",
+        "resolver_id": "8.8.8.8",
+        "ttl": 2,
+        "answers": [
+          "ns1.google.com. dns-admin.google.com. 828388013 900 900 1800 60"
+        ],
+        "status": "OK",
+        "error": null
+      },
+      {
+        "name": "google.com",
+        "rtype": "A",
+        "resolver_id": "9.9.9.9",
+        "ttl": 195,
+        "answers": [
+          "142.250.70.78"
+        ],
+        "status": "OK",
+        "error": null
+      },
+      {
+        "name": "google.com",
+        "rtype": "AAAA",
+        "resolver_id": "9.9.9.9",
+        "ttl": 274,
+        "answers": [
+          "2404:6800:4009:802::200e"
+        ],
+        "status": "OK",
+        "error": null
+      },
+      {
+        "name": "google.com",
+        "rtype": "CNAME",
+        "resolver_id": "9.9.9.9",
+        "ttl": null,
+        "answers": [],
+        "status": "NODATA",
+        "error": null
+      },
+      {
+        "name": "google.com",
+        "rtype": "MX",
+        "resolver_id": "9.9.9.9",
+        "ttl": 30,
+        "answers": [
+          "10 smtp.google.com."
+        ],
+        "status": "OK",
+        "error": null
+      },
+      {
+        "name": "google.com",
+        "rtype": "TXT",
+        "resolver_id": "9.9.9.9",
+        "ttl": 429,
+        "answers": [
+          "\"MS=E4A68B9AB2BB9670BCE15412F62916164C0B20BB\"",
+          "\"apple-domain-verification=30afIBcvSuDV2PLX\"",
+          "\"cisco-ci-domain-verification=47c38bc8c4b74b7233e9053220c1bbe76bcc1cd33c7acf7acd36cd6a5332004b\"",
+          "\"docusign=05958488-4752-4ef2-95eb-aa7ba8a3bd0e\"",
+          "\"docusign=1b0a6754-49b1-4db5-8540-d2c12664b289\"",
+          "\"facebook-domain-verification=22rm551cu4k0ab0bxsw536tlds4h95\"",
+          "\"globalsign-smime-dv=CDYX+XFHUw2wml6/Gb8+59BsH31KzUr6c1l2BPvqKX8=\"",
+          "\"google-site-verification=4ibFUgB-wXLQ_S7vsXVomSTVamuOXBiVAzpR5IZ87D0\"",
+          "\"google-site-verification=TV9-DBe4R80X4v0M4U_bd_J9cpOJM0nikft0jAgjmsQ\"",
+          "\"google-site-verification=wD8N7i1JTNTkezJ49swvWW48f8_9xveREV4oB-0Hf5o\"",
+          "\"onetrust-domain-verification=de01ed21f2fa4d8781cbc3ffb89cf4ef\"",
+          "\"v=spf1 include:_spf.google.com ~all\""
+        ],
+        "status": "OK",
+        "error": null
+      },
+      {
+        "name": "google.com",
+        "rtype": "NS",
+        "resolver_id": "9.9.9.9",
+        "ttl": 36344,
+        "answers": [
+          "ns1.google.com.",
+          "ns2.google.com.",
+          "ns3.google.com.",
+          "ns4.google.com."
+        ],
+        "status": "OK",
+        "error": null
+      },
+      {
+        "name": "google.com",
+        "rtype": "SOA",
+        "resolver_id": "9.9.9.9",
+        "ttl": 60,
+        "answers": [
+          "ns1.google.com. dns-admin.google.com. 828388013 900 900 1800 60"
+        ],
+        "status": "OK",
+        "error": null
+      },
+      {
+        "name": "google.com",
+        "rtype": "A",
+        "resolver_id": "auth:ns1.google.com@216.239.32.10",
+        "ttl": 300,
+        "answers": [
+          "142.251.221.206"
+        ],
+        "status": "OK",
+        "error": null
+      },
+      {
+        "name": "google.com",
+        "rtype": "AAAA",
+        "resolver_id": "auth:ns1.google.com@216.239.32.10",
+        "ttl": 300,
+        "answers": [
+          "2404:6800:4007:831::200e"
+        ],
+        "status": "OK",
+        "error": null
+      },
+      {
+        "name": "google.com",
+        "rtype": "CNAME",
+        "resolver_id": "auth:ns1.google.com@216.239.32.10",
+        "ttl": null,
+        "answers": [],
+        "status": "NODATA",
+        "error": null
+      },
+      {
+        "name": "google.com",
+        "rtype": "MX",
+        "resolver_id": "auth:ns1.google.com@216.239.32.10",
+        "ttl": 300,
+        "answers": [
+          "10 smtp.google.com."
+        ],
+        "status": "OK",
+        "error": null
+      },
+      {
+        "name": "google.com",
+        "rtype": "TXT",
+        "resolver_id": "auth:ns1.google.com@216.239.32.10",
+        "ttl": 3600,
+        "answers": [
+          "\"MS=E4A68B9AB2BB9670BCE15412F62916164C0B20BB\"",
+          "\"apple-domain-verification=30afIBcvSuDV2PLX\"",
+          "\"cisco-ci-domain-verification=47c38bc8c4b74b7233e9053220c1bbe76bcc1cd33c7acf7acd36cd6a5332004b\"",
+          "\"docusign=05958488-4752-4ef2-95eb-aa7ba8a3bd0e\"",
+          "\"docusign=1b0a6754-49b1-4db5-8540-d2c12664b289\"",
+          "\"facebook-domain-verification=22rm551cu4k0ab0bxsw536tlds4h95\"",
+          "\"globalsign-smime-dv=CDYX+XFHUw2wml6/Gb8+59BsH31KzUr6c1l2BPvqKX8=\"",
+          "\"google-site-verification=4ibFUgB-wXLQ_S7vsXVomSTVamuOXBiVAzpR5IZ87D0\"",
+          "\"google-site-verification=TV9-DBe4R80X4v0M4U_bd_J9cpOJM0nikft0jAgjmsQ\"",
+          "\"google-site-verification=wD8N7i1JTNTkezJ49swvWW48f8_9xveREV4oB-0Hf5o\"",
+          "\"onetrust-domain-verification=de01ed21f2fa4d8781cbc3ffb89cf4ef\"",
+          "\"v=spf1 include:_spf.google.com ~all\""
+        ],
+        "status": "OK",
+        "error": null
+      },
+      {
+        "name": "google.com",
+        "rtype": "NS",
+        "resolver_id": "auth:ns1.google.com@216.239.32.10",
+        "ttl": 345600,
+        "answers": [
+          "ns1.google.com.",
+          "ns2.google.com.",
+          "ns3.google.com.",
+          "ns4.google.com."
+        ],
+        "status": "OK",
+        "error": null
+      },
+      {
+        "name": "google.com",
+        "rtype": "SOA",
+        "resolver_id": "auth:ns1.google.com@216.239.32.10",
+        "ttl": 60,
+        "answers": [
+          "ns1.google.com. dns-admin.google.com. 828873403 900 900 1800 60"
+        ],
+        "status": "OK",
+        "error": null
+      },
+      {
+        "name": "google.com",
+        "rtype": "A",
+        "resolver_id": "auth:ns1.google.com@2001:4860:4802:32::a",
+        "ttl": 300,
+        "answers": [
+          "142.250.206.14"
+        ],
+        "status": "OK",
+        "error": null
+      },
+      {
+        "name": "google.com",
+        "rtype": "AAAA",
+        "resolver_id": "auth:ns1.google.com@2001:4860:4802:32::a",
+        "ttl": 300,
+        "answers": [
+          "2404:6800:4007:80c::200e"
+        ],
+        "status": "OK",
+        "error": null
+      },
+      {
+        "name": "google.com",
+        "rtype": "CNAME",
+        "resolver_id": "auth:ns1.google.com@2001:4860:4802:32::a",
+        "ttl": null,
+        "answers": [],
+        "status": "NODATA",
+        "error": null
+      },
+      {
+        "name": "google.com",
+        "rtype": "MX",
+        "resolver_id": "auth:ns1.google.com@2001:4860:4802:32::a",
+        "ttl": 300,
+        "answers": [
+          "10 smtp.google.com."
+        ],
+        "status": "OK",
+        "error": null
+      },
+      {
+        "name": "google.com",
+        "rtype": "TXT",
+        "resolver_id": "auth:ns1.google.com@2001:4860:4802:32::a",
+        "ttl": 3600,
+        "answers": [
+          "\"MS=E4A68B9AB2BB9670BCE15412F62916164C0B20BB\"",
+          "\"apple-domain-verification=30afIBcvSuDV2PLX\"",
+          "\"cisco-ci-domain-verification=47c38bc8c4b74b7233e9053220c1bbe76bcc1cd33c7acf7acd36cd6a5332004b\"",
+          "\"docusign=05958488-4752-4ef2-95eb-aa7ba8a3bd0e\"",
+          "\"docusign=1b0a6754-49b1-4db5-8540-d2c12664b289\"",
+          "\"facebook-domain-verification=22rm551cu4k0ab0bxsw536tlds4h95\"",
+          "\"globalsign-smime-dv=CDYX+XFHUw2wml6/Gb8+59BsH31KzUr6c1l2BPvqKX8=\"",
+          "\"google-site-verification=4ibFUgB-wXLQ_S7vsXVomSTVamuOXBiVAzpR5IZ87D0\"",
+          "\"google-site-verification=TV9-DBe4R80X4v0M4U_bd_J9cpOJM0nikft0jAgjmsQ\"",
+          "\"google-site-verification=wD8N7i1JTNTkezJ49swvWW48f8_9xveREV4oB-0Hf5o\"",
+          "\"onetrust-domain-verification=de01ed21f2fa4d8781cbc3ffb89cf4ef\"",
+          "\"v=spf1 include:_spf.google.com ~all\""
+        ],
+        "status": "OK",
+        "error": null
+      },
+      {
+        "name": "google.com",
+        "rtype": "NS",
+        "resolver_id": "auth:ns1.google.com@2001:4860:4802:32::a",
+        "ttl": 345600,
+        "answers": [
+          "ns1.google.com.",
+          "ns2.google.com.",
+          "ns3.google.com.",
+          "ns4.google.com."
+        ],
+        "status": "OK",
+        "error": null
+      },
+      {
+        "name": "google.com",
+        "rtype": "SOA",
+        "resolver_id": "auth:ns1.google.com@2001:4860:4802:32::a",
+        "ttl": 60,
+        "answers": [
+          "ns1.google.com. dns-admin.google.com. 828873403 900 900 1800 60"
+        ],
+        "status": "OK",
+        "error": null
+      },
+      {
+        "name": "google.com",
+        "rtype": "A",
+        "resolver_id": "auth:ns2.google.com@216.239.34.10",
+        "ttl": 300,
+        "answers": [
+          "142.251.221.206"
+        ],
+        "status": "OK",
+        "error": null
+      },
+      {
+        "name": "google.com",
+        "rtype": "AAAA",
+        "resolver_id": "auth:ns2.google.com@216.239.34.10",
+        "ttl": 300,
+        "answers": [
+          "2404:6800:4007:831::200e"
+        ],
+        "status": "OK",
+        "error": null
+      },
+      {
+        "name": "google.com",
+        "rtype": "CNAME",
+        "resolver_id": "auth:ns2.google.com@216.239.34.10",
+        "ttl": null,
+        "answers": [],
+        "status": "NODATA",
+        "error": null
+      },
+      {
+        "name": "google.com",
+        "rtype": "MX",
+        "resolver_id": "auth:ns2.google.com@216.239.34.10",
+        "ttl": 300,
+        "answers": [
+          "10 smtp.google.com."
+        ],
+        "status": "OK",
+        "error": null
+      },
+      {
+        "name": "google.com",
+        "rtype": "TXT",
+        "resolver_id": "auth:ns2.google.com@216.239.34.10",
+        "ttl": 3600,
+        "answers": [
+          "\"MS=E4A68B9AB2BB9670BCE15412F62916164C0B20BB\"",
+          "\"apple-domain-verification=30afIBcvSuDV2PLX\"",
+          "\"cisco-ci-domain-verification=47c38bc8c4b74b7233e9053220c1bbe76bcc1cd33c7acf7acd36cd6a5332004b\"",
+          "\"docusign=05958488-4752-4ef2-95eb-aa7ba8a3bd0e\"",
+          "\"docusign=1b0a6754-49b1-4db5-8540-d2c12664b289\"",
+          "\"facebook-domain-verification=22rm551cu4k0ab0bxsw536tlds4h95\"",
+          "\"globalsign-smime-dv=CDYX+XFHUw2wml6/Gb8+59BsH31KzUr6c1l2BPvqKX8=\"",
+          "\"google-site-verification=4ibFUgB-wXLQ_S7vsXVomSTVamuOXBiVAzpR5IZ87D0\"",
+          "\"google-site-verification=TV9-DBe4R80X4v0M4U_bd_J9cpOJM0nikft0jAgjmsQ\"",
+          "\"google-site-verification=wD8N7i1JTNTkezJ49swvWW48f8_9xveREV4oB-0Hf5o\"",
+          "\"onetrust-domain-verification=de01ed21f2fa4d8781cbc3ffb89cf4ef\"",
+          "\"v=spf1 include:_spf.google.com ~all\""
+        ],
+        "status": "OK",
+        "error": null
+      },
+      {
+        "name": "google.com",
+        "rtype": "NS",
+        "resolver_id": "auth:ns2.google.com@216.239.34.10",
+        "ttl": 345600,
+        "answers": [
+          "ns1.google.com.",
+          "ns2.google.com.",
+          "ns3.google.com.",
+          "ns4.google.com."
+        ],
+        "status": "OK",
+        "error": null
+      },
+      {
+        "name": "google.com",
+        "rtype": "SOA",
+        "resolver_id": "auth:ns2.google.com@216.239.34.10",
+        "ttl": 60,
+        "answers": [
+          "ns1.google.com. dns-admin.google.com. 828388013 900 900 1800 60"
+        ],
+        "status": "OK",
+        "error": null
+      },
+      {
+        "name": "google.com",
+        "rtype": "A",
+        "resolver_id": "auth:ns2.google.com@2001:4860:4802:34::a",
+        "ttl": 300,
+        "answers": [
+          "142.250.206.14"
+        ],
+        "status": "OK",
+        "error": null
+      },
+      {
+        "name": "google.com",
+        "rtype": "AAAA",
+        "resolver_id": "auth:ns2.google.com@2001:4860:4802:34::a",
+        "ttl": 300,
+        "answers": [
+          "2404:6800:4007:80c::200e"
+        ],
+        "status": "OK",
+        "error": null
+      },
+      {
+        "name": "google.com",
+        "rtype": "CNAME",
+        "resolver_id": "auth:ns2.google.com@2001:4860:4802:34::a",
+        "ttl": null,
+        "answers": [],
+        "status": "NODATA",
+        "error": null
+      },
+      {
+        "name": "google.com",
+        "rtype": "MX",
+        "resolver_id": "auth:ns2.google.com@2001:4860:4802:34::a",
+        "ttl": 300,
+        "answers": [
+          "10 smtp.google.com."
+        ],
+        "status": "OK",
+        "error": null
+      },
+      {
+        "name": "google.com",
+        "rtype": "TXT",
+        "resolver_id": "auth:ns2.google.com@2001:4860:4802:34::a",
+        "ttl": 3600,
+        "answers": [
+          "\"MS=E4A68B9AB2BB9670BCE15412F62916164C0B20BB\"",
+          "\"apple-domain-verification=30afIBcvSuDV2PLX\"",
+          "\"cisco-ci-domain-verification=47c38bc8c4b74b7233e9053220c1bbe76bcc1cd33c7acf7acd36cd6a5332004b\"",
+          "\"docusign=05958488-4752-4ef2-95eb-aa7ba8a3bd0e\"",
+          "\"docusign=1b0a6754-49b1-4db5-8540-d2c12664b289\"",
+          "\"facebook-domain-verification=22rm551cu4k0ab0bxsw536tlds4h95\"",
+          "\"globalsign-smime-dv=CDYX+XFHUw2wml6/Gb8+59BsH31KzUr6c1l2BPvqKX8=\"",
+          "\"google-site-verification=4ibFUgB-wXLQ_S7vsXVomSTVamuOXBiVAzpR5IZ87D0\"",
+          "\"google-site-verification=TV9-DBe4R80X4v0M4U_bd_J9cpOJM0nikft0jAgjmsQ\"",
+          "\"google-site-verification=wD8N7i1JTNTkezJ49swvWW48f8_9xveREV4oB-0Hf5o\"",
+          "\"onetrust-domain-verification=de01ed21f2fa4d8781cbc3ffb89cf4ef\"",
+          "\"v=spf1 include:_spf.google.com ~all\""
+        ],
+        "status": "OK",
+        "error": null
+      },
+      {
+        "name": "google.com",
+        "rtype": "NS",
+        "resolver_id": "auth:ns2.google.com@2001:4860:4802:34::a",
+        "ttl": 345600,
+        "answers": [
+          "ns1.google.com.",
+          "ns2.google.com.",
+          "ns3.google.com.",
+          "ns4.google.com."
+        ],
+        "status": "OK",
+        "error": null
+      },
+      {
+        "name": "google.com",
+        "rtype": "SOA",
+        "resolver_id": "auth:ns2.google.com@2001:4860:4802:34::a",
+        "ttl": 60,
+        "answers": [
+          "ns1.google.com. dns-admin.google.com. 828388013 900 900 1800 60"
+        ],
+        "status": "OK",
+        "error": null
+      },
+      {
+        "name": "google.com",
+        "rtype": "A",
+        "resolver_id": "auth:ns3.google.com@216.239.36.10",
+        "ttl": 300,
+        "answers": [
+          "142.251.221.206"
+        ],
+        "status": "OK",
+        "error": null
+      },
+      {
+        "name": "google.com",
+        "rtype": "AAAA",
+        "resolver_id": "auth:ns3.google.com@216.239.36.10",
+        "ttl": 300,
+        "answers": [
+          "2404:6800:4007:831::200e"
+        ],
+        "status": "OK",
+        "error": null
+      },
+      {
+        "name": "google.com",
+        "rtype": "CNAME",
+        "resolver_id": "auth:ns3.google.com@216.239.36.10",
+        "ttl": null,
+        "answers": [],
+        "status": "NODATA",
+        "error": null
+      },
+      {
+        "name": "google.com",
+        "rtype": "MX",
+        "resolver_id": "auth:ns3.google.com@216.239.36.10",
+        "ttl": 300,
+        "answers": [
+          "10 smtp.google.com."
+        ],
+        "status": "OK",
+        "error": null
+      },
+      {
+        "name": "google.com",
+        "rtype": "TXT",
+        "resolver_id": "auth:ns3.google.com@216.239.36.10",
+        "ttl": 3600,
+        "answers": [
+          "\"MS=E4A68B9AB2BB9670BCE15412F62916164C0B20BB\"",
+          "\"apple-domain-verification=30afIBcvSuDV2PLX\"",
+          "\"cisco-ci-domain-verification=47c38bc8c4b74b7233e9053220c1bbe76bcc1cd33c7acf7acd36cd6a5332004b\"",
+          "\"docusign=05958488-4752-4ef2-95eb-aa7ba8a3bd0e\"",
+          "\"docusign=1b0a6754-49b1-4db5-8540-d2c12664b289\"",
+          "\"facebook-domain-verification=22rm551cu4k0ab0bxsw536tlds4h95\"",
+          "\"globalsign-smime-dv=CDYX+XFHUw2wml6/Gb8+59BsH31KzUr6c1l2BPvqKX8=\"",
+          "\"google-site-verification=4ibFUgB-wXLQ_S7vsXVomSTVamuOXBiVAzpR5IZ87D0\"",
+          "\"google-site-verification=TV9-DBe4R80X4v0M4U_bd_J9cpOJM0nikft0jAgjmsQ\"",
+          "\"google-site-verification=wD8N7i1JTNTkezJ49swvWW48f8_9xveREV4oB-0Hf5o\"",
+          "\"onetrust-domain-verification=de01ed21f2fa4d8781cbc3ffb89cf4ef\"",
+          "\"v=spf1 include:_spf.google.com ~all\""
+        ],
+        "status": "OK",
+        "error": null
+      },
+      {
+        "name": "google.com",
+        "rtype": "NS",
+        "resolver_id": "auth:ns3.google.com@216.239.36.10",
+        "ttl": 345600,
+        "answers": [
+          "ns1.google.com.",
+          "ns2.google.com.",
+          "ns3.google.com.",
+          "ns4.google.com."
+        ],
+        "status": "OK",
+        "error": null
+      },
+      {
+        "name": "google.com",
+        "rtype": "SOA",
+        "resolver_id": "auth:ns3.google.com@216.239.36.10",
+        "ttl": 60,
+        "answers": [
+          "ns1.google.com. dns-admin.google.com. 828873403 900 900 1800 60"
+        ],
+        "status": "OK",
+        "error": null
+      },
+      {
+        "name": "google.com",
+        "rtype": "A",
+        "resolver_id": "auth:ns3.google.com@2001:4860:4802:36::a",
+        "ttl": 300,
+        "answers": [
+          "142.250.206.14"
+        ],
+        "status": "OK",
+        "error": null
+      },
+      {
+        "name": "google.com",
+        "rtype": "AAAA",
+        "resolver_id": "auth:ns3.google.com@2001:4860:4802:36::a",
+        "ttl": 300,
+        "answers": [
+          "2404:6800:4007:80c::200e"
+        ],
+        "status": "OK",
+        "error": null
+      },
+      {
+        "name": "google.com",
+        "rtype": "CNAME",
+        "resolver_id": "auth:ns3.google.com@2001:4860:4802:36::a",
+        "ttl": null,
+        "answers": [],
+        "status": "NODATA",
+        "error": null
+      },
+      {
+        "name": "google.com",
+        "rtype": "MX",
+        "resolver_id": "auth:ns3.google.com@2001:4860:4802:36::a",
+        "ttl": 300,
+        "answers": [
+          "10 smtp.google.com."
+        ],
+        "status": "OK",
+        "error": null
+      },
+      {
+        "name": "google.com",
+        "rtype": "TXT",
+        "resolver_id": "auth:ns3.google.com@2001:4860:4802:36::a",
+        "ttl": 3600,
+        "answers": [
+          "\"MS=E4A68B9AB2BB9670BCE15412F62916164C0B20BB\"",
+          "\"apple-domain-verification=30afIBcvSuDV2PLX\"",
+          "\"cisco-ci-domain-verification=47c38bc8c4b74b7233e9053220c1bbe76bcc1cd33c7acf7acd36cd6a5332004b\"",
+          "\"docusign=05958488-4752-4ef2-95eb-aa7ba8a3bd0e\"",
+          "\"docusign=1b0a6754-49b1-4db5-8540-d2c12664b289\"",
+          "\"facebook-domain-verification=22rm551cu4k0ab0bxsw536tlds4h95\"",
+          "\"globalsign-smime-dv=CDYX+XFHUw2wml6/Gb8+59BsH31KzUr6c1l2BPvqKX8=\"",
+          "\"google-site-verification=4ibFUgB-wXLQ_S7vsXVomSTVamuOXBiVAzpR5IZ87D0\"",
+          "\"google-site-verification=TV9-DBe4R80X4v0M4U_bd_J9cpOJM0nikft0jAgjmsQ\"",
+          "\"google-site-verification=wD8N7i1JTNTkezJ49swvWW48f8_9xveREV4oB-0Hf5o\"",
+          "\"onetrust-domain-verification=de01ed21f2fa4d8781cbc3ffb89cf4ef\"",
+          "\"v=spf1 include:_spf.google.com ~all\""
+        ],
+        "status": "OK",
+        "error": null
+      },
+      {
+        "name": "google.com",
+        "rtype": "NS",
+        "resolver_id": "auth:ns3.google.com@2001:4860:4802:36::a",
+        "ttl": 345600,
+        "answers": [
+          "ns1.google.com.",
+          "ns2.google.com.",
+          "ns3.google.com.",
+          "ns4.google.com."
+        ],
+        "status": "OK",
+        "error": null
+      },
+      {
+        "name": "google.com",
+        "rtype": "SOA",
+        "resolver_id": "auth:ns3.google.com@2001:4860:4802:36::a",
+        "ttl": 60,
+        "answers": [
+          "ns1.google.com. dns-admin.google.com. 828873403 900 900 1800 60"
+        ],
+        "status": "OK",
+        "error": null
+      },
+      {
+        "name": "google.com",
+        "rtype": "A",
+        "resolver_id": "auth:ns4.google.com@216.239.38.10",
+        "ttl": 300,
+        "answers": [
+          "142.251.221.206"
+        ],
+        "status": "OK",
+        "error": null
+      },
+      {
+        "name": "google.com",
+        "rtype": "AAAA",
+        "resolver_id": "auth:ns4.google.com@216.239.38.10",
+        "ttl": 300,
+        "answers": [
+          "2404:6800:4007:831::200e"
+        ],
+        "status": "OK",
+        "error": null
+      },
+      {
+        "name": "google.com",
+        "rtype": "CNAME",
+        "resolver_id": "auth:ns4.google.com@216.239.38.10",
+        "ttl": null,
+        "answers": [],
+        "status": "NODATA",
+        "error": null
+      },
+      {
+        "name": "google.com",
+        "rtype": "MX",
+        "resolver_id": "auth:ns4.google.com@216.239.38.10",
+        "ttl": 300,
+        "answers": [
+          "10 smtp.google.com."
+        ],
+        "status": "OK",
+        "error": null
+      },
+      {
+        "name": "google.com",
+        "rtype": "TXT",
+        "resolver_id": "auth:ns4.google.com@216.239.38.10",
+        "ttl": 3600,
+        "answers": [
+          "\"MS=E4A68B9AB2BB9670BCE15412F62916164C0B20BB\"",
+          "\"apple-domain-verification=30afIBcvSuDV2PLX\"",
+          "\"cisco-ci-domain-verification=47c38bc8c4b74b7233e9053220c1bbe76bcc1cd33c7acf7acd36cd6a5332004b\"",
+          "\"docusign=05958488-4752-4ef2-95eb-aa7ba8a3bd0e\"",
+          "\"docusign=1b0a6754-49b1-4db5-8540-d2c12664b289\"",
+          "\"facebook-domain-verification=22rm551cu4k0ab0bxsw536tlds4h95\"",
+          "\"globalsign-smime-dv=CDYX+XFHUw2wml6/Gb8+59BsH31KzUr6c1l2BPvqKX8=\"",
+          "\"google-site-verification=4ibFUgB-wXLQ_S7vsXVomSTVamuOXBiVAzpR5IZ87D0\"",
+          "\"google-site-verification=TV9-DBe4R80X4v0M4U_bd_J9cpOJM0nikft0jAgjmsQ\"",
+          "\"google-site-verification=wD8N7i1JTNTkezJ49swvWW48f8_9xveREV4oB-0Hf5o\"",
+          "\"onetrust-domain-verification=de01ed21f2fa4d8781cbc3ffb89cf4ef\"",
+          "\"v=spf1 include:_spf.google.com ~all\""
+        ],
+        "status": "OK",
+        "error": null
+      },
+      {
+        "name": "google.com",
+        "rtype": "NS",
+        "resolver_id": "auth:ns4.google.com@216.239.38.10",
+        "ttl": 345600,
+        "answers": [
+          "ns1.google.com.",
+          "ns2.google.com.",
+          "ns3.google.com.",
+          "ns4.google.com."
+        ],
+        "status": "OK",
+        "error": null
+      },
+      {
+        "name": "google.com",
+        "rtype": "SOA",
+        "resolver_id": "auth:ns4.google.com@216.239.38.10",
+        "ttl": 60,
+        "answers": [
+          "ns1.google.com. dns-admin.google.com. 828873403 900 900 1800 60"
+        ],
+        "status": "OK",
+        "error": null
+      },
+      {
+        "name": "google.com",
+        "rtype": "A",
+        "resolver_id": "auth:ns4.google.com@2001:4860:4802:38::a",
+        "ttl": 300,
+        "answers": [
+          "142.250.206.14"
+        ],
+        "status": "OK",
+        "error": null
+      },
+      {
+        "name": "google.com",
+        "rtype": "AAAA",
+        "resolver_id": "auth:ns4.google.com@2001:4860:4802:38::a",
+        "ttl": 300,
+        "answers": [
+          "2404:6800:4007:80c::200e"
+        ],
+        "status": "OK",
+        "error": null
+      },
+      {
+        "name": "google.com",
+        "rtype": "CNAME",
+        "resolver_id": "auth:ns4.google.com@2001:4860:4802:38::a",
+        "ttl": null,
+        "answers": [],
+        "status": "NODATA",
+        "error": null
+      },
+      {
+        "name": "google.com",
+        "rtype": "MX",
+        "resolver_id": "auth:ns4.google.com@2001:4860:4802:38::a",
+        "ttl": 300,
+        "answers": [
+          "10 smtp.google.com."
+        ],
+        "status": "OK",
+        "error": null
+      },
+      {
+        "name": "google.com",
+        "rtype": "TXT",
+        "resolver_id": "auth:ns4.google.com@2001:4860:4802:38::a",
+        "ttl": 3600,
+        "answers": [
+          "\"MS=E4A68B9AB2BB9670BCE15412F62916164C0B20BB\"",
+          "\"apple-domain-verification=30afIBcvSuDV2PLX\"",
+          "\"cisco-ci-domain-verification=47c38bc8c4b74b7233e9053220c1bbe76bcc1cd33c7acf7acd36cd6a5332004b\"",
+          "\"docusign=05958488-4752-4ef2-95eb-aa7ba8a3bd0e\"",
+          "\"docusign=1b0a6754-49b1-4db5-8540-d2c12664b289\"",
+          "\"facebook-domain-verification=22rm551cu4k0ab0bxsw536tlds4h95\"",
+          "\"globalsign-smime-dv=CDYX+XFHUw2wml6/Gb8+59BsH31KzUr6c1l2BPvqKX8=\"",
+          "\"google-site-verification=4ibFUgB-wXLQ_S7vsXVomSTVamuOXBiVAzpR5IZ87D0\"",
+          "\"google-site-verification=TV9-DBe4R80X4v0M4U_bd_J9cpOJM0nikft0jAgjmsQ\"",
+          "\"google-site-verification=wD8N7i1JTNTkezJ49swvWW48f8_9xveREV4oB-0Hf5o\"",
+          "\"onetrust-domain-verification=de01ed21f2fa4d8781cbc3ffb89cf4ef\"",
+          "\"v=spf1 include:_spf.google.com ~all\""
+        ],
+        "status": "OK",
+        "error": null
+      },
+      {
+        "name": "google.com",
+        "rtype": "NS",
+        "resolver_id": "auth:ns4.google.com@2001:4860:4802:38::a",
+        "ttl": 345600,
+        "answers": [
+          "ns1.google.com.",
+          "ns2.google.com.",
+          "ns3.google.com.",
+          "ns4.google.com."
+        ],
+        "status": "OK",
+        "error": null
+      },
+      {
+        "name": "google.com",
+        "rtype": "SOA",
+        "resolver_id": "auth:ns4.google.com@2001:4860:4802:38::a",
+        "ttl": 60,
+        "answers": [
+          "ns1.google.com. dns-admin.google.com. 828873403 900 900 1800 60"
+        ],
+        "status": "OK",
+        "error": null
+      }
+    ],
+    "consistency": {
+      "google.com A": "DRIFT",
+      "google.com AAAA": "DRIFT",
+      "google.com CNAME": "CONSISTENT",
+      "google.com MX": "CONSISTENT",
+      "google.com TXT": "CONSISTENT",
+      "google.com NS": "CONSISTENT",
+      "google.com SOA": "DRIFT"
+    },
+    "weak_ttl": [],
+    "per_rr_verdict": {
+      "google.com A": "FAIL",
+      "google.com AAAA": "FAIL",
+      "google.com CNAME": "PASS",
+      "google.com MX": "PASS",
+      "google.com TXT": "PASS",
+      "google.com NS": "PASS",
+      "google.com SOA": "FAIL"
+    },
+    "variance_note": "One or more public answers don’t match any authoritative response.",
+    "auth_ttl_by_rr": {
+      "google.com A": 300,
+      "google.com AAAA": 300,
+      "google.com CNAME": null,
+      "google.com MX": 300,
+      "google.com TXT": 3600,
+      "google.com NS": 345600,
+      "google.com SOA": 60
+    }
+  },
+  "dnssec": {
+    "ds_present": false,
+    "ds_match": false,
+    "dnskey_rrsig_valid": false,
+    "rrsig_expiry_hours": null,
+    "nsec_present": false,
+    "issues": [],
+    "state": "UNSIGNED",
+    "summary": "PASS"
+  },
+  "drift": {
+    "score": 86,
+    "added": {},
+    "removed": {},
+    "modified": {
+      "google.com A": {
+        "from": [
+          "142.250.192.110",
+          "142.250.206.14",
+          "142.251.221.206",
+          "142.251.222.206",
+          "142.251.43.78"
+        ],
+        "to": [
+          "142.250.205.78",
+          "142.250.206.14",
+          "142.250.70.78",
+          "142.251.221.206",
+          "142.251.43.78"
+        ]
+      },
+      "google.com AAAA": {
+        "from": [
+          "2404:6800:4007:80c::200e",
+          "2404:6800:4007:816::200e",
+          "2404:6800:4007:81b::200e",
+          "2404:6800:4007:831::200e",
+          "2404:6800:4007:835::200e"
+        ],
+        "to": [
+          "2404:6800:4007:802::200e",
+          "2404:6800:4007:80c::200e",
+          "2404:6800:4007:817::200e",
+          "2404:6800:4007:831::200e",
+          "2404:6800:4009:802::200e"
+        ]
+      }
+    },
+    "diff_rows": [
+      {
+        "rr_key": "google.com A",
+        "resolver_id": "1.1.1.1",
+        "role": "public",
+        "answers": [
+          "142.251.43.78"
+        ],
+        "matches_authoritative": false,
+        "dig_cmd": "dig +norecurse @1.1.1.1 google.com A"
+      },
+      {
+        "rr_key": "google.com A",
+        "resolver_id": "8.8.8.8",
+        "role": "public",
+        "answers": [
+          "142.250.205.78"
+        ],
+        "matches_authoritative": false,
+        "dig_cmd": "dig +norecurse @8.8.8.8 google.com A"
+      },
+      {
+        "rr_key": "google.com A",
+        "resolver_id": "9.9.9.9",
+        "role": "public",
+        "answers": [
+          "142.250.70.78"
+        ],
+        "matches_authoritative": false,
+        "dig_cmd": "dig +norecurse @9.9.9.9 google.com A"
+      },
+      {
+        "rr_key": "google.com A",
+        "resolver_id": "auth:ns1.google.com@216.239.32.10",
+        "role": "authoritative",
+        "answers": [
+          "142.251.221.206"
+        ],
+        "matches_authoritative": true,
+        "dig_cmd": "dig +norecurse @216.239.32.10 google.com A"
+      },
+      {
+        "rr_key": "google.com A",
+        "resolver_id": "auth:ns1.google.com@2001:4860:4802:32::a",
+        "role": "authoritative",
+        "answers": [
+          "142.250.206.14"
+        ],
+        "matches_authoritative": true,
+        "dig_cmd": "dig +norecurse @2001:4860:4802:32::a google.com A"
+      },
+      {
+        "rr_key": "google.com A",
+        "resolver_id": "auth:ns2.google.com@216.239.34.10",
+        "role": "authoritative",
+        "answers": [
+          "142.251.221.206"
+        ],
+        "matches_authoritative": true,
+        "dig_cmd": "dig +norecurse @216.239.34.10 google.com A"
+      },
+      {
+        "rr_key": "google.com A",
+        "resolver_id": "auth:ns2.google.com@2001:4860:4802:34::a",
+        "role": "authoritative",
+        "answers": [
+          "142.250.206.14"
+        ],
+        "matches_authoritative": true,
+        "dig_cmd": "dig +norecurse @2001:4860:4802:34::a google.com A"
+      },
+      {
+        "rr_key": "google.com A",
+        "resolver_id": "auth:ns3.google.com@216.239.36.10",
+        "role": "authoritative",
+        "answers": [
+          "142.251.221.206"
+        ],
+        "matches_authoritative": true,
+        "dig_cmd": "dig +norecurse @216.239.36.10 google.com A"
+      },
+      {
+        "rr_key": "google.com A",
+        "resolver_id": "auth:ns3.google.com@2001:4860:4802:36::a",
+        "role": "authoritative",
+        "answers": [
+          "142.250.206.14"
+        ],
+        "matches_authoritative": true,
+        "dig_cmd": "dig +norecurse @2001:4860:4802:36::a google.com A"
+      },
+      {
+        "rr_key": "google.com A",
+        "resolver_id": "auth:ns4.google.com@216.239.38.10",
+        "role": "authoritative",
+        "answers": [
+          "142.251.221.206"
+        ],
+        "matches_authoritative": true,
+        "dig_cmd": "dig +norecurse @216.239.38.10 google.com A"
+      },
+      {
+        "rr_key": "google.com A",
+        "resolver_id": "auth:ns4.google.com@2001:4860:4802:38::a",
+        "role": "authoritative",
+        "answers": [
+          "142.250.206.14"
+        ],
+        "matches_authoritative": true,
+        "dig_cmd": "dig +norecurse @2001:4860:4802:38::a google.com A"
+      },
+      {
+        "rr_key": "google.com AAAA",
+        "resolver_id": "1.1.1.1",
+        "role": "public",
+        "answers": [
+          "2404:6800:4007:817::200e"
+        ],
+        "matches_authoritative": false,
+        "dig_cmd": "dig +norecurse @1.1.1.1 google.com AAAA"
+      },
+      {
+        "rr_key": "google.com AAAA",
+        "resolver_id": "8.8.8.8",
+        "role": "public",
+        "answers": [
+          "2404:6800:4007:802::200e"
+        ],
+        "matches_authoritative": false,
+        "dig_cmd": "dig +norecurse @8.8.8.8 google.com AAAA"
+      },
+      {
+        "rr_key": "google.com AAAA",
+        "resolver_id": "9.9.9.9",
+        "role": "public",
+        "answers": [
+          "2404:6800:4009:802::200e"
+        ],
+        "matches_authoritative": false,
+        "dig_cmd": "dig +norecurse @9.9.9.9 google.com AAAA"
+      },
+      {
+        "rr_key": "google.com AAAA",
+        "resolver_id": "auth:ns1.google.com@216.239.32.10",
+        "role": "authoritative",
+        "answers": [
+          "2404:6800:4007:831::200e"
+        ],
+        "matches_authoritative": true,
+        "dig_cmd": "dig +norecurse @216.239.32.10 google.com AAAA"
+      },
+      {
+        "rr_key": "google.com AAAA",
+        "resolver_id": "auth:ns1.google.com@2001:4860:4802:32::a",
+        "role": "authoritative",
+        "answers": [
+          "2404:6800:4007:80c::200e"
+        ],
+        "matches_authoritative": true,
+        "dig_cmd": "dig +norecurse @2001:4860:4802:32::a google.com AAAA"
+      },
+      {
+        "rr_key": "google.com AAAA",
+        "resolver_id": "auth:ns2.google.com@216.239.34.10",
+        "role": "authoritative",
+        "answers": [
+          "2404:6800:4007:831::200e"
+        ],
+        "matches_authoritative": true,
+        "dig_cmd": "dig +norecurse @216.239.34.10 google.com AAAA"
+      },
+      {
+        "rr_key": "google.com AAAA",
+        "resolver_id": "auth:ns2.google.com@2001:4860:4802:34::a",
+        "role": "authoritative",
+        "answers": [
+          "2404:6800:4007:80c::200e"
+        ],
+        "matches_authoritative": true,
+        "dig_cmd": "dig +norecurse @2001:4860:4802:34::a google.com AAAA"
+      },
+      {
+        "rr_key": "google.com AAAA",
+        "resolver_id": "auth:ns3.google.com@216.239.36.10",
+        "role": "authoritative",
+        "answers": [
+          "2404:6800:4007:831::200e"
+        ],
+        "matches_authoritative": true,
+        "dig_cmd": "dig +norecurse @216.239.36.10 google.com AAAA"
+      },
+      {
+        "rr_key": "google.com AAAA",
+        "resolver_id": "auth:ns3.google.com@2001:4860:4802:36::a",
+        "role": "authoritative",
+        "answers": [
+          "2404:6800:4007:80c::200e"
+        ],
+        "matches_authoritative": true,
+        "dig_cmd": "dig +norecurse @2001:4860:4802:36::a google.com AAAA"
+      },
+      {
+        "rr_key": "google.com AAAA",
+        "resolver_id": "auth:ns4.google.com@216.239.38.10",
+        "role": "authoritative",
+        "answers": [
+          "2404:6800:4007:831::200e"
+        ],
+        "matches_authoritative": true,
+        "dig_cmd": "dig +norecurse @216.239.38.10 google.com AAAA"
+      },
+      {
+        "rr_key": "google.com AAAA",
+        "resolver_id": "auth:ns4.google.com@2001:4860:4802:38::a",
+        "role": "authoritative",
+        "answers": [
+          "2404:6800:4007:80c::200e"
+        ],
+        "matches_authoritative": true,
+        "dig_cmd": "dig +norecurse @2001:4860:4802:38::a google.com AAAA"
+      },
+      {
+        "rr_key": "google.com SOA",
+        "resolver_id": "1.1.1.1",
+        "role": "public",
+        "answers": [
+          "ns1.google.com. dns-admin.google.com. 828388013 900 900 1800 60"
+        ],
+        "matches_authoritative": true,
+        "dig_cmd": "dig +norecurse @1.1.1.1 google.com SOA"
+      },
+      {
+        "rr_key": "google.com SOA",
+        "resolver_id": "8.8.8.8",
+        "role": "public",
+        "answers": [
+          "ns1.google.com. dns-admin.google.com. 828388013 900 900 1800 60"
+        ],
+        "matches_authoritative": true,
+        "dig_cmd": "dig +norecurse @8.8.8.8 google.com SOA"
+      },
+      {
+        "rr_key": "google.com SOA",
+        "resolver_id": "9.9.9.9",
+        "role": "public",
+        "answers": [
+          "ns1.google.com. dns-admin.google.com. 828388013 900 900 1800 60"
+        ],
+        "matches_authoritative": true,
+        "dig_cmd": "dig +norecurse @9.9.9.9 google.com SOA"
+      },
+      {
+        "rr_key": "google.com SOA",
+        "resolver_id": "auth:ns1.google.com@216.239.32.10",
+        "role": "authoritative",
+        "answers": [
+          "ns1.google.com. dns-admin.google.com. 828873403 900 900 1800 60"
+        ],
+        "matches_authoritative": true,
+        "dig_cmd": "dig +norecurse @216.239.32.10 google.com SOA"
+      },
+      {
+        "rr_key": "google.com SOA",
+        "resolver_id": "auth:ns1.google.com@2001:4860:4802:32::a",
+        "role": "authoritative",
+        "answers": [
+          "ns1.google.com. dns-admin.google.com. 828873403 900 900 1800 60"
+        ],
+        "matches_authoritative": true,
+        "dig_cmd": "dig +norecurse @2001:4860:4802:32::a google.com SOA"
+      },
+      {
+        "rr_key": "google.com SOA",
+        "resolver_id": "auth:ns2.google.com@216.239.34.10",
+        "role": "authoritative",
+        "answers": [
+          "ns1.google.com. dns-admin.google.com. 828388013 900 900 1800 60"
+        ],
+        "matches_authoritative": true,
+        "dig_cmd": "dig +norecurse @216.239.34.10 google.com SOA"
+      },
+      {
+        "rr_key": "google.com SOA",
+        "resolver_id": "auth:ns2.google.com@2001:4860:4802:34::a",
+        "role": "authoritative",
+        "answers": [
+          "ns1.google.com. dns-admin.google.com. 828388013 900 900 1800 60"
+        ],
+        "matches_authoritative": true,
+        "dig_cmd": "dig +norecurse @2001:4860:4802:34::a google.com SOA"
+      },
+      {
+        "rr_key": "google.com SOA",
+        "resolver_id": "auth:ns3.google.com@216.239.36.10",
+        "role": "authoritative",
+        "answers": [
+          "ns1.google.com. dns-admin.google.com. 828873403 900 900 1800 60"
+        ],
+        "matches_authoritative": true,
+        "dig_cmd": "dig +norecurse @216.239.36.10 google.com SOA"
+      },
+      {
+        "rr_key": "google.com SOA",
+        "resolver_id": "auth:ns3.google.com@2001:4860:4802:36::a",
+        "role": "authoritative",
+        "answers": [
+          "ns1.google.com. dns-admin.google.com. 828873403 900 900 1800 60"
+        ],
+        "matches_authoritative": true,
+        "dig_cmd": "dig +norecurse @2001:4860:4802:36::a google.com SOA"
+      },
+      {
+        "rr_key": "google.com SOA",
+        "resolver_id": "auth:ns4.google.com@216.239.38.10",
+        "role": "authoritative",
+        "answers": [
+          "ns1.google.com. dns-admin.google.com. 828873403 900 900 1800 60"
+        ],
+        "matches_authoritative": true,
+        "dig_cmd": "dig +norecurse @216.239.38.10 google.com SOA"
+      },
+      {
+        "rr_key": "google.com SOA",
+        "resolver_id": "auth:ns4.google.com@2001:4860:4802:38::a",
+        "role": "authoritative",
+        "answers": [
+          "ns1.google.com. dns-admin.google.com. 828873403 900 900 1800 60"
+        ],
+        "matches_authoritative": true,
+        "dig_cmd": "dig +norecurse @2001:4860:4802:38::a google.com SOA"
+      }
+    ]
+  },
+  "ns_health": null,
+  "summary": {
+    "pass_count": 5,
+    "warn_count": 0,
+    "fail_count": 3,
+    "started_at": 1762514807.11786,
+    "duration_sec": 6.083328008651733,
+    "resolver_count": 11,
+    "records_scanned": 77
+  },
+  "errors": []
+}

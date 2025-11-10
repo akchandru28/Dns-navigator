@@ -1,0 +1,44 @@
+{
+  "run_id": "b0a9bfac",
+  "options": {
+    "domain": "example.com",
+    "resolvers": [
+      "1.1.1.1",
+      "8.8.8.8",
+      "9.9.9.9",
+      "authoritative"
+    ],
+    "record_types": [
+      "A",
+      "AAAA",
+      "CNAME",
+      "MX",
+      "TXT",
+      "NS",
+      "SOA"
+    ],
+    "dnssec": {
+      "do": true,
+      "strict_alg_match": false,
+      "expiry_threshold_hours": 48
+    },
+    "rate_limits": {
+      "max_qps": 20.0,
+      "timeout_sec": 4.0,
+      "retries": 1
+    }
+  },
+  "phase": "Error",
+  "progress": 70,
+  "meta": {
+    "started_at": 1762744310.945386
+  },
+  "overview": null,
+  "dnssec": null,
+  "drift": null,
+  "ns_health": null,
+  "summary": null,
+  "errors": [
+    "analyze_rrsets() got an unexpected keyword argument 'nxd_stats'"
+  ]
+}

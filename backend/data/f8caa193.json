@@ -1,0 +1,1558 @@
+{
+  "run_id": "f8caa193",
+  "options": {
+    "domain": "example.com",
+    "resolvers": [
+      "1.1.1.1",
+      "8.8.8.8",
+      "9.9.9.9",
+      "authoritative"
+    ],
+    "record_types": [
+      "A",
+      "AAAA",
+      "CNAME",
+      "MX",
+      "TXT",
+      "NS",
+      "SOA"
+    ],
+    "dnssec": {
+      "do": true,
+      "strict_alg_match": false,
+      "expiry_threshold_hours": 48
+    },
+    "rate_limits": {
+      "max_qps": 20.0,
+      "timeout_sec": 4.0,
+      "retries": 1
+    }
+  },
+  "phase": "Reporting",
+  "progress": 85,
+  "meta": {
+    "started_at": 1762518674.7193708,
+    "auth_ns": [
+      [
+        "a.iana-servers.net",
+        "199.43.135.53"
+      ],
+      [
+        "a.iana-servers.net",
+        "2001:500:8f::53"
+      ],
+      [
+        "b.iana-servers.net",
+        "199.43.133.53"
+      ],
+      [
+        "b.iana-servers.net",
+        "2001:500:8d::53"
+      ]
+    ],
+    "run_verdict": "FAIL"
+  },
+  "overview": {
+    "grid": [
+      {
+        "name": "example.com",
+        "rtype": "A",
+        "resolver_id": "1.1.1.1",
+        "ttl": 290,
+        "answers": [
+          "23.192.228.80",
+          "23.192.228.84",
+          "23.215.0.136",
+          "23.215.0.138",
+          "23.220.75.232",
+          "23.220.75.245"
+        ],
+        "status": "OK",
+        "error": null,
+        "diagnostics": {
+          "transport": "udp",
+          "edns": 1232,
+          "rcode": 0,
+          "flags": 33152,
+          "retries": 0,
+          "attempts": [
+            {
+              "transport": "udp",
+              "edns": 1232,
+              "error": false
+            }
+          ],
+          "elapsed_ms": 0.0
+        }
+      },
+      {
+        "name": "example.com",
+        "rtype": "AAAA",
+        "resolver_id": "1.1.1.1",
+        "ttl": 174,
+        "answers": [
+          "2600:1406:5e00:6::17ce:bc12",
+          "2600:1406:5e00:6::17ce:bc1b",
+          "2600:1406:bc00:53::b81e:94c8",
+          "2600:1406:bc00:53::b81e:94ce",
+          "2600:1408:ec00:36::1736:7f24",
+          "2600:1408:ec00:36::1736:7f31"
+        ],
+        "status": "OK",
+        "error": null,
+        "diagnostics": {
+          "transport": "udp",
+          "edns": 1232,
+          "rcode": 0,
+          "flags": 33152,
+          "retries": 0,
+          "attempts": [
+            {
+              "transport": "udp",
+              "edns": 1232,
+              "error": false
+            }
+          ],
+          "elapsed_ms": 0.0
+        }
+      },
+      {
+        "name": "example.com",
+        "rtype": "CNAME",
+        "resolver_id": "1.1.1.1",
+        "ttl": null,
+        "answers": [],
+        "status": "NODATA",
+        "error": null,
+        "diagnostics": {
+          "transport": "udp",
+          "edns": 1232,
+          "rcode": 0,
+          "flags": 33152,
+          "retries": 0,
+          "attempts": [
+            {
+              "transport": "udp",
+              "edns": 1232,
+              "error": false
+            }
+          ],
+          "elapsed_ms": 0.0
+        }
+      },
+      {
+        "name": "example.com",
+        "rtype": "MX",
+        "resolver_id": "1.1.1.1",
+        "ttl": 86400,
+        "answers": [
+          "0 ."
+        ],
+        "status": "OK",
+        "error": null,
+        "diagnostics": {
+          "transport": "udp",
+          "edns": 1232,
+          "rcode": 0,
+          "flags": 33152,
+          "retries": 0,
+          "attempts": [
+            {
+              "transport": "udp",
+              "edns": 1232,
+              "error": false
+            }
+          ],
+          "elapsed_ms": 0.0
+        }
+      },
+      {
+        "name": "example.com",
+        "rtype": "NS",
+        "resolver_id": "1.1.1.1",
+        "ttl": 75838,
+        "answers": [
+          "a.iana-servers.net.",
+          "b.iana-servers.net."
+        ],
+        "status": "OK",
+        "error": null,
+        "diagnostics": {
+          "transport": "udp",
+          "edns": 1232,
+          "rcode": 0,
+          "flags": 33152,
+          "retries": 0,
+          "attempts": [
+            {
+              "transport": "udp",
+              "edns": 1232,
+              "error": false
+            }
+          ],
+          "elapsed_ms": 0.0
+        }
+      },
+      {
+        "name": "example.com",
+        "rtype": "SOA",
+        "resolver_id": "1.1.1.1",
+        "ttl": 3600,
+        "answers": [
+          "ns.icann.org. noc.dns.icann.org. 2025082288 7200 3600 1209600 3600"
+        ],
+        "status": "OK",
+        "error": null,
+        "diagnostics": {
+          "transport": "udp",
+          "edns": 1232,
+          "rcode": 0,
+          "flags": 33152,
+          "retries": 0,
+          "attempts": [
+            {
+              "transport": "udp",
+              "edns": 1232,
+              "error": false
+            }
+          ],
+          "elapsed_ms": 0.0
+        }
+      },
+      {
+        "name": "example.com",
+        "rtype": "TXT",
+        "resolver_id": "1.1.1.1",
+        "ttl": 86400,
+        "answers": [
+          "\"_k2n1y4vw3qtb4skdx9e7dxt97qrmmq9\"",
+          "\"v=spf1 -all\""
+        ],
+        "status": "OK",
+        "error": null,
+        "diagnostics": {
+          "transport": "udp",
+          "edns": 1232,
+          "rcode": 0,
+          "flags": 33152,
+          "retries": 0,
+          "attempts": [
+            {
+              "transport": "udp",
+              "edns": 1232,
+              "error": false
+            }
+          ],
+          "elapsed_ms": 0.0
+        }
+      },
+      {
+        "name": "example.com",
+        "rtype": "A",
+        "resolver_id": "8.8.8.8",
+        "ttl": 139,
+        "answers": [
+          "23.192.228.80",
+          "23.192.228.84",
+          "23.215.0.136",
+          "23.215.0.138",
+          "23.220.75.232",
+          "23.220.75.245"
+        ],
+        "status": "OK",
+        "error": null,
+        "diagnostics": {
+          "transport": "udp",
+          "edns": 1232,
+          "rcode": 0,
+          "flags": 33152,
+          "retries": 0,
+          "attempts": [
+            {
+              "transport": "udp",
+              "edns": 1232,
+              "error": false
+            }
+          ],
+          "elapsed_ms": 0.0
+        }
+      },
+      {
+        "name": "example.com",
+        "rtype": "AAAA",
+        "resolver_id": "8.8.8.8",
+        "ttl": 78,
+        "answers": [
+          "2600:1406:5e00:6::17ce:bc12",
+          "2600:1406:5e00:6::17ce:bc1b",
+          "2600:1406:bc00:53::b81e:94c8",
+          "2600:1406:bc00:53::b81e:94ce",
+          "2600:1408:ec00:36::1736:7f24",
+          "2600:1408:ec00:36::1736:7f31"
+        ],
+        "status": "OK",
+        "error": null,
+        "diagnostics": {
+          "transport": "udp",
+          "edns": 1232,
+          "rcode": 0,
+          "flags": 33152,
+          "retries": 0,
+          "attempts": [
+            {
+              "transport": "udp",
+              "edns": 1232,
+              "error": false
+            }
+          ],
+          "elapsed_ms": 0.0
+        }
+      },
+      {
+        "name": "example.com",
+        "rtype": "CNAME",
+        "resolver_id": "8.8.8.8",
+        "ttl": null,
+        "answers": [],
+        "status": "NODATA",
+        "error": null,
+        "diagnostics": {
+          "transport": "udp",
+          "edns": 1232,
+          "rcode": 0,
+          "flags": 33152,
+          "retries": 0,
+          "attempts": [
+            {
+              "transport": "udp",
+              "edns": 1232,
+              "error": false
+            }
+          ],
+          "elapsed_ms": 0.0
+        }
+      },
+      {
+        "name": "example.com",
+        "rtype": "MX",
+        "resolver_id": "8.8.8.8",
+        "ttl": 3290,
+        "answers": [
+          "0 ."
+        ],
+        "status": "OK",
+        "error": null,
+        "diagnostics": {
+          "transport": "udp",
+          "edns": 1232,
+          "rcode": 0,
+          "flags": 33152,
+          "retries": 0,
+          "attempts": [
+            {
+              "transport": "udp",
+              "edns": 1232,
+              "error": false
+            }
+          ],
+          "elapsed_ms": 0.0
+        }
+      },
+      {
+        "name": "example.com",
+        "rtype": "NS",
+        "resolver_id": "8.8.8.8",
+        "ttl": 3854,
+        "answers": [
+          "a.iana-servers.net.",
+          "b.iana-servers.net."
+        ],
+        "status": "OK",
+        "error": null,
+        "diagnostics": {
+          "transport": "udp",
+          "edns": 1232,
+          "rcode": 0,
+          "flags": 33152,
+          "retries": 0,
+          "attempts": [
+            {
+              "transport": "udp",
+              "edns": 1232,
+              "error": false
+            }
+          ],
+          "elapsed_ms": 0.0
+        }
+      },
+      {
+        "name": "example.com",
+        "rtype": "SOA",
+        "resolver_id": "8.8.8.8",
+        "ttl": 3243,
+        "answers": [
+          "ns.icann.org. noc.dns.icann.org. 2025082288 7200 3600 1209600 3600"
+        ],
+        "status": "OK",
+        "error": null,
+        "diagnostics": {
+          "transport": "udp",
+          "edns": 1232,
+          "rcode": 0,
+          "flags": 33152,
+          "retries": 0,
+          "attempts": [
+            {
+              "transport": "udp",
+              "edns": 1232,
+              "error": false
+            }
+          ],
+          "elapsed_ms": 0.0
+        }
+      },
+      {
+        "name": "example.com",
+        "rtype": "TXT",
+        "resolver_id": "8.8.8.8",
+        "ttl": 10489,
+        "answers": [
+          "\"_k2n1y4vw3qtb4skdx9e7dxt97qrmmq9\"",
+          "\"v=spf1 -all\""
+        ],
+        "status": "OK",
+        "error": null,
+        "diagnostics": {
+          "transport": "udp",
+          "edns": 1232,
+          "rcode": 0,
+          "flags": 33152,
+          "retries": 0,
+          "attempts": [
+            {
+              "transport": "udp",
+              "edns": 1232,
+              "error": false
+            }
+          ],
+          "elapsed_ms": 0.0
+        }
+      },
+      {
+        "name": "example.com",
+        "rtype": "A",
+        "resolver_id": "9.9.9.9",
+        "ttl": 246,
+        "answers": [
+          "23.192.228.80",
+          "23.192.228.84",
+          "23.215.0.136",
+          "23.215.0.138",
+          "23.220.75.232",
+          "23.220.75.245"
+        ],
+        "status": "OK",
+        "error": null,
+        "diagnostics": {
+          "transport": "udp",
+          "edns": 1232,
+          "rcode": 0,
+          "flags": 33152,
+          "retries": 0,
+          "attempts": [
+            {
+              "transport": "udp",
+              "edns": 1232,
+              "error": false
+            }
+          ],
+          "elapsed_ms": 0.0
+        }
+      },
+      {
+        "name": "example.com",
+        "rtype": "AAAA",
+        "resolver_id": "9.9.9.9",
+        "ttl": 23,
+        "answers": [
+          "2600:1406:5e00:6::17ce:bc12",
+          "2600:1406:5e00:6::17ce:bc1b",
+          "2600:1406:bc00:53::b81e:94c8",
+          "2600:1406:bc00:53::b81e:94ce",
+          "2600:1408:ec00:36::1736:7f24",
+          "2600:1408:ec00:36::1736:7f31"
+        ],
+        "status": "OK",
+        "error": null,
+        "diagnostics": {
+          "transport": "udp",
+          "edns": 1232,
+          "rcode": 0,
+          "flags": 33152,
+          "retries": 0,
+          "attempts": [
+            {
+              "transport": "udp",
+              "edns": 1232,
+              "error": false
+            }
+          ],
+          "elapsed_ms": 0.0
+        }
+      },
+      {
+        "name": "example.com",
+        "rtype": "CNAME",
+        "resolver_id": "9.9.9.9",
+        "ttl": null,
+        "answers": [],
+        "status": "NODATA",
+        "error": null,
+        "diagnostics": {
+          "transport": "udp",
+          "edns": 1232,
+          "rcode": 0,
+          "flags": 33152,
+          "retries": 0,
+          "attempts": [
+            {
+              "transport": "udp",
+              "edns": 1232,
+              "error": false
+            }
+          ],
+          "elapsed_ms": 0.0
+        }
+      },
+      {
+        "name": "example.com",
+        "rtype": "MX",
+        "resolver_id": "9.9.9.9",
+        "ttl": 31673,
+        "answers": [
+          "0 ."
+        ],
+        "status": "OK",
+        "error": null,
+        "diagnostics": {
+          "transport": "udp",
+          "edns": 1232,
+          "rcode": 0,
+          "flags": 33152,
+          "retries": 0,
+          "attempts": [
+            {
+              "transport": "udp",
+              "edns": 1232,
+              "error": false
+            }
+          ],
+          "elapsed_ms": 0.0
+        }
+      },
+      {
+        "name": "example.com",
+        "rtype": "NS",
+        "resolver_id": "9.9.9.9",
+        "ttl": 33801,
+        "answers": [
+          "a.iana-servers.net.",
+          "b.iana-servers.net."
+        ],
+        "status": "OK",
+        "error": null,
+        "diagnostics": {
+          "transport": "udp",
+          "edns": 1232,
+          "rcode": 0,
+          "flags": 33152,
+          "retries": 0,
+          "attempts": [
+            {
+              "transport": "udp",
+              "edns": 1232,
+              "error": false
+            }
+          ],
+          "elapsed_ms": 0.0
+        }
+      },
+      {
+        "name": "example.com",
+        "rtype": "SOA",
+        "resolver_id": "9.9.9.9",
+        "ttl": 30,
+        "answers": [
+          "ns.icann.org. noc.dns.icann.org. 2025082288 7200 3600 1209600 3600"
+        ],
+        "status": "OK",
+        "error": null,
+        "diagnostics": {
+          "transport": "udp",
+          "edns": 1232,
+          "rcode": 0,
+          "flags": 33152,
+          "retries": 0,
+          "attempts": [
+            {
+              "transport": "udp",
+              "edns": 1232,
+              "error": false
+            }
+          ],
+          "elapsed_ms": 0.0
+        }
+      },
+      {
+        "name": "example.com",
+        "rtype": "TXT",
+        "resolver_id": "9.9.9.9",
+        "ttl": 31673,
+        "answers": [
+          "\"_k2n1y4vw3qtb4skdx9e7dxt97qrmmq9\"",
+          "\"v=spf1 -all\""
+        ],
+        "status": "OK",
+        "error": null,
+        "diagnostics": {
+          "transport": "udp",
+          "edns": 1232,
+          "rcode": 0,
+          "flags": 33152,
+          "retries": 0,
+          "attempts": [
+            {
+              "transport": "udp",
+              "edns": 1232,
+              "error": false
+            }
+          ],
+          "elapsed_ms": 0.0
+        }
+      },
+      {
+        "name": "example.com",
+        "rtype": "A",
+        "resolver_id": "auth:a.iana-servers.net@199.43.135.53",
+        "ttl": 300,
+        "answers": [
+          "23.192.228.80",
+          "23.192.228.84",
+          "23.215.0.136",
+          "23.215.0.138",
+          "23.220.75.232",
+          "23.220.75.245"
+        ],
+        "status": "OK",
+        "error": null,
+        "diagnostics": {
+          "transport": "udp",
+          "edns": 1232,
+          "rcode": 0,
+          "flags": 33792,
+          "retries": 0,
+          "attempts": [
+            {
+              "transport": "udp",
+              "edns": 1232,
+              "error": false
+            }
+          ],
+          "elapsed_ms": 0.0
+        }
+      },
+      {
+        "name": "example.com",
+        "rtype": "AAAA",
+        "resolver_id": "auth:a.iana-servers.net@199.43.135.53",
+        "ttl": 300,
+        "answers": [
+          "2600:1406:5e00:6::17ce:bc12",
+          "2600:1406:5e00:6::17ce:bc1b",
+          "2600:1406:bc00:53::b81e:94c8",
+          "2600:1406:bc00:53::b81e:94ce",
+          "2600:1408:ec00:36::1736:7f24",
+          "2600:1408:ec00:36::1736:7f31"
+        ],
+        "status": "OK",
+        "error": null,
+        "diagnostics": {
+          "transport": "udp",
+          "edns": 1232,
+          "rcode": 0,
+          "flags": 33792,
+          "retries": 0,
+          "attempts": [
+            {
+              "transport": "udp",
+              "edns": 1232,
+              "error": false
+            }
+          ],
+          "elapsed_ms": 0.0
+        }
+      },
+      {
+        "name": "example.com",
+        "rtype": "CNAME",
+        "resolver_id": "auth:a.iana-servers.net@199.43.135.53",
+        "ttl": null,
+        "answers": [],
+        "status": "NODATA",
+        "error": null,
+        "diagnostics": {
+          "transport": "udp",
+          "edns": 1232,
+          "rcode": 0,
+          "flags": 33792,
+          "retries": 0,
+          "attempts": [
+            {
+              "transport": "udp",
+              "edns": 1232,
+              "error": false
+            }
+          ],
+          "elapsed_ms": 0.0
+        }
+      },
+      {
+        "name": "example.com",
+        "rtype": "MX",
+        "resolver_id": "auth:a.iana-servers.net@199.43.135.53",
+        "ttl": 86400,
+        "answers": [
+          "0 ."
+        ],
+        "status": "OK",
+        "error": null,
+        "diagnostics": {
+          "transport": "udp",
+          "edns": 1232,
+          "rcode": 0,
+          "flags": 33792,
+          "retries": 0,
+          "attempts": [
+            {
+              "transport": "udp",
+              "edns": 1232,
+              "error": false
+            }
+          ],
+          "elapsed_ms": 0.0
+        }
+      },
+      {
+        "name": "example.com",
+        "rtype": "NS",
+        "resolver_id": "auth:a.iana-servers.net@199.43.135.53",
+        "ttl": 86400,
+        "answers": [
+          "a.iana-servers.net.",
+          "b.iana-servers.net."
+        ],
+        "status": "OK",
+        "error": null,
+        "diagnostics": {
+          "transport": "udp",
+          "edns": 1232,
+          "rcode": 0,
+          "flags": 33792,
+          "retries": 0,
+          "attempts": [
+            {
+              "transport": "udp",
+              "edns": 1232,
+              "error": false
+            }
+          ],
+          "elapsed_ms": 0.0
+        }
+      },
+      {
+        "name": "example.com",
+        "rtype": "SOA",
+        "resolver_id": "auth:a.iana-servers.net@199.43.135.53",
+        "ttl": 3600,
+        "answers": [
+          "ns.icann.org. noc.dns.icann.org. 2025082288 7200 3600 1209600 3600"
+        ],
+        "status": "OK",
+        "error": null,
+        "diagnostics": {
+          "transport": "udp",
+          "edns": 1232,
+          "rcode": 0,
+          "flags": 33792,
+          "retries": 0,
+          "attempts": [
+            {
+              "transport": "udp",
+              "edns": 1232,
+              "error": false
+            }
+          ],
+          "elapsed_ms": 0.0
+        }
+      },
+      {
+        "name": "example.com",
+        "rtype": "TXT",
+        "resolver_id": "auth:a.iana-servers.net@199.43.135.53",
+        "ttl": 86400,
+        "answers": [
+          "\"_k2n1y4vw3qtb4skdx9e7dxt97qrmmq9\"",
+          "\"v=spf1 -all\""
+        ],
+        "status": "OK",
+        "error": null,
+        "diagnostics": {
+          "transport": "udp",
+          "edns": 1232,
+          "rcode": 0,
+          "flags": 33792,
+          "retries": 0,
+          "attempts": [
+            {
+              "transport": "udp",
+              "edns": 1232,
+              "error": false
+            }
+          ],
+          "elapsed_ms": 0.0
+        }
+      },
+      {
+        "name": "example.com",
+        "rtype": "A",
+        "resolver_id": "auth:a.iana-servers.net@2001:500:8f::53",
+        "ttl": 300,
+        "answers": [
+          "23.192.228.80",
+          "23.192.228.84",
+          "23.215.0.136",
+          "23.215.0.138",
+          "23.220.75.232",
+          "23.220.75.245"
+        ],
+        "status": "OK",
+        "error": null,
+        "diagnostics": {
+          "transport": "udp",
+          "edns": 1232,
+          "rcode": 0,
+          "flags": 33792,
+          "retries": 0,
+          "attempts": [
+            {
+              "transport": "udp",
+              "edns": 1232,
+              "error": false
+            }
+          ],
+          "elapsed_ms": 0.0
+        }
+      },
+      {
+        "name": "example.com",
+        "rtype": "AAAA",
+        "resolver_id": "auth:a.iana-servers.net@2001:500:8f::53",
+        "ttl": 300,
+        "answers": [
+          "2600:1406:5e00:6::17ce:bc12",
+          "2600:1406:5e00:6::17ce:bc1b",
+          "2600:1406:bc00:53::b81e:94c8",
+          "2600:1406:bc00:53::b81e:94ce",
+          "2600:1408:ec00:36::1736:7f24",
+          "2600:1408:ec00:36::1736:7f31"
+        ],
+        "status": "OK",
+        "error": null,
+        "diagnostics": {
+          "transport": "udp",
+          "edns": 1232,
+          "rcode": 0,
+          "flags": 33792,
+          "retries": 0,
+          "attempts": [
+            {
+              "transport": "udp",
+              "edns": 1232,
+              "error": false
+            }
+          ],
+          "elapsed_ms": 0.0
+        }
+      },
+      {
+        "name": "example.com",
+        "rtype": "CNAME",
+        "resolver_id": "auth:a.iana-servers.net@2001:500:8f::53",
+        "ttl": null,
+        "answers": [],
+        "status": "NODATA",
+        "error": null,
+        "diagnostics": {
+          "transport": "udp",
+          "edns": 1232,
+          "rcode": 0,
+          "flags": 33792,
+          "retries": 0,
+          "attempts": [
+            {
+              "transport": "udp",
+              "edns": 1232,
+              "error": false
+            }
+          ],
+          "elapsed_ms": 0.0
+        }
+      },
+      {
+        "name": "example.com",
+        "rtype": "MX",
+        "resolver_id": "auth:a.iana-servers.net@2001:500:8f::53",
+        "ttl": 86400,
+        "answers": [
+          "0 ."
+        ],
+        "status": "OK",
+        "error": null,
+        "diagnostics": {
+          "transport": "udp",
+          "edns": 1232,
+          "rcode": 0,
+          "flags": 33792,
+          "retries": 0,
+          "attempts": [
+            {
+              "transport": "udp",
+              "edns": 1232,
+              "error": false
+            }
+          ],
+          "elapsed_ms": 0.0
+        }
+      },
+      {
+        "name": "example.com",
+        "rtype": "NS",
+        "resolver_id": "auth:a.iana-servers.net@2001:500:8f::53",
+        "ttl": 86400,
+        "answers": [
+          "a.iana-servers.net.",
+          "b.iana-servers.net."
+        ],
+        "status": "OK",
+        "error": null,
+        "diagnostics": {
+          "transport": "udp",
+          "edns": 1232,
+          "rcode": 0,
+          "flags": 33792,
+          "retries": 0,
+          "attempts": [
+            {
+              "transport": "udp",
+              "edns": 1232,
+              "error": false
+            }
+          ],
+          "elapsed_ms": 0.0
+        }
+      },
+      {
+        "name": "example.com",
+        "rtype": "SOA",
+        "resolver_id": "auth:a.iana-servers.net@2001:500:8f::53",
+        "ttl": 3600,
+        "answers": [
+          "ns.icann.org. noc.dns.icann.org. 2025082288 7200 3600 1209600 3600"
+        ],
+        "status": "OK",
+        "error": null,
+        "diagnostics": {
+          "transport": "udp",
+          "edns": 1232,
+          "rcode": 0,
+          "flags": 33792,
+          "retries": 0,
+          "attempts": [
+            {
+              "transport": "udp",
+              "edns": 1232,
+              "error": false
+            }
+          ],
+          "elapsed_ms": 0.0
+        }
+      },
+      {
+        "name": "example.com",
+        "rtype": "TXT",
+        "resolver_id": "auth:a.iana-servers.net@2001:500:8f::53",
+        "ttl": 86400,
+        "answers": [
+          "\"_k2n1y4vw3qtb4skdx9e7dxt97qrmmq9\"",
+          "\"v=spf1 -all\""
+        ],
+        "status": "OK",
+        "error": null,
+        "diagnostics": {
+          "transport": "udp",
+          "edns": 1232,
+          "rcode": 0,
+          "flags": 33792,
+          "retries": 0,
+          "attempts": [
+            {
+              "transport": "udp",
+              "edns": 1232,
+              "error": false
+            }
+          ],
+          "elapsed_ms": 0.0
+        }
+      },
+      {
+        "name": "example.com",
+        "rtype": "A",
+        "resolver_id": "auth:b.iana-servers.net@199.43.133.53",
+        "ttl": 300,
+        "answers": [
+          "23.192.228.80",
+          "23.192.228.84",
+          "23.215.0.136",
+          "23.215.0.138",
+          "23.220.75.232",
+          "23.220.75.245"
+        ],
+        "status": "OK",
+        "error": null,
+        "diagnostics": {
+          "transport": "udp",
+          "edns": 1232,
+          "rcode": 0,
+          "flags": 33792,
+          "retries": 0,
+          "attempts": [
+            {
+              "transport": "udp",
+              "edns": 1232,
+              "error": false
+            }
+          ],
+          "elapsed_ms": 0.0
+        }
+      },
+      {
+        "name": "example.com",
+        "rtype": "AAAA",
+        "resolver_id": "auth:b.iana-servers.net@199.43.133.53",
+        "ttl": 300,
+        "answers": [
+          "2600:1406:5e00:6::17ce:bc12",
+          "2600:1406:5e00:6::17ce:bc1b",
+          "2600:1406:bc00:53::b81e:94c8",
+          "2600:1406:bc00:53::b81e:94ce",
+          "2600:1408:ec00:36::1736:7f24",
+          "2600:1408:ec00:36::1736:7f31"
+        ],
+        "status": "OK",
+        "error": null,
+        "diagnostics": {
+          "transport": "udp",
+          "edns": 1232,
+          "rcode": 0,
+          "flags": 33792,
+          "retries": 0,
+          "attempts": [
+            {
+              "transport": "udp",
+              "edns": 1232,
+              "error": false
+            }
+          ],
+          "elapsed_ms": 0.0
+        }
+      },
+      {
+        "name": "example.com",
+        "rtype": "CNAME",
+        "resolver_id": "auth:b.iana-servers.net@199.43.133.53",
+        "ttl": null,
+        "answers": [],
+        "status": "NODATA",
+        "error": null,
+        "diagnostics": {
+          "transport": "udp",
+          "edns": 1232,
+          "rcode": 0,
+          "flags": 33792,
+          "retries": 0,
+          "attempts": [
+            {
+              "transport": "udp",
+              "edns": 1232,
+              "error": false
+            }
+          ],
+          "elapsed_ms": 0.0
+        }
+      },
+      {
+        "name": "example.com",
+        "rtype": "MX",
+        "resolver_id": "auth:b.iana-servers.net@199.43.133.53",
+        "ttl": 86400,
+        "answers": [
+          "0 ."
+        ],
+        "status": "OK",
+        "error": null,
+        "diagnostics": {
+          "transport": "udp",
+          "edns": 1232,
+          "rcode": 0,
+          "flags": 33792,
+          "retries": 0,
+          "attempts": [
+            {
+              "transport": "udp",
+              "edns": 1232,
+              "error": false
+            }
+          ],
+          "elapsed_ms": 0.0
+        }
+      },
+      {
+        "name": "example.com",
+        "rtype": "NS",
+        "resolver_id": "auth:b.iana-servers.net@199.43.133.53",
+        "ttl": 86400,
+        "answers": [
+          "a.iana-servers.net.",
+          "b.iana-servers.net."
+        ],
+        "status": "OK",
+        "error": null,
+        "diagnostics": {
+          "transport": "udp",
+          "edns": 1232,
+          "rcode": 0,
+          "flags": 33792,
+          "retries": 0,
+          "attempts": [
+            {
+              "transport": "udp",
+              "edns": 1232,
+              "error": false
+            }
+          ],
+          "elapsed_ms": 0.0
+        }
+      },
+      {
+        "name": "example.com",
+        "rtype": "SOA",
+        "resolver_id": "auth:b.iana-servers.net@199.43.133.53",
+        "ttl": 3600,
+        "answers": [
+          "ns.icann.org. noc.dns.icann.org. 2025082288 7200 3600 1209600 3600"
+        ],
+        "status": "OK",
+        "error": null,
+        "diagnostics": {
+          "transport": "udp",
+          "edns": 1232,
+          "rcode": 0,
+          "flags": 33792,
+          "retries": 0,
+          "attempts": [
+            {
+              "transport": "udp",
+              "edns": 1232,
+              "error": false
+            }
+          ],
+          "elapsed_ms": 0.0
+        }
+      },
+      {
+        "name": "example.com",
+        "rtype": "TXT",
+        "resolver_id": "auth:b.iana-servers.net@199.43.133.53",
+        "ttl": 86400,
+        "answers": [
+          "\"_k2n1y4vw3qtb4skdx9e7dxt97qrmmq9\"",
+          "\"v=spf1 -all\""
+        ],
+        "status": "OK",
+        "error": null,
+        "diagnostics": {
+          "transport": "udp",
+          "edns": 1232,
+          "rcode": 0,
+          "flags": 33792,
+          "retries": 0,
+          "attempts": [
+            {
+              "transport": "udp",
+              "edns": 1232,
+              "error": false
+            }
+          ],
+          "elapsed_ms": 0.0
+        }
+      },
+      {
+        "name": "example.com",
+        "rtype": "A",
+        "resolver_id": "auth:b.iana-servers.net@2001:500:8d::53",
+        "ttl": 300,
+        "answers": [
+          "23.192.228.80",
+          "23.192.228.84",
+          "23.215.0.136",
+          "23.215.0.138",
+          "23.220.75.232",
+          "23.220.75.245"
+        ],
+        "status": "OK",
+        "error": null,
+        "diagnostics": {
+          "transport": "udp",
+          "edns": 1232,
+          "rcode": 0,
+          "flags": 33792,
+          "retries": 0,
+          "attempts": [
+            {
+              "transport": "udp",
+              "edns": 1232,
+              "error": false
+            }
+          ],
+          "elapsed_ms": 0.0
+        }
+      },
+      {
+        "name": "example.com",
+        "rtype": "AAAA",
+        "resolver_id": "auth:b.iana-servers.net@2001:500:8d::53",
+        "ttl": 300,
+        "answers": [
+          "2600:1406:5e00:6::17ce:bc12",
+          "2600:1406:5e00:6::17ce:bc1b",
+          "2600:1406:bc00:53::b81e:94c8",
+          "2600:1406:bc00:53::b81e:94ce",
+          "2600:1408:ec00:36::1736:7f24",
+          "2600:1408:ec00:36::1736:7f31"
+        ],
+        "status": "OK",
+        "error": null,
+        "diagnostics": {
+          "transport": "udp",
+          "edns": 1232,
+          "rcode": 0,
+          "flags": 33792,
+          "retries": 0,
+          "attempts": [
+            {
+              "transport": "udp",
+              "edns": 1232,
+              "error": false
+            }
+          ],
+          "elapsed_ms": 0.0
+        }
+      },
+      {
+        "name": "example.com",
+        "rtype": "CNAME",
+        "resolver_id": "auth:b.iana-servers.net@2001:500:8d::53",
+        "ttl": null,
+        "answers": [],
+        "status": "NODATA",
+        "error": null,
+        "diagnostics": {
+          "transport": "udp",
+          "edns": 1232,
+          "rcode": 0,
+          "flags": 33792,
+          "retries": 0,
+          "attempts": [
+            {
+              "transport": "udp",
+              "edns": 1232,
+              "error": false
+            }
+          ],
+          "elapsed_ms": 0.0
+        }
+      },
+      {
+        "name": "example.com",
+        "rtype": "MX",
+        "resolver_id": "auth:b.iana-servers.net@2001:500:8d::53",
+        "ttl": 86400,
+        "answers": [
+          "0 ."
+        ],
+        "status": "OK",
+        "error": null,
+        "diagnostics": {
+          "transport": "udp",
+          "edns": 1232,
+          "rcode": 0,
+          "flags": 33792,
+          "retries": 0,
+          "attempts": [
+            {
+              "transport": "udp",
+              "edns": 1232,
+              "error": false
+            }
+          ],
+          "elapsed_ms": 0.0
+        }
+      },
+      {
+        "name": "example.com",
+        "rtype": "NS",
+        "resolver_id": "auth:b.iana-servers.net@2001:500:8d::53",
+        "ttl": 86400,
+        "answers": [
+          "a.iana-servers.net.",
+          "b.iana-servers.net."
+        ],
+        "status": "OK",
+        "error": null,
+        "diagnostics": {
+          "transport": "udp",
+          "edns": 1232,
+          "rcode": 0,
+          "flags": 33792,
+          "retries": 0,
+          "attempts": [
+            {
+              "transport": "udp",
+              "edns": 1232,
+              "error": false
+            }
+          ],
+          "elapsed_ms": 0.0
+        }
+      },
+      {
+        "name": "example.com",
+        "rtype": "SOA",
+        "resolver_id": "auth:b.iana-servers.net@2001:500:8d::53",
+        "ttl": 3600,
+        "answers": [
+          "ns.icann.org. noc.dns.icann.org. 2025082288 7200 3600 1209600 3600"
+        ],
+        "status": "OK",
+        "error": null,
+        "diagnostics": {
+          "transport": "udp",
+          "edns": 1232,
+          "rcode": 0,
+          "flags": 33792,
+          "retries": 0,
+          "attempts": [
+            {
+              "transport": "udp",
+              "edns": 1232,
+              "error": false
+            }
+          ],
+          "elapsed_ms": 0.0
+        }
+      },
+      {
+        "name": "example.com",
+        "rtype": "TXT",
+        "resolver_id": "auth:b.iana-servers.net@2001:500:8d::53",
+        "ttl": 86400,
+        "answers": [
+          "\"_k2n1y4vw3qtb4skdx9e7dxt97qrmmq9\"",
+          "\"v=spf1 -all\""
+        ],
+        "status": "OK",
+        "error": null,
+        "diagnostics": {
+          "transport": "udp",
+          "edns": 1232,
+          "rcode": 0,
+          "flags": 33792,
+          "retries": 0,
+          "attempts": [
+            {
+              "transport": "udp",
+              "edns": 1232,
+              "error": false
+            }
+          ],
+          "elapsed_ms": 0.0
+        }
+      }
+    ],
+    "consistency": {
+      "example.com A": "CONSISTENT",
+      "example.com AAAA": "CONSISTENT",
+      "example.com CNAME": "CONSISTENT",
+      "example.com MX": "CONSISTENT",
+      "example.com NS": "CONSISTENT",
+      "example.com SOA": "CONSISTENT",
+      "example.com TXT": "CONSISTENT"
+    },
+    "weak_ttl": [],
+    "per_rr_verdict": {
+      "example.com A": "PASS",
+      "example.com AAAA": "PASS",
+      "example.com CNAME": "PASS",
+      "example.com MX": "PASS",
+      "example.com NS": "PASS",
+      "example.com SOA": "PASS",
+      "example.com TXT": "PASS"
+    },
+    "variance_note": null,
+    "auth_ttl_by_rr": {
+      "example.com A": 300,
+      "example.com AAAA": 300,
+      "example.com CNAME": null,
+      "example.com MX": 86400,
+      "example.com NS": 86400,
+      "example.com SOA": 3600,
+      "example.com TXT": 86400
+    },
+    "auth_union_present": true,
+    "auth_union_by_rr": {
+      "example.com A": [
+        "23.192.228.80",
+        "23.192.228.84",
+        "23.215.0.136",
+        "23.215.0.138",
+        "23.220.75.232",
+        "23.220.75.245"
+      ],
+      "example.com AAAA": [
+        "2600:1406:5e00:6::17ce:bc12",
+        "2600:1406:5e00:6::17ce:bc1b",
+        "2600:1406:bc00:53::b81e:94c8",
+        "2600:1406:bc00:53::b81e:94ce",
+        "2600:1408:ec00:36::1736:7f24",
+        "2600:1408:ec00:36::1736:7f31"
+      ],
+      "example.com MX": [
+        "0 ."
+      ],
+      "example.com TXT": [
+        "\"_k2n1y4vw3qtb4skdx9e7dxt97qrmmq9\"",
+        "\"v=spf1 -all\""
+      ],
+      "example.com NS": [
+        "a.iana-servers.net.",
+        "b.iana-servers.net."
+      ],
+      "example.com SOA": [
+        "ns.icann.org. noc.dns.icann.org. 2025082288 7200 3600 1209600 3600"
+      ]
+    },
+    "auth_union_size_by_rr": {
+      "example.com A": 6,
+      "example.com AAAA": 6,
+      "example.com MX": 1,
+      "example.com TXT": 2,
+      "example.com NS": 2,
+      "example.com SOA": 1
+    }
+  },
+  "dnssec": {
+    "ds_present": true,
+    "ds_match": false,
+    "dnskey_rrsig_valid": false,
+    "rrsig_expiry_hours": null,
+    "nsec_present": false,
+    "issues": [
+      "DNSKEY/RRSIG(DNSKEY) not retrievable from authoritative servers."
+    ],
+    "state": "SIGNED_BROKEN",
+    "summary": "FAIL"
+  },
+  "drift": {
+    "score": 0,
+    "added": {},
+    "removed": {},
+    "modified": {},
+    "diff_rows": []
+  },
+  "ns_health": null,
+  "summary": {
+    "pass_count": 7,
+    "warn_count": 0,
+    "fail_count": 1,
+    "started_at": 1762518674.7193708,
+    "duration_sec": 9.247601985931396,
+    "resolver_count": 7,
+    "records_scanned": 49
+  },
+  "errors": [],
+  "schema_version": "1.1",
+  "generator": "dns-navigator",
+  "run": {
+    "domain": "example.com",
+    "timestamp_utc": "2025-11-07T12:31:23Z",
+    "resolvers": [
+      "1.1.1.1",
+      "8.8.8.8",
+      "9.9.9.9",
+      "authoritative"
+    ],
+    "record_types": [
+      "A",
+      "AAAA",
+      "CNAME",
+      "MX",
+      "TXT",
+      "NS",
+      "SOA"
+    ],
+    "dnssec": {
+      "do": true,
+      "strict_alg": false
+    },
+    "timeouts": {
+      "connect_ms": 500,
+      "read_ms": 1500
+    },
+    "retries": 1,
+    "feature": {
+      "auth_union": true
+    },
+    "policy": {
+      "min_ttl": {
+        "A": 300,
+        "AAAA": 300,
+        "MX": 600,
+        "TXT": 300,
+        "NS": 86400,
+        "SOA": 300
+      },
+      "weights": {
+        "A": 2,
+        "AAAA": 2,
+        "SOA": 2,
+        "MX": 1,
+        "TXT": 1,
+        "NS": 1
+      },
+      "warn_labels": {
+        "weak_ttl": true,
+        "cdn_variance": true
+      }
+    }
+  }
+}

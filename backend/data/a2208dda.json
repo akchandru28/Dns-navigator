@@ -1,0 +1,1481 @@
+{
+  "run_id": "a2208dda",
+  "options": {
+    "domain": "http://google.com",
+    "resolvers": [
+      "1.1.1.1",
+      "8.8.8.8",
+      "9.9.9.9",
+      "authoritative"
+    ],
+    "record_types": [
+      "A",
+      "AAAA",
+      "CNAME",
+      "MX",
+      "TXT",
+      "NS",
+      "SOA"
+    ],
+    "dnssec": {
+      "do": true,
+      "strict_alg_match": false,
+      "expiry_threshold_hours": 48
+    },
+    "rate_limits": {
+      "max_qps": 20.0,
+      "timeout_sec": 4.0,
+      "retries": 1
+    },
+    "enable_axfr": false,
+    "axfr_timeout_sec": 8.0
+  },
+  "phase": "Reporting",
+  "progress": 85,
+  "meta": {
+    "started_at": 1762772970.567316,
+    "auth_ns": [],
+    "variance_explainer": "Variance across public resolvers is common for large CDNs. Confirm authoritatives agree.",
+    "run_verdict": "WARN",
+    "axfr_summary": null
+  },
+  "overview": {
+    "grid": [
+      {
+        "name": "http://google.com",
+        "rtype": "A",
+        "resolver_id": "1.1.1.1",
+        "ttl": null,
+        "answers": [],
+        "status": "NXDOMAIN",
+        "error": null,
+        "diagnostics": {
+          "transport": "udp",
+          "edns": 1232,
+          "rcode": 3,
+          "rcode_name": "NXDOMAIN",
+          "flags": 33155,
+          "retries": 0,
+          "attempts": [
+            {
+              "transport": "udp",
+              "edns": 1232,
+              "error": false,
+              "elapsed_ms": 92.67
+            }
+          ],
+          "elapsed_ms": 92.67,
+          "fallback_used": false
+        }
+      },
+      {
+        "name": "http://google.com",
+        "rtype": "AAAA",
+        "resolver_id": "1.1.1.1",
+        "ttl": null,
+        "answers": [],
+        "status": "NXDOMAIN",
+        "error": null,
+        "diagnostics": {
+          "transport": "udp",
+          "edns": 1232,
+          "rcode": 3,
+          "rcode_name": "NXDOMAIN",
+          "flags": 33155,
+          "retries": 0,
+          "attempts": [
+            {
+              "transport": "udp",
+              "edns": 1232,
+              "error": false,
+              "elapsed_ms": 94.98
+            }
+          ],
+          "elapsed_ms": 94.98,
+          "fallback_used": false
+        }
+      },
+      {
+        "name": "http://google.com",
+        "rtype": "CNAME",
+        "resolver_id": "1.1.1.1",
+        "ttl": null,
+        "answers": [],
+        "status": "NXDOMAIN",
+        "error": null,
+        "diagnostics": {
+          "transport": "udp",
+          "edns": 1232,
+          "rcode": 3,
+          "rcode_name": "NXDOMAIN",
+          "flags": 33155,
+          "retries": 0,
+          "attempts": [
+            {
+              "transport": "udp",
+              "edns": 1232,
+              "error": false,
+              "elapsed_ms": 95.25
+            }
+          ],
+          "elapsed_ms": 95.25,
+          "fallback_used": false
+        }
+      },
+      {
+        "name": "http://google.com",
+        "rtype": "MX",
+        "resolver_id": "1.1.1.1",
+        "ttl": null,
+        "answers": [],
+        "status": "NXDOMAIN",
+        "error": null,
+        "diagnostics": {
+          "transport": "udp",
+          "edns": 1232,
+          "rcode": 3,
+          "rcode_name": "NXDOMAIN",
+          "flags": 33155,
+          "retries": 0,
+          "attempts": [
+            {
+              "transport": "udp",
+              "edns": 1232,
+              "error": false,
+              "elapsed_ms": 90.03
+            }
+          ],
+          "elapsed_ms": 90.03,
+          "fallback_used": false
+        }
+      },
+      {
+        "name": "http://google.com",
+        "rtype": "NS",
+        "resolver_id": "1.1.1.1",
+        "ttl": null,
+        "answers": [],
+        "status": "NXDOMAIN",
+        "error": null,
+        "diagnostics": {
+          "transport": "udp",
+          "edns": 1232,
+          "rcode": 3,
+          "rcode_name": "NXDOMAIN",
+          "flags": 33155,
+          "retries": 0,
+          "attempts": [
+            {
+              "transport": "udp",
+              "edns": 1232,
+              "error": false,
+              "elapsed_ms": 94.88
+            }
+          ],
+          "elapsed_ms": 94.88,
+          "fallback_used": false
+        }
+      },
+      {
+        "name": "http://google.com",
+        "rtype": "SOA",
+        "resolver_id": "1.1.1.1",
+        "ttl": null,
+        "answers": [],
+        "status": "NXDOMAIN",
+        "error": null,
+        "diagnostics": {
+          "transport": "udp",
+          "edns": 1232,
+          "rcode": 3,
+          "rcode_name": "NXDOMAIN",
+          "flags": 33155,
+          "retries": 0,
+          "attempts": [
+            {
+              "transport": "udp",
+              "edns": 1232,
+              "error": false,
+              "elapsed_ms": 81.96
+            }
+          ],
+          "elapsed_ms": 81.96,
+          "fallback_used": false
+        }
+      },
+      {
+        "name": "http://google.com",
+        "rtype": "TXT",
+        "resolver_id": "1.1.1.1",
+        "ttl": null,
+        "answers": [],
+        "status": "NXDOMAIN",
+        "error": null,
+        "diagnostics": {
+          "transport": "udp",
+          "edns": 1232,
+          "rcode": 3,
+          "rcode_name": "NXDOMAIN",
+          "flags": 33155,
+          "retries": 0,
+          "attempts": [
+            {
+              "transport": "udp",
+              "edns": 1232,
+              "error": false,
+              "elapsed_ms": 98.96
+            }
+          ],
+          "elapsed_ms": 98.96,
+          "fallback_used": false
+        }
+      },
+      {
+        "name": "http://google.com",
+        "rtype": "A",
+        "resolver_id": "8.8.8.8",
+        "ttl": null,
+        "answers": [],
+        "status": "NXDOMAIN",
+        "error": null,
+        "diagnostics": {
+          "transport": "udp",
+          "edns": 1232,
+          "rcode": 3,
+          "rcode_name": "NXDOMAIN",
+          "flags": 33155,
+          "retries": 0,
+          "attempts": [
+            {
+              "transport": "udp",
+              "edns": 1232,
+              "error": false,
+              "elapsed_ms": 338.1
+            }
+          ],
+          "elapsed_ms": 338.1,
+          "fallback_used": false
+        }
+      },
+      {
+        "name": "http://google.com",
+        "rtype": "AAAA",
+        "resolver_id": "8.8.8.8",
+        "ttl": null,
+        "answers": [],
+        "status": "NXDOMAIN",
+        "error": null,
+        "diagnostics": {
+          "transport": "udp",
+          "edns": 1232,
+          "rcode": 3,
+          "rcode_name": "NXDOMAIN",
+          "flags": 33155,
+          "retries": 0,
+          "attempts": [
+            {
+              "transport": "udp",
+              "edns": 1232,
+              "error": false,
+              "elapsed_ms": 120.14
+            }
+          ],
+          "elapsed_ms": 120.14,
+          "fallback_used": false
+        }
+      },
+      {
+        "name": "http://google.com",
+        "rtype": "CNAME",
+        "resolver_id": "8.8.8.8",
+        "ttl": null,
+        "answers": [],
+        "status": "NXDOMAIN",
+        "error": null,
+        "diagnostics": {
+          "transport": "udp",
+          "edns": 0,
+          "rcode": 3,
+          "rcode_name": "NXDOMAIN",
+          "flags": 33155,
+          "retries": 1,
+          "attempts": [
+            {
+              "transport": "udp",
+              "edns": 1232,
+              "error": true,
+              "elapsed_ms": 4005.15
+            },
+            {
+              "transport": "udp",
+              "edns": 0,
+              "error": false,
+              "elapsed_ms": 112.89
+            }
+          ],
+          "elapsed_ms": 112.89,
+          "fallback_used": true
+        }
+      },
+      {
+        "name": "http://google.com",
+        "rtype": "MX",
+        "resolver_id": "8.8.8.8",
+        "ttl": null,
+        "answers": [],
+        "status": "NXDOMAIN",
+        "error": null,
+        "diagnostics": {
+          "transport": "udp",
+          "edns": 1232,
+          "rcode": 3,
+          "rcode_name": "NXDOMAIN",
+          "flags": 33155,
+          "retries": 0,
+          "attempts": [
+            {
+              "transport": "udp",
+              "edns": 1232,
+              "error": false,
+              "elapsed_ms": 326.95
+            }
+          ],
+          "elapsed_ms": 326.95,
+          "fallback_used": false
+        }
+      },
+      {
+        "name": "http://google.com",
+        "rtype": "NS",
+        "resolver_id": "8.8.8.8",
+        "ttl": null,
+        "answers": [],
+        "status": "NXDOMAIN",
+        "error": null,
+        "diagnostics": {
+          "transport": "udp",
+          "edns": 1232,
+          "rcode": 3,
+          "rcode_name": "NXDOMAIN",
+          "flags": 33155,
+          "retries": 0,
+          "attempts": [
+            {
+              "transport": "udp",
+              "edns": 1232,
+              "error": false,
+              "elapsed_ms": 127.06
+            }
+          ],
+          "elapsed_ms": 127.06,
+          "fallback_used": false
+        }
+      },
+      {
+        "name": "http://google.com",
+        "rtype": "SOA",
+        "resolver_id": "8.8.8.8",
+        "ttl": null,
+        "answers": [],
+        "status": "NXDOMAIN",
+        "error": null,
+        "diagnostics": {
+          "transport": "udp",
+          "edns": 1232,
+          "rcode": 3,
+          "rcode_name": "NXDOMAIN",
+          "flags": 33155,
+          "retries": 0,
+          "attempts": [
+            {
+              "transport": "udp",
+              "edns": 1232,
+              "error": false,
+              "elapsed_ms": 130.66
+            }
+          ],
+          "elapsed_ms": 130.66,
+          "fallback_used": false
+        }
+      },
+      {
+        "name": "http://google.com",
+        "rtype": "TXT",
+        "resolver_id": "8.8.8.8",
+        "ttl": null,
+        "answers": [],
+        "status": "NXDOMAIN",
+        "error": null,
+        "diagnostics": {
+          "transport": "udp",
+          "edns": 1232,
+          "rcode": 3,
+          "rcode_name": "NXDOMAIN",
+          "flags": 33155,
+          "retries": 0,
+          "attempts": [
+            {
+              "transport": "udp",
+              "edns": 1232,
+              "error": false,
+              "elapsed_ms": 251.26
+            }
+          ],
+          "elapsed_ms": 251.26,
+          "fallback_used": false
+        }
+      },
+      {
+        "name": "http://google.com",
+        "rtype": "A",
+        "resolver_id": "9.9.9.9",
+        "ttl": null,
+        "answers": [],
+        "status": "NXDOMAIN",
+        "error": null,
+        "diagnostics": {
+          "transport": "udp",
+          "edns": 1232,
+          "rcode": 3,
+          "rcode_name": "NXDOMAIN",
+          "flags": 33155,
+          "retries": 0,
+          "attempts": [
+            {
+              "transport": "udp",
+              "edns": 1232,
+              "error": false,
+              "elapsed_ms": 192.91
+            }
+          ],
+          "elapsed_ms": 192.91,
+          "fallback_used": false
+        }
+      },
+      {
+        "name": "http://google.com",
+        "rtype": "AAAA",
+        "resolver_id": "9.9.9.9",
+        "ttl": null,
+        "answers": [],
+        "status": "NXDOMAIN",
+        "error": null,
+        "diagnostics": {
+          "transport": "udp",
+          "edns": 1232,
+          "rcode": 3,
+          "rcode_name": "NXDOMAIN",
+          "flags": 33155,
+          "retries": 0,
+          "attempts": [
+            {
+              "transport": "udp",
+              "edns": 1232,
+              "error": false,
+              "elapsed_ms": 213.67
+            }
+          ],
+          "elapsed_ms": 213.67,
+          "fallback_used": false
+        }
+      },
+      {
+        "name": "http://google.com",
+        "rtype": "CNAME",
+        "resolver_id": "9.9.9.9",
+        "ttl": null,
+        "answers": [],
+        "status": "NXDOMAIN",
+        "error": null,
+        "diagnostics": {
+          "transport": "udp",
+          "edns": 1232,
+          "rcode": 3,
+          "rcode_name": "NXDOMAIN",
+          "flags": 33155,
+          "retries": 0,
+          "attempts": [
+            {
+              "transport": "udp",
+              "edns": 1232,
+              "error": false,
+              "elapsed_ms": 240.11
+            }
+          ],
+          "elapsed_ms": 240.11,
+          "fallback_used": false
+        }
+      },
+      {
+        "name": "http://google.com",
+        "rtype": "MX",
+        "resolver_id": "9.9.9.9",
+        "ttl": null,
+        "answers": [],
+        "status": "NXDOMAIN",
+        "error": null,
+        "diagnostics": {
+          "transport": "udp",
+          "edns": 1232,
+          "rcode": 3,
+          "rcode_name": "NXDOMAIN",
+          "flags": 33155,
+          "retries": 0,
+          "attempts": [
+            {
+              "transport": "udp",
+              "edns": 1232,
+              "error": false,
+              "elapsed_ms": 205.38
+            }
+          ],
+          "elapsed_ms": 205.38,
+          "fallback_used": false
+        }
+      },
+      {
+        "name": "http://google.com",
+        "rtype": "NS",
+        "resolver_id": "9.9.9.9",
+        "ttl": null,
+        "answers": [],
+        "status": "NXDOMAIN",
+        "error": null,
+        "diagnostics": {
+          "transport": "udp",
+          "edns": 1232,
+          "rcode": 3,
+          "rcode_name": "NXDOMAIN",
+          "flags": 33155,
+          "retries": 0,
+          "attempts": [
+            {
+              "transport": "udp",
+              "edns": 1232,
+              "error": false,
+              "elapsed_ms": 249.55
+            }
+          ],
+          "elapsed_ms": 249.55,
+          "fallback_used": false
+        }
+      },
+      {
+        "name": "http://google.com",
+        "rtype": "SOA",
+        "resolver_id": "9.9.9.9",
+        "ttl": null,
+        "answers": [],
+        "status": "NXDOMAIN",
+        "error": null,
+        "diagnostics": {
+          "transport": "udp",
+          "edns": 1232,
+          "rcode": 3,
+          "rcode_name": "NXDOMAIN",
+          "flags": 33155,
+          "retries": 0,
+          "attempts": [
+            {
+              "transport": "udp",
+              "edns": 1232,
+              "error": false,
+              "elapsed_ms": 224.82
+            }
+          ],
+          "elapsed_ms": 224.82,
+          "fallback_used": false
+        }
+      },
+      {
+        "name": "http://google.com",
+        "rtype": "TXT",
+        "resolver_id": "9.9.9.9",
+        "ttl": null,
+        "answers": [],
+        "status": "NXDOMAIN",
+        "error": null,
+        "diagnostics": {
+          "transport": "udp",
+          "edns": 1232,
+          "rcode": 3,
+          "rcode_name": "NXDOMAIN",
+          "flags": 33155,
+          "retries": 0,
+          "attempts": [
+            {
+              "transport": "udp",
+              "edns": 1232,
+              "error": false,
+              "elapsed_ms": 230.65
+            }
+          ],
+          "elapsed_ms": 230.65,
+          "fallback_used": false
+        }
+      }
+    ],
+    "consistency": {
+      "http://google.com A": "UNKNOWN",
+      "http://google.com AAAA": "UNKNOWN",
+      "http://google.com CNAME": "UNKNOWN",
+      "http://google.com MX": "UNKNOWN",
+      "http://google.com NS": "UNKNOWN",
+      "http://google.com SOA": "UNKNOWN",
+      "http://google.com TXT": "UNKNOWN"
+    },
+    "weak_ttl": [],
+    "per_rr_verdict": {
+      "http://google.com A": "WARN",
+      "http://google.com AAAA": "WARN",
+      "http://google.com CNAME": "WARN",
+      "http://google.com MX": "WARN",
+      "http://google.com NS": "WARN",
+      "http://google.com SOA": "WARN",
+      "http://google.com TXT": "WARN"
+    },
+    "variance_note": "Variance across public resolvers is common for large CDNs. Confirm authoritatives agree.",
+    "auth_ttl_by_rr": {
+      "http://google.com A": null,
+      "http://google.com AAAA": null,
+      "http://google.com CNAME": null,
+      "http://google.com MX": null,
+      "http://google.com NS": null,
+      "http://google.com SOA": null,
+      "http://google.com TXT": null
+    },
+    "auth_union_present": false,
+    "auth_union_by_rr": {},
+    "auth_union_size_by_rr": {},
+    "nxdomain_hotspots": [
+      {
+        "label": "http://google.com",
+        "rtype": "A",
+        "resolver_id": "1.1.1.1",
+        "count": 1,
+        "last_rcode": "NXDOMAIN",
+        "last_seen_ts": 1762772993.508
+      },
+      {
+        "label": "http://google.com",
+        "rtype": "AAAA",
+        "resolver_id": "1.1.1.1",
+        "count": 1,
+        "last_rcode": "NXDOMAIN",
+        "last_seen_ts": 1762772993.508
+      },
+      {
+        "label": "http://google.com",
+        "rtype": "CNAME",
+        "resolver_id": "1.1.1.1",
+        "count": 1,
+        "last_rcode": "NXDOMAIN",
+        "last_seen_ts": 1762772993.508
+      },
+      {
+        "label": "http://google.com",
+        "rtype": "MX",
+        "resolver_id": "1.1.1.1",
+        "count": 1,
+        "last_rcode": "NXDOMAIN",
+        "last_seen_ts": 1762772993.508
+      },
+      {
+        "label": "http://google.com",
+        "rtype": "NS",
+        "resolver_id": "1.1.1.1",
+        "count": 1,
+        "last_rcode": "NXDOMAIN",
+        "last_seen_ts": 1762772993.508
+      },
+      {
+        "label": "http://google.com",
+        "rtype": "SOA",
+        "resolver_id": "1.1.1.1",
+        "count": 1,
+        "last_rcode": "NXDOMAIN",
+        "last_seen_ts": 1762772993.508
+      },
+      {
+        "label": "http://google.com",
+        "rtype": "TXT",
+        "resolver_id": "1.1.1.1",
+        "count": 1,
+        "last_rcode": "NXDOMAIN",
+        "last_seen_ts": 1762772993.508
+      },
+      {
+        "label": "http://google.com",
+        "rtype": "A",
+        "resolver_id": "8.8.8.8",
+        "count": 1,
+        "last_rcode": "NXDOMAIN",
+        "last_seen_ts": 1762772993.508
+      },
+      {
+        "label": "http://google.com",
+        "rtype": "AAAA",
+        "resolver_id": "8.8.8.8",
+        "count": 1,
+        "last_rcode": "NXDOMAIN",
+        "last_seen_ts": 1762772993.508
+      },
+      {
+        "label": "http://google.com",
+        "rtype": "CNAME",
+        "resolver_id": "8.8.8.8",
+        "count": 1,
+        "last_rcode": "NXDOMAIN",
+        "last_seen_ts": 1762772993.508
+      },
+      {
+        "label": "http://google.com",
+        "rtype": "MX",
+        "resolver_id": "8.8.8.8",
+        "count": 1,
+        "last_rcode": "NXDOMAIN",
+        "last_seen_ts": 1762772993.508
+      },
+      {
+        "label": "http://google.com",
+        "rtype": "NS",
+        "resolver_id": "8.8.8.8",
+        "count": 1,
+        "last_rcode": "NXDOMAIN",
+        "last_seen_ts": 1762772993.508
+      },
+      {
+        "label": "http://google.com",
+        "rtype": "SOA",
+        "resolver_id": "8.8.8.8",
+        "count": 1,
+        "last_rcode": "NXDOMAIN",
+        "last_seen_ts": 1762772993.508
+      },
+      {
+        "label": "http://google.com",
+        "rtype": "TXT",
+        "resolver_id": "8.8.8.8",
+        "count": 1,
+        "last_rcode": "NXDOMAIN",
+        "last_seen_ts": 1762772993.508
+      },
+      {
+        "label": "http://google.com",
+        "rtype": "A",
+        "resolver_id": "9.9.9.9",
+        "count": 1,
+        "last_rcode": "NXDOMAIN",
+        "last_seen_ts": 1762772993.508
+      },
+      {
+        "label": "http://google.com",
+        "rtype": "AAAA",
+        "resolver_id": "9.9.9.9",
+        "count": 1,
+        "last_rcode": "NXDOMAIN",
+        "last_seen_ts": 1762772993.508
+      },
+      {
+        "label": "http://google.com",
+        "rtype": "CNAME",
+        "resolver_id": "9.9.9.9",
+        "count": 1,
+        "last_rcode": "NXDOMAIN",
+        "last_seen_ts": 1762772993.508
+      },
+      {
+        "label": "http://google.com",
+        "rtype": "MX",
+        "resolver_id": "9.9.9.9",
+        "count": 1,
+        "last_rcode": "NXDOMAIN",
+        "last_seen_ts": 1762772993.508
+      },
+      {
+        "label": "http://google.com",
+        "rtype": "NS",
+        "resolver_id": "9.9.9.9",
+        "count": 1,
+        "last_rcode": "NXDOMAIN",
+        "last_seen_ts": 1762772993.508
+      },
+      {
+        "label": "http://google.com",
+        "rtype": "SOA",
+        "resolver_id": "9.9.9.9",
+        "count": 1,
+        "last_rcode": "NXDOMAIN",
+        "last_seen_ts": 1762772993.508
+      },
+      {
+        "label": "http://google.com",
+        "rtype": "TXT",
+        "resolver_id": "9.9.9.9",
+        "count": 1,
+        "last_rcode": "NXDOMAIN",
+        "last_seen_ts": 1762772993.508
+      }
+    ]
+  },
+  "dnssec": {
+    "ds_present": false,
+    "ds_match": false,
+    "dnskey_rrsig_valid": false,
+    "rrsig_expiry_hours": null,
+    "nsec_present": false,
+    "issues": [],
+    "state": "UNSIGNED",
+    "summary": "PASS",
+    "probe_log": []
+  },
+  "drift": {
+    "score": 25,
+    "added": {
+      "http://google.com A": [],
+      "http://google.com AAAA": [],
+      "http://google.com CNAME": [],
+      "http://google.com MX": [],
+      "http://google.com NS": [],
+      "http://google.com SOA": [],
+      "http://google.com TXT": []
+    },
+    "removed": {},
+    "modified": {},
+    "diff_rows": [
+      {
+        "rr_key": "http://google.com A",
+        "resolver_id": "1.1.1.1",
+        "role": "public",
+        "answers": [],
+        "matches_authoritative": true,
+        "dig_cmd": "dig +norecurse @1.1.1.1 http://google.com A"
+      },
+      {
+        "rr_key": "http://google.com A",
+        "resolver_id": "8.8.8.8",
+        "role": "public",
+        "answers": [],
+        "matches_authoritative": true,
+        "dig_cmd": "dig +norecurse @8.8.8.8 http://google.com A"
+      },
+      {
+        "rr_key": "http://google.com A",
+        "resolver_id": "9.9.9.9",
+        "role": "public",
+        "answers": [],
+        "matches_authoritative": true,
+        "dig_cmd": "dig +norecurse @9.9.9.9 http://google.com A"
+      },
+      {
+        "rr_key": "http://google.com AAAA",
+        "resolver_id": "1.1.1.1",
+        "role": "public",
+        "answers": [],
+        "matches_authoritative": true,
+        "dig_cmd": "dig +norecurse @1.1.1.1 http://google.com AAAA"
+      },
+      {
+        "rr_key": "http://google.com AAAA",
+        "resolver_id": "8.8.8.8",
+        "role": "public",
+        "answers": [],
+        "matches_authoritative": true,
+        "dig_cmd": "dig +norecurse @8.8.8.8 http://google.com AAAA"
+      },
+      {
+        "rr_key": "http://google.com AAAA",
+        "resolver_id": "9.9.9.9",
+        "role": "public",
+        "answers": [],
+        "matches_authoritative": true,
+        "dig_cmd": "dig +norecurse @9.9.9.9 http://google.com AAAA"
+      },
+      {
+        "rr_key": "http://google.com CNAME",
+        "resolver_id": "1.1.1.1",
+        "role": "public",
+        "answers": [],
+        "matches_authoritative": true,
+        "dig_cmd": "dig +norecurse @1.1.1.1 http://google.com CNAME"
+      },
+      {
+        "rr_key": "http://google.com CNAME",
+        "resolver_id": "8.8.8.8",
+        "role": "public",
+        "answers": [],
+        "matches_authoritative": true,
+        "dig_cmd": "dig +norecurse @8.8.8.8 http://google.com CNAME"
+      },
+      {
+        "rr_key": "http://google.com CNAME",
+        "resolver_id": "9.9.9.9",
+        "role": "public",
+        "answers": [],
+        "matches_authoritative": true,
+        "dig_cmd": "dig +norecurse @9.9.9.9 http://google.com CNAME"
+      },
+      {
+        "rr_key": "http://google.com MX",
+        "resolver_id": "1.1.1.1",
+        "role": "public",
+        "answers": [],
+        "matches_authoritative": true,
+        "dig_cmd": "dig +norecurse @1.1.1.1 http://google.com MX"
+      },
+      {
+        "rr_key": "http://google.com MX",
+        "resolver_id": "8.8.8.8",
+        "role": "public",
+        "answers": [],
+        "matches_authoritative": true,
+        "dig_cmd": "dig +norecurse @8.8.8.8 http://google.com MX"
+      },
+      {
+        "rr_key": "http://google.com MX",
+        "resolver_id": "9.9.9.9",
+        "role": "public",
+        "answers": [],
+        "matches_authoritative": true,
+        "dig_cmd": "dig +norecurse @9.9.9.9 http://google.com MX"
+      },
+      {
+        "rr_key": "http://google.com NS",
+        "resolver_id": "1.1.1.1",
+        "role": "public",
+        "answers": [],
+        "matches_authoritative": true,
+        "dig_cmd": "dig +norecurse @1.1.1.1 http://google.com NS"
+      },
+      {
+        "rr_key": "http://google.com NS",
+        "resolver_id": "8.8.8.8",
+        "role": "public",
+        "answers": [],
+        "matches_authoritative": true,
+        "dig_cmd": "dig +norecurse @8.8.8.8 http://google.com NS"
+      },
+      {
+        "rr_key": "http://google.com NS",
+        "resolver_id": "9.9.9.9",
+        "role": "public",
+        "answers": [],
+        "matches_authoritative": true,
+        "dig_cmd": "dig +norecurse @9.9.9.9 http://google.com NS"
+      },
+      {
+        "rr_key": "http://google.com SOA",
+        "resolver_id": "1.1.1.1",
+        "role": "public",
+        "answers": [],
+        "matches_authoritative": true,
+        "dig_cmd": "dig +norecurse @1.1.1.1 http://google.com SOA"
+      },
+      {
+        "rr_key": "http://google.com SOA",
+        "resolver_id": "8.8.8.8",
+        "role": "public",
+        "answers": [],
+        "matches_authoritative": true,
+        "dig_cmd": "dig +norecurse @8.8.8.8 http://google.com SOA"
+      },
+      {
+        "rr_key": "http://google.com SOA",
+        "resolver_id": "9.9.9.9",
+        "role": "public",
+        "answers": [],
+        "matches_authoritative": true,
+        "dig_cmd": "dig +norecurse @9.9.9.9 http://google.com SOA"
+      },
+      {
+        "rr_key": "http://google.com TXT",
+        "resolver_id": "1.1.1.1",
+        "role": "public",
+        "answers": [],
+        "matches_authoritative": true,
+        "dig_cmd": "dig +norecurse @1.1.1.1 http://google.com TXT"
+      },
+      {
+        "rr_key": "http://google.com TXT",
+        "resolver_id": "8.8.8.8",
+        "role": "public",
+        "answers": [],
+        "matches_authoritative": true,
+        "dig_cmd": "dig +norecurse @8.8.8.8 http://google.com TXT"
+      },
+      {
+        "rr_key": "http://google.com TXT",
+        "resolver_id": "9.9.9.9",
+        "role": "public",
+        "answers": [],
+        "matches_authoritative": true,
+        "dig_cmd": "dig +norecurse @9.9.9.9 http://google.com TXT"
+      }
+    ]
+  },
+  "ns_health": {
+    "ns": []
+  },
+  "summary": {
+    "pass_count": 1,
+    "warn_count": 7,
+    "fail_count": 0,
+    "started_at": 1762772970.567316,
+    "duration_sec": 23.23368525505066,
+    "resolver_count": 3,
+    "records_scanned": 21,
+    "run_verdict": "WARN",
+    "issues": []
+  },
+  "errors": [],
+  "records": [
+    {
+      "qname": "http://google.com",
+      "qtype": "A",
+      "verdict": "WARN",
+      "consistency": "UNKNOWN",
+      "auth_union_present": false,
+      "authoritative_union": [],
+      "resolver_answers": [
+        {
+          "resolver_id": "1.1.1.1",
+          "role": "public",
+          "status": "NXDOMAIN",
+          "answers": [],
+          "issue": "No authoritative data captured for this RRset; comparison is advisory.",
+          "flags": {
+            "union_miss": false,
+            "no_contradictions": true,
+            "soa_ns_stable": true,
+            "resolvers_consistent": true
+          }
+        },
+        {
+          "resolver_id": "8.8.8.8",
+          "role": "public",
+          "status": "NXDOMAIN",
+          "answers": [],
+          "issue": "No authoritative data captured for this RRset; comparison is advisory.",
+          "flags": {
+            "union_miss": false,
+            "no_contradictions": true,
+            "soa_ns_stable": true,
+            "resolvers_consistent": true
+          }
+        },
+        {
+          "resolver_id": "9.9.9.9",
+          "role": "public",
+          "status": "NXDOMAIN",
+          "answers": [],
+          "issue": "No authoritative data captured for this RRset; comparison is advisory.",
+          "flags": {
+            "union_miss": false,
+            "no_contradictions": true,
+            "soa_ns_stable": true,
+            "resolvers_consistent": true
+          }
+        }
+      ],
+      "flags": {
+        "union_miss": false,
+        "no_contradictions": true,
+        "soa_ns_stable": true,
+        "resolvers_consistent": true
+      }
+    },
+    {
+      "qname": "http://google.com",
+      "qtype": "AAAA",
+      "verdict": "WARN",
+      "consistency": "UNKNOWN",
+      "auth_union_present": false,
+      "authoritative_union": [],
+      "resolver_answers": [
+        {
+          "resolver_id": "1.1.1.1",
+          "role": "public",
+          "status": "NXDOMAIN",
+          "answers": [],
+          "issue": "No authoritative data captured for this RRset; comparison is advisory.",
+          "flags": {
+            "union_miss": false,
+            "no_contradictions": true,
+            "soa_ns_stable": true,
+            "resolvers_consistent": true
+          }
+        },
+        {
+          "resolver_id": "8.8.8.8",
+          "role": "public",
+          "status": "NXDOMAIN",
+          "answers": [],
+          "issue": "No authoritative data captured for this RRset; comparison is advisory.",
+          "flags": {
+            "union_miss": false,
+            "no_contradictions": true,
+            "soa_ns_stable": true,
+            "resolvers_consistent": true
+          }
+        },
+        {
+          "resolver_id": "9.9.9.9",
+          "role": "public",
+          "status": "NXDOMAIN",
+          "answers": [],
+          "issue": "No authoritative data captured for this RRset; comparison is advisory.",
+          "flags": {
+            "union_miss": false,
+            "no_contradictions": true,
+            "soa_ns_stable": true,
+            "resolvers_consistent": true
+          }
+        }
+      ],
+      "flags": {
+        "union_miss": false,
+        "no_contradictions": true,
+        "soa_ns_stable": true,
+        "resolvers_consistent": true
+      }
+    },
+    {
+      "qname": "http://google.com",
+      "qtype": "CNAME",
+      "verdict": "WARN",
+      "consistency": "UNKNOWN",
+      "auth_union_present": false,
+      "authoritative_union": [],
+      "resolver_answers": [
+        {
+          "resolver_id": "1.1.1.1",
+          "role": "public",
+          "status": "NXDOMAIN",
+          "answers": [],
+          "issue": "No authoritative data captured for this RRset; comparison is advisory.",
+          "flags": {
+            "union_miss": false,
+            "no_contradictions": true,
+            "soa_ns_stable": true,
+            "resolvers_consistent": true
+          }
+        },
+        {
+          "resolver_id": "8.8.8.8",
+          "role": "public",
+          "status": "NXDOMAIN",
+          "answers": [],
+          "issue": "No authoritative data captured for this RRset; comparison is advisory.",
+          "flags": {
+            "union_miss": false,
+            "no_contradictions": true,
+            "soa_ns_stable": true,
+            "resolvers_consistent": true
+          }
+        },
+        {
+          "resolver_id": "9.9.9.9",
+          "role": "public",
+          "status": "NXDOMAIN",
+          "answers": [],
+          "issue": "No authoritative data captured for this RRset; comparison is advisory.",
+          "flags": {
+            "union_miss": false,
+            "no_contradictions": true,
+            "soa_ns_stable": true,
+            "resolvers_consistent": true
+          }
+        }
+      ],
+      "flags": {
+        "union_miss": false,
+        "no_contradictions": true,
+        "soa_ns_stable": true,
+        "resolvers_consistent": true
+      }
+    },
+    {
+      "qname": "http://google.com",
+      "qtype": "MX",
+      "verdict": "WARN",
+      "consistency": "UNKNOWN",
+      "auth_union_present": false,
+      "authoritative_union": [],
+      "resolver_answers": [
+        {
+          "resolver_id": "1.1.1.1",
+          "role": "public",
+          "status": "NXDOMAIN",
+          "answers": [],
+          "issue": "No authoritative data captured for this RRset; comparison is advisory.",
+          "flags": {
+            "union_miss": false,
+            "no_contradictions": true,
+            "soa_ns_stable": true,
+            "resolvers_consistent": true
+          }
+        },
+        {
+          "resolver_id": "8.8.8.8",
+          "role": "public",
+          "status": "NXDOMAIN",
+          "answers": [],
+          "issue": "No authoritative data captured for this RRset; comparison is advisory.",
+          "flags": {
+            "union_miss": false,
+            "no_contradictions": true,
+            "soa_ns_stable": true,
+            "resolvers_consistent": true
+          }
+        },
+        {
+          "resolver_id": "9.9.9.9",
+          "role": "public",
+          "status": "NXDOMAIN",
+          "answers": [],
+          "issue": "No authoritative data captured for this RRset; comparison is advisory.",
+          "flags": {
+            "union_miss": false,
+            "no_contradictions": true,
+            "soa_ns_stable": true,
+            "resolvers_consistent": true
+          }
+        }
+      ],
+      "flags": {
+        "union_miss": false,
+        "no_contradictions": true,
+        "soa_ns_stable": true,
+        "resolvers_consistent": true
+      }
+    },
+    {
+      "qname": "http://google.com",
+      "qtype": "NS",
+      "verdict": "WARN",
+      "consistency": "UNKNOWN",
+      "auth_union_present": false,
+      "authoritative_union": [],
+      "resolver_answers": [
+        {
+          "resolver_id": "1.1.1.1",
+          "role": "public",
+          "status": "NXDOMAIN",
+          "answers": [],
+          "issue": "No authoritative data captured for this RRset; comparison is advisory.",
+          "flags": {
+            "union_miss": false,
+            "no_contradictions": true,
+            "soa_ns_stable": true,
+            "resolvers_consistent": true
+          }
+        },
+        {
+          "resolver_id": "8.8.8.8",
+          "role": "public",
+          "status": "NXDOMAIN",
+          "answers": [],
+          "issue": "No authoritative data captured for this RRset; comparison is advisory.",
+          "flags": {
+            "union_miss": false,
+            "no_contradictions": true,
+            "soa_ns_stable": true,
+            "resolvers_consistent": true
+          }
+        },
+        {
+          "resolver_id": "9.9.9.9",
+          "role": "public",
+          "status": "NXDOMAIN",
+          "answers": [],
+          "issue": "No authoritative data captured for this RRset; comparison is advisory.",
+          "flags": {
+            "union_miss": false,
+            "no_contradictions": true,
+            "soa_ns_stable": true,
+            "resolvers_consistent": true
+          }
+        }
+      ],
+      "flags": {
+        "union_miss": false,
+        "no_contradictions": true,
+        "soa_ns_stable": true,
+        "resolvers_consistent": true
+      }
+    },
+    {
+      "qname": "http://google.com",
+      "qtype": "SOA",
+      "verdict": "WARN",
+      "consistency": "UNKNOWN",
+      "auth_union_present": false,
+      "authoritative_union": [],
+      "resolver_answers": [
+        {
+          "resolver_id": "1.1.1.1",
+          "role": "public",
+          "status": "NXDOMAIN",
+          "answers": [],
+          "issue": "No authoritative data captured for this RRset; comparison is advisory.",
+          "flags": {
+            "union_miss": false,
+            "no_contradictions": true,
+            "soa_ns_stable": true,
+            "resolvers_consistent": true
+          }
+        },
+        {
+          "resolver_id": "8.8.8.8",
+          "role": "public",
+          "status": "NXDOMAIN",
+          "answers": [],
+          "issue": "No authoritative data captured for this RRset; comparison is advisory.",
+          "flags": {
+            "union_miss": false,
+            "no_contradictions": true,
+            "soa_ns_stable": true,
+            "resolvers_consistent": true
+          }
+        },
+        {
+          "resolver_id": "9.9.9.9",
+          "role": "public",
+          "status": "NXDOMAIN",
+          "answers": [],
+          "issue": "No authoritative data captured for this RRset; comparison is advisory.",
+          "flags": {
+            "union_miss": false,
+            "no_contradictions": true,
+            "soa_ns_stable": true,
+            "resolvers_consistent": true
+          }
+        }
+      ],
+      "flags": {
+        "union_miss": false,
+        "no_contradictions": true,
+        "soa_ns_stable": true,
+        "resolvers_consistent": true
+      }
+    },
+    {
+      "qname": "http://google.com",
+      "qtype": "TXT",
+      "verdict": "WARN",
+      "consistency": "UNKNOWN",
+      "auth_union_present": false,
+      "authoritative_union": [],
+      "resolver_answers": [
+        {
+          "resolver_id": "1.1.1.1",
+          "role": "public",
+          "status": "NXDOMAIN",
+          "answers": [],
+          "issue": "No authoritative data captured for this RRset; comparison is advisory.",
+          "flags": {
+            "union_miss": false,
+            "no_contradictions": true,
+            "soa_ns_stable": true,
+            "resolvers_consistent": true
+          }
+        },
+        {
+          "resolver_id": "8.8.8.8",
+          "role": "public",
+          "status": "NXDOMAIN",
+          "answers": [],
+          "issue": "No authoritative data captured for this RRset; comparison is advisory.",
+          "flags": {
+            "union_miss": false,
+            "no_contradictions": true,
+            "soa_ns_stable": true,
+            "resolvers_consistent": true
+          }
+        },
+        {
+          "resolver_id": "9.9.9.9",
+          "role": "public",
+          "status": "NXDOMAIN",
+          "answers": [],
+          "issue": "No authoritative data captured for this RRset; comparison is advisory.",
+          "flags": {
+            "union_miss": false,
+            "no_contradictions": true,
+            "soa_ns_stable": true,
+            "resolvers_consistent": true
+          }
+        }
+      ],
+      "flags": {
+        "union_miss": false,
+        "no_contradictions": true,
+        "soa_ns_stable": true,
+        "resolvers_consistent": true
+      }
+    }
+  ],
+  "axfr_results": [],
+  "schema_version": "1.3",
+  "generator": "dns-navigator",
+  "run": {
+    "domain": "http://google.com",
+    "timestamp_utc": "2025-11-10T11:09:53Z",
+    "resolvers": [
+      "1.1.1.1",
+      "8.8.8.8",
+      "9.9.9.9",
+      "authoritative"
+    ],
+    "record_types": [
+      "A",
+      "AAAA",
+      "CNAME",
+      "MX",
+      "TXT",
+      "NS",
+      "SOA"
+    ],
+    "dnssec": {
+      "do": true,
+      "strict_alg": false
+    },
+    "timeouts": {
+      "connect_ms": 500,
+      "read_ms": 1500
+    },
+    "retries": 1,
+    "feature": {
+      "auth_union": true
+    },
+    "policy": {
+      "min_ttl": {
+        "A": 300,
+        "AAAA": 300,
+        "MX": 600,
+        "TXT": 300,
+        "NS": 86400,
+        "SOA": 300
+      },
+      "weights": {
+        "A": 2,
+        "AAAA": 2,
+        "SOA": 2,
+        "MX": 1,
+        "TXT": 1,
+        "NS": 1
+      },
+      "warn_labels": {
+        "weak_ttl": true,
+        "cdn_variance": true
+      },
+      "drift": {
+        "tolerant_mode": true
+      }
+    },
+    "axfr": {
+      "enabled": false,
+      "timeout_sec": 8.0
+    }
+  }
+}

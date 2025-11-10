@@ -1,0 +1,927 @@
+{
+  "run_id": "add81eb1",
+  "options": {
+    "domain": "dnssec-failed.org",
+    "resolvers": [
+      "1.1.1.1",
+      "8.8.8.8",
+      "9.9.9.9",
+      "authoritative"
+    ],
+    "record_types": [
+      "A",
+      "AAAA",
+      "CNAME",
+      "MX",
+      "TXT",
+      "NS",
+      "SOA"
+    ],
+    "dnssec": {
+      "do": true,
+      "strict_alg_match": false,
+      "expiry_threshold_hours": 48
+    },
+    "rate_limits": {
+      "max_qps": 20.0,
+      "timeout_sec": 4.0,
+      "retries": 1
+    },
+    "enable_axfr": false,
+    "axfr_timeout_sec": 8.0
+  },
+  "phase": "Reporting",
+  "progress": 85,
+  "meta": {
+    "started_at": 1762765915.464305,
+    "auth_ns": [],
+    "run_verdict": "FAIL",
+    "axfr_summary": null
+  },
+  "overview": {
+    "grid": [
+      {
+        "name": "dnssec-failed.org",
+        "rtype": "A",
+        "resolver_id": "1.1.1.1",
+        "ttl": null,
+        "answers": [],
+        "status": "ERR",
+        "error": null,
+        "diagnostics": {
+          "transport": "udp",
+          "edns": 1232,
+          "rcode": 2,
+          "rcode_name": "SERVFAIL",
+          "flags": 33154,
+          "retries": 0,
+          "attempts": [
+            {
+              "transport": "udp",
+              "edns": 1232,
+              "error": false,
+              "elapsed_ms": 755.81
+            }
+          ],
+          "elapsed_ms": 755.81,
+          "fallback_used": false
+        }
+      },
+      {
+        "name": "dnssec-failed.org",
+        "rtype": "AAAA",
+        "resolver_id": "1.1.1.1",
+        "ttl": null,
+        "answers": [],
+        "status": "ERR",
+        "error": null,
+        "diagnostics": {
+          "transport": "udp",
+          "edns": 1232,
+          "rcode": 2,
+          "rcode_name": "SERVFAIL",
+          "flags": 33154,
+          "retries": 0,
+          "attempts": [
+            {
+              "transport": "udp",
+              "edns": 1232,
+              "error": false,
+              "elapsed_ms": 767.97
+            }
+          ],
+          "elapsed_ms": 767.97,
+          "fallback_used": false
+        }
+      },
+      {
+        "name": "dnssec-failed.org",
+        "rtype": "CNAME",
+        "resolver_id": "1.1.1.1",
+        "ttl": null,
+        "answers": [],
+        "status": "ERR",
+        "error": null,
+        "diagnostics": {
+          "transport": "udp",
+          "edns": 1232,
+          "rcode": 2,
+          "rcode_name": "SERVFAIL",
+          "flags": 33154,
+          "retries": 0,
+          "attempts": [
+            {
+              "transport": "udp",
+              "edns": 1232,
+              "error": false,
+              "elapsed_ms": 1124.36
+            }
+          ],
+          "elapsed_ms": 1124.36,
+          "fallback_used": false
+        }
+      },
+      {
+        "name": "dnssec-failed.org",
+        "rtype": "MX",
+        "resolver_id": "1.1.1.1",
+        "ttl": null,
+        "answers": [],
+        "status": "ERR",
+        "error": null,
+        "diagnostics": {
+          "transport": "udp",
+          "edns": 1232,
+          "rcode": 2,
+          "rcode_name": "SERVFAIL",
+          "flags": 33154,
+          "retries": 0,
+          "attempts": [
+            {
+              "transport": "udp",
+              "edns": 1232,
+              "error": false,
+              "elapsed_ms": 1129.58
+            }
+          ],
+          "elapsed_ms": 1129.58,
+          "fallback_used": false
+        }
+      },
+      {
+        "name": "dnssec-failed.org",
+        "rtype": "NS",
+        "resolver_id": "1.1.1.1",
+        "ttl": null,
+        "answers": [],
+        "status": "ERR",
+        "error": null,
+        "diagnostics": {
+          "transport": "udp",
+          "edns": 1232,
+          "rcode": 2,
+          "rcode_name": "SERVFAIL",
+          "flags": 33154,
+          "retries": 0,
+          "attempts": [
+            {
+              "transport": "udp",
+              "edns": 1232,
+              "error": false,
+              "elapsed_ms": 1121.78
+            }
+          ],
+          "elapsed_ms": 1121.78,
+          "fallback_used": false
+        }
+      },
+      {
+        "name": "dnssec-failed.org",
+        "rtype": "SOA",
+        "resolver_id": "1.1.1.1",
+        "ttl": null,
+        "answers": [],
+        "status": "ERR",
+        "error": null,
+        "diagnostics": {
+          "transport": "udp",
+          "edns": 1232,
+          "rcode": 2,
+          "rcode_name": "SERVFAIL",
+          "flags": 33154,
+          "retries": 0,
+          "attempts": [
+            {
+              "transport": "udp",
+              "edns": 1232,
+              "error": false,
+              "elapsed_ms": 762.72
+            }
+          ],
+          "elapsed_ms": 762.72,
+          "fallback_used": false
+        }
+      },
+      {
+        "name": "dnssec-failed.org",
+        "rtype": "TXT",
+        "resolver_id": "1.1.1.1",
+        "ttl": null,
+        "answers": [],
+        "status": "ERR",
+        "error": null,
+        "diagnostics": {
+          "transport": "udp",
+          "edns": 1232,
+          "rcode": 2,
+          "rcode_name": "SERVFAIL",
+          "flags": 33154,
+          "retries": 0,
+          "attempts": [
+            {
+              "transport": "udp",
+              "edns": 1232,
+              "error": false,
+              "elapsed_ms": 764.7
+            }
+          ],
+          "elapsed_ms": 764.7,
+          "fallback_used": false
+        }
+      },
+      {
+        "name": "dnssec-failed.org",
+        "rtype": "A",
+        "resolver_id": "8.8.8.8",
+        "ttl": null,
+        "answers": [],
+        "status": "ERR",
+        "error": null,
+        "diagnostics": {
+          "transport": "udp",
+          "edns": 1232,
+          "rcode": 2,
+          "rcode_name": "SERVFAIL",
+          "flags": 33154,
+          "retries": 0,
+          "attempts": [
+            {
+              "transport": "udp",
+              "edns": 1232,
+              "error": false,
+              "elapsed_ms": 618.41
+            }
+          ],
+          "elapsed_ms": 618.41,
+          "fallback_used": false
+        }
+      },
+      {
+        "name": "dnssec-failed.org",
+        "rtype": "AAAA",
+        "resolver_id": "8.8.8.8",
+        "ttl": null,
+        "answers": [],
+        "status": "ERR",
+        "error": null,
+        "diagnostics": {
+          "transport": "udp",
+          "edns": 1232,
+          "rcode": 2,
+          "rcode_name": "SERVFAIL",
+          "flags": 33154,
+          "retries": 0,
+          "attempts": [
+            {
+              "transport": "udp",
+              "edns": 1232,
+              "error": false,
+              "elapsed_ms": 624.46
+            }
+          ],
+          "elapsed_ms": 624.46,
+          "fallback_used": false
+        }
+      },
+      {
+        "name": "dnssec-failed.org",
+        "rtype": "CNAME",
+        "resolver_id": "8.8.8.8",
+        "ttl": null,
+        "answers": [],
+        "status": "ERR",
+        "error": null,
+        "diagnostics": {
+          "transport": "udp",
+          "edns": 1232,
+          "rcode": 2,
+          "rcode_name": "SERVFAIL",
+          "flags": 33154,
+          "retries": 0,
+          "attempts": [
+            {
+              "transport": "udp",
+              "edns": 1232,
+              "error": false,
+              "elapsed_ms": 603.42
+            }
+          ],
+          "elapsed_ms": 603.42,
+          "fallback_used": false
+        }
+      },
+      {
+        "name": "dnssec-failed.org",
+        "rtype": "MX",
+        "resolver_id": "8.8.8.8",
+        "ttl": null,
+        "answers": [],
+        "status": "ERR",
+        "error": null,
+        "diagnostics": {
+          "transport": "udp",
+          "edns": 1232,
+          "rcode": 2,
+          "rcode_name": "SERVFAIL",
+          "flags": 33154,
+          "retries": 0,
+          "attempts": [
+            {
+              "transport": "udp",
+              "edns": 1232,
+              "error": false,
+              "elapsed_ms": 731.91
+            }
+          ],
+          "elapsed_ms": 731.91,
+          "fallback_used": false
+        }
+      },
+      {
+        "name": "dnssec-failed.org",
+        "rtype": "NS",
+        "resolver_id": "8.8.8.8",
+        "ttl": null,
+        "answers": [],
+        "status": "ERR",
+        "error": null,
+        "diagnostics": {
+          "transport": "udp",
+          "edns": 1232,
+          "rcode": 2,
+          "rcode_name": "SERVFAIL",
+          "flags": 33154,
+          "retries": 0,
+          "attempts": [
+            {
+              "transport": "udp",
+              "edns": 1232,
+              "error": false,
+              "elapsed_ms": 664.92
+            }
+          ],
+          "elapsed_ms": 664.92,
+          "fallback_used": false
+        }
+      },
+      {
+        "name": "dnssec-failed.org",
+        "rtype": "SOA",
+        "resolver_id": "8.8.8.8",
+        "ttl": null,
+        "answers": [],
+        "status": "ERR",
+        "error": null,
+        "diagnostics": {
+          "transport": "udp",
+          "edns": 1232,
+          "rcode": 2,
+          "rcode_name": "SERVFAIL",
+          "flags": 33154,
+          "retries": 0,
+          "attempts": [
+            {
+              "transport": "udp",
+              "edns": 1232,
+              "error": false,
+              "elapsed_ms": 602.33
+            }
+          ],
+          "elapsed_ms": 602.33,
+          "fallback_used": false
+        }
+      },
+      {
+        "name": "dnssec-failed.org",
+        "rtype": "TXT",
+        "resolver_id": "8.8.8.8",
+        "ttl": null,
+        "answers": [],
+        "status": "ERR",
+        "error": null,
+        "diagnostics": {
+          "transport": "udp",
+          "edns": 1232,
+          "rcode": 2,
+          "rcode_name": "SERVFAIL",
+          "flags": 33154,
+          "retries": 0,
+          "attempts": [
+            {
+              "transport": "udp",
+              "edns": 1232,
+              "error": false,
+              "elapsed_ms": 1125.53
+            }
+          ],
+          "elapsed_ms": 1125.53,
+          "fallback_used": false
+        }
+      },
+      {
+        "name": "dnssec-failed.org",
+        "rtype": "A",
+        "resolver_id": "9.9.9.9",
+        "ttl": null,
+        "answers": [],
+        "status": "ERR",
+        "error": null,
+        "diagnostics": {
+          "transport": "udp",
+          "edns": 1232,
+          "rcode": 2,
+          "rcode_name": "SERVFAIL",
+          "flags": 33154,
+          "retries": 0,
+          "attempts": [
+            {
+              "transport": "udp",
+              "edns": 1232,
+              "error": false,
+              "elapsed_ms": 59.37
+            }
+          ],
+          "elapsed_ms": 59.37,
+          "fallback_used": false
+        }
+      },
+      {
+        "name": "dnssec-failed.org",
+        "rtype": "AAAA",
+        "resolver_id": "9.9.9.9",
+        "ttl": null,
+        "answers": [],
+        "status": "ERR",
+        "error": null,
+        "diagnostics": {
+          "transport": "udp",
+          "edns": 1232,
+          "rcode": 2,
+          "rcode_name": "SERVFAIL",
+          "flags": 33154,
+          "retries": 0,
+          "attempts": [
+            {
+              "transport": "udp",
+              "edns": 1232,
+              "error": false,
+              "elapsed_ms": 1692.51
+            }
+          ],
+          "elapsed_ms": 1692.51,
+          "fallback_used": false
+        }
+      },
+      {
+        "name": "dnssec-failed.org",
+        "rtype": "CNAME",
+        "resolver_id": "9.9.9.9",
+        "ttl": null,
+        "answers": [],
+        "status": "ERR",
+        "error": null,
+        "diagnostics": {
+          "transport": "udp",
+          "edns": 0,
+          "rcode": 2,
+          "rcode_name": "SERVFAIL",
+          "flags": 33154,
+          "retries": 1,
+          "attempts": [
+            {
+              "transport": "udp",
+              "edns": 1232,
+              "error": true,
+              "elapsed_ms": 4008.88
+            },
+            {
+              "transport": "udp",
+              "edns": 0,
+              "error": false,
+              "elapsed_ms": 49.49
+            }
+          ],
+          "elapsed_ms": 49.49,
+          "fallback_used": true
+        }
+      },
+      {
+        "name": "dnssec-failed.org",
+        "rtype": "MX",
+        "resolver_id": "9.9.9.9",
+        "ttl": null,
+        "answers": [],
+        "status": "ERR",
+        "error": null,
+        "diagnostics": {
+          "transport": "udp",
+          "edns": 1232,
+          "rcode": 2,
+          "rcode_name": "SERVFAIL",
+          "flags": 33154,
+          "retries": 0,
+          "attempts": [
+            {
+              "transport": "udp",
+              "edns": 1232,
+              "error": false,
+              "elapsed_ms": 622.25
+            }
+          ],
+          "elapsed_ms": 622.25,
+          "fallback_used": false
+        }
+      },
+      {
+        "name": "dnssec-failed.org",
+        "rtype": "NS",
+        "resolver_id": "9.9.9.9",
+        "ttl": null,
+        "answers": [],
+        "status": "ERR",
+        "error": null,
+        "diagnostics": {
+          "transport": "udp",
+          "edns": 1232,
+          "rcode": 2,
+          "rcode_name": "SERVFAIL",
+          "flags": 33154,
+          "retries": 0,
+          "attempts": [
+            {
+              "transport": "udp",
+              "edns": 1232,
+              "error": false,
+              "elapsed_ms": 610.28
+            }
+          ],
+          "elapsed_ms": 610.28,
+          "fallback_used": false
+        }
+      },
+      {
+        "name": "dnssec-failed.org",
+        "rtype": "SOA",
+        "resolver_id": "9.9.9.9",
+        "ttl": null,
+        "answers": [],
+        "status": "ERR",
+        "error": null,
+        "diagnostics": {
+          "transport": "udp",
+          "edns": 1232,
+          "rcode": 2,
+          "rcode_name": "SERVFAIL",
+          "flags": 33154,
+          "retries": 0,
+          "attempts": [
+            {
+              "transport": "udp",
+              "edns": 1232,
+              "error": false,
+              "elapsed_ms": 627.7
+            }
+          ],
+          "elapsed_ms": 627.7,
+          "fallback_used": false
+        }
+      },
+      {
+        "name": "dnssec-failed.org",
+        "rtype": "TXT",
+        "resolver_id": "9.9.9.9",
+        "ttl": null,
+        "answers": [],
+        "status": "ERR",
+        "error": null,
+        "diagnostics": {
+          "transport": "udp",
+          "edns": 0,
+          "rcode": 2,
+          "rcode_name": "SERVFAIL",
+          "flags": 33154,
+          "retries": 1,
+          "attempts": [
+            {
+              "transport": "udp",
+              "edns": 1232,
+              "error": true,
+              "elapsed_ms": 3985.13
+            },
+            {
+              "transport": "udp",
+              "edns": 0,
+              "error": false,
+              "elapsed_ms": 393.55
+            }
+          ],
+          "elapsed_ms": 393.55,
+          "fallback_used": true
+        }
+      }
+    ],
+    "consistency": {
+      "dnssec-failed.org A": "CONSISTENT",
+      "dnssec-failed.org AAAA": "CONSISTENT",
+      "dnssec-failed.org CNAME": "CONSISTENT",
+      "dnssec-failed.org MX": "CONSISTENT",
+      "dnssec-failed.org NS": "CONSISTENT",
+      "dnssec-failed.org SOA": "CONSISTENT",
+      "dnssec-failed.org TXT": "CONSISTENT"
+    },
+    "weak_ttl": [],
+    "per_rr_verdict": {
+      "dnssec-failed.org A": "PASS",
+      "dnssec-failed.org AAAA": "PASS",
+      "dnssec-failed.org CNAME": "PASS",
+      "dnssec-failed.org MX": "PASS",
+      "dnssec-failed.org NS": "PASS",
+      "dnssec-failed.org SOA": "PASS",
+      "dnssec-failed.org TXT": "PASS"
+    },
+    "variance_note": null,
+    "auth_ttl_by_rr": {
+      "dnssec-failed.org A": null,
+      "dnssec-failed.org AAAA": null,
+      "dnssec-failed.org CNAME": null,
+      "dnssec-failed.org MX": null,
+      "dnssec-failed.org NS": null,
+      "dnssec-failed.org SOA": null,
+      "dnssec-failed.org TXT": null
+    },
+    "auth_union_present": false,
+    "auth_union_by_rr": {},
+    "auth_union_size_by_rr": {},
+    "nxdomain_hotspots": [
+      {
+        "label": "dnssec-failed.org",
+        "rtype": "A",
+        "resolver_id": "1.1.1.1",
+        "count": 1,
+        "last_rcode": "SERVFAIL",
+        "last_seen_ts": 1762765927.4919415
+      },
+      {
+        "label": "dnssec-failed.org",
+        "rtype": "AAAA",
+        "resolver_id": "1.1.1.1",
+        "count": 1,
+        "last_rcode": "SERVFAIL",
+        "last_seen_ts": 1762765927.4919415
+      },
+      {
+        "label": "dnssec-failed.org",
+        "rtype": "CNAME",
+        "resolver_id": "1.1.1.1",
+        "count": 1,
+        "last_rcode": "SERVFAIL",
+        "last_seen_ts": 1762765927.4919415
+      },
+      {
+        "label": "dnssec-failed.org",
+        "rtype": "MX",
+        "resolver_id": "1.1.1.1",
+        "count": 1,
+        "last_rcode": "SERVFAIL",
+        "last_seen_ts": 1762765927.4919415
+      },
+      {
+        "label": "dnssec-failed.org",
+        "rtype": "NS",
+        "resolver_id": "1.1.1.1",
+        "count": 1,
+        "last_rcode": "SERVFAIL",
+        "last_seen_ts": 1762765927.4919415
+      },
+      {
+        "label": "dnssec-failed.org",
+        "rtype": "SOA",
+        "resolver_id": "1.1.1.1",
+        "count": 1,
+        "last_rcode": "SERVFAIL",
+        "last_seen_ts": 1762765927.4919415
+      },
+      {
+        "label": "dnssec-failed.org",
+        "rtype": "TXT",
+        "resolver_id": "1.1.1.1",
+        "count": 1,
+        "last_rcode": "SERVFAIL",
+        "last_seen_ts": 1762765927.4919415
+      },
+      {
+        "label": "dnssec-failed.org",
+        "rtype": "A",
+        "resolver_id": "8.8.8.8",
+        "count": 1,
+        "last_rcode": "SERVFAIL",
+        "last_seen_ts": 1762765927.4919415
+      },
+      {
+        "label": "dnssec-failed.org",
+        "rtype": "AAAA",
+        "resolver_id": "8.8.8.8",
+        "count": 1,
+        "last_rcode": "SERVFAIL",
+        "last_seen_ts": 1762765927.4919415
+      },
+      {
+        "label": "dnssec-failed.org",
+        "rtype": "CNAME",
+        "resolver_id": "8.8.8.8",
+        "count": 1,
+        "last_rcode": "SERVFAIL",
+        "last_seen_ts": 1762765927.4919415
+      },
+      {
+        "label": "dnssec-failed.org",
+        "rtype": "MX",
+        "resolver_id": "8.8.8.8",
+        "count": 1,
+        "last_rcode": "SERVFAIL",
+        "last_seen_ts": 1762765927.4919415
+      },
+      {
+        "label": "dnssec-failed.org",
+        "rtype": "NS",
+        "resolver_id": "8.8.8.8",
+        "count": 1,
+        "last_rcode": "SERVFAIL",
+        "last_seen_ts": 1762765927.4919415
+      },
+      {
+        "label": "dnssec-failed.org",
+        "rtype": "SOA",
+        "resolver_id": "8.8.8.8",
+        "count": 1,
+        "last_rcode": "SERVFAIL",
+        "last_seen_ts": 1762765927.4919415
+      },
+      {
+        "label": "dnssec-failed.org",
+        "rtype": "TXT",
+        "resolver_id": "8.8.8.8",
+        "count": 1,
+        "last_rcode": "SERVFAIL",
+        "last_seen_ts": 1762765927.4919415
+      },
+      {
+        "label": "dnssec-failed.org",
+        "rtype": "A",
+        "resolver_id": "9.9.9.9",
+        "count": 1,
+        "last_rcode": "SERVFAIL",
+        "last_seen_ts": 1762765927.4919415
+      },
+      {
+        "label": "dnssec-failed.org",
+        "rtype": "AAAA",
+        "resolver_id": "9.9.9.9",
+        "count": 1,
+        "last_rcode": "SERVFAIL",
+        "last_seen_ts": 1762765927.4919415
+      },
+      {
+        "label": "dnssec-failed.org",
+        "rtype": "CNAME",
+        "resolver_id": "9.9.9.9",
+        "count": 1,
+        "last_rcode": "SERVFAIL",
+        "last_seen_ts": 1762765927.4919415
+      },
+      {
+        "label": "dnssec-failed.org",
+        "rtype": "MX",
+        "resolver_id": "9.9.9.9",
+        "count": 1,
+        "last_rcode": "SERVFAIL",
+        "last_seen_ts": 1762765927.4919415
+      },
+      {
+        "label": "dnssec-failed.org",
+        "rtype": "NS",
+        "resolver_id": "9.9.9.9",
+        "count": 1,
+        "last_rcode": "SERVFAIL",
+        "last_seen_ts": 1762765927.4919415
+      },
+      {
+        "label": "dnssec-failed.org",
+        "rtype": "SOA",
+        "resolver_id": "9.9.9.9",
+        "count": 1,
+        "last_rcode": "SERVFAIL",
+        "last_seen_ts": 1762765927.4919415
+      },
+      {
+        "label": "dnssec-failed.org",
+        "rtype": "TXT",
+        "resolver_id": "9.9.9.9",
+        "count": 1,
+        "last_rcode": "SERVFAIL",
+        "last_seen_ts": 1762765927.4919415
+      }
+    ]
+  },
+  "dnssec": {
+    "ds_present": true,
+    "ds_match": false,
+    "dnskey_rrsig_valid": false,
+    "rrsig_expiry_hours": null,
+    "nsec_present": false,
+    "issues": [
+      "No authoritative nameserver IPs provided."
+    ],
+    "state": "SIGNED_BROKEN",
+    "summary": "FAIL",
+    "probe_log": []
+  },
+  "drift": {
+    "score": 0,
+    "added": {
+      "dnssec-failed.org A": [],
+      "dnssec-failed.org AAAA": [],
+      "dnssec-failed.org CNAME": [],
+      "dnssec-failed.org MX": [],
+      "dnssec-failed.org NS": [],
+      "dnssec-failed.org SOA": [],
+      "dnssec-failed.org TXT": []
+    },
+    "removed": {},
+    "modified": {},
+    "diff_rows": []
+  },
+  "ns_health": {
+    "ns": []
+  },
+  "summary": {
+    "pass_count": 7,
+    "warn_count": 0,
+    "fail_count": 1,
+    "started_at": 1762765915.464305,
+    "duration_sec": 12.257079362869263,
+    "resolver_count": 3,
+    "records_scanned": 21
+  },
+  "errors": [],
+  "axfr_results": [],
+  "schema_version": "1.3",
+  "generator": "dns-navigator",
+  "run": {
+    "domain": "dnssec-failed.org",
+    "timestamp_utc": "2025-11-10T09:12:07Z",
+    "resolvers": [
+      "1.1.1.1",
+      "8.8.8.8",
+      "9.9.9.9",
+      "authoritative"
+    ],
+    "record_types": [
+      "A",
+      "AAAA",
+      "CNAME",
+      "MX",
+      "TXT",
+      "NS",
+      "SOA"
+    ],
+    "dnssec": {
+      "do": true,
+      "strict_alg": false
+    },
+    "timeouts": {
+      "connect_ms": 500,
+      "read_ms": 1500
+    },
+    "retries": 1,
+    "feature": {
+      "auth_union": true
+    },
+    "policy": {
+      "min_ttl": {
+        "A": 300,
+        "AAAA": 300,
+        "MX": 600,
+        "TXT": 300,
+        "NS": 86400,
+        "SOA": 300
+      },
+      "weights": {
+        "A": 2,
+        "AAAA": 2,
+        "SOA": 2,
+        "MX": 1,
+        "TXT": 1,
+        "NS": 1
+      },
+      "warn_labels": {
+        "weak_ttl": true,
+        "cdn_variance": true
+      }
+    },
+    "axfr": {
+      "enabled": false,
+      "timeout_sec": 8.0
+    }
+  }
+}

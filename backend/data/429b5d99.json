@@ -1,0 +1,727 @@
+{
+  "run_id": "429b5d99",
+  "options": {
+    "domain": "example.com",
+    "resolvers": [
+      "1.1.1.1",
+      "8.8.8.8",
+      "9.9.9.9",
+      "authoritative"
+    ],
+    "record_types": [
+      "A",
+      "AAAA",
+      "CNAME",
+      "MX",
+      "TXT",
+      "NS",
+      "SOA"
+    ],
+    "dnssec": {
+      "do": true,
+      "strict_alg_match": true,
+      "expiry_threshold_hours": 48
+    },
+    "rate_limits": {
+      "max_qps": 20.0,
+      "timeout_sec": 300.0,
+      "retries": 1
+    }
+  },
+  "phase": "Reporting",
+  "progress": 85,
+  "meta": {
+    "started_at": 1762514627.2965126,
+    "auth_ns": [
+      [
+        "a.iana-servers.net",
+        "199.43.135.53"
+      ],
+      [
+        "a.iana-servers.net",
+        "2001:500:8f::53"
+      ],
+      [
+        "b.iana-servers.net",
+        "199.43.133.53"
+      ],
+      [
+        "b.iana-servers.net",
+        "2001:500:8d::53"
+      ]
+    ]
+  },
+  "overview": {
+    "grid": [
+      {
+        "name": "example.com",
+        "rtype": "A",
+        "resolver_id": "1.1.1.1",
+        "ttl": 106,
+        "answers": [
+          "23.192.228.80",
+          "23.192.228.84",
+          "23.215.0.136",
+          "23.215.0.138",
+          "23.220.75.232",
+          "23.220.75.245"
+        ],
+        "status": "OK",
+        "error": null
+      },
+      {
+        "name": "example.com",
+        "rtype": "AAAA",
+        "resolver_id": "1.1.1.1",
+        "ttl": 100,
+        "answers": [
+          "2600:1406:5e00:6::17ce:bc12",
+          "2600:1406:5e00:6::17ce:bc1b",
+          "2600:1406:bc00:53::b81e:94c8",
+          "2600:1406:bc00:53::b81e:94ce",
+          "2600:1408:ec00:36::1736:7f24",
+          "2600:1408:ec00:36::1736:7f31"
+        ],
+        "status": "OK",
+        "error": null
+      },
+      {
+        "name": "example.com",
+        "rtype": "CNAME",
+        "resolver_id": "1.1.1.1",
+        "ttl": null,
+        "answers": [],
+        "status": "NODATA",
+        "error": null
+      },
+      {
+        "name": "example.com",
+        "rtype": "MX",
+        "resolver_id": "1.1.1.1",
+        "ttl": 78978,
+        "answers": [
+          "0 ."
+        ],
+        "status": "OK",
+        "error": null
+      },
+      {
+        "name": "example.com",
+        "rtype": "TXT",
+        "resolver_id": "1.1.1.1",
+        "ttl": 78977,
+        "answers": [
+          "\"_k2n1y4vw3qtb4skdx9e7dxt97qrmmq9\"",
+          "\"v=spf1 -all\""
+        ],
+        "status": "OK",
+        "error": null
+      },
+      {
+        "name": "example.com",
+        "rtype": "NS",
+        "resolver_id": "1.1.1.1",
+        "ttl": 79891,
+        "answers": [
+          "a.iana-servers.net.",
+          "b.iana-servers.net."
+        ],
+        "status": "OK",
+        "error": null
+      },
+      {
+        "name": "example.com",
+        "rtype": "SOA",
+        "resolver_id": "1.1.1.1",
+        "ttl": 529,
+        "answers": [
+          "ns.icann.org. noc.dns.icann.org. 2025082288 7200 3600 1209600 3600"
+        ],
+        "status": "OK",
+        "error": null
+      },
+      {
+        "name": "example.com",
+        "rtype": "A",
+        "resolver_id": "8.8.8.8",
+        "ttl": 286,
+        "answers": [
+          "23.192.228.80",
+          "23.192.228.84",
+          "23.215.0.136",
+          "23.215.0.138",
+          "23.220.75.232",
+          "23.220.75.245"
+        ],
+        "status": "OK",
+        "error": null
+      },
+      {
+        "name": "example.com",
+        "rtype": "AAAA",
+        "resolver_id": "8.8.8.8",
+        "ttl": 155,
+        "answers": [
+          "2600:1406:5e00:6::17ce:bc12",
+          "2600:1406:5e00:6::17ce:bc1b",
+          "2600:1406:bc00:53::b81e:94c8",
+          "2600:1406:bc00:53::b81e:94ce",
+          "2600:1408:ec00:36::1736:7f24",
+          "2600:1408:ec00:36::1736:7f31"
+        ],
+        "status": "OK",
+        "error": null
+      },
+      {
+        "name": "example.com",
+        "rtype": "CNAME",
+        "resolver_id": "8.8.8.8",
+        "ttl": null,
+        "answers": [],
+        "status": "NODATA",
+        "error": null
+      },
+      {
+        "name": "example.com",
+        "rtype": "MX",
+        "resolver_id": "8.8.8.8",
+        "ttl": 9731,
+        "answers": [
+          "0 ."
+        ],
+        "status": "OK",
+        "error": null
+      },
+      {
+        "name": "example.com",
+        "rtype": "TXT",
+        "resolver_id": "8.8.8.8",
+        "ttl": 14536,
+        "answers": [
+          "\"_k2n1y4vw3qtb4skdx9e7dxt97qrmmq9\"",
+          "\"v=spf1 -all\""
+        ],
+        "status": "OK",
+        "error": null
+      },
+      {
+        "name": "example.com",
+        "rtype": "NS",
+        "resolver_id": "8.8.8.8",
+        "ttl": 17125,
+        "answers": [
+          "a.iana-servers.net.",
+          "b.iana-servers.net."
+        ],
+        "status": "OK",
+        "error": null
+      },
+      {
+        "name": "example.com",
+        "rtype": "SOA",
+        "resolver_id": "8.8.8.8",
+        "ttl": 3349,
+        "answers": [
+          "ns.icann.org. noc.dns.icann.org. 2025082288 7200 3600 1209600 3600"
+        ],
+        "status": "OK",
+        "error": null
+      },
+      {
+        "name": "example.com",
+        "rtype": "A",
+        "resolver_id": "9.9.9.9",
+        "ttl": 73,
+        "answers": [
+          "23.192.228.80",
+          "23.192.228.84",
+          "23.215.0.136",
+          "23.215.0.138",
+          "23.220.75.232",
+          "23.220.75.245"
+        ],
+        "status": "OK",
+        "error": null
+      },
+      {
+        "name": "example.com",
+        "rtype": "AAAA",
+        "resolver_id": "9.9.9.9",
+        "ttl": 148,
+        "answers": [
+          "2600:1406:5e00:6::17ce:bc12",
+          "2600:1406:5e00:6::17ce:bc1b",
+          "2600:1406:bc00:53::b81e:94c8",
+          "2600:1406:bc00:53::b81e:94ce",
+          "2600:1408:ec00:36::1736:7f24",
+          "2600:1408:ec00:36::1736:7f31"
+        ],
+        "status": "OK",
+        "error": null
+      },
+      {
+        "name": "example.com",
+        "rtype": "CNAME",
+        "resolver_id": "9.9.9.9",
+        "ttl": null,
+        "answers": [],
+        "status": "NODATA",
+        "error": null
+      },
+      {
+        "name": "example.com",
+        "rtype": "MX",
+        "resolver_id": "9.9.9.9",
+        "ttl": 35720,
+        "answers": [
+          "0 ."
+        ],
+        "status": "OK",
+        "error": null
+      },
+      {
+        "name": "example.com",
+        "rtype": "TXT",
+        "resolver_id": "9.9.9.9",
+        "ttl": 35720,
+        "answers": [
+          "\"_k2n1y4vw3qtb4skdx9e7dxt97qrmmq9\"",
+          "\"v=spf1 -all\""
+        ],
+        "status": "OK",
+        "error": null
+      },
+      {
+        "name": "example.com",
+        "rtype": "NS",
+        "resolver_id": "9.9.9.9",
+        "ttl": 37848,
+        "answers": [
+          "a.iana-servers.net.",
+          "b.iana-servers.net."
+        ],
+        "status": "OK",
+        "error": null
+      },
+      {
+        "name": "example.com",
+        "rtype": "SOA",
+        "resolver_id": "9.9.9.9",
+        "ttl": 527,
+        "answers": [
+          "ns.icann.org. noc.dns.icann.org. 2025082288 7200 3600 1209600 3600"
+        ],
+        "status": "OK",
+        "error": null
+      },
+      {
+        "name": "example.com",
+        "rtype": "A",
+        "resolver_id": "auth:a.iana-servers.net@199.43.135.53",
+        "ttl": 300,
+        "answers": [
+          "23.192.228.80",
+          "23.192.228.84",
+          "23.215.0.136",
+          "23.215.0.138",
+          "23.220.75.232",
+          "23.220.75.245"
+        ],
+        "status": "OK",
+        "error": null
+      },
+      {
+        "name": "example.com",
+        "rtype": "AAAA",
+        "resolver_id": "auth:a.iana-servers.net@199.43.135.53",
+        "ttl": 300,
+        "answers": [
+          "2600:1406:5e00:6::17ce:bc12",
+          "2600:1406:5e00:6::17ce:bc1b",
+          "2600:1406:bc00:53::b81e:94c8",
+          "2600:1406:bc00:53::b81e:94ce",
+          "2600:1408:ec00:36::1736:7f24",
+          "2600:1408:ec00:36::1736:7f31"
+        ],
+        "status": "OK",
+        "error": null
+      },
+      {
+        "name": "example.com",
+        "rtype": "CNAME",
+        "resolver_id": "auth:a.iana-servers.net@199.43.135.53",
+        "ttl": null,
+        "answers": [],
+        "status": "NODATA",
+        "error": null
+      },
+      {
+        "name": "example.com",
+        "rtype": "MX",
+        "resolver_id": "auth:a.iana-servers.net@199.43.135.53",
+        "ttl": 86400,
+        "answers": [
+          "0 ."
+        ],
+        "status": "OK",
+        "error": null
+      },
+      {
+        "name": "example.com",
+        "rtype": "TXT",
+        "resolver_id": "auth:a.iana-servers.net@199.43.135.53",
+        "ttl": 86400,
+        "answers": [
+          "\"_k2n1y4vw3qtb4skdx9e7dxt97qrmmq9\"",
+          "\"v=spf1 -all\""
+        ],
+        "status": "OK",
+        "error": null
+      },
+      {
+        "name": "example.com",
+        "rtype": "NS",
+        "resolver_id": "auth:a.iana-servers.net@199.43.135.53",
+        "ttl": 86400,
+        "answers": [
+          "a.iana-servers.net.",
+          "b.iana-servers.net."
+        ],
+        "status": "OK",
+        "error": null
+      },
+      {
+        "name": "example.com",
+        "rtype": "SOA",
+        "resolver_id": "auth:a.iana-servers.net@199.43.135.53",
+        "ttl": 3600,
+        "answers": [
+          "ns.icann.org. noc.dns.icann.org. 2025082288 7200 3600 1209600 3600"
+        ],
+        "status": "OK",
+        "error": null
+      },
+      {
+        "name": "example.com",
+        "rtype": "A",
+        "resolver_id": "auth:a.iana-servers.net@2001:500:8f::53",
+        "ttl": 300,
+        "answers": [
+          "23.192.228.80",
+          "23.192.228.84",
+          "23.215.0.136",
+          "23.215.0.138",
+          "23.220.75.232",
+          "23.220.75.245"
+        ],
+        "status": "OK",
+        "error": null
+      },
+      {
+        "name": "example.com",
+        "rtype": "AAAA",
+        "resolver_id": "auth:a.iana-servers.net@2001:500:8f::53",
+        "ttl": 300,
+        "answers": [
+          "2600:1406:5e00:6::17ce:bc12",
+          "2600:1406:5e00:6::17ce:bc1b",
+          "2600:1406:bc00:53::b81e:94c8",
+          "2600:1406:bc00:53::b81e:94ce",
+          "2600:1408:ec00:36::1736:7f24",
+          "2600:1408:ec00:36::1736:7f31"
+        ],
+        "status": "OK",
+        "error": null
+      },
+      {
+        "name": "example.com",
+        "rtype": "CNAME",
+        "resolver_id": "auth:a.iana-servers.net@2001:500:8f::53",
+        "ttl": null,
+        "answers": [],
+        "status": "NODATA",
+        "error": null
+      },
+      {
+        "name": "example.com",
+        "rtype": "MX",
+        "resolver_id": "auth:a.iana-servers.net@2001:500:8f::53",
+        "ttl": 86400,
+        "answers": [
+          "0 ."
+        ],
+        "status": "OK",
+        "error": null
+      },
+      {
+        "name": "example.com",
+        "rtype": "TXT",
+        "resolver_id": "auth:a.iana-servers.net@2001:500:8f::53",
+        "ttl": 86400,
+        "answers": [
+          "\"_k2n1y4vw3qtb4skdx9e7dxt97qrmmq9\"",
+          "\"v=spf1 -all\""
+        ],
+        "status": "OK",
+        "error": null
+      },
+      {
+        "name": "example.com",
+        "rtype": "NS",
+        "resolver_id": "auth:a.iana-servers.net@2001:500:8f::53",
+        "ttl": 86400,
+        "answers": [
+          "a.iana-servers.net.",
+          "b.iana-servers.net."
+        ],
+        "status": "OK",
+        "error": null
+      },
+      {
+        "name": "example.com",
+        "rtype": "SOA",
+        "resolver_id": "auth:a.iana-servers.net@2001:500:8f::53",
+        "ttl": 3600,
+        "answers": [
+          "ns.icann.org. noc.dns.icann.org. 2025082288 7200 3600 1209600 3600"
+        ],
+        "status": "OK",
+        "error": null
+      },
+      {
+        "name": "example.com",
+        "rtype": "A",
+        "resolver_id": "auth:b.iana-servers.net@199.43.133.53",
+        "ttl": 300,
+        "answers": [
+          "23.192.228.80",
+          "23.192.228.84",
+          "23.215.0.136",
+          "23.215.0.138",
+          "23.220.75.232",
+          "23.220.75.245"
+        ],
+        "status": "OK",
+        "error": null
+      },
+      {
+        "name": "example.com",
+        "rtype": "AAAA",
+        "resolver_id": "auth:b.iana-servers.net@199.43.133.53",
+        "ttl": 300,
+        "answers": [
+          "2600:1406:5e00:6::17ce:bc12",
+          "2600:1406:5e00:6::17ce:bc1b",
+          "2600:1406:bc00:53::b81e:94c8",
+          "2600:1406:bc00:53::b81e:94ce",
+          "2600:1408:ec00:36::1736:7f24",
+          "2600:1408:ec00:36::1736:7f31"
+        ],
+        "status": "OK",
+        "error": null
+      },
+      {
+        "name": "example.com",
+        "rtype": "CNAME",
+        "resolver_id": "auth:b.iana-servers.net@199.43.133.53",
+        "ttl": null,
+        "answers": [],
+        "status": "NODATA",
+        "error": null
+      },
+      {
+        "name": "example.com",
+        "rtype": "MX",
+        "resolver_id": "auth:b.iana-servers.net@199.43.133.53",
+        "ttl": 86400,
+        "answers": [
+          "0 ."
+        ],
+        "status": "OK",
+        "error": null
+      },
+      {
+        "name": "example.com",
+        "rtype": "TXT",
+        "resolver_id": "auth:b.iana-servers.net@199.43.133.53",
+        "ttl": 86400,
+        "answers": [
+          "\"_k2n1y4vw3qtb4skdx9e7dxt97qrmmq9\"",
+          "\"v=spf1 -all\""
+        ],
+        "status": "OK",
+        "error": null
+      },
+      {
+        "name": "example.com",
+        "rtype": "NS",
+        "resolver_id": "auth:b.iana-servers.net@199.43.133.53",
+        "ttl": 86400,
+        "answers": [
+          "a.iana-servers.net.",
+          "b.iana-servers.net."
+        ],
+        "status": "OK",
+        "error": null
+      },
+      {
+        "name": "example.com",
+        "rtype": "SOA",
+        "resolver_id": "auth:b.iana-servers.net@199.43.133.53",
+        "ttl": 3600,
+        "answers": [
+          "ns.icann.org. noc.dns.icann.org. 2025082288 7200 3600 1209600 3600"
+        ],
+        "status": "OK",
+        "error": null
+      },
+      {
+        "name": "example.com",
+        "rtype": "A",
+        "resolver_id": "auth:b.iana-servers.net@2001:500:8d::53",
+        "ttl": 300,
+        "answers": [
+          "23.192.228.80",
+          "23.192.228.84",
+          "23.215.0.136",
+          "23.215.0.138",
+          "23.220.75.232",
+          "23.220.75.245"
+        ],
+        "status": "OK",
+        "error": null
+      },
+      {
+        "name": "example.com",
+        "rtype": "AAAA",
+        "resolver_id": "auth:b.iana-servers.net@2001:500:8d::53",
+        "ttl": 300,
+        "answers": [
+          "2600:1406:5e00:6::17ce:bc12",
+          "2600:1406:5e00:6::17ce:bc1b",
+          "2600:1406:bc00:53::b81e:94c8",
+          "2600:1406:bc00:53::b81e:94ce",
+          "2600:1408:ec00:36::1736:7f24",
+          "2600:1408:ec00:36::1736:7f31"
+        ],
+        "status": "OK",
+        "error": null
+      },
+      {
+        "name": "example.com",
+        "rtype": "CNAME",
+        "resolver_id": "auth:b.iana-servers.net@2001:500:8d::53",
+        "ttl": null,
+        "answers": [],
+        "status": "NODATA",
+        "error": null
+      },
+      {
+        "name": "example.com",
+        "rtype": "MX",
+        "resolver_id": "auth:b.iana-servers.net@2001:500:8d::53",
+        "ttl": 86400,
+        "answers": [
+          "0 ."
+        ],
+        "status": "OK",
+        "error": null
+      },
+      {
+        "name": "example.com",
+        "rtype": "TXT",
+        "resolver_id": "auth:b.iana-servers.net@2001:500:8d::53",
+        "ttl": 86400,
+        "answers": [
+          "\"_k2n1y4vw3qtb4skdx9e7dxt97qrmmq9\"",
+          "\"v=spf1 -all\""
+        ],
+        "status": "OK",
+        "error": null
+      },
+      {
+        "name": "example.com",
+        "rtype": "NS",
+        "resolver_id": "auth:b.iana-servers.net@2001:500:8d::53",
+        "ttl": 86400,
+        "answers": [
+          "a.iana-servers.net.",
+          "b.iana-servers.net."
+        ],
+        "status": "OK",
+        "error": null
+      },
+      {
+        "name": "example.com",
+        "rtype": "SOA",
+        "resolver_id": "auth:b.iana-servers.net@2001:500:8d::53",
+        "ttl": 3600,
+        "answers": [
+          "ns.icann.org. noc.dns.icann.org. 2025082288 7200 3600 1209600 3600"
+        ],
+        "status": "OK",
+        "error": null
+      }
+    ],
+    "consistency": {
+      "example.com A": "CONSISTENT",
+      "example.com AAAA": "CONSISTENT",
+      "example.com CNAME": "CONSISTENT",
+      "example.com MX": "CONSISTENT",
+      "example.com TXT": "CONSISTENT",
+      "example.com NS": "CONSISTENT",
+      "example.com SOA": "CONSISTENT"
+    },
+    "weak_ttl": [],
+    "per_rr_verdict": {
+      "example.com A": "PASS",
+      "example.com AAAA": "PASS",
+      "example.com CNAME": "PASS",
+      "example.com MX": "PASS",
+      "example.com TXT": "PASS",
+      "example.com NS": "PASS",
+      "example.com SOA": "PASS"
+    },
+    "variance_note": null,
+    "auth_ttl_by_rr": {
+      "example.com A": 300,
+      "example.com AAAA": 300,
+      "example.com CNAME": null,
+      "example.com MX": 86400,
+      "example.com TXT": 86400,
+      "example.com NS": 86400,
+      "example.com SOA": 3600
+    }
+  },
+  "dnssec": {
+    "ds_present": true,
+    "ds_match": false,
+    "dnskey_rrsig_valid": false,
+    "rrsig_expiry_hours": null,
+    "nsec_present": false,
+    "issues": [
+      "DNSKEY/RRSIG(DNSKEY) not retrievable from authoritative servers.",
+      "No NSEC/NSEC3 proofs detected for NXDOMAIN."
+    ],
+    "state": "SIGNED_BROKEN",
+    "summary": "FAIL"
+  },
+  "drift": {
+    "score": 0,
+    "added": {},
+    "removed": {},
+    "modified": {},
+    "diff_rows": []
+  },
+  "ns_health": null,
+  "summary": {
+    "pass_count": 7,
+    "warn_count": 0,
+    "fail_count": 1,
+    "started_at": 1762514627.2965126,
+    "duration_sec": 2.950723886489868,
+    "resolver_count": 7,
+    "records_scanned": 49
+  },
+  "errors": []
+}

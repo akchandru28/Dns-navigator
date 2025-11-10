@@ -1,0 +1,6052 @@
+{
+  "run_id": "80dacac9",
+  "options": {
+    "domain": "cloudflare.com",
+    "resolvers": [
+      "1.1.1.1",
+      "8.8.8.8",
+      "9.9.9.9",
+      "authoritative"
+    ],
+    "record_types": [
+      "A",
+      "AAAA",
+      "CNAME",
+      "MX",
+      "TXT",
+      "NS",
+      "SOA"
+    ],
+    "dnssec": {
+      "do": true,
+      "strict_alg_match": false,
+      "expiry_threshold_hours": 48
+    },
+    "rate_limits": {
+      "max_qps": 20.0,
+      "timeout_sec": 4.0,
+      "retries": 1
+    },
+    "enable_axfr": false,
+    "axfr_timeout_sec": 8.0
+  },
+  "phase": "Reporting",
+  "progress": 85,
+  "meta": {
+    "started_at": 1762760061.541439,
+    "auth_ns": [
+      [
+        "ns3.cloudflare.com",
+        "162.159.0.33"
+      ],
+      [
+        "ns3.cloudflare.com",
+        "162.159.7.226"
+      ],
+      [
+        "ns3.cloudflare.com",
+        "2400:cb00:2049:1::a29f:7e2"
+      ],
+      [
+        "ns3.cloudflare.com",
+        "2400:cb00:2049:1::a29f:21"
+      ],
+      [
+        "ns4.cloudflare.com",
+        "162.159.8.55"
+      ],
+      [
+        "ns4.cloudflare.com",
+        "162.159.1.33"
+      ],
+      [
+        "ns4.cloudflare.com",
+        "2400:cb00:2049:1::a29f:121"
+      ],
+      [
+        "ns4.cloudflare.com",
+        "2400:cb00:2049:1::a29f:837"
+      ],
+      [
+        "ns5.cloudflare.com",
+        "162.159.2.9"
+      ],
+      [
+        "ns5.cloudflare.com",
+        "162.159.9.55"
+      ],
+      [
+        "ns5.cloudflare.com",
+        "2400:cb00:2049:1::a29f:937"
+      ],
+      [
+        "ns5.cloudflare.com",
+        "2400:cb00:2049:1::a29f:209"
+      ],
+      [
+        "ns6.cloudflare.com",
+        "162.159.5.6"
+      ],
+      [
+        "ns6.cloudflare.com",
+        "162.159.3.11"
+      ],
+      [
+        "ns6.cloudflare.com",
+        "2400:cb00:2049:1::a29f:506"
+      ],
+      [
+        "ns6.cloudflare.com",
+        "2400:cb00:2049:1::a29f:30b"
+      ],
+      [
+        "ns7.cloudflare.com",
+        "162.159.6.6"
+      ],
+      [
+        "ns7.cloudflare.com",
+        "162.159.4.8"
+      ],
+      [
+        "ns7.cloudflare.com",
+        "2400:cb00:2049:1::a29f:408"
+      ],
+      [
+        "ns7.cloudflare.com",
+        "2400:cb00:2049:1::a29f:606"
+      ]
+    ],
+    "run_verdict": "PASS",
+    "axfr_summary": null
+  },
+  "overview": {
+    "grid": [
+      {
+        "name": "cloudflare.com",
+        "rtype": "A",
+        "resolver_id": "1.1.1.1",
+        "ttl": 130,
+        "answers": [
+          "104.16.132.229",
+          "104.16.133.229"
+        ],
+        "status": "OK",
+        "error": null,
+        "diagnostics": {
+          "transport": "udp",
+          "edns": 1232,
+          "rcode": 0,
+          "rcode_name": "NOERROR",
+          "flags": 33152,
+          "retries": 0,
+          "attempts": [
+            {
+              "transport": "udp",
+              "edns": 1232,
+              "error": false,
+              "elapsed_ms": 16.05
+            }
+          ],
+          "elapsed_ms": 16.05,
+          "fallback_used": false
+        }
+      },
+      {
+        "name": "cloudflare.com",
+        "rtype": "AAAA",
+        "resolver_id": "1.1.1.1",
+        "ttl": 256,
+        "answers": [
+          "2606:4700::6810:84e5",
+          "2606:4700::6810:85e5"
+        ],
+        "status": "OK",
+        "error": null,
+        "diagnostics": {
+          "transport": "udp",
+          "edns": 1232,
+          "rcode": 0,
+          "rcode_name": "NOERROR",
+          "flags": 33152,
+          "retries": 0,
+          "attempts": [
+            {
+              "transport": "udp",
+              "edns": 1232,
+              "error": false,
+              "elapsed_ms": 20.79
+            }
+          ],
+          "elapsed_ms": 20.79,
+          "fallback_used": false
+        }
+      },
+      {
+        "name": "cloudflare.com",
+        "rtype": "CNAME",
+        "resolver_id": "1.1.1.1",
+        "ttl": null,
+        "answers": [],
+        "status": "NODATA",
+        "error": null,
+        "diagnostics": {
+          "transport": "udp",
+          "edns": 1232,
+          "rcode": 0,
+          "rcode_name": "NOERROR",
+          "flags": 33152,
+          "retries": 0,
+          "attempts": [
+            {
+              "transport": "udp",
+              "edns": 1232,
+              "error": false,
+              "elapsed_ms": 26.64
+            }
+          ],
+          "elapsed_ms": 26.64,
+          "fallback_used": false
+        }
+      },
+      {
+        "name": "cloudflare.com",
+        "rtype": "MX",
+        "resolver_id": "1.1.1.1",
+        "ttl": 655,
+        "answers": [
+          "10 mxa.global.inbound.cf-emailsecurity.net.",
+          "10 mxb.global.inbound.cf-emailsecurity.net.",
+          "5 mxa-canary.global.inbound.cf-emailsecurity.net.",
+          "5 mxb-canary.global.inbound.cf-emailsecurity.net."
+        ],
+        "status": "OK",
+        "error": null,
+        "diagnostics": {
+          "transport": "udp",
+          "edns": 1232,
+          "rcode": 0,
+          "rcode_name": "NOERROR",
+          "flags": 33152,
+          "retries": 0,
+          "attempts": [
+            {
+              "transport": "udp",
+              "edns": 1232,
+              "error": false,
+              "elapsed_ms": 20.35
+            }
+          ],
+          "elapsed_ms": 20.35,
+          "fallback_used": false
+        }
+      },
+      {
+        "name": "cloudflare.com",
+        "rtype": "NS",
+        "resolver_id": "1.1.1.1",
+        "ttl": 86400,
+        "answers": [
+          "ns3.cloudflare.com.",
+          "ns4.cloudflare.com.",
+          "ns5.cloudflare.com.",
+          "ns6.cloudflare.com.",
+          "ns7.cloudflare.com."
+        ],
+        "status": "OK",
+        "error": null,
+        "diagnostics": {
+          "transport": "udp",
+          "edns": 1232,
+          "rcode": 0,
+          "rcode_name": "NOERROR",
+          "flags": 33152,
+          "retries": 0,
+          "attempts": [
+            {
+              "transport": "udp",
+              "edns": 1232,
+              "error": false,
+              "elapsed_ms": 24.6
+            }
+          ],
+          "elapsed_ms": 24.6,
+          "fallback_used": false
+        }
+      },
+      {
+        "name": "cloudflare.com",
+        "rtype": "SOA",
+        "resolver_id": "1.1.1.1",
+        "ttl": 300,
+        "answers": [
+          "ns3.cloudflare.com. dns.cloudflare.com. 2387738886 10000 2400 604800 300"
+        ],
+        "status": "OK",
+        "error": null,
+        "diagnostics": {
+          "transport": "udp",
+          "edns": 1232,
+          "rcode": 0,
+          "rcode_name": "NOERROR",
+          "flags": 33152,
+          "retries": 0,
+          "attempts": [
+            {
+              "transport": "udp",
+              "edns": 1232,
+              "error": false,
+              "elapsed_ms": 26.73
+            }
+          ],
+          "elapsed_ms": 26.73,
+          "fallback_used": false
+        }
+      },
+      {
+        "name": "cloudflare.com",
+        "rtype": "TXT",
+        "resolver_id": "1.1.1.1",
+        "ttl": 300,
+        "answers": [
+          "\"MS=ms70274184\"",
+          "\"ZOOM_verify_7LFBvOO9SIigypFG2xRlMA\"",
+          "\"_neqmkgaq1lq9it5s8qmetrhbnu121wb\"",
+          "\"_saml-domain-challenge.2dc00405-79cd-457b-b288-a119c6f0c7b7.71996d53-d178-4ba9-bef4-7f7e46edab74.cloudflare.com=1c8736fd-84b2-4197-985f-3fb2852f2457\"",
+          "\"apple-domain-verification=DNnWJoArJobFJKhJ\"",
+          "\"asv=894f6d1f9f83bcf44e4b1bc40bc1c4aa\"",
+          "\"atlassian-domain-verification=WxxKyN9aLnjEsoOjUYI6T0bb5vcqmKzaIkC9Rx2QkNb751G3LL/cus8/ZDOgh8xB\"",
+          "\"canva-site-verification=oOyaVnHC-OiFoR1BPvetNA\"",
+          "\"cisco-ci-domain-verification=27e926884619804ef987ae4aa1c4168f6b152ada84f4c8bfc74eb2bd2912ad72\"",
+          "\"creatopy-domain-verification=97d2ca50-9b6f-4a21-9bdb-fbb630e4cec7\"",
+          "\"docker-verification=c578e21c-34fb-4474-9b90-d55ee4cba10c\"",
+          "\"drift-domain-verification=f037808a26ae8b25bc13b1f1f2b4c3e0f78c03e67f24cefdd4ec520efa8e719f\"",
+          "\"facebook-domain-verification=h9mm6zopj6p2po54woa16m5bskm6oo\"",
+          "\"google-site-verification=C7thfNeXVahkVhniiqTI1iSVnElKR_kBBtnEHkeGDlo\"",
+          "\"google-site-verification=ZdlQZLBBAPkxeFTCM1rpiB_ibtGff_JF5KllNKwDR9I\"",
+          "\"liveramp-site-verification=EhH1MqgwbndTWl1AN64hOTKz7hc1s80yUpchLbgpfY0\"",
+          "\"logmein-verification-code=b3433c86-3823-4808-8a7e-58042469f654\"",
+          "\"miro-verification=bdd7dfa0a49adfb43ad6ddfaf797633246c07356\"",
+          "\"onetrust-domain-verification=bd5cd08a1e9644799fdb98ed7d60c9cb\"",
+          "\"status-page-domain-verification=r14frwljwbxs\"",
+          "\"stripe-verification=5096d01ff2cf194285dd51cae18f24fa9c26dc928cebac3636d462b4c6925623\"",
+          "\"stripe-verification=bf1a94e6b16ace2502a4a7fff574a25c8a45291054960c883c59be39d1788db9\"",
+          "\"uber-domain-verification=58086039-150a-42a4-a4be-b4032921aa0f\"",
+          "\"v=spf1 ip4:199.15.212.0/22 ip4:173.245.48.0/20 include:_spf.google.com include:spf1.mcsv.net include:spf.mandrillapp.com include:mail.zendesk.com include:stspg-customer.com include:_spf.salesforce.com -all\""
+        ],
+        "status": "OK",
+        "error": null,
+        "diagnostics": {
+          "transport": "udp",
+          "edns": 1232,
+          "rcode": 0,
+          "rcode_name": "NOERROR",
+          "flags": 33152,
+          "retries": 0,
+          "attempts": [
+            {
+              "transport": "udp",
+              "edns": 1232,
+              "error": false,
+              "elapsed_ms": 110.48
+            }
+          ],
+          "elapsed_ms": 110.48,
+          "fallback_used": false
+        }
+      },
+      {
+        "name": "cloudflare.com",
+        "rtype": "A",
+        "resolver_id": "8.8.8.8",
+        "ttl": 300,
+        "answers": [
+          "104.16.132.229",
+          "104.16.133.229"
+        ],
+        "status": "OK",
+        "error": null,
+        "diagnostics": {
+          "transport": "udp",
+          "edns": 1232,
+          "rcode": 0,
+          "rcode_name": "NOERROR",
+          "flags": 33152,
+          "retries": 0,
+          "attempts": [
+            {
+              "transport": "udp",
+              "edns": 1232,
+              "error": false,
+              "elapsed_ms": 37.46
+            }
+          ],
+          "elapsed_ms": 37.46,
+          "fallback_used": false
+        }
+      },
+      {
+        "name": "cloudflare.com",
+        "rtype": "AAAA",
+        "resolver_id": "8.8.8.8",
+        "ttl": 300,
+        "answers": [
+          "2606:4700::6810:84e5",
+          "2606:4700::6810:85e5"
+        ],
+        "status": "OK",
+        "error": null,
+        "diagnostics": {
+          "transport": "udp",
+          "edns": 1232,
+          "rcode": 0,
+          "rcode_name": "NOERROR",
+          "flags": 33152,
+          "retries": 0,
+          "attempts": [
+            {
+              "transport": "udp",
+              "edns": 1232,
+              "error": false,
+              "elapsed_ms": 36.44
+            }
+          ],
+          "elapsed_ms": 36.44,
+          "fallback_used": false
+        }
+      },
+      {
+        "name": "cloudflare.com",
+        "rtype": "CNAME",
+        "resolver_id": "8.8.8.8",
+        "ttl": null,
+        "answers": [],
+        "status": "NODATA",
+        "error": null,
+        "diagnostics": {
+          "transport": "udp",
+          "edns": 1232,
+          "rcode": 0,
+          "rcode_name": "NOERROR",
+          "flags": 33152,
+          "retries": 0,
+          "attempts": [
+            {
+              "transport": "udp",
+              "edns": 1232,
+              "error": false,
+              "elapsed_ms": 35.66
+            }
+          ],
+          "elapsed_ms": 35.66,
+          "fallback_used": false
+        }
+      },
+      {
+        "name": "cloudflare.com",
+        "rtype": "MX",
+        "resolver_id": "8.8.8.8",
+        "ttl": 1800,
+        "answers": [
+          "10 mxa.global.inbound.cf-emailsecurity.net.",
+          "10 mxb.global.inbound.cf-emailsecurity.net.",
+          "5 mxa-canary.global.inbound.cf-emailsecurity.net.",
+          "5 mxb-canary.global.inbound.cf-emailsecurity.net."
+        ],
+        "status": "OK",
+        "error": null,
+        "diagnostics": {
+          "transport": "udp",
+          "edns": 1232,
+          "rcode": 0,
+          "rcode_name": "NOERROR",
+          "flags": 33152,
+          "retries": 0,
+          "attempts": [
+            {
+              "transport": "udp",
+              "edns": 1232,
+              "error": false,
+              "elapsed_ms": 46.53
+            }
+          ],
+          "elapsed_ms": 46.53,
+          "fallback_used": false
+        }
+      },
+      {
+        "name": "cloudflare.com",
+        "rtype": "NS",
+        "resolver_id": "8.8.8.8",
+        "ttl": 19179,
+        "answers": [
+          "ns3.cloudflare.com.",
+          "ns4.cloudflare.com.",
+          "ns5.cloudflare.com.",
+          "ns6.cloudflare.com.",
+          "ns7.cloudflare.com."
+        ],
+        "status": "OK",
+        "error": null,
+        "diagnostics": {
+          "transport": "udp",
+          "edns": 1232,
+          "rcode": 0,
+          "rcode_name": "NOERROR",
+          "flags": 33152,
+          "retries": 0,
+          "attempts": [
+            {
+              "transport": "udp",
+              "edns": 1232,
+              "error": false,
+              "elapsed_ms": 35.57
+            }
+          ],
+          "elapsed_ms": 35.57,
+          "fallback_used": false
+        }
+      },
+      {
+        "name": "cloudflare.com",
+        "rtype": "SOA",
+        "resolver_id": "8.8.8.8",
+        "ttl": 300,
+        "answers": [
+          "ns3.cloudflare.com. dns.cloudflare.com. 2387738886 10000 2400 604800 300"
+        ],
+        "status": "OK",
+        "error": null,
+        "diagnostics": {
+          "transport": "udp",
+          "edns": 1232,
+          "rcode": 0,
+          "rcode_name": "NOERROR",
+          "flags": 33152,
+          "retries": 0,
+          "attempts": [
+            {
+              "transport": "udp",
+              "edns": 1232,
+              "error": false,
+              "elapsed_ms": 89.54
+            }
+          ],
+          "elapsed_ms": 89.54,
+          "fallback_used": false
+        }
+      },
+      {
+        "name": "cloudflare.com",
+        "rtype": "TXT",
+        "resolver_id": "8.8.8.8",
+        "ttl": 300,
+        "answers": [
+          "\"MS=ms70274184\"",
+          "\"ZOOM_verify_7LFBvOO9SIigypFG2xRlMA\"",
+          "\"_neqmkgaq1lq9it5s8qmetrhbnu121wb\"",
+          "\"_saml-domain-challenge.2dc00405-79cd-457b-b288-a119c6f0c7b7.71996d53-d178-4ba9-bef4-7f7e46edab74.cloudflare.com=1c8736fd-84b2-4197-985f-3fb2852f2457\"",
+          "\"apple-domain-verification=DNnWJoArJobFJKhJ\"",
+          "\"asv=894f6d1f9f83bcf44e4b1bc40bc1c4aa\"",
+          "\"atlassian-domain-verification=WxxKyN9aLnjEsoOjUYI6T0bb5vcqmKzaIkC9Rx2QkNb751G3LL/cus8/ZDOgh8xB\"",
+          "\"canva-site-verification=oOyaVnHC-OiFoR1BPvetNA\"",
+          "\"cisco-ci-domain-verification=27e926884619804ef987ae4aa1c4168f6b152ada84f4c8bfc74eb2bd2912ad72\"",
+          "\"creatopy-domain-verification=97d2ca50-9b6f-4a21-9bdb-fbb630e4cec7\"",
+          "\"docker-verification=c578e21c-34fb-4474-9b90-d55ee4cba10c\"",
+          "\"drift-domain-verification=f037808a26ae8b25bc13b1f1f2b4c3e0f78c03e67f24cefdd4ec520efa8e719f\"",
+          "\"facebook-domain-verification=h9mm6zopj6p2po54woa16m5bskm6oo\"",
+          "\"google-site-verification=C7thfNeXVahkVhniiqTI1iSVnElKR_kBBtnEHkeGDlo\"",
+          "\"google-site-verification=ZdlQZLBBAPkxeFTCM1rpiB_ibtGff_JF5KllNKwDR9I\"",
+          "\"liveramp-site-verification=EhH1MqgwbndTWl1AN64hOTKz7hc1s80yUpchLbgpfY0\"",
+          "\"logmein-verification-code=b3433c86-3823-4808-8a7e-58042469f654\"",
+          "\"miro-verification=bdd7dfa0a49adfb43ad6ddfaf797633246c07356\"",
+          "\"onetrust-domain-verification=bd5cd08a1e9644799fdb98ed7d60c9cb\"",
+          "\"status-page-domain-verification=r14frwljwbxs\"",
+          "\"stripe-verification=5096d01ff2cf194285dd51cae18f24fa9c26dc928cebac3636d462b4c6925623\"",
+          "\"stripe-verification=bf1a94e6b16ace2502a4a7fff574a25c8a45291054960c883c59be39d1788db9\"",
+          "\"uber-domain-verification=58086039-150a-42a4-a4be-b4032921aa0f\"",
+          "\"v=spf1 ip4:199.15.212.0/22 ip4:173.245.48.0/20 include:_spf.google.com include:spf1.mcsv.net include:spf.mandrillapp.com include:mail.zendesk.com include:stspg-customer.com include:_spf.salesforce.com -all\""
+        ],
+        "status": "OK",
+        "error": null,
+        "diagnostics": {
+          "transport": "udp",
+          "edns": 1232,
+          "rcode": 0,
+          "rcode_name": "NOERROR",
+          "flags": 33152,
+          "retries": 0,
+          "attempts": [
+            {
+              "transport": "udp",
+              "edns": 1232,
+              "error": false,
+              "elapsed_ms": 174.94
+            }
+          ],
+          "elapsed_ms": 174.94,
+          "fallback_used": false
+        }
+      },
+      {
+        "name": "cloudflare.com",
+        "rtype": "A",
+        "resolver_id": "9.9.9.9",
+        "ttl": 300,
+        "answers": [
+          "104.16.132.229",
+          "104.16.133.229"
+        ],
+        "status": "OK",
+        "error": null,
+        "diagnostics": {
+          "transport": "udp",
+          "edns": 1232,
+          "rcode": 0,
+          "rcode_name": "NOERROR",
+          "flags": 33152,
+          "retries": 0,
+          "attempts": [
+            {
+              "transport": "udp",
+              "edns": 1232,
+              "error": false,
+              "elapsed_ms": 89.46
+            }
+          ],
+          "elapsed_ms": 89.46,
+          "fallback_used": false
+        }
+      },
+      {
+        "name": "cloudflare.com",
+        "rtype": "AAAA",
+        "resolver_id": "9.9.9.9",
+        "ttl": 30,
+        "answers": [
+          "2606:4700::6810:84e5",
+          "2606:4700::6810:85e5"
+        ],
+        "status": "OK",
+        "error": null,
+        "diagnostics": {
+          "transport": "udp",
+          "edns": 1232,
+          "rcode": 0,
+          "rcode_name": "NOERROR",
+          "flags": 33152,
+          "retries": 0,
+          "attempts": [
+            {
+              "transport": "udp",
+              "edns": 1232,
+              "error": false,
+              "elapsed_ms": 86.28
+            }
+          ],
+          "elapsed_ms": 86.28,
+          "fallback_used": false
+        }
+      },
+      {
+        "name": "cloudflare.com",
+        "rtype": "CNAME",
+        "resolver_id": "9.9.9.9",
+        "ttl": null,
+        "answers": [],
+        "status": "NODATA",
+        "error": null,
+        "diagnostics": {
+          "transport": "udp",
+          "edns": 1232,
+          "rcode": 0,
+          "rcode_name": "NOERROR",
+          "flags": 33152,
+          "retries": 0,
+          "attempts": [
+            {
+              "transport": "udp",
+              "edns": 1232,
+              "error": false,
+              "elapsed_ms": 90.3
+            }
+          ],
+          "elapsed_ms": 90.3,
+          "fallback_used": false
+        }
+      },
+      {
+        "name": "cloudflare.com",
+        "rtype": "MX",
+        "resolver_id": "9.9.9.9",
+        "ttl": 1800,
+        "answers": [
+          "10 mxa.global.inbound.cf-emailsecurity.net.",
+          "10 mxb.global.inbound.cf-emailsecurity.net.",
+          "5 mxa-canary.global.inbound.cf-emailsecurity.net.",
+          "5 mxb-canary.global.inbound.cf-emailsecurity.net."
+        ],
+        "status": "OK",
+        "error": null,
+        "diagnostics": {
+          "transport": "udp",
+          "edns": 1232,
+          "rcode": 0,
+          "rcode_name": "NOERROR",
+          "flags": 33152,
+          "retries": 0,
+          "attempts": [
+            {
+              "transport": "udp",
+              "edns": 1232,
+              "error": false,
+              "elapsed_ms": 95.74
+            }
+          ],
+          "elapsed_ms": 95.74,
+          "fallback_used": false
+        }
+      },
+      {
+        "name": "cloudflare.com",
+        "rtype": "NS",
+        "resolver_id": "9.9.9.9",
+        "ttl": 31062,
+        "answers": [
+          "ns3.cloudflare.com.",
+          "ns4.cloudflare.com.",
+          "ns5.cloudflare.com.",
+          "ns6.cloudflare.com.",
+          "ns7.cloudflare.com."
+        ],
+        "status": "OK",
+        "error": null,
+        "diagnostics": {
+          "transport": "udp",
+          "edns": 1232,
+          "rcode": 0,
+          "rcode_name": "NOERROR",
+          "flags": 33152,
+          "retries": 0,
+          "attempts": [
+            {
+              "transport": "udp",
+              "edns": 1232,
+              "error": false,
+              "elapsed_ms": 90.78
+            }
+          ],
+          "elapsed_ms": 90.78,
+          "fallback_used": false
+        }
+      },
+      {
+        "name": "cloudflare.com",
+        "rtype": "SOA",
+        "resolver_id": "9.9.9.9",
+        "ttl": 188,
+        "answers": [
+          "ns3.cloudflare.com. dns.cloudflare.com. 2387738886 10000 2400 604800 300"
+        ],
+        "status": "OK",
+        "error": null,
+        "diagnostics": {
+          "transport": "udp",
+          "edns": 1232,
+          "rcode": 0,
+          "rcode_name": "NOERROR",
+          "flags": 33152,
+          "retries": 0,
+          "attempts": [
+            {
+              "transport": "udp",
+              "edns": 1232,
+              "error": false,
+              "elapsed_ms": 88.49
+            }
+          ],
+          "elapsed_ms": 88.49,
+          "fallback_used": false
+        }
+      },
+      {
+        "name": "cloudflare.com",
+        "rtype": "TXT",
+        "resolver_id": "9.9.9.9",
+        "ttl": 300,
+        "answers": [
+          "\"MS=ms70274184\"",
+          "\"ZOOM_verify_7LFBvOO9SIigypFG2xRlMA\"",
+          "\"_neqmkgaq1lq9it5s8qmetrhbnu121wb\"",
+          "\"_saml-domain-challenge.2dc00405-79cd-457b-b288-a119c6f0c7b7.71996d53-d178-4ba9-bef4-7f7e46edab74.cloudflare.com=1c8736fd-84b2-4197-985f-3fb2852f2457\"",
+          "\"apple-domain-verification=DNnWJoArJobFJKhJ\"",
+          "\"asv=894f6d1f9f83bcf44e4b1bc40bc1c4aa\"",
+          "\"atlassian-domain-verification=WxxKyN9aLnjEsoOjUYI6T0bb5vcqmKzaIkC9Rx2QkNb751G3LL/cus8/ZDOgh8xB\"",
+          "\"canva-site-verification=oOyaVnHC-OiFoR1BPvetNA\"",
+          "\"cisco-ci-domain-verification=27e926884619804ef987ae4aa1c4168f6b152ada84f4c8bfc74eb2bd2912ad72\"",
+          "\"creatopy-domain-verification=97d2ca50-9b6f-4a21-9bdb-fbb630e4cec7\"",
+          "\"docker-verification=c578e21c-34fb-4474-9b90-d55ee4cba10c\"",
+          "\"drift-domain-verification=f037808a26ae8b25bc13b1f1f2b4c3e0f78c03e67f24cefdd4ec520efa8e719f\"",
+          "\"facebook-domain-verification=h9mm6zopj6p2po54woa16m5bskm6oo\"",
+          "\"google-site-verification=C7thfNeXVahkVhniiqTI1iSVnElKR_kBBtnEHkeGDlo\"",
+          "\"google-site-verification=ZdlQZLBBAPkxeFTCM1rpiB_ibtGff_JF5KllNKwDR9I\"",
+          "\"liveramp-site-verification=EhH1MqgwbndTWl1AN64hOTKz7hc1s80yUpchLbgpfY0\"",
+          "\"logmein-verification-code=b3433c86-3823-4808-8a7e-58042469f654\"",
+          "\"miro-verification=bdd7dfa0a49adfb43ad6ddfaf797633246c07356\"",
+          "\"onetrust-domain-verification=bd5cd08a1e9644799fdb98ed7d60c9cb\"",
+          "\"status-page-domain-verification=r14frwljwbxs\"",
+          "\"stripe-verification=5096d01ff2cf194285dd51cae18f24fa9c26dc928cebac3636d462b4c6925623\"",
+          "\"stripe-verification=bf1a94e6b16ace2502a4a7fff574a25c8a45291054960c883c59be39d1788db9\"",
+          "\"uber-domain-verification=58086039-150a-42a4-a4be-b4032921aa0f\"",
+          "\"v=spf1 ip4:199.15.212.0/22 ip4:173.245.48.0/20 include:_spf.google.com include:spf1.mcsv.net include:spf.mandrillapp.com include:mail.zendesk.com include:stspg-customer.com include:_spf.salesforce.com -all\""
+        ],
+        "status": "OK",
+        "error": null,
+        "diagnostics": {
+          "transport": "udp",
+          "edns": 1232,
+          "rcode": 0,
+          "rcode_name": "NOERROR",
+          "flags": 33152,
+          "retries": 0,
+          "attempts": [
+            {
+              "transport": "udp",
+              "edns": 1232,
+              "error": false,
+              "elapsed_ms": 157.04
+            }
+          ],
+          "elapsed_ms": 157.04,
+          "fallback_used": false
+        }
+      },
+      {
+        "name": "cloudflare.com",
+        "rtype": "A",
+        "resolver_id": "auth:ns3.cloudflare.com@162.159.0.33",
+        "ttl": 300,
+        "answers": [
+          "104.16.132.229",
+          "104.16.133.229"
+        ],
+        "status": "OK",
+        "error": null,
+        "diagnostics": {
+          "transport": "udp",
+          "edns": 1232,
+          "rcode": 0,
+          "rcode_name": "NOERROR",
+          "flags": 33792,
+          "retries": 0,
+          "attempts": [
+            {
+              "transport": "udp",
+              "edns": 1232,
+              "error": false,
+              "elapsed_ms": 18.13
+            }
+          ],
+          "elapsed_ms": 18.13,
+          "fallback_used": false
+        }
+      },
+      {
+        "name": "cloudflare.com",
+        "rtype": "AAAA",
+        "resolver_id": "auth:ns3.cloudflare.com@162.159.0.33",
+        "ttl": 300,
+        "answers": [
+          "2606:4700::6810:84e5",
+          "2606:4700::6810:85e5"
+        ],
+        "status": "OK",
+        "error": null,
+        "diagnostics": {
+          "transport": "udp",
+          "edns": 1232,
+          "rcode": 0,
+          "rcode_name": "NOERROR",
+          "flags": 33792,
+          "retries": 0,
+          "attempts": [
+            {
+              "transport": "udp",
+              "edns": 1232,
+              "error": false,
+              "elapsed_ms": 56.76
+            }
+          ],
+          "elapsed_ms": 56.76,
+          "fallback_used": false
+        }
+      },
+      {
+        "name": "cloudflare.com",
+        "rtype": "CNAME",
+        "resolver_id": "auth:ns3.cloudflare.com@162.159.0.33",
+        "ttl": null,
+        "answers": [],
+        "status": "NODATA",
+        "error": null,
+        "diagnostics": {
+          "transport": "udp",
+          "edns": 1232,
+          "rcode": 0,
+          "rcode_name": "NOERROR",
+          "flags": 33792,
+          "retries": 0,
+          "attempts": [
+            {
+              "transport": "udp",
+              "edns": 1232,
+              "error": false,
+              "elapsed_ms": 43.27
+            }
+          ],
+          "elapsed_ms": 43.27,
+          "fallback_used": false
+        }
+      },
+      {
+        "name": "cloudflare.com",
+        "rtype": "MX",
+        "resolver_id": "auth:ns3.cloudflare.com@162.159.0.33",
+        "ttl": 1800,
+        "answers": [
+          "10 mxa.global.inbound.cf-emailsecurity.net.",
+          "10 mxb.global.inbound.cf-emailsecurity.net.",
+          "5 mxa-canary.global.inbound.cf-emailsecurity.net.",
+          "5 mxb-canary.global.inbound.cf-emailsecurity.net."
+        ],
+        "status": "OK",
+        "error": null,
+        "diagnostics": {
+          "transport": "udp",
+          "edns": 1232,
+          "rcode": 0,
+          "rcode_name": "NOERROR",
+          "flags": 33792,
+          "retries": 0,
+          "attempts": [
+            {
+              "transport": "udp",
+              "edns": 1232,
+              "error": false,
+              "elapsed_ms": 19.16
+            }
+          ],
+          "elapsed_ms": 19.16,
+          "fallback_used": false
+        }
+      },
+      {
+        "name": "cloudflare.com",
+        "rtype": "NS",
+        "resolver_id": "auth:ns3.cloudflare.com@162.159.0.33",
+        "ttl": 86400,
+        "answers": [
+          "ns3.cloudflare.com.",
+          "ns4.cloudflare.com.",
+          "ns5.cloudflare.com.",
+          "ns6.cloudflare.com.",
+          "ns7.cloudflare.com."
+        ],
+        "status": "OK",
+        "error": null,
+        "diagnostics": {
+          "transport": "udp",
+          "edns": 1232,
+          "rcode": 0,
+          "rcode_name": "NOERROR",
+          "flags": 33792,
+          "retries": 0,
+          "attempts": [
+            {
+              "transport": "udp",
+              "edns": 1232,
+              "error": false,
+              "elapsed_ms": 42.1
+            }
+          ],
+          "elapsed_ms": 42.1,
+          "fallback_used": false
+        }
+      },
+      {
+        "name": "cloudflare.com",
+        "rtype": "SOA",
+        "resolver_id": "auth:ns3.cloudflare.com@162.159.0.33",
+        "ttl": 300,
+        "answers": [
+          "ns3.cloudflare.com. dns.cloudflare.com. 2387738886 10000 2400 604800 300"
+        ],
+        "status": "OK",
+        "error": null,
+        "diagnostics": {
+          "transport": "udp",
+          "edns": 1232,
+          "rcode": 0,
+          "rcode_name": "NOERROR",
+          "flags": 33792,
+          "retries": 0,
+          "attempts": [
+            {
+              "transport": "udp",
+              "edns": 1232,
+              "error": false,
+              "elapsed_ms": 65.41
+            }
+          ],
+          "elapsed_ms": 65.41,
+          "fallback_used": false
+        }
+      },
+      {
+        "name": "cloudflare.com",
+        "rtype": "TXT",
+        "resolver_id": "auth:ns3.cloudflare.com@162.159.0.33",
+        "ttl": 300,
+        "answers": [
+          "\"MS=ms70274184\"",
+          "\"ZOOM_verify_7LFBvOO9SIigypFG2xRlMA\"",
+          "\"_neqmkgaq1lq9it5s8qmetrhbnu121wb\"",
+          "\"_saml-domain-challenge.2dc00405-79cd-457b-b288-a119c6f0c7b7.71996d53-d178-4ba9-bef4-7f7e46edab74.cloudflare.com=1c8736fd-84b2-4197-985f-3fb2852f2457\"",
+          "\"apple-domain-verification=DNnWJoArJobFJKhJ\"",
+          "\"asv=894f6d1f9f83bcf44e4b1bc40bc1c4aa\"",
+          "\"atlassian-domain-verification=WxxKyN9aLnjEsoOjUYI6T0bb5vcqmKzaIkC9Rx2QkNb751G3LL/cus8/ZDOgh8xB\"",
+          "\"canva-site-verification=oOyaVnHC-OiFoR1BPvetNA\"",
+          "\"cisco-ci-domain-verification=27e926884619804ef987ae4aa1c4168f6b152ada84f4c8bfc74eb2bd2912ad72\"",
+          "\"creatopy-domain-verification=97d2ca50-9b6f-4a21-9bdb-fbb630e4cec7\"",
+          "\"docker-verification=c578e21c-34fb-4474-9b90-d55ee4cba10c\"",
+          "\"drift-domain-verification=f037808a26ae8b25bc13b1f1f2b4c3e0f78c03e67f24cefdd4ec520efa8e719f\"",
+          "\"facebook-domain-verification=h9mm6zopj6p2po54woa16m5bskm6oo\"",
+          "\"google-site-verification=C7thfNeXVahkVhniiqTI1iSVnElKR_kBBtnEHkeGDlo\"",
+          "\"google-site-verification=ZdlQZLBBAPkxeFTCM1rpiB_ibtGff_JF5KllNKwDR9I\"",
+          "\"liveramp-site-verification=EhH1MqgwbndTWl1AN64hOTKz7hc1s80yUpchLbgpfY0\"",
+          "\"logmein-verification-code=b3433c86-3823-4808-8a7e-58042469f654\"",
+          "\"miro-verification=bdd7dfa0a49adfb43ad6ddfaf797633246c07356\"",
+          "\"onetrust-domain-verification=bd5cd08a1e9644799fdb98ed7d60c9cb\"",
+          "\"status-page-domain-verification=r14frwljwbxs\"",
+          "\"stripe-verification=5096d01ff2cf194285dd51cae18f24fa9c26dc928cebac3636d462b4c6925623\"",
+          "\"stripe-verification=bf1a94e6b16ace2502a4a7fff574a25c8a45291054960c883c59be39d1788db9\"",
+          "\"uber-domain-verification=58086039-150a-42a4-a4be-b4032921aa0f\"",
+          "\"v=spf1 ip4:199.15.212.0/22 ip4:173.245.48.0/20 include:_spf.google.com include:spf1.mcsv.net include:spf.mandrillapp.com include:mail.zendesk.com include:stspg-customer.com include:_spf.salesforce.com -all\""
+        ],
+        "status": "OK",
+        "error": null,
+        "diagnostics": {
+          "transport": "udp",
+          "edns": 1232,
+          "rcode": 0,
+          "rcode_name": "NOERROR",
+          "flags": 33792,
+          "retries": 0,
+          "attempts": [
+            {
+              "transport": "udp",
+              "edns": 1232,
+              "error": false,
+              "elapsed_ms": 92.77
+            }
+          ],
+          "elapsed_ms": 92.77,
+          "fallback_used": false
+        }
+      },
+      {
+        "name": "cloudflare.com",
+        "rtype": "A",
+        "resolver_id": "auth:ns3.cloudflare.com@162.159.7.226",
+        "ttl": 300,
+        "answers": [
+          "104.16.132.229",
+          "104.16.133.229"
+        ],
+        "status": "OK",
+        "error": null,
+        "diagnostics": {
+          "transport": "udp",
+          "edns": 1232,
+          "rcode": 0,
+          "rcode_name": "NOERROR",
+          "flags": 33792,
+          "retries": 0,
+          "attempts": [
+            {
+              "transport": "udp",
+              "edns": 1232,
+              "error": false,
+              "elapsed_ms": 67.06
+            }
+          ],
+          "elapsed_ms": 67.06,
+          "fallback_used": false
+        }
+      },
+      {
+        "name": "cloudflare.com",
+        "rtype": "AAAA",
+        "resolver_id": "auth:ns3.cloudflare.com@162.159.7.226",
+        "ttl": 300,
+        "answers": [
+          "2606:4700::6810:84e5",
+          "2606:4700::6810:85e5"
+        ],
+        "status": "OK",
+        "error": null,
+        "diagnostics": {
+          "transport": "udp",
+          "edns": 1232,
+          "rcode": 0,
+          "rcode_name": "NOERROR",
+          "flags": 33792,
+          "retries": 0,
+          "attempts": [
+            {
+              "transport": "udp",
+              "edns": 1232,
+              "error": false,
+              "elapsed_ms": 55.94
+            }
+          ],
+          "elapsed_ms": 55.94,
+          "fallback_used": false
+        }
+      },
+      {
+        "name": "cloudflare.com",
+        "rtype": "CNAME",
+        "resolver_id": "auth:ns3.cloudflare.com@162.159.7.226",
+        "ttl": null,
+        "answers": [],
+        "status": "NODATA",
+        "error": null,
+        "diagnostics": {
+          "transport": "udp",
+          "edns": 1232,
+          "rcode": 0,
+          "rcode_name": "NOERROR",
+          "flags": 33792,
+          "retries": 0,
+          "attempts": [
+            {
+              "transport": "udp",
+              "edns": 1232,
+              "error": false,
+              "elapsed_ms": 18.6
+            }
+          ],
+          "elapsed_ms": 18.6,
+          "fallback_used": false
+        }
+      },
+      {
+        "name": "cloudflare.com",
+        "rtype": "MX",
+        "resolver_id": "auth:ns3.cloudflare.com@162.159.7.226",
+        "ttl": 1800,
+        "answers": [
+          "10 mxa.global.inbound.cf-emailsecurity.net.",
+          "10 mxb.global.inbound.cf-emailsecurity.net.",
+          "5 mxa-canary.global.inbound.cf-emailsecurity.net.",
+          "5 mxb-canary.global.inbound.cf-emailsecurity.net."
+        ],
+        "status": "OK",
+        "error": null,
+        "diagnostics": {
+          "transport": "udp",
+          "edns": 1232,
+          "rcode": 0,
+          "rcode_name": "NOERROR",
+          "flags": 33792,
+          "retries": 0,
+          "attempts": [
+            {
+              "transport": "udp",
+              "edns": 1232,
+              "error": false,
+              "elapsed_ms": 17.76
+            }
+          ],
+          "elapsed_ms": 17.76,
+          "fallback_used": false
+        }
+      },
+      {
+        "name": "cloudflare.com",
+        "rtype": "NS",
+        "resolver_id": "auth:ns3.cloudflare.com@162.159.7.226",
+        "ttl": 86400,
+        "answers": [
+          "ns3.cloudflare.com.",
+          "ns4.cloudflare.com.",
+          "ns5.cloudflare.com.",
+          "ns6.cloudflare.com.",
+          "ns7.cloudflare.com."
+        ],
+        "status": "OK",
+        "error": null,
+        "diagnostics": {
+          "transport": "udp",
+          "edns": 1232,
+          "rcode": 0,
+          "rcode_name": "NOERROR",
+          "flags": 33792,
+          "retries": 0,
+          "attempts": [
+            {
+              "transport": "udp",
+              "edns": 1232,
+              "error": false,
+              "elapsed_ms": 16.93
+            }
+          ],
+          "elapsed_ms": 16.93,
+          "fallback_used": false
+        }
+      },
+      {
+        "name": "cloudflare.com",
+        "rtype": "SOA",
+        "resolver_id": "auth:ns3.cloudflare.com@162.159.7.226",
+        "ttl": 300,
+        "answers": [
+          "ns3.cloudflare.com. dns.cloudflare.com. 2387738886 10000 2400 604800 300"
+        ],
+        "status": "OK",
+        "error": null,
+        "diagnostics": {
+          "transport": "udp",
+          "edns": 1232,
+          "rcode": 0,
+          "rcode_name": "NOERROR",
+          "flags": 33792,
+          "retries": 0,
+          "attempts": [
+            {
+              "transport": "udp",
+              "edns": 1232,
+              "error": false,
+              "elapsed_ms": 15.11
+            }
+          ],
+          "elapsed_ms": 15.11,
+          "fallback_used": false
+        }
+      },
+      {
+        "name": "cloudflare.com",
+        "rtype": "TXT",
+        "resolver_id": "auth:ns3.cloudflare.com@162.159.7.226",
+        "ttl": 300,
+        "answers": [
+          "\"MS=ms70274184\"",
+          "\"ZOOM_verify_7LFBvOO9SIigypFG2xRlMA\"",
+          "\"_neqmkgaq1lq9it5s8qmetrhbnu121wb\"",
+          "\"_saml-domain-challenge.2dc00405-79cd-457b-b288-a119c6f0c7b7.71996d53-d178-4ba9-bef4-7f7e46edab74.cloudflare.com=1c8736fd-84b2-4197-985f-3fb2852f2457\"",
+          "\"apple-domain-verification=DNnWJoArJobFJKhJ\"",
+          "\"asv=894f6d1f9f83bcf44e4b1bc40bc1c4aa\"",
+          "\"atlassian-domain-verification=WxxKyN9aLnjEsoOjUYI6T0bb5vcqmKzaIkC9Rx2QkNb751G3LL/cus8/ZDOgh8xB\"",
+          "\"canva-site-verification=oOyaVnHC-OiFoR1BPvetNA\"",
+          "\"cisco-ci-domain-verification=27e926884619804ef987ae4aa1c4168f6b152ada84f4c8bfc74eb2bd2912ad72\"",
+          "\"creatopy-domain-verification=97d2ca50-9b6f-4a21-9bdb-fbb630e4cec7\"",
+          "\"docker-verification=c578e21c-34fb-4474-9b90-d55ee4cba10c\"",
+          "\"drift-domain-verification=f037808a26ae8b25bc13b1f1f2b4c3e0f78c03e67f24cefdd4ec520efa8e719f\"",
+          "\"facebook-domain-verification=h9mm6zopj6p2po54woa16m5bskm6oo\"",
+          "\"google-site-verification=C7thfNeXVahkVhniiqTI1iSVnElKR_kBBtnEHkeGDlo\"",
+          "\"google-site-verification=ZdlQZLBBAPkxeFTCM1rpiB_ibtGff_JF5KllNKwDR9I\"",
+          "\"liveramp-site-verification=EhH1MqgwbndTWl1AN64hOTKz7hc1s80yUpchLbgpfY0\"",
+          "\"logmein-verification-code=b3433c86-3823-4808-8a7e-58042469f654\"",
+          "\"miro-verification=bdd7dfa0a49adfb43ad6ddfaf797633246c07356\"",
+          "\"onetrust-domain-verification=bd5cd08a1e9644799fdb98ed7d60c9cb\"",
+          "\"status-page-domain-verification=r14frwljwbxs\"",
+          "\"stripe-verification=5096d01ff2cf194285dd51cae18f24fa9c26dc928cebac3636d462b4c6925623\"",
+          "\"stripe-verification=bf1a94e6b16ace2502a4a7fff574a25c8a45291054960c883c59be39d1788db9\"",
+          "\"uber-domain-verification=58086039-150a-42a4-a4be-b4032921aa0f\"",
+          "\"v=spf1 ip4:199.15.212.0/22 ip4:173.245.48.0/20 include:_spf.google.com include:spf1.mcsv.net include:spf.mandrillapp.com include:mail.zendesk.com include:stspg-customer.com include:_spf.salesforce.com -all\""
+        ],
+        "status": "OK",
+        "error": null,
+        "diagnostics": {
+          "transport": "udp",
+          "edns": 1232,
+          "rcode": 0,
+          "rcode_name": "NOERROR",
+          "flags": 33792,
+          "retries": 0,
+          "attempts": [
+            {
+              "transport": "udp",
+              "edns": 1232,
+              "error": false,
+              "elapsed_ms": 83.43
+            }
+          ],
+          "elapsed_ms": 83.43,
+          "fallback_used": false
+        }
+      },
+      {
+        "name": "cloudflare.com",
+        "rtype": "A",
+        "resolver_id": "auth:ns3.cloudflare.com@2400:cb00:2049:1::a29f:21",
+        "ttl": 300,
+        "answers": [
+          "104.16.132.229",
+          "104.16.133.229"
+        ],
+        "status": "OK",
+        "error": null,
+        "diagnostics": {
+          "transport": "udp",
+          "edns": 1232,
+          "rcode": 0,
+          "rcode_name": "NOERROR",
+          "flags": 33792,
+          "retries": 0,
+          "attempts": [
+            {
+              "transport": "udp",
+              "edns": 1232,
+              "error": false,
+              "elapsed_ms": 18.63
+            }
+          ],
+          "elapsed_ms": 18.63,
+          "fallback_used": false
+        }
+      },
+      {
+        "name": "cloudflare.com",
+        "rtype": "AAAA",
+        "resolver_id": "auth:ns3.cloudflare.com@2400:cb00:2049:1::a29f:21",
+        "ttl": 300,
+        "answers": [
+          "2606:4700::6810:84e5",
+          "2606:4700::6810:85e5"
+        ],
+        "status": "OK",
+        "error": null,
+        "diagnostics": {
+          "transport": "udp",
+          "edns": 1232,
+          "rcode": 0,
+          "rcode_name": "NOERROR",
+          "flags": 33792,
+          "retries": 0,
+          "attempts": [
+            {
+              "transport": "udp",
+              "edns": 1232,
+              "error": false,
+              "elapsed_ms": 15.98
+            }
+          ],
+          "elapsed_ms": 15.98,
+          "fallback_used": false
+        }
+      },
+      {
+        "name": "cloudflare.com",
+        "rtype": "CNAME",
+        "resolver_id": "auth:ns3.cloudflare.com@2400:cb00:2049:1::a29f:21",
+        "ttl": null,
+        "answers": [],
+        "status": "NODATA",
+        "error": null,
+        "diagnostics": {
+          "transport": "udp",
+          "edns": 1232,
+          "rcode": 0,
+          "rcode_name": "NOERROR",
+          "flags": 33792,
+          "retries": 0,
+          "attempts": [
+            {
+              "transport": "udp",
+              "edns": 1232,
+              "error": false,
+              "elapsed_ms": 15.39
+            }
+          ],
+          "elapsed_ms": 15.39,
+          "fallback_used": false
+        }
+      },
+      {
+        "name": "cloudflare.com",
+        "rtype": "MX",
+        "resolver_id": "auth:ns3.cloudflare.com@2400:cb00:2049:1::a29f:21",
+        "ttl": 1800,
+        "answers": [
+          "10 mxa.global.inbound.cf-emailsecurity.net.",
+          "10 mxb.global.inbound.cf-emailsecurity.net.",
+          "5 mxa-canary.global.inbound.cf-emailsecurity.net.",
+          "5 mxb-canary.global.inbound.cf-emailsecurity.net."
+        ],
+        "status": "OK",
+        "error": null,
+        "diagnostics": {
+          "transport": "udp",
+          "edns": 1232,
+          "rcode": 0,
+          "rcode_name": "NOERROR",
+          "flags": 33792,
+          "retries": 0,
+          "attempts": [
+            {
+              "transport": "udp",
+              "edns": 1232,
+              "error": false,
+              "elapsed_ms": 17.06
+            }
+          ],
+          "elapsed_ms": 17.06,
+          "fallback_used": false
+        }
+      },
+      {
+        "name": "cloudflare.com",
+        "rtype": "NS",
+        "resolver_id": "auth:ns3.cloudflare.com@2400:cb00:2049:1::a29f:21",
+        "ttl": 86400,
+        "answers": [
+          "ns3.cloudflare.com.",
+          "ns4.cloudflare.com.",
+          "ns5.cloudflare.com.",
+          "ns6.cloudflare.com.",
+          "ns7.cloudflare.com."
+        ],
+        "status": "OK",
+        "error": null,
+        "diagnostics": {
+          "transport": "udp",
+          "edns": 1232,
+          "rcode": 0,
+          "rcode_name": "NOERROR",
+          "flags": 33792,
+          "retries": 0,
+          "attempts": [
+            {
+              "transport": "udp",
+              "edns": 1232,
+              "error": false,
+              "elapsed_ms": 18.07
+            }
+          ],
+          "elapsed_ms": 18.07,
+          "fallback_used": false
+        }
+      },
+      {
+        "name": "cloudflare.com",
+        "rtype": "SOA",
+        "resolver_id": "auth:ns3.cloudflare.com@2400:cb00:2049:1::a29f:21",
+        "ttl": 300,
+        "answers": [
+          "ns3.cloudflare.com. dns.cloudflare.com. 2387738886 10000 2400 604800 300"
+        ],
+        "status": "OK",
+        "error": null,
+        "diagnostics": {
+          "transport": "udp",
+          "edns": 1232,
+          "rcode": 0,
+          "rcode_name": "NOERROR",
+          "flags": 33792,
+          "retries": 0,
+          "attempts": [
+            {
+              "transport": "udp",
+              "edns": 1232,
+              "error": false,
+              "elapsed_ms": 15.72
+            }
+          ],
+          "elapsed_ms": 15.72,
+          "fallback_used": false
+        }
+      },
+      {
+        "name": "cloudflare.com",
+        "rtype": "TXT",
+        "resolver_id": "auth:ns3.cloudflare.com@2400:cb00:2049:1::a29f:21",
+        "ttl": 300,
+        "answers": [
+          "\"MS=ms70274184\"",
+          "\"ZOOM_verify_7LFBvOO9SIigypFG2xRlMA\"",
+          "\"_neqmkgaq1lq9it5s8qmetrhbnu121wb\"",
+          "\"_saml-domain-challenge.2dc00405-79cd-457b-b288-a119c6f0c7b7.71996d53-d178-4ba9-bef4-7f7e46edab74.cloudflare.com=1c8736fd-84b2-4197-985f-3fb2852f2457\"",
+          "\"apple-domain-verification=DNnWJoArJobFJKhJ\"",
+          "\"asv=894f6d1f9f83bcf44e4b1bc40bc1c4aa\"",
+          "\"atlassian-domain-verification=WxxKyN9aLnjEsoOjUYI6T0bb5vcqmKzaIkC9Rx2QkNb751G3LL/cus8/ZDOgh8xB\"",
+          "\"canva-site-verification=oOyaVnHC-OiFoR1BPvetNA\"",
+          "\"cisco-ci-domain-verification=27e926884619804ef987ae4aa1c4168f6b152ada84f4c8bfc74eb2bd2912ad72\"",
+          "\"creatopy-domain-verification=97d2ca50-9b6f-4a21-9bdb-fbb630e4cec7\"",
+          "\"docker-verification=c578e21c-34fb-4474-9b90-d55ee4cba10c\"",
+          "\"drift-domain-verification=f037808a26ae8b25bc13b1f1f2b4c3e0f78c03e67f24cefdd4ec520efa8e719f\"",
+          "\"facebook-domain-verification=h9mm6zopj6p2po54woa16m5bskm6oo\"",
+          "\"google-site-verification=C7thfNeXVahkVhniiqTI1iSVnElKR_kBBtnEHkeGDlo\"",
+          "\"google-site-verification=ZdlQZLBBAPkxeFTCM1rpiB_ibtGff_JF5KllNKwDR9I\"",
+          "\"liveramp-site-verification=EhH1MqgwbndTWl1AN64hOTKz7hc1s80yUpchLbgpfY0\"",
+          "\"logmein-verification-code=b3433c86-3823-4808-8a7e-58042469f654\"",
+          "\"miro-verification=bdd7dfa0a49adfb43ad6ddfaf797633246c07356\"",
+          "\"onetrust-domain-verification=bd5cd08a1e9644799fdb98ed7d60c9cb\"",
+          "\"status-page-domain-verification=r14frwljwbxs\"",
+          "\"stripe-verification=5096d01ff2cf194285dd51cae18f24fa9c26dc928cebac3636d462b4c6925623\"",
+          "\"stripe-verification=bf1a94e6b16ace2502a4a7fff574a25c8a45291054960c883c59be39d1788db9\"",
+          "\"uber-domain-verification=58086039-150a-42a4-a4be-b4032921aa0f\"",
+          "\"v=spf1 ip4:199.15.212.0/22 ip4:173.245.48.0/20 include:_spf.google.com include:spf1.mcsv.net include:spf.mandrillapp.com include:mail.zendesk.com include:stspg-customer.com include:_spf.salesforce.com -all\""
+        ],
+        "status": "OK",
+        "error": null,
+        "diagnostics": {
+          "transport": "udp",
+          "edns": 1232,
+          "rcode": 0,
+          "rcode_name": "NOERROR",
+          "flags": 33792,
+          "retries": 0,
+          "attempts": [
+            {
+              "transport": "udp",
+              "edns": 1232,
+              "error": false,
+              "elapsed_ms": 49.12
+            }
+          ],
+          "elapsed_ms": 49.12,
+          "fallback_used": false
+        }
+      },
+      {
+        "name": "cloudflare.com",
+        "rtype": "A",
+        "resolver_id": "auth:ns3.cloudflare.com@2400:cb00:2049:1::a29f:7e2",
+        "ttl": 300,
+        "answers": [
+          "104.16.132.229",
+          "104.16.133.229"
+        ],
+        "status": "OK",
+        "error": null,
+        "diagnostics": {
+          "transport": "udp",
+          "edns": 1232,
+          "rcode": 0,
+          "rcode_name": "NOERROR",
+          "flags": 33792,
+          "retries": 0,
+          "attempts": [
+            {
+              "transport": "udp",
+              "edns": 1232,
+              "error": false,
+              "elapsed_ms": 19.24
+            }
+          ],
+          "elapsed_ms": 19.24,
+          "fallback_used": false
+        }
+      },
+      {
+        "name": "cloudflare.com",
+        "rtype": "AAAA",
+        "resolver_id": "auth:ns3.cloudflare.com@2400:cb00:2049:1::a29f:7e2",
+        "ttl": 300,
+        "answers": [
+          "2606:4700::6810:84e5",
+          "2606:4700::6810:85e5"
+        ],
+        "status": "OK",
+        "error": null,
+        "diagnostics": {
+          "transport": "udp",
+          "edns": 1232,
+          "rcode": 0,
+          "rcode_name": "NOERROR",
+          "flags": 33792,
+          "retries": 0,
+          "attempts": [
+            {
+              "transport": "udp",
+              "edns": 1232,
+              "error": false,
+              "elapsed_ms": 16.84
+            }
+          ],
+          "elapsed_ms": 16.84,
+          "fallback_used": false
+        }
+      },
+      {
+        "name": "cloudflare.com",
+        "rtype": "CNAME",
+        "resolver_id": "auth:ns3.cloudflare.com@2400:cb00:2049:1::a29f:7e2",
+        "ttl": null,
+        "answers": [],
+        "status": "NODATA",
+        "error": null,
+        "diagnostics": {
+          "transport": "udp",
+          "edns": 1232,
+          "rcode": 0,
+          "rcode_name": "NOERROR",
+          "flags": 33792,
+          "retries": 0,
+          "attempts": [
+            {
+              "transport": "udp",
+              "edns": 1232,
+              "error": false,
+              "elapsed_ms": 20.68
+            }
+          ],
+          "elapsed_ms": 20.68,
+          "fallback_used": false
+        }
+      },
+      {
+        "name": "cloudflare.com",
+        "rtype": "MX",
+        "resolver_id": "auth:ns3.cloudflare.com@2400:cb00:2049:1::a29f:7e2",
+        "ttl": 1800,
+        "answers": [
+          "10 mxa.global.inbound.cf-emailsecurity.net.",
+          "10 mxb.global.inbound.cf-emailsecurity.net.",
+          "5 mxa-canary.global.inbound.cf-emailsecurity.net.",
+          "5 mxb-canary.global.inbound.cf-emailsecurity.net."
+        ],
+        "status": "OK",
+        "error": null,
+        "diagnostics": {
+          "transport": "udp",
+          "edns": 1232,
+          "rcode": 0,
+          "rcode_name": "NOERROR",
+          "flags": 33792,
+          "retries": 0,
+          "attempts": [
+            {
+              "transport": "udp",
+              "edns": 1232,
+              "error": false,
+              "elapsed_ms": 14.55
+            }
+          ],
+          "elapsed_ms": 14.55,
+          "fallback_used": false
+        }
+      },
+      {
+        "name": "cloudflare.com",
+        "rtype": "NS",
+        "resolver_id": "auth:ns3.cloudflare.com@2400:cb00:2049:1::a29f:7e2",
+        "ttl": 86400,
+        "answers": [
+          "ns3.cloudflare.com.",
+          "ns4.cloudflare.com.",
+          "ns5.cloudflare.com.",
+          "ns6.cloudflare.com.",
+          "ns7.cloudflare.com."
+        ],
+        "status": "OK",
+        "error": null,
+        "diagnostics": {
+          "transport": "udp",
+          "edns": 1232,
+          "rcode": 0,
+          "rcode_name": "NOERROR",
+          "flags": 33792,
+          "retries": 0,
+          "attempts": [
+            {
+              "transport": "udp",
+              "edns": 1232,
+              "error": false,
+              "elapsed_ms": 15.21
+            }
+          ],
+          "elapsed_ms": 15.21,
+          "fallback_used": false
+        }
+      },
+      {
+        "name": "cloudflare.com",
+        "rtype": "SOA",
+        "resolver_id": "auth:ns3.cloudflare.com@2400:cb00:2049:1::a29f:7e2",
+        "ttl": 300,
+        "answers": [
+          "ns3.cloudflare.com. dns.cloudflare.com. 2387738886 10000 2400 604800 300"
+        ],
+        "status": "OK",
+        "error": null,
+        "diagnostics": {
+          "transport": "udp",
+          "edns": 1232,
+          "rcode": 0,
+          "rcode_name": "NOERROR",
+          "flags": 33792,
+          "retries": 0,
+          "attempts": [
+            {
+              "transport": "udp",
+              "edns": 1232,
+              "error": false,
+              "elapsed_ms": 14.38
+            }
+          ],
+          "elapsed_ms": 14.38,
+          "fallback_used": false
+        }
+      },
+      {
+        "name": "cloudflare.com",
+        "rtype": "TXT",
+        "resolver_id": "auth:ns3.cloudflare.com@2400:cb00:2049:1::a29f:7e2",
+        "ttl": 300,
+        "answers": [
+          "\"MS=ms70274184\"",
+          "\"ZOOM_verify_7LFBvOO9SIigypFG2xRlMA\"",
+          "\"_neqmkgaq1lq9it5s8qmetrhbnu121wb\"",
+          "\"_saml-domain-challenge.2dc00405-79cd-457b-b288-a119c6f0c7b7.71996d53-d178-4ba9-bef4-7f7e46edab74.cloudflare.com=1c8736fd-84b2-4197-985f-3fb2852f2457\"",
+          "\"apple-domain-verification=DNnWJoArJobFJKhJ\"",
+          "\"asv=894f6d1f9f83bcf44e4b1bc40bc1c4aa\"",
+          "\"atlassian-domain-verification=WxxKyN9aLnjEsoOjUYI6T0bb5vcqmKzaIkC9Rx2QkNb751G3LL/cus8/ZDOgh8xB\"",
+          "\"canva-site-verification=oOyaVnHC-OiFoR1BPvetNA\"",
+          "\"cisco-ci-domain-verification=27e926884619804ef987ae4aa1c4168f6b152ada84f4c8bfc74eb2bd2912ad72\"",
+          "\"creatopy-domain-verification=97d2ca50-9b6f-4a21-9bdb-fbb630e4cec7\"",
+          "\"docker-verification=c578e21c-34fb-4474-9b90-d55ee4cba10c\"",
+          "\"drift-domain-verification=f037808a26ae8b25bc13b1f1f2b4c3e0f78c03e67f24cefdd4ec520efa8e719f\"",
+          "\"facebook-domain-verification=h9mm6zopj6p2po54woa16m5bskm6oo\"",
+          "\"google-site-verification=C7thfNeXVahkVhniiqTI1iSVnElKR_kBBtnEHkeGDlo\"",
+          "\"google-site-verification=ZdlQZLBBAPkxeFTCM1rpiB_ibtGff_JF5KllNKwDR9I\"",
+          "\"liveramp-site-verification=EhH1MqgwbndTWl1AN64hOTKz7hc1s80yUpchLbgpfY0\"",
+          "\"logmein-verification-code=b3433c86-3823-4808-8a7e-58042469f654\"",
+          "\"miro-verification=bdd7dfa0a49adfb43ad6ddfaf797633246c07356\"",
+          "\"onetrust-domain-verification=bd5cd08a1e9644799fdb98ed7d60c9cb\"",
+          "\"status-page-domain-verification=r14frwljwbxs\"",
+          "\"stripe-verification=5096d01ff2cf194285dd51cae18f24fa9c26dc928cebac3636d462b4c6925623\"",
+          "\"stripe-verification=bf1a94e6b16ace2502a4a7fff574a25c8a45291054960c883c59be39d1788db9\"",
+          "\"uber-domain-verification=58086039-150a-42a4-a4be-b4032921aa0f\"",
+          "\"v=spf1 ip4:199.15.212.0/22 ip4:173.245.48.0/20 include:_spf.google.com include:spf1.mcsv.net include:spf.mandrillapp.com include:mail.zendesk.com include:stspg-customer.com include:_spf.salesforce.com -all\""
+        ],
+        "status": "OK",
+        "error": null,
+        "diagnostics": {
+          "transport": "udp",
+          "edns": 1232,
+          "rcode": 0,
+          "rcode_name": "NOERROR",
+          "flags": 33792,
+          "retries": 0,
+          "attempts": [
+            {
+              "transport": "udp",
+              "edns": 1232,
+              "error": false,
+              "elapsed_ms": 51.56
+            }
+          ],
+          "elapsed_ms": 51.56,
+          "fallback_used": false
+        }
+      },
+      {
+        "name": "cloudflare.com",
+        "rtype": "A",
+        "resolver_id": "auth:ns4.cloudflare.com@162.159.1.33",
+        "ttl": 300,
+        "answers": [
+          "104.16.132.229",
+          "104.16.133.229"
+        ],
+        "status": "OK",
+        "error": null,
+        "diagnostics": {
+          "transport": "udp",
+          "edns": 1232,
+          "rcode": 0,
+          "rcode_name": "NOERROR",
+          "flags": 33792,
+          "retries": 0,
+          "attempts": [
+            {
+              "transport": "udp",
+              "edns": 1232,
+              "error": false,
+              "elapsed_ms": 18.53
+            }
+          ],
+          "elapsed_ms": 18.53,
+          "fallback_used": false
+        }
+      },
+      {
+        "name": "cloudflare.com",
+        "rtype": "AAAA",
+        "resolver_id": "auth:ns4.cloudflare.com@162.159.1.33",
+        "ttl": 300,
+        "answers": [
+          "2606:4700::6810:84e5",
+          "2606:4700::6810:85e5"
+        ],
+        "status": "OK",
+        "error": null,
+        "diagnostics": {
+          "transport": "udp",
+          "edns": 1232,
+          "rcode": 0,
+          "rcode_name": "NOERROR",
+          "flags": 33792,
+          "retries": 0,
+          "attempts": [
+            {
+              "transport": "udp",
+              "edns": 1232,
+              "error": false,
+              "elapsed_ms": 14.86
+            }
+          ],
+          "elapsed_ms": 14.86,
+          "fallback_used": false
+        }
+      },
+      {
+        "name": "cloudflare.com",
+        "rtype": "CNAME",
+        "resolver_id": "auth:ns4.cloudflare.com@162.159.1.33",
+        "ttl": null,
+        "answers": [],
+        "status": "NODATA",
+        "error": null,
+        "diagnostics": {
+          "transport": "udp",
+          "edns": 1232,
+          "rcode": 0,
+          "rcode_name": "NOERROR",
+          "flags": 33792,
+          "retries": 0,
+          "attempts": [
+            {
+              "transport": "udp",
+              "edns": 1232,
+              "error": false,
+              "elapsed_ms": 18.15
+            }
+          ],
+          "elapsed_ms": 18.15,
+          "fallback_used": false
+        }
+      },
+      {
+        "name": "cloudflare.com",
+        "rtype": "MX",
+        "resolver_id": "auth:ns4.cloudflare.com@162.159.1.33",
+        "ttl": 1800,
+        "answers": [
+          "10 mxa.global.inbound.cf-emailsecurity.net.",
+          "10 mxb.global.inbound.cf-emailsecurity.net.",
+          "5 mxa-canary.global.inbound.cf-emailsecurity.net.",
+          "5 mxb-canary.global.inbound.cf-emailsecurity.net."
+        ],
+        "status": "OK",
+        "error": null,
+        "diagnostics": {
+          "transport": "udp",
+          "edns": 1232,
+          "rcode": 0,
+          "rcode_name": "NOERROR",
+          "flags": 33792,
+          "retries": 0,
+          "attempts": [
+            {
+              "transport": "udp",
+              "edns": 1232,
+              "error": false,
+              "elapsed_ms": 17.74
+            }
+          ],
+          "elapsed_ms": 17.74,
+          "fallback_used": false
+        }
+      },
+      {
+        "name": "cloudflare.com",
+        "rtype": "NS",
+        "resolver_id": "auth:ns4.cloudflare.com@162.159.1.33",
+        "ttl": 86400,
+        "answers": [
+          "ns3.cloudflare.com.",
+          "ns4.cloudflare.com.",
+          "ns5.cloudflare.com.",
+          "ns6.cloudflare.com.",
+          "ns7.cloudflare.com."
+        ],
+        "status": "OK",
+        "error": null,
+        "diagnostics": {
+          "transport": "udp",
+          "edns": 1232,
+          "rcode": 0,
+          "rcode_name": "NOERROR",
+          "flags": 33792,
+          "retries": 0,
+          "attempts": [
+            {
+              "transport": "udp",
+              "edns": 1232,
+              "error": false,
+              "elapsed_ms": 22.6
+            }
+          ],
+          "elapsed_ms": 22.6,
+          "fallback_used": false
+        }
+      },
+      {
+        "name": "cloudflare.com",
+        "rtype": "SOA",
+        "resolver_id": "auth:ns4.cloudflare.com@162.159.1.33",
+        "ttl": 300,
+        "answers": [
+          "ns3.cloudflare.com. dns.cloudflare.com. 2387738886 10000 2400 604800 300"
+        ],
+        "status": "OK",
+        "error": null,
+        "diagnostics": {
+          "transport": "udp",
+          "edns": 1232,
+          "rcode": 0,
+          "rcode_name": "NOERROR",
+          "flags": 33792,
+          "retries": 0,
+          "attempts": [
+            {
+              "transport": "udp",
+              "edns": 1232,
+              "error": false,
+              "elapsed_ms": 19.18
+            }
+          ],
+          "elapsed_ms": 19.18,
+          "fallback_used": false
+        }
+      },
+      {
+        "name": "cloudflare.com",
+        "rtype": "TXT",
+        "resolver_id": "auth:ns4.cloudflare.com@162.159.1.33",
+        "ttl": 300,
+        "answers": [
+          "\"MS=ms70274184\"",
+          "\"ZOOM_verify_7LFBvOO9SIigypFG2xRlMA\"",
+          "\"_neqmkgaq1lq9it5s8qmetrhbnu121wb\"",
+          "\"_saml-domain-challenge.2dc00405-79cd-457b-b288-a119c6f0c7b7.71996d53-d178-4ba9-bef4-7f7e46edab74.cloudflare.com=1c8736fd-84b2-4197-985f-3fb2852f2457\"",
+          "\"apple-domain-verification=DNnWJoArJobFJKhJ\"",
+          "\"asv=894f6d1f9f83bcf44e4b1bc40bc1c4aa\"",
+          "\"atlassian-domain-verification=WxxKyN9aLnjEsoOjUYI6T0bb5vcqmKzaIkC9Rx2QkNb751G3LL/cus8/ZDOgh8xB\"",
+          "\"canva-site-verification=oOyaVnHC-OiFoR1BPvetNA\"",
+          "\"cisco-ci-domain-verification=27e926884619804ef987ae4aa1c4168f6b152ada84f4c8bfc74eb2bd2912ad72\"",
+          "\"creatopy-domain-verification=97d2ca50-9b6f-4a21-9bdb-fbb630e4cec7\"",
+          "\"docker-verification=c578e21c-34fb-4474-9b90-d55ee4cba10c\"",
+          "\"drift-domain-verification=f037808a26ae8b25bc13b1f1f2b4c3e0f78c03e67f24cefdd4ec520efa8e719f\"",
+          "\"facebook-domain-verification=h9mm6zopj6p2po54woa16m5bskm6oo\"",
+          "\"google-site-verification=C7thfNeXVahkVhniiqTI1iSVnElKR_kBBtnEHkeGDlo\"",
+          "\"google-site-verification=ZdlQZLBBAPkxeFTCM1rpiB_ibtGff_JF5KllNKwDR9I\"",
+          "\"liveramp-site-verification=EhH1MqgwbndTWl1AN64hOTKz7hc1s80yUpchLbgpfY0\"",
+          "\"logmein-verification-code=b3433c86-3823-4808-8a7e-58042469f654\"",
+          "\"miro-verification=bdd7dfa0a49adfb43ad6ddfaf797633246c07356\"",
+          "\"onetrust-domain-verification=bd5cd08a1e9644799fdb98ed7d60c9cb\"",
+          "\"status-page-domain-verification=r14frwljwbxs\"",
+          "\"stripe-verification=5096d01ff2cf194285dd51cae18f24fa9c26dc928cebac3636d462b4c6925623\"",
+          "\"stripe-verification=bf1a94e6b16ace2502a4a7fff574a25c8a45291054960c883c59be39d1788db9\"",
+          "\"uber-domain-verification=58086039-150a-42a4-a4be-b4032921aa0f\"",
+          "\"v=spf1 ip4:199.15.212.0/22 ip4:173.245.48.0/20 include:_spf.google.com include:spf1.mcsv.net include:spf.mandrillapp.com include:mail.zendesk.com include:stspg-customer.com include:_spf.salesforce.com -all\""
+        ],
+        "status": "OK",
+        "error": null,
+        "diagnostics": {
+          "transport": "udp",
+          "edns": 1232,
+          "rcode": 0,
+          "rcode_name": "NOERROR",
+          "flags": 33792,
+          "retries": 0,
+          "attempts": [
+            {
+              "transport": "udp",
+              "edns": 1232,
+              "error": false,
+              "elapsed_ms": 56.87
+            }
+          ],
+          "elapsed_ms": 56.87,
+          "fallback_used": false
+        }
+      },
+      {
+        "name": "cloudflare.com",
+        "rtype": "A",
+        "resolver_id": "auth:ns4.cloudflare.com@162.159.8.55",
+        "ttl": 300,
+        "answers": [
+          "104.16.132.229",
+          "104.16.133.229"
+        ],
+        "status": "OK",
+        "error": null,
+        "diagnostics": {
+          "transport": "udp",
+          "edns": 1232,
+          "rcode": 0,
+          "rcode_name": "NOERROR",
+          "flags": 33792,
+          "retries": 0,
+          "attempts": [
+            {
+              "transport": "udp",
+              "edns": 1232,
+              "error": false,
+              "elapsed_ms": 15.71
+            }
+          ],
+          "elapsed_ms": 15.71,
+          "fallback_used": false
+        }
+      },
+      {
+        "name": "cloudflare.com",
+        "rtype": "AAAA",
+        "resolver_id": "auth:ns4.cloudflare.com@162.159.8.55",
+        "ttl": 300,
+        "answers": [
+          "2606:4700::6810:84e5",
+          "2606:4700::6810:85e5"
+        ],
+        "status": "OK",
+        "error": null,
+        "diagnostics": {
+          "transport": "udp",
+          "edns": 1232,
+          "rcode": 0,
+          "rcode_name": "NOERROR",
+          "flags": 33792,
+          "retries": 0,
+          "attempts": [
+            {
+              "transport": "udp",
+              "edns": 1232,
+              "error": false,
+              "elapsed_ms": 17.02
+            }
+          ],
+          "elapsed_ms": 17.02,
+          "fallback_used": false
+        }
+      },
+      {
+        "name": "cloudflare.com",
+        "rtype": "CNAME",
+        "resolver_id": "auth:ns4.cloudflare.com@162.159.8.55",
+        "ttl": null,
+        "answers": [],
+        "status": "NODATA",
+        "error": null,
+        "diagnostics": {
+          "transport": "udp",
+          "edns": 1232,
+          "rcode": 0,
+          "rcode_name": "NOERROR",
+          "flags": 33792,
+          "retries": 0,
+          "attempts": [
+            {
+              "transport": "udp",
+              "edns": 1232,
+              "error": false,
+              "elapsed_ms": 17.62
+            }
+          ],
+          "elapsed_ms": 17.62,
+          "fallback_used": false
+        }
+      },
+      {
+        "name": "cloudflare.com",
+        "rtype": "MX",
+        "resolver_id": "auth:ns4.cloudflare.com@162.159.8.55",
+        "ttl": 1800,
+        "answers": [
+          "10 mxa.global.inbound.cf-emailsecurity.net.",
+          "10 mxb.global.inbound.cf-emailsecurity.net.",
+          "5 mxa-canary.global.inbound.cf-emailsecurity.net.",
+          "5 mxb-canary.global.inbound.cf-emailsecurity.net."
+        ],
+        "status": "OK",
+        "error": null,
+        "diagnostics": {
+          "transport": "udp",
+          "edns": 1232,
+          "rcode": 0,
+          "rcode_name": "NOERROR",
+          "flags": 33792,
+          "retries": 0,
+          "attempts": [
+            {
+              "transport": "udp",
+              "edns": 1232,
+              "error": false,
+              "elapsed_ms": 16.83
+            }
+          ],
+          "elapsed_ms": 16.83,
+          "fallback_used": false
+        }
+      },
+      {
+        "name": "cloudflare.com",
+        "rtype": "NS",
+        "resolver_id": "auth:ns4.cloudflare.com@162.159.8.55",
+        "ttl": 86400,
+        "answers": [
+          "ns3.cloudflare.com.",
+          "ns4.cloudflare.com.",
+          "ns5.cloudflare.com.",
+          "ns6.cloudflare.com.",
+          "ns7.cloudflare.com."
+        ],
+        "status": "OK",
+        "error": null,
+        "diagnostics": {
+          "transport": "udp",
+          "edns": 1232,
+          "rcode": 0,
+          "rcode_name": "NOERROR",
+          "flags": 33792,
+          "retries": 0,
+          "attempts": [
+            {
+              "transport": "udp",
+              "edns": 1232,
+              "error": false,
+              "elapsed_ms": 16.59
+            }
+          ],
+          "elapsed_ms": 16.59,
+          "fallback_used": false
+        }
+      },
+      {
+        "name": "cloudflare.com",
+        "rtype": "SOA",
+        "resolver_id": "auth:ns4.cloudflare.com@162.159.8.55",
+        "ttl": 300,
+        "answers": [
+          "ns3.cloudflare.com. dns.cloudflare.com. 2387738886 10000 2400 604800 300"
+        ],
+        "status": "OK",
+        "error": null,
+        "diagnostics": {
+          "transport": "udp",
+          "edns": 1232,
+          "rcode": 0,
+          "rcode_name": "NOERROR",
+          "flags": 33792,
+          "retries": 0,
+          "attempts": [
+            {
+              "transport": "udp",
+              "edns": 1232,
+              "error": false,
+              "elapsed_ms": 15.13
+            }
+          ],
+          "elapsed_ms": 15.13,
+          "fallback_used": false
+        }
+      },
+      {
+        "name": "cloudflare.com",
+        "rtype": "TXT",
+        "resolver_id": "auth:ns4.cloudflare.com@162.159.8.55",
+        "ttl": 300,
+        "answers": [
+          "\"MS=ms70274184\"",
+          "\"ZOOM_verify_7LFBvOO9SIigypFG2xRlMA\"",
+          "\"_neqmkgaq1lq9it5s8qmetrhbnu121wb\"",
+          "\"_saml-domain-challenge.2dc00405-79cd-457b-b288-a119c6f0c7b7.71996d53-d178-4ba9-bef4-7f7e46edab74.cloudflare.com=1c8736fd-84b2-4197-985f-3fb2852f2457\"",
+          "\"apple-domain-verification=DNnWJoArJobFJKhJ\"",
+          "\"asv=894f6d1f9f83bcf44e4b1bc40bc1c4aa\"",
+          "\"atlassian-domain-verification=WxxKyN9aLnjEsoOjUYI6T0bb5vcqmKzaIkC9Rx2QkNb751G3LL/cus8/ZDOgh8xB\"",
+          "\"canva-site-verification=oOyaVnHC-OiFoR1BPvetNA\"",
+          "\"cisco-ci-domain-verification=27e926884619804ef987ae4aa1c4168f6b152ada84f4c8bfc74eb2bd2912ad72\"",
+          "\"creatopy-domain-verification=97d2ca50-9b6f-4a21-9bdb-fbb630e4cec7\"",
+          "\"docker-verification=c578e21c-34fb-4474-9b90-d55ee4cba10c\"",
+          "\"drift-domain-verification=f037808a26ae8b25bc13b1f1f2b4c3e0f78c03e67f24cefdd4ec520efa8e719f\"",
+          "\"facebook-domain-verification=h9mm6zopj6p2po54woa16m5bskm6oo\"",
+          "\"google-site-verification=C7thfNeXVahkVhniiqTI1iSVnElKR_kBBtnEHkeGDlo\"",
+          "\"google-site-verification=ZdlQZLBBAPkxeFTCM1rpiB_ibtGff_JF5KllNKwDR9I\"",
+          "\"liveramp-site-verification=EhH1MqgwbndTWl1AN64hOTKz7hc1s80yUpchLbgpfY0\"",
+          "\"logmein-verification-code=b3433c86-3823-4808-8a7e-58042469f654\"",
+          "\"miro-verification=bdd7dfa0a49adfb43ad6ddfaf797633246c07356\"",
+          "\"onetrust-domain-verification=bd5cd08a1e9644799fdb98ed7d60c9cb\"",
+          "\"status-page-domain-verification=r14frwljwbxs\"",
+          "\"stripe-verification=5096d01ff2cf194285dd51cae18f24fa9c26dc928cebac3636d462b4c6925623\"",
+          "\"stripe-verification=bf1a94e6b16ace2502a4a7fff574a25c8a45291054960c883c59be39d1788db9\"",
+          "\"uber-domain-verification=58086039-150a-42a4-a4be-b4032921aa0f\"",
+          "\"v=spf1 ip4:199.15.212.0/22 ip4:173.245.48.0/20 include:_spf.google.com include:spf1.mcsv.net include:spf.mandrillapp.com include:mail.zendesk.com include:stspg-customer.com include:_spf.salesforce.com -all\""
+        ],
+        "status": "OK",
+        "error": null,
+        "diagnostics": {
+          "transport": "udp",
+          "edns": 1232,
+          "rcode": 0,
+          "rcode_name": "NOERROR",
+          "flags": 33792,
+          "retries": 0,
+          "attempts": [
+            {
+              "transport": "udp",
+              "edns": 1232,
+              "error": false,
+              "elapsed_ms": 46.19
+            }
+          ],
+          "elapsed_ms": 46.19,
+          "fallback_used": false
+        }
+      },
+      {
+        "name": "cloudflare.com",
+        "rtype": "A",
+        "resolver_id": "auth:ns4.cloudflare.com@2400:cb00:2049:1::a29f:121",
+        "ttl": 300,
+        "answers": [
+          "104.16.132.229",
+          "104.16.133.229"
+        ],
+        "status": "OK",
+        "error": null,
+        "diagnostics": {
+          "transport": "udp",
+          "edns": 1232,
+          "rcode": 0,
+          "rcode_name": "NOERROR",
+          "flags": 33792,
+          "retries": 0,
+          "attempts": [
+            {
+              "transport": "udp",
+              "edns": 1232,
+              "error": false,
+              "elapsed_ms": 16.47
+            }
+          ],
+          "elapsed_ms": 16.47,
+          "fallback_used": false
+        }
+      },
+      {
+        "name": "cloudflare.com",
+        "rtype": "AAAA",
+        "resolver_id": "auth:ns4.cloudflare.com@2400:cb00:2049:1::a29f:121",
+        "ttl": 300,
+        "answers": [
+          "2606:4700::6810:84e5",
+          "2606:4700::6810:85e5"
+        ],
+        "status": "OK",
+        "error": null,
+        "diagnostics": {
+          "transport": "udp",
+          "edns": 1232,
+          "rcode": 0,
+          "rcode_name": "NOERROR",
+          "flags": 33792,
+          "retries": 0,
+          "attempts": [
+            {
+              "transport": "udp",
+              "edns": 1232,
+              "error": false,
+              "elapsed_ms": 18.02
+            }
+          ],
+          "elapsed_ms": 18.02,
+          "fallback_used": false
+        }
+      },
+      {
+        "name": "cloudflare.com",
+        "rtype": "CNAME",
+        "resolver_id": "auth:ns4.cloudflare.com@2400:cb00:2049:1::a29f:121",
+        "ttl": null,
+        "answers": [],
+        "status": "NODATA",
+        "error": null,
+        "diagnostics": {
+          "transport": "udp",
+          "edns": 1232,
+          "rcode": 0,
+          "rcode_name": "NOERROR",
+          "flags": 33792,
+          "retries": 0,
+          "attempts": [
+            {
+              "transport": "udp",
+              "edns": 1232,
+              "error": false,
+              "elapsed_ms": 15.62
+            }
+          ],
+          "elapsed_ms": 15.62,
+          "fallback_used": false
+        }
+      },
+      {
+        "name": "cloudflare.com",
+        "rtype": "MX",
+        "resolver_id": "auth:ns4.cloudflare.com@2400:cb00:2049:1::a29f:121",
+        "ttl": 1800,
+        "answers": [
+          "10 mxa.global.inbound.cf-emailsecurity.net.",
+          "10 mxb.global.inbound.cf-emailsecurity.net.",
+          "5 mxa-canary.global.inbound.cf-emailsecurity.net.",
+          "5 mxb-canary.global.inbound.cf-emailsecurity.net."
+        ],
+        "status": "OK",
+        "error": null,
+        "diagnostics": {
+          "transport": "udp",
+          "edns": 1232,
+          "rcode": 0,
+          "rcode_name": "NOERROR",
+          "flags": 33792,
+          "retries": 0,
+          "attempts": [
+            {
+              "transport": "udp",
+              "edns": 1232,
+              "error": false,
+              "elapsed_ms": 16.82
+            }
+          ],
+          "elapsed_ms": 16.82,
+          "fallback_used": false
+        }
+      },
+      {
+        "name": "cloudflare.com",
+        "rtype": "NS",
+        "resolver_id": "auth:ns4.cloudflare.com@2400:cb00:2049:1::a29f:121",
+        "ttl": 86400,
+        "answers": [
+          "ns3.cloudflare.com.",
+          "ns4.cloudflare.com.",
+          "ns5.cloudflare.com.",
+          "ns6.cloudflare.com.",
+          "ns7.cloudflare.com."
+        ],
+        "status": "OK",
+        "error": null,
+        "diagnostics": {
+          "transport": "udp",
+          "edns": 1232,
+          "rcode": 0,
+          "rcode_name": "NOERROR",
+          "flags": 33792,
+          "retries": 0,
+          "attempts": [
+            {
+              "transport": "udp",
+              "edns": 1232,
+              "error": false,
+              "elapsed_ms": 24.38
+            }
+          ],
+          "elapsed_ms": 24.38,
+          "fallback_used": false
+        }
+      },
+      {
+        "name": "cloudflare.com",
+        "rtype": "SOA",
+        "resolver_id": "auth:ns4.cloudflare.com@2400:cb00:2049:1::a29f:121",
+        "ttl": 300,
+        "answers": [
+          "ns3.cloudflare.com. dns.cloudflare.com. 2387738886 10000 2400 604800 300"
+        ],
+        "status": "OK",
+        "error": null,
+        "diagnostics": {
+          "transport": "udp",
+          "edns": 1232,
+          "rcode": 0,
+          "rcode_name": "NOERROR",
+          "flags": 33792,
+          "retries": 0,
+          "attempts": [
+            {
+              "transport": "udp",
+              "edns": 1232,
+              "error": false,
+              "elapsed_ms": 18.81
+            }
+          ],
+          "elapsed_ms": 18.81,
+          "fallback_used": false
+        }
+      },
+      {
+        "name": "cloudflare.com",
+        "rtype": "TXT",
+        "resolver_id": "auth:ns4.cloudflare.com@2400:cb00:2049:1::a29f:121",
+        "ttl": 300,
+        "answers": [
+          "\"MS=ms70274184\"",
+          "\"ZOOM_verify_7LFBvOO9SIigypFG2xRlMA\"",
+          "\"_neqmkgaq1lq9it5s8qmetrhbnu121wb\"",
+          "\"_saml-domain-challenge.2dc00405-79cd-457b-b288-a119c6f0c7b7.71996d53-d178-4ba9-bef4-7f7e46edab74.cloudflare.com=1c8736fd-84b2-4197-985f-3fb2852f2457\"",
+          "\"apple-domain-verification=DNnWJoArJobFJKhJ\"",
+          "\"asv=894f6d1f9f83bcf44e4b1bc40bc1c4aa\"",
+          "\"atlassian-domain-verification=WxxKyN9aLnjEsoOjUYI6T0bb5vcqmKzaIkC9Rx2QkNb751G3LL/cus8/ZDOgh8xB\"",
+          "\"canva-site-verification=oOyaVnHC-OiFoR1BPvetNA\"",
+          "\"cisco-ci-domain-verification=27e926884619804ef987ae4aa1c4168f6b152ada84f4c8bfc74eb2bd2912ad72\"",
+          "\"creatopy-domain-verification=97d2ca50-9b6f-4a21-9bdb-fbb630e4cec7\"",
+          "\"docker-verification=c578e21c-34fb-4474-9b90-d55ee4cba10c\"",
+          "\"drift-domain-verification=f037808a26ae8b25bc13b1f1f2b4c3e0f78c03e67f24cefdd4ec520efa8e719f\"",
+          "\"facebook-domain-verification=h9mm6zopj6p2po54woa16m5bskm6oo\"",
+          "\"google-site-verification=C7thfNeXVahkVhniiqTI1iSVnElKR_kBBtnEHkeGDlo\"",
+          "\"google-site-verification=ZdlQZLBBAPkxeFTCM1rpiB_ibtGff_JF5KllNKwDR9I\"",
+          "\"liveramp-site-verification=EhH1MqgwbndTWl1AN64hOTKz7hc1s80yUpchLbgpfY0\"",
+          "\"logmein-verification-code=b3433c86-3823-4808-8a7e-58042469f654\"",
+          "\"miro-verification=bdd7dfa0a49adfb43ad6ddfaf797633246c07356\"",
+          "\"onetrust-domain-verification=bd5cd08a1e9644799fdb98ed7d60c9cb\"",
+          "\"status-page-domain-verification=r14frwljwbxs\"",
+          "\"stripe-verification=5096d01ff2cf194285dd51cae18f24fa9c26dc928cebac3636d462b4c6925623\"",
+          "\"stripe-verification=bf1a94e6b16ace2502a4a7fff574a25c8a45291054960c883c59be39d1788db9\"",
+          "\"uber-domain-verification=58086039-150a-42a4-a4be-b4032921aa0f\"",
+          "\"v=spf1 ip4:199.15.212.0/22 ip4:173.245.48.0/20 include:_spf.google.com include:spf1.mcsv.net include:spf.mandrillapp.com include:mail.zendesk.com include:stspg-customer.com include:_spf.salesforce.com -all\""
+        ],
+        "status": "OK",
+        "error": null,
+        "diagnostics": {
+          "transport": "udp",
+          "edns": 1232,
+          "rcode": 0,
+          "rcode_name": "NOERROR",
+          "flags": 33792,
+          "retries": 0,
+          "attempts": [
+            {
+              "transport": "udp",
+              "edns": 1232,
+              "error": false,
+              "elapsed_ms": 55.42
+            }
+          ],
+          "elapsed_ms": 55.42,
+          "fallback_used": false
+        }
+      },
+      {
+        "name": "cloudflare.com",
+        "rtype": "A",
+        "resolver_id": "auth:ns4.cloudflare.com@2400:cb00:2049:1::a29f:837",
+        "ttl": 300,
+        "answers": [
+          "104.16.132.229",
+          "104.16.133.229"
+        ],
+        "status": "OK",
+        "error": null,
+        "diagnostics": {
+          "transport": "udp",
+          "edns": 1232,
+          "rcode": 0,
+          "rcode_name": "NOERROR",
+          "flags": 33792,
+          "retries": 0,
+          "attempts": [
+            {
+              "transport": "udp",
+              "edns": 1232,
+              "error": false,
+              "elapsed_ms": 16.2
+            }
+          ],
+          "elapsed_ms": 16.2,
+          "fallback_used": false
+        }
+      },
+      {
+        "name": "cloudflare.com",
+        "rtype": "AAAA",
+        "resolver_id": "auth:ns4.cloudflare.com@2400:cb00:2049:1::a29f:837",
+        "ttl": 300,
+        "answers": [
+          "2606:4700::6810:84e5",
+          "2606:4700::6810:85e5"
+        ],
+        "status": "OK",
+        "error": null,
+        "diagnostics": {
+          "transport": "udp",
+          "edns": 1232,
+          "rcode": 0,
+          "rcode_name": "NOERROR",
+          "flags": 33792,
+          "retries": 0,
+          "attempts": [
+            {
+              "transport": "udp",
+              "edns": 1232,
+              "error": false,
+              "elapsed_ms": 14.37
+            }
+          ],
+          "elapsed_ms": 14.37,
+          "fallback_used": false
+        }
+      },
+      {
+        "name": "cloudflare.com",
+        "rtype": "CNAME",
+        "resolver_id": "auth:ns4.cloudflare.com@2400:cb00:2049:1::a29f:837",
+        "ttl": null,
+        "answers": [],
+        "status": "NODATA",
+        "error": null,
+        "diagnostics": {
+          "transport": "udp",
+          "edns": 1232,
+          "rcode": 0,
+          "rcode_name": "NOERROR",
+          "flags": 33792,
+          "retries": 0,
+          "attempts": [
+            {
+              "transport": "udp",
+              "edns": 1232,
+              "error": false,
+              "elapsed_ms": 14.68
+            }
+          ],
+          "elapsed_ms": 14.68,
+          "fallback_used": false
+        }
+      },
+      {
+        "name": "cloudflare.com",
+        "rtype": "MX",
+        "resolver_id": "auth:ns4.cloudflare.com@2400:cb00:2049:1::a29f:837",
+        "ttl": 1800,
+        "answers": [
+          "10 mxa.global.inbound.cf-emailsecurity.net.",
+          "10 mxb.global.inbound.cf-emailsecurity.net.",
+          "5 mxa-canary.global.inbound.cf-emailsecurity.net.",
+          "5 mxb-canary.global.inbound.cf-emailsecurity.net."
+        ],
+        "status": "OK",
+        "error": null,
+        "diagnostics": {
+          "transport": "udp",
+          "edns": 1232,
+          "rcode": 0,
+          "rcode_name": "NOERROR",
+          "flags": 33792,
+          "retries": 0,
+          "attempts": [
+            {
+              "transport": "udp",
+              "edns": 1232,
+              "error": false,
+              "elapsed_ms": 19.83
+            }
+          ],
+          "elapsed_ms": 19.83,
+          "fallback_used": false
+        }
+      },
+      {
+        "name": "cloudflare.com",
+        "rtype": "NS",
+        "resolver_id": "auth:ns4.cloudflare.com@2400:cb00:2049:1::a29f:837",
+        "ttl": 86400,
+        "answers": [
+          "ns3.cloudflare.com.",
+          "ns4.cloudflare.com.",
+          "ns5.cloudflare.com.",
+          "ns6.cloudflare.com.",
+          "ns7.cloudflare.com."
+        ],
+        "status": "OK",
+        "error": null,
+        "diagnostics": {
+          "transport": "udp",
+          "edns": 1232,
+          "rcode": 0,
+          "rcode_name": "NOERROR",
+          "flags": 33792,
+          "retries": 0,
+          "attempts": [
+            {
+              "transport": "udp",
+              "edns": 1232,
+              "error": false,
+              "elapsed_ms": 23.76
+            }
+          ],
+          "elapsed_ms": 23.76,
+          "fallback_used": false
+        }
+      },
+      {
+        "name": "cloudflare.com",
+        "rtype": "SOA",
+        "resolver_id": "auth:ns4.cloudflare.com@2400:cb00:2049:1::a29f:837",
+        "ttl": 300,
+        "answers": [
+          "ns3.cloudflare.com. dns.cloudflare.com. 2387738886 10000 2400 604800 300"
+        ],
+        "status": "OK",
+        "error": null,
+        "diagnostics": {
+          "transport": "udp",
+          "edns": 1232,
+          "rcode": 0,
+          "rcode_name": "NOERROR",
+          "flags": 33792,
+          "retries": 0,
+          "attempts": [
+            {
+              "transport": "udp",
+              "edns": 1232,
+              "error": false,
+              "elapsed_ms": 12.54
+            }
+          ],
+          "elapsed_ms": 12.54,
+          "fallback_used": false
+        }
+      },
+      {
+        "name": "cloudflare.com",
+        "rtype": "TXT",
+        "resolver_id": "auth:ns4.cloudflare.com@2400:cb00:2049:1::a29f:837",
+        "ttl": 300,
+        "answers": [
+          "\"MS=ms70274184\"",
+          "\"ZOOM_verify_7LFBvOO9SIigypFG2xRlMA\"",
+          "\"_neqmkgaq1lq9it5s8qmetrhbnu121wb\"",
+          "\"_saml-domain-challenge.2dc00405-79cd-457b-b288-a119c6f0c7b7.71996d53-d178-4ba9-bef4-7f7e46edab74.cloudflare.com=1c8736fd-84b2-4197-985f-3fb2852f2457\"",
+          "\"apple-domain-verification=DNnWJoArJobFJKhJ\"",
+          "\"asv=894f6d1f9f83bcf44e4b1bc40bc1c4aa\"",
+          "\"atlassian-domain-verification=WxxKyN9aLnjEsoOjUYI6T0bb5vcqmKzaIkC9Rx2QkNb751G3LL/cus8/ZDOgh8xB\"",
+          "\"canva-site-verification=oOyaVnHC-OiFoR1BPvetNA\"",
+          "\"cisco-ci-domain-verification=27e926884619804ef987ae4aa1c4168f6b152ada84f4c8bfc74eb2bd2912ad72\"",
+          "\"creatopy-domain-verification=97d2ca50-9b6f-4a21-9bdb-fbb630e4cec7\"",
+          "\"docker-verification=c578e21c-34fb-4474-9b90-d55ee4cba10c\"",
+          "\"drift-domain-verification=f037808a26ae8b25bc13b1f1f2b4c3e0f78c03e67f24cefdd4ec520efa8e719f\"",
+          "\"facebook-domain-verification=h9mm6zopj6p2po54woa16m5bskm6oo\"",
+          "\"google-site-verification=C7thfNeXVahkVhniiqTI1iSVnElKR_kBBtnEHkeGDlo\"",
+          "\"google-site-verification=ZdlQZLBBAPkxeFTCM1rpiB_ibtGff_JF5KllNKwDR9I\"",
+          "\"liveramp-site-verification=EhH1MqgwbndTWl1AN64hOTKz7hc1s80yUpchLbgpfY0\"",
+          "\"logmein-verification-code=b3433c86-3823-4808-8a7e-58042469f654\"",
+          "\"miro-verification=bdd7dfa0a49adfb43ad6ddfaf797633246c07356\"",
+          "\"onetrust-domain-verification=bd5cd08a1e9644799fdb98ed7d60c9cb\"",
+          "\"status-page-domain-verification=r14frwljwbxs\"",
+          "\"stripe-verification=5096d01ff2cf194285dd51cae18f24fa9c26dc928cebac3636d462b4c6925623\"",
+          "\"stripe-verification=bf1a94e6b16ace2502a4a7fff574a25c8a45291054960c883c59be39d1788db9\"",
+          "\"uber-domain-verification=58086039-150a-42a4-a4be-b4032921aa0f\"",
+          "\"v=spf1 ip4:199.15.212.0/22 ip4:173.245.48.0/20 include:_spf.google.com include:spf1.mcsv.net include:spf.mandrillapp.com include:mail.zendesk.com include:stspg-customer.com include:_spf.salesforce.com -all\""
+        ],
+        "status": "OK",
+        "error": null,
+        "diagnostics": {
+          "transport": "udp",
+          "edns": 1232,
+          "rcode": 0,
+          "rcode_name": "NOERROR",
+          "flags": 33792,
+          "retries": 0,
+          "attempts": [
+            {
+              "transport": "udp",
+              "edns": 1232,
+              "error": false,
+              "elapsed_ms": 54.16
+            }
+          ],
+          "elapsed_ms": 54.16,
+          "fallback_used": false
+        }
+      },
+      {
+        "name": "cloudflare.com",
+        "rtype": "A",
+        "resolver_id": "auth:ns5.cloudflare.com@162.159.2.9",
+        "ttl": 300,
+        "answers": [
+          "104.16.132.229",
+          "104.16.133.229"
+        ],
+        "status": "OK",
+        "error": null,
+        "diagnostics": {
+          "transport": "udp",
+          "edns": 1232,
+          "rcode": 0,
+          "rcode_name": "NOERROR",
+          "flags": 33792,
+          "retries": 0,
+          "attempts": [
+            {
+              "transport": "udp",
+              "edns": 1232,
+              "error": false,
+              "elapsed_ms": 17.85
+            }
+          ],
+          "elapsed_ms": 17.85,
+          "fallback_used": false
+        }
+      },
+      {
+        "name": "cloudflare.com",
+        "rtype": "AAAA",
+        "resolver_id": "auth:ns5.cloudflare.com@162.159.2.9",
+        "ttl": 300,
+        "answers": [
+          "2606:4700::6810:84e5",
+          "2606:4700::6810:85e5"
+        ],
+        "status": "OK",
+        "error": null,
+        "diagnostics": {
+          "transport": "udp",
+          "edns": 1232,
+          "rcode": 0,
+          "rcode_name": "NOERROR",
+          "flags": 33792,
+          "retries": 0,
+          "attempts": [
+            {
+              "transport": "udp",
+              "edns": 1232,
+              "error": false,
+              "elapsed_ms": 21.51
+            }
+          ],
+          "elapsed_ms": 21.51,
+          "fallback_used": false
+        }
+      },
+      {
+        "name": "cloudflare.com",
+        "rtype": "CNAME",
+        "resolver_id": "auth:ns5.cloudflare.com@162.159.2.9",
+        "ttl": null,
+        "answers": [],
+        "status": "NODATA",
+        "error": null,
+        "diagnostics": {
+          "transport": "udp",
+          "edns": 1232,
+          "rcode": 0,
+          "rcode_name": "NOERROR",
+          "flags": 33792,
+          "retries": 0,
+          "attempts": [
+            {
+              "transport": "udp",
+              "edns": 1232,
+              "error": false,
+              "elapsed_ms": 13.31
+            }
+          ],
+          "elapsed_ms": 13.31,
+          "fallback_used": false
+        }
+      },
+      {
+        "name": "cloudflare.com",
+        "rtype": "MX",
+        "resolver_id": "auth:ns5.cloudflare.com@162.159.2.9",
+        "ttl": 1800,
+        "answers": [
+          "10 mxa.global.inbound.cf-emailsecurity.net.",
+          "10 mxb.global.inbound.cf-emailsecurity.net.",
+          "5 mxa-canary.global.inbound.cf-emailsecurity.net.",
+          "5 mxb-canary.global.inbound.cf-emailsecurity.net."
+        ],
+        "status": "OK",
+        "error": null,
+        "diagnostics": {
+          "transport": "udp",
+          "edns": 1232,
+          "rcode": 0,
+          "rcode_name": "NOERROR",
+          "flags": 33792,
+          "retries": 0,
+          "attempts": [
+            {
+              "transport": "udp",
+              "edns": 1232,
+              "error": false,
+              "elapsed_ms": 19.98
+            }
+          ],
+          "elapsed_ms": 19.98,
+          "fallback_used": false
+        }
+      },
+      {
+        "name": "cloudflare.com",
+        "rtype": "NS",
+        "resolver_id": "auth:ns5.cloudflare.com@162.159.2.9",
+        "ttl": 86400,
+        "answers": [
+          "ns3.cloudflare.com.",
+          "ns4.cloudflare.com.",
+          "ns5.cloudflare.com.",
+          "ns6.cloudflare.com.",
+          "ns7.cloudflare.com."
+        ],
+        "status": "OK",
+        "error": null,
+        "diagnostics": {
+          "transport": "udp",
+          "edns": 1232,
+          "rcode": 0,
+          "rcode_name": "NOERROR",
+          "flags": 33792,
+          "retries": 0,
+          "attempts": [
+            {
+              "transport": "udp",
+              "edns": 1232,
+              "error": false,
+              "elapsed_ms": 25.39
+            }
+          ],
+          "elapsed_ms": 25.39,
+          "fallback_used": false
+        }
+      },
+      {
+        "name": "cloudflare.com",
+        "rtype": "SOA",
+        "resolver_id": "auth:ns5.cloudflare.com@162.159.2.9",
+        "ttl": 300,
+        "answers": [
+          "ns3.cloudflare.com. dns.cloudflare.com. 2387738886 10000 2400 604800 300"
+        ],
+        "status": "OK",
+        "error": null,
+        "diagnostics": {
+          "transport": "udp",
+          "edns": 1232,
+          "rcode": 0,
+          "rcode_name": "NOERROR",
+          "flags": 33792,
+          "retries": 0,
+          "attempts": [
+            {
+              "transport": "udp",
+              "edns": 1232,
+              "error": false,
+              "elapsed_ms": 24.27
+            }
+          ],
+          "elapsed_ms": 24.27,
+          "fallback_used": false
+        }
+      },
+      {
+        "name": "cloudflare.com",
+        "rtype": "TXT",
+        "resolver_id": "auth:ns5.cloudflare.com@162.159.2.9",
+        "ttl": 300,
+        "answers": [
+          "\"MS=ms70274184\"",
+          "\"ZOOM_verify_7LFBvOO9SIigypFG2xRlMA\"",
+          "\"_neqmkgaq1lq9it5s8qmetrhbnu121wb\"",
+          "\"_saml-domain-challenge.2dc00405-79cd-457b-b288-a119c6f0c7b7.71996d53-d178-4ba9-bef4-7f7e46edab74.cloudflare.com=1c8736fd-84b2-4197-985f-3fb2852f2457\"",
+          "\"apple-domain-verification=DNnWJoArJobFJKhJ\"",
+          "\"asv=894f6d1f9f83bcf44e4b1bc40bc1c4aa\"",
+          "\"atlassian-domain-verification=WxxKyN9aLnjEsoOjUYI6T0bb5vcqmKzaIkC9Rx2QkNb751G3LL/cus8/ZDOgh8xB\"",
+          "\"canva-site-verification=oOyaVnHC-OiFoR1BPvetNA\"",
+          "\"cisco-ci-domain-verification=27e926884619804ef987ae4aa1c4168f6b152ada84f4c8bfc74eb2bd2912ad72\"",
+          "\"creatopy-domain-verification=97d2ca50-9b6f-4a21-9bdb-fbb630e4cec7\"",
+          "\"docker-verification=c578e21c-34fb-4474-9b90-d55ee4cba10c\"",
+          "\"drift-domain-verification=f037808a26ae8b25bc13b1f1f2b4c3e0f78c03e67f24cefdd4ec520efa8e719f\"",
+          "\"facebook-domain-verification=h9mm6zopj6p2po54woa16m5bskm6oo\"",
+          "\"google-site-verification=C7thfNeXVahkVhniiqTI1iSVnElKR_kBBtnEHkeGDlo\"",
+          "\"google-site-verification=ZdlQZLBBAPkxeFTCM1rpiB_ibtGff_JF5KllNKwDR9I\"",
+          "\"liveramp-site-verification=EhH1MqgwbndTWl1AN64hOTKz7hc1s80yUpchLbgpfY0\"",
+          "\"logmein-verification-code=b3433c86-3823-4808-8a7e-58042469f654\"",
+          "\"miro-verification=bdd7dfa0a49adfb43ad6ddfaf797633246c07356\"",
+          "\"onetrust-domain-verification=bd5cd08a1e9644799fdb98ed7d60c9cb\"",
+          "\"status-page-domain-verification=r14frwljwbxs\"",
+          "\"stripe-verification=5096d01ff2cf194285dd51cae18f24fa9c26dc928cebac3636d462b4c6925623\"",
+          "\"stripe-verification=bf1a94e6b16ace2502a4a7fff574a25c8a45291054960c883c59be39d1788db9\"",
+          "\"uber-domain-verification=58086039-150a-42a4-a4be-b4032921aa0f\"",
+          "\"v=spf1 ip4:199.15.212.0/22 ip4:173.245.48.0/20 include:_spf.google.com include:spf1.mcsv.net include:spf.mandrillapp.com include:mail.zendesk.com include:stspg-customer.com include:_spf.salesforce.com -all\""
+        ],
+        "status": "OK",
+        "error": null,
+        "diagnostics": {
+          "transport": "udp",
+          "edns": 1232,
+          "rcode": 0,
+          "rcode_name": "NOERROR",
+          "flags": 33792,
+          "retries": 0,
+          "attempts": [
+            {
+              "transport": "udp",
+              "edns": 1232,
+              "error": false,
+              "elapsed_ms": 58.41
+            }
+          ],
+          "elapsed_ms": 58.41,
+          "fallback_used": false
+        }
+      },
+      {
+        "name": "cloudflare.com",
+        "rtype": "A",
+        "resolver_id": "auth:ns5.cloudflare.com@162.159.9.55",
+        "ttl": 300,
+        "answers": [
+          "104.16.132.229",
+          "104.16.133.229"
+        ],
+        "status": "OK",
+        "error": null,
+        "diagnostics": {
+          "transport": "udp",
+          "edns": 1232,
+          "rcode": 0,
+          "rcode_name": "NOERROR",
+          "flags": 33792,
+          "retries": 0,
+          "attempts": [
+            {
+              "transport": "udp",
+              "edns": 1232,
+              "error": false,
+              "elapsed_ms": 24.21
+            }
+          ],
+          "elapsed_ms": 24.21,
+          "fallback_used": false
+        }
+      },
+      {
+        "name": "cloudflare.com",
+        "rtype": "AAAA",
+        "resolver_id": "auth:ns5.cloudflare.com@162.159.9.55",
+        "ttl": 300,
+        "answers": [
+          "2606:4700::6810:84e5",
+          "2606:4700::6810:85e5"
+        ],
+        "status": "OK",
+        "error": null,
+        "diagnostics": {
+          "transport": "udp",
+          "edns": 1232,
+          "rcode": 0,
+          "rcode_name": "NOERROR",
+          "flags": 33792,
+          "retries": 0,
+          "attempts": [
+            {
+              "transport": "udp",
+              "edns": 1232,
+              "error": false,
+              "elapsed_ms": 15.6
+            }
+          ],
+          "elapsed_ms": 15.6,
+          "fallback_used": false
+        }
+      },
+      {
+        "name": "cloudflare.com",
+        "rtype": "CNAME",
+        "resolver_id": "auth:ns5.cloudflare.com@162.159.9.55",
+        "ttl": null,
+        "answers": [],
+        "status": "NODATA",
+        "error": null,
+        "diagnostics": {
+          "transport": "udp",
+          "edns": 1232,
+          "rcode": 0,
+          "rcode_name": "NOERROR",
+          "flags": 33792,
+          "retries": 0,
+          "attempts": [
+            {
+              "transport": "udp",
+              "edns": 1232,
+              "error": false,
+              "elapsed_ms": 22.56
+            }
+          ],
+          "elapsed_ms": 22.56,
+          "fallback_used": false
+        }
+      },
+      {
+        "name": "cloudflare.com",
+        "rtype": "MX",
+        "resolver_id": "auth:ns5.cloudflare.com@162.159.9.55",
+        "ttl": 1800,
+        "answers": [
+          "10 mxa.global.inbound.cf-emailsecurity.net.",
+          "10 mxb.global.inbound.cf-emailsecurity.net.",
+          "5 mxa-canary.global.inbound.cf-emailsecurity.net.",
+          "5 mxb-canary.global.inbound.cf-emailsecurity.net."
+        ],
+        "status": "OK",
+        "error": null,
+        "diagnostics": {
+          "transport": "udp",
+          "edns": 1232,
+          "rcode": 0,
+          "rcode_name": "NOERROR",
+          "flags": 33792,
+          "retries": 0,
+          "attempts": [
+            {
+              "transport": "udp",
+              "edns": 1232,
+              "error": false,
+              "elapsed_ms": 26.9
+            }
+          ],
+          "elapsed_ms": 26.9,
+          "fallback_used": false
+        }
+      },
+      {
+        "name": "cloudflare.com",
+        "rtype": "NS",
+        "resolver_id": "auth:ns5.cloudflare.com@162.159.9.55",
+        "ttl": 86400,
+        "answers": [
+          "ns3.cloudflare.com.",
+          "ns4.cloudflare.com.",
+          "ns5.cloudflare.com.",
+          "ns6.cloudflare.com.",
+          "ns7.cloudflare.com."
+        ],
+        "status": "OK",
+        "error": null,
+        "diagnostics": {
+          "transport": "udp",
+          "edns": 1232,
+          "rcode": 0,
+          "rcode_name": "NOERROR",
+          "flags": 33792,
+          "retries": 0,
+          "attempts": [
+            {
+              "transport": "udp",
+              "edns": 1232,
+              "error": false,
+              "elapsed_ms": 20.78
+            }
+          ],
+          "elapsed_ms": 20.78,
+          "fallback_used": false
+        }
+      },
+      {
+        "name": "cloudflare.com",
+        "rtype": "SOA",
+        "resolver_id": "auth:ns5.cloudflare.com@162.159.9.55",
+        "ttl": 300,
+        "answers": [
+          "ns3.cloudflare.com. dns.cloudflare.com. 2387738886 10000 2400 604800 300"
+        ],
+        "status": "OK",
+        "error": null,
+        "diagnostics": {
+          "transport": "udp",
+          "edns": 1232,
+          "rcode": 0,
+          "rcode_name": "NOERROR",
+          "flags": 33792,
+          "retries": 0,
+          "attempts": [
+            {
+              "transport": "udp",
+              "edns": 1232,
+              "error": false,
+              "elapsed_ms": 16.65
+            }
+          ],
+          "elapsed_ms": 16.65,
+          "fallback_used": false
+        }
+      },
+      {
+        "name": "cloudflare.com",
+        "rtype": "TXT",
+        "resolver_id": "auth:ns5.cloudflare.com@162.159.9.55",
+        "ttl": 300,
+        "answers": [
+          "\"MS=ms70274184\"",
+          "\"ZOOM_verify_7LFBvOO9SIigypFG2xRlMA\"",
+          "\"_neqmkgaq1lq9it5s8qmetrhbnu121wb\"",
+          "\"_saml-domain-challenge.2dc00405-79cd-457b-b288-a119c6f0c7b7.71996d53-d178-4ba9-bef4-7f7e46edab74.cloudflare.com=1c8736fd-84b2-4197-985f-3fb2852f2457\"",
+          "\"apple-domain-verification=DNnWJoArJobFJKhJ\"",
+          "\"asv=894f6d1f9f83bcf44e4b1bc40bc1c4aa\"",
+          "\"atlassian-domain-verification=WxxKyN9aLnjEsoOjUYI6T0bb5vcqmKzaIkC9Rx2QkNb751G3LL/cus8/ZDOgh8xB\"",
+          "\"canva-site-verification=oOyaVnHC-OiFoR1BPvetNA\"",
+          "\"cisco-ci-domain-verification=27e926884619804ef987ae4aa1c4168f6b152ada84f4c8bfc74eb2bd2912ad72\"",
+          "\"creatopy-domain-verification=97d2ca50-9b6f-4a21-9bdb-fbb630e4cec7\"",
+          "\"docker-verification=c578e21c-34fb-4474-9b90-d55ee4cba10c\"",
+          "\"drift-domain-verification=f037808a26ae8b25bc13b1f1f2b4c3e0f78c03e67f24cefdd4ec520efa8e719f\"",
+          "\"facebook-domain-verification=h9mm6zopj6p2po54woa16m5bskm6oo\"",
+          "\"google-site-verification=C7thfNeXVahkVhniiqTI1iSVnElKR_kBBtnEHkeGDlo\"",
+          "\"google-site-verification=ZdlQZLBBAPkxeFTCM1rpiB_ibtGff_JF5KllNKwDR9I\"",
+          "\"liveramp-site-verification=EhH1MqgwbndTWl1AN64hOTKz7hc1s80yUpchLbgpfY0\"",
+          "\"logmein-verification-code=b3433c86-3823-4808-8a7e-58042469f654\"",
+          "\"miro-verification=bdd7dfa0a49adfb43ad6ddfaf797633246c07356\"",
+          "\"onetrust-domain-verification=bd5cd08a1e9644799fdb98ed7d60c9cb\"",
+          "\"status-page-domain-verification=r14frwljwbxs\"",
+          "\"stripe-verification=5096d01ff2cf194285dd51cae18f24fa9c26dc928cebac3636d462b4c6925623\"",
+          "\"stripe-verification=bf1a94e6b16ace2502a4a7fff574a25c8a45291054960c883c59be39d1788db9\"",
+          "\"uber-domain-verification=58086039-150a-42a4-a4be-b4032921aa0f\"",
+          "\"v=spf1 ip4:199.15.212.0/22 ip4:173.245.48.0/20 include:_spf.google.com include:spf1.mcsv.net include:spf.mandrillapp.com include:mail.zendesk.com include:stspg-customer.com include:_spf.salesforce.com -all\""
+        ],
+        "status": "OK",
+        "error": null,
+        "diagnostics": {
+          "transport": "udp",
+          "edns": 1232,
+          "rcode": 0,
+          "rcode_name": "NOERROR",
+          "flags": 33792,
+          "retries": 0,
+          "attempts": [
+            {
+              "transport": "udp",
+              "edns": 1232,
+              "error": false,
+              "elapsed_ms": 58.99
+            }
+          ],
+          "elapsed_ms": 58.99,
+          "fallback_used": false
+        }
+      },
+      {
+        "name": "cloudflare.com",
+        "rtype": "A",
+        "resolver_id": "auth:ns5.cloudflare.com@2400:cb00:2049:1::a29f:209",
+        "ttl": 300,
+        "answers": [
+          "104.16.132.229",
+          "104.16.133.229"
+        ],
+        "status": "OK",
+        "error": null,
+        "diagnostics": {
+          "transport": "udp",
+          "edns": 1232,
+          "rcode": 0,
+          "rcode_name": "NOERROR",
+          "flags": 33792,
+          "retries": 0,
+          "attempts": [
+            {
+              "transport": "udp",
+              "edns": 1232,
+              "error": false,
+              "elapsed_ms": 25.93
+            }
+          ],
+          "elapsed_ms": 25.93,
+          "fallback_used": false
+        }
+      },
+      {
+        "name": "cloudflare.com",
+        "rtype": "AAAA",
+        "resolver_id": "auth:ns5.cloudflare.com@2400:cb00:2049:1::a29f:209",
+        "ttl": 300,
+        "answers": [
+          "2606:4700::6810:84e5",
+          "2606:4700::6810:85e5"
+        ],
+        "status": "OK",
+        "error": null,
+        "diagnostics": {
+          "transport": "udp",
+          "edns": 1232,
+          "rcode": 0,
+          "rcode_name": "NOERROR",
+          "flags": 33792,
+          "retries": 0,
+          "attempts": [
+            {
+              "transport": "udp",
+              "edns": 1232,
+              "error": false,
+              "elapsed_ms": 13.72
+            }
+          ],
+          "elapsed_ms": 13.72,
+          "fallback_used": false
+        }
+      },
+      {
+        "name": "cloudflare.com",
+        "rtype": "CNAME",
+        "resolver_id": "auth:ns5.cloudflare.com@2400:cb00:2049:1::a29f:209",
+        "ttl": null,
+        "answers": [],
+        "status": "NODATA",
+        "error": null,
+        "diagnostics": {
+          "transport": "udp",
+          "edns": 1232,
+          "rcode": 0,
+          "rcode_name": "NOERROR",
+          "flags": 33792,
+          "retries": 0,
+          "attempts": [
+            {
+              "transport": "udp",
+              "edns": 1232,
+              "error": false,
+              "elapsed_ms": 19.96
+            }
+          ],
+          "elapsed_ms": 19.96,
+          "fallback_used": false
+        }
+      },
+      {
+        "name": "cloudflare.com",
+        "rtype": "MX",
+        "resolver_id": "auth:ns5.cloudflare.com@2400:cb00:2049:1::a29f:209",
+        "ttl": 1800,
+        "answers": [
+          "10 mxa.global.inbound.cf-emailsecurity.net.",
+          "10 mxb.global.inbound.cf-emailsecurity.net.",
+          "5 mxa-canary.global.inbound.cf-emailsecurity.net.",
+          "5 mxb-canary.global.inbound.cf-emailsecurity.net."
+        ],
+        "status": "OK",
+        "error": null,
+        "diagnostics": {
+          "transport": "udp",
+          "edns": 1232,
+          "rcode": 0,
+          "rcode_name": "NOERROR",
+          "flags": 33792,
+          "retries": 0,
+          "attempts": [
+            {
+              "transport": "udp",
+              "edns": 1232,
+              "error": false,
+              "elapsed_ms": 13.13
+            }
+          ],
+          "elapsed_ms": 13.13,
+          "fallback_used": false
+        }
+      },
+      {
+        "name": "cloudflare.com",
+        "rtype": "NS",
+        "resolver_id": "auth:ns5.cloudflare.com@2400:cb00:2049:1::a29f:209",
+        "ttl": 86400,
+        "answers": [
+          "ns3.cloudflare.com.",
+          "ns4.cloudflare.com.",
+          "ns5.cloudflare.com.",
+          "ns6.cloudflare.com.",
+          "ns7.cloudflare.com."
+        ],
+        "status": "OK",
+        "error": null,
+        "diagnostics": {
+          "transport": "udp",
+          "edns": 1232,
+          "rcode": 0,
+          "rcode_name": "NOERROR",
+          "flags": 33792,
+          "retries": 0,
+          "attempts": [
+            {
+              "transport": "udp",
+              "edns": 1232,
+              "error": false,
+              "elapsed_ms": 16.36
+            }
+          ],
+          "elapsed_ms": 16.36,
+          "fallback_used": false
+        }
+      },
+      {
+        "name": "cloudflare.com",
+        "rtype": "SOA",
+        "resolver_id": "auth:ns5.cloudflare.com@2400:cb00:2049:1::a29f:209",
+        "ttl": 300,
+        "answers": [
+          "ns3.cloudflare.com. dns.cloudflare.com. 2387738886 10000 2400 604800 300"
+        ],
+        "status": "OK",
+        "error": null,
+        "diagnostics": {
+          "transport": "udp",
+          "edns": 1232,
+          "rcode": 0,
+          "rcode_name": "NOERROR",
+          "flags": 33792,
+          "retries": 0,
+          "attempts": [
+            {
+              "transport": "udp",
+              "edns": 1232,
+              "error": false,
+              "elapsed_ms": 23.64
+            }
+          ],
+          "elapsed_ms": 23.64,
+          "fallback_used": false
+        }
+      },
+      {
+        "name": "cloudflare.com",
+        "rtype": "TXT",
+        "resolver_id": "auth:ns5.cloudflare.com@2400:cb00:2049:1::a29f:209",
+        "ttl": 300,
+        "answers": [
+          "\"MS=ms70274184\"",
+          "\"ZOOM_verify_7LFBvOO9SIigypFG2xRlMA\"",
+          "\"_neqmkgaq1lq9it5s8qmetrhbnu121wb\"",
+          "\"_saml-domain-challenge.2dc00405-79cd-457b-b288-a119c6f0c7b7.71996d53-d178-4ba9-bef4-7f7e46edab74.cloudflare.com=1c8736fd-84b2-4197-985f-3fb2852f2457\"",
+          "\"apple-domain-verification=DNnWJoArJobFJKhJ\"",
+          "\"asv=894f6d1f9f83bcf44e4b1bc40bc1c4aa\"",
+          "\"atlassian-domain-verification=WxxKyN9aLnjEsoOjUYI6T0bb5vcqmKzaIkC9Rx2QkNb751G3LL/cus8/ZDOgh8xB\"",
+          "\"canva-site-verification=oOyaVnHC-OiFoR1BPvetNA\"",
+          "\"cisco-ci-domain-verification=27e926884619804ef987ae4aa1c4168f6b152ada84f4c8bfc74eb2bd2912ad72\"",
+          "\"creatopy-domain-verification=97d2ca50-9b6f-4a21-9bdb-fbb630e4cec7\"",
+          "\"docker-verification=c578e21c-34fb-4474-9b90-d55ee4cba10c\"",
+          "\"drift-domain-verification=f037808a26ae8b25bc13b1f1f2b4c3e0f78c03e67f24cefdd4ec520efa8e719f\"",
+          "\"facebook-domain-verification=h9mm6zopj6p2po54woa16m5bskm6oo\"",
+          "\"google-site-verification=C7thfNeXVahkVhniiqTI1iSVnElKR_kBBtnEHkeGDlo\"",
+          "\"google-site-verification=ZdlQZLBBAPkxeFTCM1rpiB_ibtGff_JF5KllNKwDR9I\"",
+          "\"liveramp-site-verification=EhH1MqgwbndTWl1AN64hOTKz7hc1s80yUpchLbgpfY0\"",
+          "\"logmein-verification-code=b3433c86-3823-4808-8a7e-58042469f654\"",
+          "\"miro-verification=bdd7dfa0a49adfb43ad6ddfaf797633246c07356\"",
+          "\"onetrust-domain-verification=bd5cd08a1e9644799fdb98ed7d60c9cb\"",
+          "\"status-page-domain-verification=r14frwljwbxs\"",
+          "\"stripe-verification=5096d01ff2cf194285dd51cae18f24fa9c26dc928cebac3636d462b4c6925623\"",
+          "\"stripe-verification=bf1a94e6b16ace2502a4a7fff574a25c8a45291054960c883c59be39d1788db9\"",
+          "\"uber-domain-verification=58086039-150a-42a4-a4be-b4032921aa0f\"",
+          "\"v=spf1 ip4:199.15.212.0/22 ip4:173.245.48.0/20 include:_spf.google.com include:spf1.mcsv.net include:spf.mandrillapp.com include:mail.zendesk.com include:stspg-customer.com include:_spf.salesforce.com -all\""
+        ],
+        "status": "OK",
+        "error": null,
+        "diagnostics": {
+          "transport": "udp",
+          "edns": 1232,
+          "rcode": 0,
+          "rcode_name": "NOERROR",
+          "flags": 33792,
+          "retries": 0,
+          "attempts": [
+            {
+              "transport": "udp",
+              "edns": 1232,
+              "error": false,
+              "elapsed_ms": 63.19
+            }
+          ],
+          "elapsed_ms": 63.19,
+          "fallback_used": false
+        }
+      },
+      {
+        "name": "cloudflare.com",
+        "rtype": "A",
+        "resolver_id": "auth:ns5.cloudflare.com@2400:cb00:2049:1::a29f:937",
+        "ttl": 300,
+        "answers": [
+          "104.16.132.229",
+          "104.16.133.229"
+        ],
+        "status": "OK",
+        "error": null,
+        "diagnostics": {
+          "transport": "udp",
+          "edns": 1232,
+          "rcode": 0,
+          "rcode_name": "NOERROR",
+          "flags": 33792,
+          "retries": 0,
+          "attempts": [
+            {
+              "transport": "udp",
+              "edns": 1232,
+              "error": false,
+              "elapsed_ms": 25.13
+            }
+          ],
+          "elapsed_ms": 25.13,
+          "fallback_used": false
+        }
+      },
+      {
+        "name": "cloudflare.com",
+        "rtype": "AAAA",
+        "resolver_id": "auth:ns5.cloudflare.com@2400:cb00:2049:1::a29f:937",
+        "ttl": 300,
+        "answers": [
+          "2606:4700::6810:84e5",
+          "2606:4700::6810:85e5"
+        ],
+        "status": "OK",
+        "error": null,
+        "diagnostics": {
+          "transport": "udp",
+          "edns": 1232,
+          "rcode": 0,
+          "rcode_name": "NOERROR",
+          "flags": 33792,
+          "retries": 0,
+          "attempts": [
+            {
+              "transport": "udp",
+              "edns": 1232,
+              "error": false,
+              "elapsed_ms": 13.48
+            }
+          ],
+          "elapsed_ms": 13.48,
+          "fallback_used": false
+        }
+      },
+      {
+        "name": "cloudflare.com",
+        "rtype": "CNAME",
+        "resolver_id": "auth:ns5.cloudflare.com@2400:cb00:2049:1::a29f:937",
+        "ttl": null,
+        "answers": [],
+        "status": "NODATA",
+        "error": null,
+        "diagnostics": {
+          "transport": "udp",
+          "edns": 1232,
+          "rcode": 0,
+          "rcode_name": "NOERROR",
+          "flags": 33792,
+          "retries": 0,
+          "attempts": [
+            {
+              "transport": "udp",
+              "edns": 1232,
+              "error": false,
+              "elapsed_ms": 18.42
+            }
+          ],
+          "elapsed_ms": 18.42,
+          "fallback_used": false
+        }
+      },
+      {
+        "name": "cloudflare.com",
+        "rtype": "MX",
+        "resolver_id": "auth:ns5.cloudflare.com@2400:cb00:2049:1::a29f:937",
+        "ttl": 1800,
+        "answers": [
+          "10 mxa.global.inbound.cf-emailsecurity.net.",
+          "10 mxb.global.inbound.cf-emailsecurity.net.",
+          "5 mxa-canary.global.inbound.cf-emailsecurity.net.",
+          "5 mxb-canary.global.inbound.cf-emailsecurity.net."
+        ],
+        "status": "OK",
+        "error": null,
+        "diagnostics": {
+          "transport": "udp",
+          "edns": 1232,
+          "rcode": 0,
+          "rcode_name": "NOERROR",
+          "flags": 33792,
+          "retries": 0,
+          "attempts": [
+            {
+              "transport": "udp",
+              "edns": 1232,
+              "error": false,
+              "elapsed_ms": 15.68
+            }
+          ],
+          "elapsed_ms": 15.68,
+          "fallback_used": false
+        }
+      },
+      {
+        "name": "cloudflare.com",
+        "rtype": "NS",
+        "resolver_id": "auth:ns5.cloudflare.com@2400:cb00:2049:1::a29f:937",
+        "ttl": 86400,
+        "answers": [
+          "ns3.cloudflare.com.",
+          "ns4.cloudflare.com.",
+          "ns5.cloudflare.com.",
+          "ns6.cloudflare.com.",
+          "ns7.cloudflare.com."
+        ],
+        "status": "OK",
+        "error": null,
+        "diagnostics": {
+          "transport": "udp",
+          "edns": 1232,
+          "rcode": 0,
+          "rcode_name": "NOERROR",
+          "flags": 33792,
+          "retries": 0,
+          "attempts": [
+            {
+              "transport": "udp",
+              "edns": 1232,
+              "error": false,
+              "elapsed_ms": 17.65
+            }
+          ],
+          "elapsed_ms": 17.65,
+          "fallback_used": false
+        }
+      },
+      {
+        "name": "cloudflare.com",
+        "rtype": "SOA",
+        "resolver_id": "auth:ns5.cloudflare.com@2400:cb00:2049:1::a29f:937",
+        "ttl": 300,
+        "answers": [
+          "ns3.cloudflare.com. dns.cloudflare.com. 2387738886 10000 2400 604800 300"
+        ],
+        "status": "OK",
+        "error": null,
+        "diagnostics": {
+          "transport": "udp",
+          "edns": 1232,
+          "rcode": 0,
+          "rcode_name": "NOERROR",
+          "flags": 33792,
+          "retries": 0,
+          "attempts": [
+            {
+              "transport": "udp",
+              "edns": 1232,
+              "error": false,
+              "elapsed_ms": 26.62
+            }
+          ],
+          "elapsed_ms": 26.62,
+          "fallback_used": false
+        }
+      },
+      {
+        "name": "cloudflare.com",
+        "rtype": "TXT",
+        "resolver_id": "auth:ns5.cloudflare.com@2400:cb00:2049:1::a29f:937",
+        "ttl": 300,
+        "answers": [
+          "\"MS=ms70274184\"",
+          "\"ZOOM_verify_7LFBvOO9SIigypFG2xRlMA\"",
+          "\"_neqmkgaq1lq9it5s8qmetrhbnu121wb\"",
+          "\"_saml-domain-challenge.2dc00405-79cd-457b-b288-a119c6f0c7b7.71996d53-d178-4ba9-bef4-7f7e46edab74.cloudflare.com=1c8736fd-84b2-4197-985f-3fb2852f2457\"",
+          "\"apple-domain-verification=DNnWJoArJobFJKhJ\"",
+          "\"asv=894f6d1f9f83bcf44e4b1bc40bc1c4aa\"",
+          "\"atlassian-domain-verification=WxxKyN9aLnjEsoOjUYI6T0bb5vcqmKzaIkC9Rx2QkNb751G3LL/cus8/ZDOgh8xB\"",
+          "\"canva-site-verification=oOyaVnHC-OiFoR1BPvetNA\"",
+          "\"cisco-ci-domain-verification=27e926884619804ef987ae4aa1c4168f6b152ada84f4c8bfc74eb2bd2912ad72\"",
+          "\"creatopy-domain-verification=97d2ca50-9b6f-4a21-9bdb-fbb630e4cec7\"",
+          "\"docker-verification=c578e21c-34fb-4474-9b90-d55ee4cba10c\"",
+          "\"drift-domain-verification=f037808a26ae8b25bc13b1f1f2b4c3e0f78c03e67f24cefdd4ec520efa8e719f\"",
+          "\"facebook-domain-verification=h9mm6zopj6p2po54woa16m5bskm6oo\"",
+          "\"google-site-verification=C7thfNeXVahkVhniiqTI1iSVnElKR_kBBtnEHkeGDlo\"",
+          "\"google-site-verification=ZdlQZLBBAPkxeFTCM1rpiB_ibtGff_JF5KllNKwDR9I\"",
+          "\"liveramp-site-verification=EhH1MqgwbndTWl1AN64hOTKz7hc1s80yUpchLbgpfY0\"",
+          "\"logmein-verification-code=b3433c86-3823-4808-8a7e-58042469f654\"",
+          "\"miro-verification=bdd7dfa0a49adfb43ad6ddfaf797633246c07356\"",
+          "\"onetrust-domain-verification=bd5cd08a1e9644799fdb98ed7d60c9cb\"",
+          "\"status-page-domain-verification=r14frwljwbxs\"",
+          "\"stripe-verification=5096d01ff2cf194285dd51cae18f24fa9c26dc928cebac3636d462b4c6925623\"",
+          "\"stripe-verification=bf1a94e6b16ace2502a4a7fff574a25c8a45291054960c883c59be39d1788db9\"",
+          "\"uber-domain-verification=58086039-150a-42a4-a4be-b4032921aa0f\"",
+          "\"v=spf1 ip4:199.15.212.0/22 ip4:173.245.48.0/20 include:_spf.google.com include:spf1.mcsv.net include:spf.mandrillapp.com include:mail.zendesk.com include:stspg-customer.com include:_spf.salesforce.com -all\""
+        ],
+        "status": "OK",
+        "error": null,
+        "diagnostics": {
+          "transport": "udp",
+          "edns": 1232,
+          "rcode": 0,
+          "rcode_name": "NOERROR",
+          "flags": 33792,
+          "retries": 0,
+          "attempts": [
+            {
+              "transport": "udp",
+              "edns": 1232,
+              "error": false,
+              "elapsed_ms": 62.09
+            }
+          ],
+          "elapsed_ms": 62.09,
+          "fallback_used": false
+        }
+      },
+      {
+        "name": "cloudflare.com",
+        "rtype": "A",
+        "resolver_id": "auth:ns6.cloudflare.com@162.159.3.11",
+        "ttl": 300,
+        "answers": [
+          "104.16.132.229",
+          "104.16.133.229"
+        ],
+        "status": "OK",
+        "error": null,
+        "diagnostics": {
+          "transport": "udp",
+          "edns": 1232,
+          "rcode": 0,
+          "rcode_name": "NOERROR",
+          "flags": 33792,
+          "retries": 0,
+          "attempts": [
+            {
+              "transport": "udp",
+              "edns": 1232,
+              "error": false,
+              "elapsed_ms": 22.6
+            }
+          ],
+          "elapsed_ms": 22.6,
+          "fallback_used": false
+        }
+      },
+      {
+        "name": "cloudflare.com",
+        "rtype": "AAAA",
+        "resolver_id": "auth:ns6.cloudflare.com@162.159.3.11",
+        "ttl": 300,
+        "answers": [
+          "2606:4700::6810:84e5",
+          "2606:4700::6810:85e5"
+        ],
+        "status": "OK",
+        "error": null,
+        "diagnostics": {
+          "transport": "udp",
+          "edns": 1232,
+          "rcode": 0,
+          "rcode_name": "NOERROR",
+          "flags": 33792,
+          "retries": 0,
+          "attempts": [
+            {
+              "transport": "udp",
+              "edns": 1232,
+              "error": false,
+              "elapsed_ms": 19.98
+            }
+          ],
+          "elapsed_ms": 19.98,
+          "fallback_used": false
+        }
+      },
+      {
+        "name": "cloudflare.com",
+        "rtype": "CNAME",
+        "resolver_id": "auth:ns6.cloudflare.com@162.159.3.11",
+        "ttl": null,
+        "answers": [],
+        "status": "NODATA",
+        "error": null,
+        "diagnostics": {
+          "transport": "udp",
+          "edns": 1232,
+          "rcode": 0,
+          "rcode_name": "NOERROR",
+          "flags": 33792,
+          "retries": 0,
+          "attempts": [
+            {
+              "transport": "udp",
+              "edns": 1232,
+              "error": false,
+              "elapsed_ms": 15.84
+            }
+          ],
+          "elapsed_ms": 15.84,
+          "fallback_used": false
+        }
+      },
+      {
+        "name": "cloudflare.com",
+        "rtype": "MX",
+        "resolver_id": "auth:ns6.cloudflare.com@162.159.3.11",
+        "ttl": 1800,
+        "answers": [
+          "10 mxa.global.inbound.cf-emailsecurity.net.",
+          "10 mxb.global.inbound.cf-emailsecurity.net.",
+          "5 mxa-canary.global.inbound.cf-emailsecurity.net.",
+          "5 mxb-canary.global.inbound.cf-emailsecurity.net."
+        ],
+        "status": "OK",
+        "error": null,
+        "diagnostics": {
+          "transport": "udp",
+          "edns": 1232,
+          "rcode": 0,
+          "rcode_name": "NOERROR",
+          "flags": 33792,
+          "retries": 0,
+          "attempts": [
+            {
+              "transport": "udp",
+              "edns": 1232,
+              "error": false,
+              "elapsed_ms": 16.22
+            }
+          ],
+          "elapsed_ms": 16.22,
+          "fallback_used": false
+        }
+      },
+      {
+        "name": "cloudflare.com",
+        "rtype": "NS",
+        "resolver_id": "auth:ns6.cloudflare.com@162.159.3.11",
+        "ttl": 86400,
+        "answers": [
+          "ns3.cloudflare.com.",
+          "ns4.cloudflare.com.",
+          "ns5.cloudflare.com.",
+          "ns6.cloudflare.com.",
+          "ns7.cloudflare.com."
+        ],
+        "status": "OK",
+        "error": null,
+        "diagnostics": {
+          "transport": "udp",
+          "edns": 1232,
+          "rcode": 0,
+          "rcode_name": "NOERROR",
+          "flags": 33792,
+          "retries": 0,
+          "attempts": [
+            {
+              "transport": "udp",
+              "edns": 1232,
+              "error": false,
+              "elapsed_ms": 25.97
+            }
+          ],
+          "elapsed_ms": 25.97,
+          "fallback_used": false
+        }
+      },
+      {
+        "name": "cloudflare.com",
+        "rtype": "SOA",
+        "resolver_id": "auth:ns6.cloudflare.com@162.159.3.11",
+        "ttl": 300,
+        "answers": [
+          "ns3.cloudflare.com. dns.cloudflare.com. 2387738886 10000 2400 604800 300"
+        ],
+        "status": "OK",
+        "error": null,
+        "diagnostics": {
+          "transport": "udp",
+          "edns": 1232,
+          "rcode": 0,
+          "rcode_name": "NOERROR",
+          "flags": 33792,
+          "retries": 0,
+          "attempts": [
+            {
+              "transport": "udp",
+              "edns": 1232,
+              "error": false,
+              "elapsed_ms": 23.08
+            }
+          ],
+          "elapsed_ms": 23.08,
+          "fallback_used": false
+        }
+      },
+      {
+        "name": "cloudflare.com",
+        "rtype": "TXT",
+        "resolver_id": "auth:ns6.cloudflare.com@162.159.3.11",
+        "ttl": 300,
+        "answers": [
+          "\"MS=ms70274184\"",
+          "\"ZOOM_verify_7LFBvOO9SIigypFG2xRlMA\"",
+          "\"_neqmkgaq1lq9it5s8qmetrhbnu121wb\"",
+          "\"_saml-domain-challenge.2dc00405-79cd-457b-b288-a119c6f0c7b7.71996d53-d178-4ba9-bef4-7f7e46edab74.cloudflare.com=1c8736fd-84b2-4197-985f-3fb2852f2457\"",
+          "\"apple-domain-verification=DNnWJoArJobFJKhJ\"",
+          "\"asv=894f6d1f9f83bcf44e4b1bc40bc1c4aa\"",
+          "\"atlassian-domain-verification=WxxKyN9aLnjEsoOjUYI6T0bb5vcqmKzaIkC9Rx2QkNb751G3LL/cus8/ZDOgh8xB\"",
+          "\"canva-site-verification=oOyaVnHC-OiFoR1BPvetNA\"",
+          "\"cisco-ci-domain-verification=27e926884619804ef987ae4aa1c4168f6b152ada84f4c8bfc74eb2bd2912ad72\"",
+          "\"creatopy-domain-verification=97d2ca50-9b6f-4a21-9bdb-fbb630e4cec7\"",
+          "\"docker-verification=c578e21c-34fb-4474-9b90-d55ee4cba10c\"",
+          "\"drift-domain-verification=f037808a26ae8b25bc13b1f1f2b4c3e0f78c03e67f24cefdd4ec520efa8e719f\"",
+          "\"facebook-domain-verification=h9mm6zopj6p2po54woa16m5bskm6oo\"",
+          "\"google-site-verification=C7thfNeXVahkVhniiqTI1iSVnElKR_kBBtnEHkeGDlo\"",
+          "\"google-site-verification=ZdlQZLBBAPkxeFTCM1rpiB_ibtGff_JF5KllNKwDR9I\"",
+          "\"liveramp-site-verification=EhH1MqgwbndTWl1AN64hOTKz7hc1s80yUpchLbgpfY0\"",
+          "\"logmein-verification-code=b3433c86-3823-4808-8a7e-58042469f654\"",
+          "\"miro-verification=bdd7dfa0a49adfb43ad6ddfaf797633246c07356\"",
+          "\"onetrust-domain-verification=bd5cd08a1e9644799fdb98ed7d60c9cb\"",
+          "\"status-page-domain-verification=r14frwljwbxs\"",
+          "\"stripe-verification=5096d01ff2cf194285dd51cae18f24fa9c26dc928cebac3636d462b4c6925623\"",
+          "\"stripe-verification=bf1a94e6b16ace2502a4a7fff574a25c8a45291054960c883c59be39d1788db9\"",
+          "\"uber-domain-verification=58086039-150a-42a4-a4be-b4032921aa0f\"",
+          "\"v=spf1 ip4:199.15.212.0/22 ip4:173.245.48.0/20 include:_spf.google.com include:spf1.mcsv.net include:spf.mandrillapp.com include:mail.zendesk.com include:stspg-customer.com include:_spf.salesforce.com -all\""
+        ],
+        "status": "OK",
+        "error": null,
+        "diagnostics": {
+          "transport": "udp",
+          "edns": 1232,
+          "rcode": 0,
+          "rcode_name": "NOERROR",
+          "flags": 33792,
+          "retries": 0,
+          "attempts": [
+            {
+              "transport": "udp",
+              "edns": 1232,
+              "error": false,
+              "elapsed_ms": 52.48
+            }
+          ],
+          "elapsed_ms": 52.48,
+          "fallback_used": false
+        }
+      },
+      {
+        "name": "cloudflare.com",
+        "rtype": "A",
+        "resolver_id": "auth:ns6.cloudflare.com@162.159.5.6",
+        "ttl": 300,
+        "answers": [
+          "104.16.132.229",
+          "104.16.133.229"
+        ],
+        "status": "OK",
+        "error": null,
+        "diagnostics": {
+          "transport": "udp",
+          "edns": 1232,
+          "rcode": 0,
+          "rcode_name": "NOERROR",
+          "flags": 33792,
+          "retries": 0,
+          "attempts": [
+            {
+              "transport": "udp",
+              "edns": 1232,
+              "error": false,
+              "elapsed_ms": 15.19
+            }
+          ],
+          "elapsed_ms": 15.19,
+          "fallback_used": false
+        }
+      },
+      {
+        "name": "cloudflare.com",
+        "rtype": "AAAA",
+        "resolver_id": "auth:ns6.cloudflare.com@162.159.5.6",
+        "ttl": 300,
+        "answers": [
+          "2606:4700::6810:84e5",
+          "2606:4700::6810:85e5"
+        ],
+        "status": "OK",
+        "error": null,
+        "diagnostics": {
+          "transport": "udp",
+          "edns": 1232,
+          "rcode": 0,
+          "rcode_name": "NOERROR",
+          "flags": 33792,
+          "retries": 0,
+          "attempts": [
+            {
+              "transport": "udp",
+              "edns": 1232,
+              "error": false,
+              "elapsed_ms": 23.46
+            }
+          ],
+          "elapsed_ms": 23.46,
+          "fallback_used": false
+        }
+      },
+      {
+        "name": "cloudflare.com",
+        "rtype": "CNAME",
+        "resolver_id": "auth:ns6.cloudflare.com@162.159.5.6",
+        "ttl": null,
+        "answers": [],
+        "status": "NODATA",
+        "error": null,
+        "diagnostics": {
+          "transport": "udp",
+          "edns": 1232,
+          "rcode": 0,
+          "rcode_name": "NOERROR",
+          "flags": 33792,
+          "retries": 0,
+          "attempts": [
+            {
+              "transport": "udp",
+              "edns": 1232,
+              "error": false,
+              "elapsed_ms": 21.43
+            }
+          ],
+          "elapsed_ms": 21.43,
+          "fallback_used": false
+        }
+      },
+      {
+        "name": "cloudflare.com",
+        "rtype": "MX",
+        "resolver_id": "auth:ns6.cloudflare.com@162.159.5.6",
+        "ttl": 1800,
+        "answers": [
+          "10 mxa.global.inbound.cf-emailsecurity.net.",
+          "10 mxb.global.inbound.cf-emailsecurity.net.",
+          "5 mxa-canary.global.inbound.cf-emailsecurity.net.",
+          "5 mxb-canary.global.inbound.cf-emailsecurity.net."
+        ],
+        "status": "OK",
+        "error": null,
+        "diagnostics": {
+          "transport": "udp",
+          "edns": 1232,
+          "rcode": 0,
+          "rcode_name": "NOERROR",
+          "flags": 33792,
+          "retries": 0,
+          "attempts": [
+            {
+              "transport": "udp",
+              "edns": 1232,
+              "error": false,
+              "elapsed_ms": 21.59
+            }
+          ],
+          "elapsed_ms": 21.59,
+          "fallback_used": false
+        }
+      },
+      {
+        "name": "cloudflare.com",
+        "rtype": "NS",
+        "resolver_id": "auth:ns6.cloudflare.com@162.159.5.6",
+        "ttl": 86400,
+        "answers": [
+          "ns3.cloudflare.com.",
+          "ns4.cloudflare.com.",
+          "ns5.cloudflare.com.",
+          "ns6.cloudflare.com.",
+          "ns7.cloudflare.com."
+        ],
+        "status": "OK",
+        "error": null,
+        "diagnostics": {
+          "transport": "udp",
+          "edns": 1232,
+          "rcode": 0,
+          "rcode_name": "NOERROR",
+          "flags": 33792,
+          "retries": 0,
+          "attempts": [
+            {
+              "transport": "udp",
+              "edns": 1232,
+              "error": false,
+              "elapsed_ms": 22.62
+            }
+          ],
+          "elapsed_ms": 22.62,
+          "fallback_used": false
+        }
+      },
+      {
+        "name": "cloudflare.com",
+        "rtype": "SOA",
+        "resolver_id": "auth:ns6.cloudflare.com@162.159.5.6",
+        "ttl": 300,
+        "answers": [
+          "ns3.cloudflare.com. dns.cloudflare.com. 2387738886 10000 2400 604800 300"
+        ],
+        "status": "OK",
+        "error": null,
+        "diagnostics": {
+          "transport": "udp",
+          "edns": 1232,
+          "rcode": 0,
+          "rcode_name": "NOERROR",
+          "flags": 33792,
+          "retries": 0,
+          "attempts": [
+            {
+              "transport": "udp",
+              "edns": 1232,
+              "error": false,
+              "elapsed_ms": 21.29
+            }
+          ],
+          "elapsed_ms": 21.29,
+          "fallback_used": false
+        }
+      },
+      {
+        "name": "cloudflare.com",
+        "rtype": "TXT",
+        "resolver_id": "auth:ns6.cloudflare.com@162.159.5.6",
+        "ttl": 300,
+        "answers": [
+          "\"MS=ms70274184\"",
+          "\"ZOOM_verify_7LFBvOO9SIigypFG2xRlMA\"",
+          "\"_neqmkgaq1lq9it5s8qmetrhbnu121wb\"",
+          "\"_saml-domain-challenge.2dc00405-79cd-457b-b288-a119c6f0c7b7.71996d53-d178-4ba9-bef4-7f7e46edab74.cloudflare.com=1c8736fd-84b2-4197-985f-3fb2852f2457\"",
+          "\"apple-domain-verification=DNnWJoArJobFJKhJ\"",
+          "\"asv=894f6d1f9f83bcf44e4b1bc40bc1c4aa\"",
+          "\"atlassian-domain-verification=WxxKyN9aLnjEsoOjUYI6T0bb5vcqmKzaIkC9Rx2QkNb751G3LL/cus8/ZDOgh8xB\"",
+          "\"canva-site-verification=oOyaVnHC-OiFoR1BPvetNA\"",
+          "\"cisco-ci-domain-verification=27e926884619804ef987ae4aa1c4168f6b152ada84f4c8bfc74eb2bd2912ad72\"",
+          "\"creatopy-domain-verification=97d2ca50-9b6f-4a21-9bdb-fbb630e4cec7\"",
+          "\"docker-verification=c578e21c-34fb-4474-9b90-d55ee4cba10c\"",
+          "\"drift-domain-verification=f037808a26ae8b25bc13b1f1f2b4c3e0f78c03e67f24cefdd4ec520efa8e719f\"",
+          "\"facebook-domain-verification=h9mm6zopj6p2po54woa16m5bskm6oo\"",
+          "\"google-site-verification=C7thfNeXVahkVhniiqTI1iSVnElKR_kBBtnEHkeGDlo\"",
+          "\"google-site-verification=ZdlQZLBBAPkxeFTCM1rpiB_ibtGff_JF5KllNKwDR9I\"",
+          "\"liveramp-site-verification=EhH1MqgwbndTWl1AN64hOTKz7hc1s80yUpchLbgpfY0\"",
+          "\"logmein-verification-code=b3433c86-3823-4808-8a7e-58042469f654\"",
+          "\"miro-verification=bdd7dfa0a49adfb43ad6ddfaf797633246c07356\"",
+          "\"onetrust-domain-verification=bd5cd08a1e9644799fdb98ed7d60c9cb\"",
+          "\"status-page-domain-verification=r14frwljwbxs\"",
+          "\"stripe-verification=5096d01ff2cf194285dd51cae18f24fa9c26dc928cebac3636d462b4c6925623\"",
+          "\"stripe-verification=bf1a94e6b16ace2502a4a7fff574a25c8a45291054960c883c59be39d1788db9\"",
+          "\"uber-domain-verification=58086039-150a-42a4-a4be-b4032921aa0f\"",
+          "\"v=spf1 ip4:199.15.212.0/22 ip4:173.245.48.0/20 include:_spf.google.com include:spf1.mcsv.net include:spf.mandrillapp.com include:mail.zendesk.com include:stspg-customer.com include:_spf.salesforce.com -all\""
+        ],
+        "status": "OK",
+        "error": null,
+        "diagnostics": {
+          "transport": "udp",
+          "edns": 1232,
+          "rcode": 0,
+          "rcode_name": "NOERROR",
+          "flags": 33792,
+          "retries": 0,
+          "attempts": [
+            {
+              "transport": "udp",
+              "edns": 1232,
+              "error": false,
+              "elapsed_ms": 53.33
+            }
+          ],
+          "elapsed_ms": 53.33,
+          "fallback_used": false
+        }
+      },
+      {
+        "name": "cloudflare.com",
+        "rtype": "A",
+        "resolver_id": "auth:ns6.cloudflare.com@2400:cb00:2049:1::a29f:30b",
+        "ttl": 300,
+        "answers": [
+          "104.16.132.229",
+          "104.16.133.229"
+        ],
+        "status": "OK",
+        "error": null,
+        "diagnostics": {
+          "transport": "udp",
+          "edns": 1232,
+          "rcode": 0,
+          "rcode_name": "NOERROR",
+          "flags": 33792,
+          "retries": 0,
+          "attempts": [
+            {
+              "transport": "udp",
+              "edns": 1232,
+              "error": false,
+              "elapsed_ms": 16.94
+            }
+          ],
+          "elapsed_ms": 16.94,
+          "fallback_used": false
+        }
+      },
+      {
+        "name": "cloudflare.com",
+        "rtype": "AAAA",
+        "resolver_id": "auth:ns6.cloudflare.com@2400:cb00:2049:1::a29f:30b",
+        "ttl": 300,
+        "answers": [
+          "2606:4700::6810:84e5",
+          "2606:4700::6810:85e5"
+        ],
+        "status": "OK",
+        "error": null,
+        "diagnostics": {
+          "transport": "udp",
+          "edns": 1232,
+          "rcode": 0,
+          "rcode_name": "NOERROR",
+          "flags": 33792,
+          "retries": 0,
+          "attempts": [
+            {
+              "transport": "udp",
+              "edns": 1232,
+              "error": false,
+              "elapsed_ms": 14.81
+            }
+          ],
+          "elapsed_ms": 14.81,
+          "fallback_used": false
+        }
+      },
+      {
+        "name": "cloudflare.com",
+        "rtype": "CNAME",
+        "resolver_id": "auth:ns6.cloudflare.com@2400:cb00:2049:1::a29f:30b",
+        "ttl": null,
+        "answers": [],
+        "status": "NODATA",
+        "error": null,
+        "diagnostics": {
+          "transport": "udp",
+          "edns": 1232,
+          "rcode": 0,
+          "rcode_name": "NOERROR",
+          "flags": 33792,
+          "retries": 0,
+          "attempts": [
+            {
+              "transport": "udp",
+              "edns": 1232,
+              "error": false,
+              "elapsed_ms": 13.1
+            }
+          ],
+          "elapsed_ms": 13.1,
+          "fallback_used": false
+        }
+      },
+      {
+        "name": "cloudflare.com",
+        "rtype": "MX",
+        "resolver_id": "auth:ns6.cloudflare.com@2400:cb00:2049:1::a29f:30b",
+        "ttl": 1800,
+        "answers": [
+          "10 mxa.global.inbound.cf-emailsecurity.net.",
+          "10 mxb.global.inbound.cf-emailsecurity.net.",
+          "5 mxa-canary.global.inbound.cf-emailsecurity.net.",
+          "5 mxb-canary.global.inbound.cf-emailsecurity.net."
+        ],
+        "status": "OK",
+        "error": null,
+        "diagnostics": {
+          "transport": "udp",
+          "edns": 1232,
+          "rcode": 0,
+          "rcode_name": "NOERROR",
+          "flags": 33792,
+          "retries": 0,
+          "attempts": [
+            {
+              "transport": "udp",
+              "edns": 1232,
+              "error": false,
+              "elapsed_ms": 15.69
+            }
+          ],
+          "elapsed_ms": 15.69,
+          "fallback_used": false
+        }
+      },
+      {
+        "name": "cloudflare.com",
+        "rtype": "NS",
+        "resolver_id": "auth:ns6.cloudflare.com@2400:cb00:2049:1::a29f:30b",
+        "ttl": 86400,
+        "answers": [
+          "ns3.cloudflare.com.",
+          "ns4.cloudflare.com.",
+          "ns5.cloudflare.com.",
+          "ns6.cloudflare.com.",
+          "ns7.cloudflare.com."
+        ],
+        "status": "OK",
+        "error": null,
+        "diagnostics": {
+          "transport": "udp",
+          "edns": 1232,
+          "rcode": 0,
+          "rcode_name": "NOERROR",
+          "flags": 33792,
+          "retries": 0,
+          "attempts": [
+            {
+              "transport": "udp",
+              "edns": 1232,
+              "error": false,
+              "elapsed_ms": 16.93
+            }
+          ],
+          "elapsed_ms": 16.93,
+          "fallback_used": false
+        }
+      },
+      {
+        "name": "cloudflare.com",
+        "rtype": "SOA",
+        "resolver_id": "auth:ns6.cloudflare.com@2400:cb00:2049:1::a29f:30b",
+        "ttl": 300,
+        "answers": [
+          "ns3.cloudflare.com. dns.cloudflare.com. 2387738886 10000 2400 604800 300"
+        ],
+        "status": "OK",
+        "error": null,
+        "diagnostics": {
+          "transport": "udp",
+          "edns": 1232,
+          "rcode": 0,
+          "rcode_name": "NOERROR",
+          "flags": 33792,
+          "retries": 0,
+          "attempts": [
+            {
+              "transport": "udp",
+              "edns": 1232,
+              "error": false,
+              "elapsed_ms": 17.12
+            }
+          ],
+          "elapsed_ms": 17.12,
+          "fallback_used": false
+        }
+      },
+      {
+        "name": "cloudflare.com",
+        "rtype": "TXT",
+        "resolver_id": "auth:ns6.cloudflare.com@2400:cb00:2049:1::a29f:30b",
+        "ttl": 300,
+        "answers": [
+          "\"MS=ms70274184\"",
+          "\"ZOOM_verify_7LFBvOO9SIigypFG2xRlMA\"",
+          "\"_neqmkgaq1lq9it5s8qmetrhbnu121wb\"",
+          "\"_saml-domain-challenge.2dc00405-79cd-457b-b288-a119c6f0c7b7.71996d53-d178-4ba9-bef4-7f7e46edab74.cloudflare.com=1c8736fd-84b2-4197-985f-3fb2852f2457\"",
+          "\"apple-domain-verification=DNnWJoArJobFJKhJ\"",
+          "\"asv=894f6d1f9f83bcf44e4b1bc40bc1c4aa\"",
+          "\"atlassian-domain-verification=WxxKyN9aLnjEsoOjUYI6T0bb5vcqmKzaIkC9Rx2QkNb751G3LL/cus8/ZDOgh8xB\"",
+          "\"canva-site-verification=oOyaVnHC-OiFoR1BPvetNA\"",
+          "\"cisco-ci-domain-verification=27e926884619804ef987ae4aa1c4168f6b152ada84f4c8bfc74eb2bd2912ad72\"",
+          "\"creatopy-domain-verification=97d2ca50-9b6f-4a21-9bdb-fbb630e4cec7\"",
+          "\"docker-verification=c578e21c-34fb-4474-9b90-d55ee4cba10c\"",
+          "\"drift-domain-verification=f037808a26ae8b25bc13b1f1f2b4c3e0f78c03e67f24cefdd4ec520efa8e719f\"",
+          "\"facebook-domain-verification=h9mm6zopj6p2po54woa16m5bskm6oo\"",
+          "\"google-site-verification=C7thfNeXVahkVhniiqTI1iSVnElKR_kBBtnEHkeGDlo\"",
+          "\"google-site-verification=ZdlQZLBBAPkxeFTCM1rpiB_ibtGff_JF5KllNKwDR9I\"",
+          "\"liveramp-site-verification=EhH1MqgwbndTWl1AN64hOTKz7hc1s80yUpchLbgpfY0\"",
+          "\"logmein-verification-code=b3433c86-3823-4808-8a7e-58042469f654\"",
+          "\"miro-verification=bdd7dfa0a49adfb43ad6ddfaf797633246c07356\"",
+          "\"onetrust-domain-verification=bd5cd08a1e9644799fdb98ed7d60c9cb\"",
+          "\"status-page-domain-verification=r14frwljwbxs\"",
+          "\"stripe-verification=5096d01ff2cf194285dd51cae18f24fa9c26dc928cebac3636d462b4c6925623\"",
+          "\"stripe-verification=bf1a94e6b16ace2502a4a7fff574a25c8a45291054960c883c59be39d1788db9\"",
+          "\"uber-domain-verification=58086039-150a-42a4-a4be-b4032921aa0f\"",
+          "\"v=spf1 ip4:199.15.212.0/22 ip4:173.245.48.0/20 include:_spf.google.com include:spf1.mcsv.net include:spf.mandrillapp.com include:mail.zendesk.com include:stspg-customer.com include:_spf.salesforce.com -all\""
+        ],
+        "status": "OK",
+        "error": null,
+        "diagnostics": {
+          "transport": "udp",
+          "edns": 1232,
+          "rcode": 0,
+          "rcode_name": "NOERROR",
+          "flags": 33792,
+          "retries": 0,
+          "attempts": [
+            {
+              "transport": "udp",
+              "edns": 1232,
+              "error": false,
+              "elapsed_ms": 49.72
+            }
+          ],
+          "elapsed_ms": 49.72,
+          "fallback_used": false
+        }
+      },
+      {
+        "name": "cloudflare.com",
+        "rtype": "A",
+        "resolver_id": "auth:ns6.cloudflare.com@2400:cb00:2049:1::a29f:506",
+        "ttl": 300,
+        "answers": [
+          "104.16.132.229",
+          "104.16.133.229"
+        ],
+        "status": "OK",
+        "error": null,
+        "diagnostics": {
+          "transport": "udp",
+          "edns": 1232,
+          "rcode": 0,
+          "rcode_name": "NOERROR",
+          "flags": 33792,
+          "retries": 0,
+          "attempts": [
+            {
+              "transport": "udp",
+              "edns": 1232,
+              "error": false,
+              "elapsed_ms": 13.33
+            }
+          ],
+          "elapsed_ms": 13.33,
+          "fallback_used": false
+        }
+      },
+      {
+        "name": "cloudflare.com",
+        "rtype": "AAAA",
+        "resolver_id": "auth:ns6.cloudflare.com@2400:cb00:2049:1::a29f:506",
+        "ttl": 300,
+        "answers": [
+          "2606:4700::6810:84e5",
+          "2606:4700::6810:85e5"
+        ],
+        "status": "OK",
+        "error": null,
+        "diagnostics": {
+          "transport": "udp",
+          "edns": 1232,
+          "rcode": 0,
+          "rcode_name": "NOERROR",
+          "flags": 33792,
+          "retries": 0,
+          "attempts": [
+            {
+              "transport": "udp",
+              "edns": 1232,
+              "error": false,
+              "elapsed_ms": 26.02
+            }
+          ],
+          "elapsed_ms": 26.02,
+          "fallback_used": false
+        }
+      },
+      {
+        "name": "cloudflare.com",
+        "rtype": "CNAME",
+        "resolver_id": "auth:ns6.cloudflare.com@2400:cb00:2049:1::a29f:506",
+        "ttl": null,
+        "answers": [],
+        "status": "NODATA",
+        "error": null,
+        "diagnostics": {
+          "transport": "udp",
+          "edns": 1232,
+          "rcode": 0,
+          "rcode_name": "NOERROR",
+          "flags": 33792,
+          "retries": 0,
+          "attempts": [
+            {
+              "transport": "udp",
+              "edns": 1232,
+              "error": false,
+              "elapsed_ms": 12.87
+            }
+          ],
+          "elapsed_ms": 12.87,
+          "fallback_used": false
+        }
+      },
+      {
+        "name": "cloudflare.com",
+        "rtype": "MX",
+        "resolver_id": "auth:ns6.cloudflare.com@2400:cb00:2049:1::a29f:506",
+        "ttl": 1800,
+        "answers": [
+          "10 mxa.global.inbound.cf-emailsecurity.net.",
+          "10 mxb.global.inbound.cf-emailsecurity.net.",
+          "5 mxa-canary.global.inbound.cf-emailsecurity.net.",
+          "5 mxb-canary.global.inbound.cf-emailsecurity.net."
+        ],
+        "status": "OK",
+        "error": null,
+        "diagnostics": {
+          "transport": "udp",
+          "edns": 1232,
+          "rcode": 0,
+          "rcode_name": "NOERROR",
+          "flags": 33792,
+          "retries": 0,
+          "attempts": [
+            {
+              "transport": "udp",
+              "edns": 1232,
+              "error": false,
+              "elapsed_ms": 18.32
+            }
+          ],
+          "elapsed_ms": 18.32,
+          "fallback_used": false
+        }
+      },
+      {
+        "name": "cloudflare.com",
+        "rtype": "NS",
+        "resolver_id": "auth:ns6.cloudflare.com@2400:cb00:2049:1::a29f:506",
+        "ttl": 86400,
+        "answers": [
+          "ns3.cloudflare.com.",
+          "ns4.cloudflare.com.",
+          "ns5.cloudflare.com.",
+          "ns6.cloudflare.com.",
+          "ns7.cloudflare.com."
+        ],
+        "status": "OK",
+        "error": null,
+        "diagnostics": {
+          "transport": "udp",
+          "edns": 1232,
+          "rcode": 0,
+          "rcode_name": "NOERROR",
+          "flags": 33792,
+          "retries": 0,
+          "attempts": [
+            {
+              "transport": "udp",
+              "edns": 1232,
+              "error": false,
+              "elapsed_ms": 18.33
+            }
+          ],
+          "elapsed_ms": 18.33,
+          "fallback_used": false
+        }
+      },
+      {
+        "name": "cloudflare.com",
+        "rtype": "SOA",
+        "resolver_id": "auth:ns6.cloudflare.com@2400:cb00:2049:1::a29f:506",
+        "ttl": 300,
+        "answers": [
+          "ns3.cloudflare.com. dns.cloudflare.com. 2387738886 10000 2400 604800 300"
+        ],
+        "status": "OK",
+        "error": null,
+        "diagnostics": {
+          "transport": "udp",
+          "edns": 1232,
+          "rcode": 0,
+          "rcode_name": "NOERROR",
+          "flags": 33792,
+          "retries": 0,
+          "attempts": [
+            {
+              "transport": "udp",
+              "edns": 1232,
+              "error": false,
+              "elapsed_ms": 25.22
+            }
+          ],
+          "elapsed_ms": 25.22,
+          "fallback_used": false
+        }
+      },
+      {
+        "name": "cloudflare.com",
+        "rtype": "TXT",
+        "resolver_id": "auth:ns6.cloudflare.com@2400:cb00:2049:1::a29f:506",
+        "ttl": 300,
+        "answers": [
+          "\"MS=ms70274184\"",
+          "\"ZOOM_verify_7LFBvOO9SIigypFG2xRlMA\"",
+          "\"_neqmkgaq1lq9it5s8qmetrhbnu121wb\"",
+          "\"_saml-domain-challenge.2dc00405-79cd-457b-b288-a119c6f0c7b7.71996d53-d178-4ba9-bef4-7f7e46edab74.cloudflare.com=1c8736fd-84b2-4197-985f-3fb2852f2457\"",
+          "\"apple-domain-verification=DNnWJoArJobFJKhJ\"",
+          "\"asv=894f6d1f9f83bcf44e4b1bc40bc1c4aa\"",
+          "\"atlassian-domain-verification=WxxKyN9aLnjEsoOjUYI6T0bb5vcqmKzaIkC9Rx2QkNb751G3LL/cus8/ZDOgh8xB\"",
+          "\"canva-site-verification=oOyaVnHC-OiFoR1BPvetNA\"",
+          "\"cisco-ci-domain-verification=27e926884619804ef987ae4aa1c4168f6b152ada84f4c8bfc74eb2bd2912ad72\"",
+          "\"creatopy-domain-verification=97d2ca50-9b6f-4a21-9bdb-fbb630e4cec7\"",
+          "\"docker-verification=c578e21c-34fb-4474-9b90-d55ee4cba10c\"",
+          "\"drift-domain-verification=f037808a26ae8b25bc13b1f1f2b4c3e0f78c03e67f24cefdd4ec520efa8e719f\"",
+          "\"facebook-domain-verification=h9mm6zopj6p2po54woa16m5bskm6oo\"",
+          "\"google-site-verification=C7thfNeXVahkVhniiqTI1iSVnElKR_kBBtnEHkeGDlo\"",
+          "\"google-site-verification=ZdlQZLBBAPkxeFTCM1rpiB_ibtGff_JF5KllNKwDR9I\"",
+          "\"liveramp-site-verification=EhH1MqgwbndTWl1AN64hOTKz7hc1s80yUpchLbgpfY0\"",
+          "\"logmein-verification-code=b3433c86-3823-4808-8a7e-58042469f654\"",
+          "\"miro-verification=bdd7dfa0a49adfb43ad6ddfaf797633246c07356\"",
+          "\"onetrust-domain-verification=bd5cd08a1e9644799fdb98ed7d60c9cb\"",
+          "\"status-page-domain-verification=r14frwljwbxs\"",
+          "\"stripe-verification=5096d01ff2cf194285dd51cae18f24fa9c26dc928cebac3636d462b4c6925623\"",
+          "\"stripe-verification=bf1a94e6b16ace2502a4a7fff574a25c8a45291054960c883c59be39d1788db9\"",
+          "\"uber-domain-verification=58086039-150a-42a4-a4be-b4032921aa0f\"",
+          "\"v=spf1 ip4:199.15.212.0/22 ip4:173.245.48.0/20 include:_spf.google.com include:spf1.mcsv.net include:spf.mandrillapp.com include:mail.zendesk.com include:stspg-customer.com include:_spf.salesforce.com -all\""
+        ],
+        "status": "OK",
+        "error": null,
+        "diagnostics": {
+          "transport": "udp",
+          "edns": 1232,
+          "rcode": 0,
+          "rcode_name": "NOERROR",
+          "flags": 33792,
+          "retries": 0,
+          "attempts": [
+            {
+              "transport": "udp",
+              "edns": 1232,
+              "error": false,
+              "elapsed_ms": 55.85
+            }
+          ],
+          "elapsed_ms": 55.85,
+          "fallback_used": false
+        }
+      },
+      {
+        "name": "cloudflare.com",
+        "rtype": "A",
+        "resolver_id": "auth:ns7.cloudflare.com@162.159.4.8",
+        "ttl": 300,
+        "answers": [
+          "104.16.132.229",
+          "104.16.133.229"
+        ],
+        "status": "OK",
+        "error": null,
+        "diagnostics": {
+          "transport": "udp",
+          "edns": 1232,
+          "rcode": 0,
+          "rcode_name": "NOERROR",
+          "flags": 33792,
+          "retries": 0,
+          "attempts": [
+            {
+              "transport": "udp",
+              "edns": 1232,
+              "error": false,
+              "elapsed_ms": 14.13
+            }
+          ],
+          "elapsed_ms": 14.13,
+          "fallback_used": false
+        }
+      },
+      {
+        "name": "cloudflare.com",
+        "rtype": "AAAA",
+        "resolver_id": "auth:ns7.cloudflare.com@162.159.4.8",
+        "ttl": 300,
+        "answers": [
+          "2606:4700::6810:84e5",
+          "2606:4700::6810:85e5"
+        ],
+        "status": "OK",
+        "error": null,
+        "diagnostics": {
+          "transport": "udp",
+          "edns": 1232,
+          "rcode": 0,
+          "rcode_name": "NOERROR",
+          "flags": 33792,
+          "retries": 0,
+          "attempts": [
+            {
+              "transport": "udp",
+              "edns": 1232,
+              "error": false,
+              "elapsed_ms": 24.86
+            }
+          ],
+          "elapsed_ms": 24.86,
+          "fallback_used": false
+        }
+      },
+      {
+        "name": "cloudflare.com",
+        "rtype": "CNAME",
+        "resolver_id": "auth:ns7.cloudflare.com@162.159.4.8",
+        "ttl": null,
+        "answers": [],
+        "status": "NODATA",
+        "error": null,
+        "diagnostics": {
+          "transport": "udp",
+          "edns": 1232,
+          "rcode": 0,
+          "rcode_name": "NOERROR",
+          "flags": 33792,
+          "retries": 0,
+          "attempts": [
+            {
+              "transport": "udp",
+              "edns": 1232,
+              "error": false,
+              "elapsed_ms": 25.43
+            }
+          ],
+          "elapsed_ms": 25.43,
+          "fallback_used": false
+        }
+      },
+      {
+        "name": "cloudflare.com",
+        "rtype": "MX",
+        "resolver_id": "auth:ns7.cloudflare.com@162.159.4.8",
+        "ttl": 1800,
+        "answers": [
+          "10 mxa.global.inbound.cf-emailsecurity.net.",
+          "10 mxb.global.inbound.cf-emailsecurity.net.",
+          "5 mxa-canary.global.inbound.cf-emailsecurity.net.",
+          "5 mxb-canary.global.inbound.cf-emailsecurity.net."
+        ],
+        "status": "OK",
+        "error": null,
+        "diagnostics": {
+          "transport": "udp",
+          "edns": 1232,
+          "rcode": 0,
+          "rcode_name": "NOERROR",
+          "flags": 33792,
+          "retries": 0,
+          "attempts": [
+            {
+              "transport": "udp",
+              "edns": 1232,
+              "error": false,
+              "elapsed_ms": 26.47
+            }
+          ],
+          "elapsed_ms": 26.47,
+          "fallback_used": false
+        }
+      },
+      {
+        "name": "cloudflare.com",
+        "rtype": "NS",
+        "resolver_id": "auth:ns7.cloudflare.com@162.159.4.8",
+        "ttl": 86400,
+        "answers": [
+          "ns3.cloudflare.com.",
+          "ns4.cloudflare.com.",
+          "ns5.cloudflare.com.",
+          "ns6.cloudflare.com.",
+          "ns7.cloudflare.com."
+        ],
+        "status": "OK",
+        "error": null,
+        "diagnostics": {
+          "transport": "udp",
+          "edns": 1232,
+          "rcode": 0,
+          "rcode_name": "NOERROR",
+          "flags": 33792,
+          "retries": 0,
+          "attempts": [
+            {
+              "transport": "udp",
+              "edns": 1232,
+              "error": false,
+              "elapsed_ms": 27.71
+            }
+          ],
+          "elapsed_ms": 27.71,
+          "fallback_used": false
+        }
+      },
+      {
+        "name": "cloudflare.com",
+        "rtype": "SOA",
+        "resolver_id": "auth:ns7.cloudflare.com@162.159.4.8",
+        "ttl": 300,
+        "answers": [
+          "ns3.cloudflare.com. dns.cloudflare.com. 2387738886 10000 2400 604800 300"
+        ],
+        "status": "OK",
+        "error": null,
+        "diagnostics": {
+          "transport": "udp",
+          "edns": 1232,
+          "rcode": 0,
+          "rcode_name": "NOERROR",
+          "flags": 33792,
+          "retries": 0,
+          "attempts": [
+            {
+              "transport": "udp",
+              "edns": 1232,
+              "error": false,
+              "elapsed_ms": 31.37
+            }
+          ],
+          "elapsed_ms": 31.37,
+          "fallback_used": false
+        }
+      },
+      {
+        "name": "cloudflare.com",
+        "rtype": "TXT",
+        "resolver_id": "auth:ns7.cloudflare.com@162.159.4.8",
+        "ttl": 300,
+        "answers": [
+          "\"MS=ms70274184\"",
+          "\"ZOOM_verify_7LFBvOO9SIigypFG2xRlMA\"",
+          "\"_neqmkgaq1lq9it5s8qmetrhbnu121wb\"",
+          "\"_saml-domain-challenge.2dc00405-79cd-457b-b288-a119c6f0c7b7.71996d53-d178-4ba9-bef4-7f7e46edab74.cloudflare.com=1c8736fd-84b2-4197-985f-3fb2852f2457\"",
+          "\"apple-domain-verification=DNnWJoArJobFJKhJ\"",
+          "\"asv=894f6d1f9f83bcf44e4b1bc40bc1c4aa\"",
+          "\"atlassian-domain-verification=WxxKyN9aLnjEsoOjUYI6T0bb5vcqmKzaIkC9Rx2QkNb751G3LL/cus8/ZDOgh8xB\"",
+          "\"canva-site-verification=oOyaVnHC-OiFoR1BPvetNA\"",
+          "\"cisco-ci-domain-verification=27e926884619804ef987ae4aa1c4168f6b152ada84f4c8bfc74eb2bd2912ad72\"",
+          "\"creatopy-domain-verification=97d2ca50-9b6f-4a21-9bdb-fbb630e4cec7\"",
+          "\"docker-verification=c578e21c-34fb-4474-9b90-d55ee4cba10c\"",
+          "\"drift-domain-verification=f037808a26ae8b25bc13b1f1f2b4c3e0f78c03e67f24cefdd4ec520efa8e719f\"",
+          "\"facebook-domain-verification=h9mm6zopj6p2po54woa16m5bskm6oo\"",
+          "\"google-site-verification=C7thfNeXVahkVhniiqTI1iSVnElKR_kBBtnEHkeGDlo\"",
+          "\"google-site-verification=ZdlQZLBBAPkxeFTCM1rpiB_ibtGff_JF5KllNKwDR9I\"",
+          "\"liveramp-site-verification=EhH1MqgwbndTWl1AN64hOTKz7hc1s80yUpchLbgpfY0\"",
+          "\"logmein-verification-code=b3433c86-3823-4808-8a7e-58042469f654\"",
+          "\"miro-verification=bdd7dfa0a49adfb43ad6ddfaf797633246c07356\"",
+          "\"onetrust-domain-verification=bd5cd08a1e9644799fdb98ed7d60c9cb\"",
+          "\"status-page-domain-verification=r14frwljwbxs\"",
+          "\"stripe-verification=5096d01ff2cf194285dd51cae18f24fa9c26dc928cebac3636d462b4c6925623\"",
+          "\"stripe-verification=bf1a94e6b16ace2502a4a7fff574a25c8a45291054960c883c59be39d1788db9\"",
+          "\"uber-domain-verification=58086039-150a-42a4-a4be-b4032921aa0f\"",
+          "\"v=spf1 ip4:199.15.212.0/22 ip4:173.245.48.0/20 include:_spf.google.com include:spf1.mcsv.net include:spf.mandrillapp.com include:mail.zendesk.com include:stspg-customer.com include:_spf.salesforce.com -all\""
+        ],
+        "status": "OK",
+        "error": null,
+        "diagnostics": {
+          "transport": "udp",
+          "edns": 1232,
+          "rcode": 0,
+          "rcode_name": "NOERROR",
+          "flags": 33792,
+          "retries": 0,
+          "attempts": [
+            {
+              "transport": "udp",
+              "edns": 1232,
+              "error": false,
+              "elapsed_ms": 60.61
+            }
+          ],
+          "elapsed_ms": 60.61,
+          "fallback_used": false
+        }
+      },
+      {
+        "name": "cloudflare.com",
+        "rtype": "A",
+        "resolver_id": "auth:ns7.cloudflare.com@162.159.6.6",
+        "ttl": 300,
+        "answers": [
+          "104.16.132.229",
+          "104.16.133.229"
+        ],
+        "status": "OK",
+        "error": null,
+        "diagnostics": {
+          "transport": "udp",
+          "edns": 1232,
+          "rcode": 0,
+          "rcode_name": "NOERROR",
+          "flags": 33792,
+          "retries": 0,
+          "attempts": [
+            {
+              "transport": "udp",
+              "edns": 1232,
+              "error": false,
+              "elapsed_ms": 12.19
+            }
+          ],
+          "elapsed_ms": 12.19,
+          "fallback_used": false
+        }
+      },
+      {
+        "name": "cloudflare.com",
+        "rtype": "AAAA",
+        "resolver_id": "auth:ns7.cloudflare.com@162.159.6.6",
+        "ttl": 300,
+        "answers": [
+          "2606:4700::6810:84e5",
+          "2606:4700::6810:85e5"
+        ],
+        "status": "OK",
+        "error": null,
+        "diagnostics": {
+          "transport": "udp",
+          "edns": 1232,
+          "rcode": 0,
+          "rcode_name": "NOERROR",
+          "flags": 33792,
+          "retries": 0,
+          "attempts": [
+            {
+              "transport": "udp",
+              "edns": 1232,
+              "error": false,
+              "elapsed_ms": 26.68
+            }
+          ],
+          "elapsed_ms": 26.68,
+          "fallback_used": false
+        }
+      },
+      {
+        "name": "cloudflare.com",
+        "rtype": "CNAME",
+        "resolver_id": "auth:ns7.cloudflare.com@162.159.6.6",
+        "ttl": null,
+        "answers": [],
+        "status": "NODATA",
+        "error": null,
+        "diagnostics": {
+          "transport": "udp",
+          "edns": 1232,
+          "rcode": 0,
+          "rcode_name": "NOERROR",
+          "flags": 33792,
+          "retries": 0,
+          "attempts": [
+            {
+              "transport": "udp",
+              "edns": 1232,
+              "error": false,
+              "elapsed_ms": 19.55
+            }
+          ],
+          "elapsed_ms": 19.55,
+          "fallback_used": false
+        }
+      },
+      {
+        "name": "cloudflare.com",
+        "rtype": "MX",
+        "resolver_id": "auth:ns7.cloudflare.com@162.159.6.6",
+        "ttl": 1800,
+        "answers": [
+          "10 mxa.global.inbound.cf-emailsecurity.net.",
+          "10 mxb.global.inbound.cf-emailsecurity.net.",
+          "5 mxa-canary.global.inbound.cf-emailsecurity.net.",
+          "5 mxb-canary.global.inbound.cf-emailsecurity.net."
+        ],
+        "status": "OK",
+        "error": null,
+        "diagnostics": {
+          "transport": "udp",
+          "edns": 1232,
+          "rcode": 0,
+          "rcode_name": "NOERROR",
+          "flags": 33792,
+          "retries": 0,
+          "attempts": [
+            {
+              "transport": "udp",
+              "edns": 1232,
+              "error": false,
+              "elapsed_ms": 26.89
+            }
+          ],
+          "elapsed_ms": 26.89,
+          "fallback_used": false
+        }
+      },
+      {
+        "name": "cloudflare.com",
+        "rtype": "NS",
+        "resolver_id": "auth:ns7.cloudflare.com@162.159.6.6",
+        "ttl": 86400,
+        "answers": [
+          "ns3.cloudflare.com.",
+          "ns4.cloudflare.com.",
+          "ns5.cloudflare.com.",
+          "ns6.cloudflare.com.",
+          "ns7.cloudflare.com."
+        ],
+        "status": "OK",
+        "error": null,
+        "diagnostics": {
+          "transport": "udp",
+          "edns": 1232,
+          "rcode": 0,
+          "rcode_name": "NOERROR",
+          "flags": 33792,
+          "retries": 0,
+          "attempts": [
+            {
+              "transport": "udp",
+              "edns": 1232,
+              "error": false,
+              "elapsed_ms": 31.32
+            }
+          ],
+          "elapsed_ms": 31.32,
+          "fallback_used": false
+        }
+      },
+      {
+        "name": "cloudflare.com",
+        "rtype": "SOA",
+        "resolver_id": "auth:ns7.cloudflare.com@162.159.6.6",
+        "ttl": 300,
+        "answers": [
+          "ns3.cloudflare.com. dns.cloudflare.com. 2387738886 10000 2400 604800 300"
+        ],
+        "status": "OK",
+        "error": null,
+        "diagnostics": {
+          "transport": "udp",
+          "edns": 1232,
+          "rcode": 0,
+          "rcode_name": "NOERROR",
+          "flags": 33792,
+          "retries": 0,
+          "attempts": [
+            {
+              "transport": "udp",
+              "edns": 1232,
+              "error": false,
+              "elapsed_ms": 16.92
+            }
+          ],
+          "elapsed_ms": 16.92,
+          "fallback_used": false
+        }
+      },
+      {
+        "name": "cloudflare.com",
+        "rtype": "TXT",
+        "resolver_id": "auth:ns7.cloudflare.com@162.159.6.6",
+        "ttl": 300,
+        "answers": [
+          "\"MS=ms70274184\"",
+          "\"ZOOM_verify_7LFBvOO9SIigypFG2xRlMA\"",
+          "\"_neqmkgaq1lq9it5s8qmetrhbnu121wb\"",
+          "\"_saml-domain-challenge.2dc00405-79cd-457b-b288-a119c6f0c7b7.71996d53-d178-4ba9-bef4-7f7e46edab74.cloudflare.com=1c8736fd-84b2-4197-985f-3fb2852f2457\"",
+          "\"apple-domain-verification=DNnWJoArJobFJKhJ\"",
+          "\"asv=894f6d1f9f83bcf44e4b1bc40bc1c4aa\"",
+          "\"atlassian-domain-verification=WxxKyN9aLnjEsoOjUYI6T0bb5vcqmKzaIkC9Rx2QkNb751G3LL/cus8/ZDOgh8xB\"",
+          "\"canva-site-verification=oOyaVnHC-OiFoR1BPvetNA\"",
+          "\"cisco-ci-domain-verification=27e926884619804ef987ae4aa1c4168f6b152ada84f4c8bfc74eb2bd2912ad72\"",
+          "\"creatopy-domain-verification=97d2ca50-9b6f-4a21-9bdb-fbb630e4cec7\"",
+          "\"docker-verification=c578e21c-34fb-4474-9b90-d55ee4cba10c\"",
+          "\"drift-domain-verification=f037808a26ae8b25bc13b1f1f2b4c3e0f78c03e67f24cefdd4ec520efa8e719f\"",
+          "\"facebook-domain-verification=h9mm6zopj6p2po54woa16m5bskm6oo\"",
+          "\"google-site-verification=C7thfNeXVahkVhniiqTI1iSVnElKR_kBBtnEHkeGDlo\"",
+          "\"google-site-verification=ZdlQZLBBAPkxeFTCM1rpiB_ibtGff_JF5KllNKwDR9I\"",
+          "\"liveramp-site-verification=EhH1MqgwbndTWl1AN64hOTKz7hc1s80yUpchLbgpfY0\"",
+          "\"logmein-verification-code=b3433c86-3823-4808-8a7e-58042469f654\"",
+          "\"miro-verification=bdd7dfa0a49adfb43ad6ddfaf797633246c07356\"",
+          "\"onetrust-domain-verification=bd5cd08a1e9644799fdb98ed7d60c9cb\"",
+          "\"status-page-domain-verification=r14frwljwbxs\"",
+          "\"stripe-verification=5096d01ff2cf194285dd51cae18f24fa9c26dc928cebac3636d462b4c6925623\"",
+          "\"stripe-verification=bf1a94e6b16ace2502a4a7fff574a25c8a45291054960c883c59be39d1788db9\"",
+          "\"uber-domain-verification=58086039-150a-42a4-a4be-b4032921aa0f\"",
+          "\"v=spf1 ip4:199.15.212.0/22 ip4:173.245.48.0/20 include:_spf.google.com include:spf1.mcsv.net include:spf.mandrillapp.com include:mail.zendesk.com include:stspg-customer.com include:_spf.salesforce.com -all\""
+        ],
+        "status": "OK",
+        "error": null,
+        "diagnostics": {
+          "transport": "udp",
+          "edns": 1232,
+          "rcode": 0,
+          "rcode_name": "NOERROR",
+          "flags": 33792,
+          "retries": 0,
+          "attempts": [
+            {
+              "transport": "udp",
+              "edns": 1232,
+              "error": false,
+              "elapsed_ms": 38.95
+            }
+          ],
+          "elapsed_ms": 38.95,
+          "fallback_used": false
+        }
+      },
+      {
+        "name": "cloudflare.com",
+        "rtype": "A",
+        "resolver_id": "auth:ns7.cloudflare.com@2400:cb00:2049:1::a29f:408",
+        "ttl": 300,
+        "answers": [
+          "104.16.132.229",
+          "104.16.133.229"
+        ],
+        "status": "OK",
+        "error": null,
+        "diagnostics": {
+          "transport": "udp",
+          "edns": 1232,
+          "rcode": 0,
+          "rcode_name": "NOERROR",
+          "flags": 33792,
+          "retries": 0,
+          "attempts": [
+            {
+              "transport": "udp",
+              "edns": 1232,
+              "error": false,
+              "elapsed_ms": 29.34
+            }
+          ],
+          "elapsed_ms": 29.34,
+          "fallback_used": false
+        }
+      },
+      {
+        "name": "cloudflare.com",
+        "rtype": "AAAA",
+        "resolver_id": "auth:ns7.cloudflare.com@2400:cb00:2049:1::a29f:408",
+        "ttl": 300,
+        "answers": [
+          "2606:4700::6810:84e5",
+          "2606:4700::6810:85e5"
+        ],
+        "status": "OK",
+        "error": null,
+        "diagnostics": {
+          "transport": "udp",
+          "edns": 1232,
+          "rcode": 0,
+          "rcode_name": "NOERROR",
+          "flags": 33792,
+          "retries": 0,
+          "attempts": [
+            {
+              "transport": "udp",
+              "edns": 1232,
+              "error": false,
+              "elapsed_ms": 15.66
+            }
+          ],
+          "elapsed_ms": 15.66,
+          "fallback_used": false
+        }
+      },
+      {
+        "name": "cloudflare.com",
+        "rtype": "CNAME",
+        "resolver_id": "auth:ns7.cloudflare.com@2400:cb00:2049:1::a29f:408",
+        "ttl": null,
+        "answers": [],
+        "status": "NODATA",
+        "error": null,
+        "diagnostics": {
+          "transport": "udp",
+          "edns": 1232,
+          "rcode": 0,
+          "rcode_name": "NOERROR",
+          "flags": 33792,
+          "retries": 0,
+          "attempts": [
+            {
+              "transport": "udp",
+              "edns": 1232,
+              "error": false,
+              "elapsed_ms": 21.02
+            }
+          ],
+          "elapsed_ms": 21.02,
+          "fallback_used": false
+        }
+      },
+      {
+        "name": "cloudflare.com",
+        "rtype": "MX",
+        "resolver_id": "auth:ns7.cloudflare.com@2400:cb00:2049:1::a29f:408",
+        "ttl": 1800,
+        "answers": [
+          "10 mxa.global.inbound.cf-emailsecurity.net.",
+          "10 mxb.global.inbound.cf-emailsecurity.net.",
+          "5 mxa-canary.global.inbound.cf-emailsecurity.net.",
+          "5 mxb-canary.global.inbound.cf-emailsecurity.net."
+        ],
+        "status": "OK",
+        "error": null,
+        "diagnostics": {
+          "transport": "udp",
+          "edns": 1232,
+          "rcode": 0,
+          "rcode_name": "NOERROR",
+          "flags": 33792,
+          "retries": 0,
+          "attempts": [
+            {
+              "transport": "udp",
+              "edns": 1232,
+              "error": false,
+              "elapsed_ms": 14.77
+            }
+          ],
+          "elapsed_ms": 14.77,
+          "fallback_used": false
+        }
+      },
+      {
+        "name": "cloudflare.com",
+        "rtype": "NS",
+        "resolver_id": "auth:ns7.cloudflare.com@2400:cb00:2049:1::a29f:408",
+        "ttl": 86400,
+        "answers": [
+          "ns3.cloudflare.com.",
+          "ns4.cloudflare.com.",
+          "ns5.cloudflare.com.",
+          "ns6.cloudflare.com.",
+          "ns7.cloudflare.com."
+        ],
+        "status": "OK",
+        "error": null,
+        "diagnostics": {
+          "transport": "udp",
+          "edns": 1232,
+          "rcode": 0,
+          "rcode_name": "NOERROR",
+          "flags": 33792,
+          "retries": 0,
+          "attempts": [
+            {
+              "transport": "udp",
+              "edns": 1232,
+              "error": false,
+              "elapsed_ms": 28.69
+            }
+          ],
+          "elapsed_ms": 28.69,
+          "fallback_used": false
+        }
+      },
+      {
+        "name": "cloudflare.com",
+        "rtype": "SOA",
+        "resolver_id": "auth:ns7.cloudflare.com@2400:cb00:2049:1::a29f:408",
+        "ttl": 300,
+        "answers": [
+          "ns3.cloudflare.com. dns.cloudflare.com. 2387738886 10000 2400 604800 300"
+        ],
+        "status": "OK",
+        "error": null,
+        "diagnostics": {
+          "transport": "udp",
+          "edns": 1232,
+          "rcode": 0,
+          "rcode_name": "NOERROR",
+          "flags": 33792,
+          "retries": 0,
+          "attempts": [
+            {
+              "transport": "udp",
+              "edns": 1232,
+              "error": false,
+              "elapsed_ms": 25.37
+            }
+          ],
+          "elapsed_ms": 25.37,
+          "fallback_used": false
+        }
+      },
+      {
+        "name": "cloudflare.com",
+        "rtype": "TXT",
+        "resolver_id": "auth:ns7.cloudflare.com@2400:cb00:2049:1::a29f:408",
+        "ttl": 300,
+        "answers": [
+          "\"MS=ms70274184\"",
+          "\"ZOOM_verify_7LFBvOO9SIigypFG2xRlMA\"",
+          "\"_neqmkgaq1lq9it5s8qmetrhbnu121wb\"",
+          "\"_saml-domain-challenge.2dc00405-79cd-457b-b288-a119c6f0c7b7.71996d53-d178-4ba9-bef4-7f7e46edab74.cloudflare.com=1c8736fd-84b2-4197-985f-3fb2852f2457\"",
+          "\"apple-domain-verification=DNnWJoArJobFJKhJ\"",
+          "\"asv=894f6d1f9f83bcf44e4b1bc40bc1c4aa\"",
+          "\"atlassian-domain-verification=WxxKyN9aLnjEsoOjUYI6T0bb5vcqmKzaIkC9Rx2QkNb751G3LL/cus8/ZDOgh8xB\"",
+          "\"canva-site-verification=oOyaVnHC-OiFoR1BPvetNA\"",
+          "\"cisco-ci-domain-verification=27e926884619804ef987ae4aa1c4168f6b152ada84f4c8bfc74eb2bd2912ad72\"",
+          "\"creatopy-domain-verification=97d2ca50-9b6f-4a21-9bdb-fbb630e4cec7\"",
+          "\"docker-verification=c578e21c-34fb-4474-9b90-d55ee4cba10c\"",
+          "\"drift-domain-verification=f037808a26ae8b25bc13b1f1f2b4c3e0f78c03e67f24cefdd4ec520efa8e719f\"",
+          "\"facebook-domain-verification=h9mm6zopj6p2po54woa16m5bskm6oo\"",
+          "\"google-site-verification=C7thfNeXVahkVhniiqTI1iSVnElKR_kBBtnEHkeGDlo\"",
+          "\"google-site-verification=ZdlQZLBBAPkxeFTCM1rpiB_ibtGff_JF5KllNKwDR9I\"",
+          "\"liveramp-site-verification=EhH1MqgwbndTWl1AN64hOTKz7hc1s80yUpchLbgpfY0\"",
+          "\"logmein-verification-code=b3433c86-3823-4808-8a7e-58042469f654\"",
+          "\"miro-verification=bdd7dfa0a49adfb43ad6ddfaf797633246c07356\"",
+          "\"onetrust-domain-verification=bd5cd08a1e9644799fdb98ed7d60c9cb\"",
+          "\"status-page-domain-verification=r14frwljwbxs\"",
+          "\"stripe-verification=5096d01ff2cf194285dd51cae18f24fa9c26dc928cebac3636d462b4c6925623\"",
+          "\"stripe-verification=bf1a94e6b16ace2502a4a7fff574a25c8a45291054960c883c59be39d1788db9\"",
+          "\"uber-domain-verification=58086039-150a-42a4-a4be-b4032921aa0f\"",
+          "\"v=spf1 ip4:199.15.212.0/22 ip4:173.245.48.0/20 include:_spf.google.com include:spf1.mcsv.net include:spf.mandrillapp.com include:mail.zendesk.com include:stspg-customer.com include:_spf.salesforce.com -all\""
+        ],
+        "status": "OK",
+        "error": null,
+        "diagnostics": {
+          "transport": "udp",
+          "edns": 1232,
+          "rcode": 0,
+          "rcode_name": "NOERROR",
+          "flags": 33792,
+          "retries": 0,
+          "attempts": [
+            {
+              "transport": "udp",
+              "edns": 1232,
+              "error": false,
+              "elapsed_ms": 118.99
+            }
+          ],
+          "elapsed_ms": 118.99,
+          "fallback_used": false
+        }
+      },
+      {
+        "name": "cloudflare.com",
+        "rtype": "A",
+        "resolver_id": "auth:ns7.cloudflare.com@2400:cb00:2049:1::a29f:606",
+        "ttl": 300,
+        "answers": [
+          "104.16.132.229",
+          "104.16.133.229"
+        ],
+        "status": "OK",
+        "error": null,
+        "diagnostics": {
+          "transport": "udp",
+          "edns": 1232,
+          "rcode": 0,
+          "rcode_name": "NOERROR",
+          "flags": 33792,
+          "retries": 0,
+          "attempts": [
+            {
+              "transport": "udp",
+              "edns": 1232,
+              "error": false,
+              "elapsed_ms": 11.91
+            }
+          ],
+          "elapsed_ms": 11.91,
+          "fallback_used": false
+        }
+      },
+      {
+        "name": "cloudflare.com",
+        "rtype": "AAAA",
+        "resolver_id": "auth:ns7.cloudflare.com@2400:cb00:2049:1::a29f:606",
+        "ttl": 300,
+        "answers": [
+          "2606:4700::6810:84e5",
+          "2606:4700::6810:85e5"
+        ],
+        "status": "OK",
+        "error": null,
+        "diagnostics": {
+          "transport": "udp",
+          "edns": 1232,
+          "rcode": 0,
+          "rcode_name": "NOERROR",
+          "flags": 33792,
+          "retries": 0,
+          "attempts": [
+            {
+              "transport": "udp",
+              "edns": 1232,
+              "error": false,
+              "elapsed_ms": 12.22
+            }
+          ],
+          "elapsed_ms": 12.22,
+          "fallback_used": false
+        }
+      },
+      {
+        "name": "cloudflare.com",
+        "rtype": "CNAME",
+        "resolver_id": "auth:ns7.cloudflare.com@2400:cb00:2049:1::a29f:606",
+        "ttl": null,
+        "answers": [],
+        "status": "NODATA",
+        "error": null,
+        "diagnostics": {
+          "transport": "udp",
+          "edns": 1232,
+          "rcode": 0,
+          "rcode_name": "NOERROR",
+          "flags": 33792,
+          "retries": 0,
+          "attempts": [
+            {
+              "transport": "udp",
+              "edns": 1232,
+              "error": false,
+              "elapsed_ms": 14.13
+            }
+          ],
+          "elapsed_ms": 14.13,
+          "fallback_used": false
+        }
+      },
+      {
+        "name": "cloudflare.com",
+        "rtype": "MX",
+        "resolver_id": "auth:ns7.cloudflare.com@2400:cb00:2049:1::a29f:606",
+        "ttl": 1800,
+        "answers": [
+          "10 mxa.global.inbound.cf-emailsecurity.net.",
+          "10 mxb.global.inbound.cf-emailsecurity.net.",
+          "5 mxa-canary.global.inbound.cf-emailsecurity.net.",
+          "5 mxb-canary.global.inbound.cf-emailsecurity.net."
+        ],
+        "status": "OK",
+        "error": null,
+        "diagnostics": {
+          "transport": "udp",
+          "edns": 1232,
+          "rcode": 0,
+          "rcode_name": "NOERROR",
+          "flags": 33792,
+          "retries": 0,
+          "attempts": [
+            {
+              "transport": "udp",
+              "edns": 1232,
+              "error": false,
+              "elapsed_ms": 14.19
+            }
+          ],
+          "elapsed_ms": 14.19,
+          "fallback_used": false
+        }
+      },
+      {
+        "name": "cloudflare.com",
+        "rtype": "NS",
+        "resolver_id": "auth:ns7.cloudflare.com@2400:cb00:2049:1::a29f:606",
+        "ttl": 86400,
+        "answers": [
+          "ns3.cloudflare.com.",
+          "ns4.cloudflare.com.",
+          "ns5.cloudflare.com.",
+          "ns6.cloudflare.com.",
+          "ns7.cloudflare.com."
+        ],
+        "status": "OK",
+        "error": null,
+        "diagnostics": {
+          "transport": "udp",
+          "edns": 1232,
+          "rcode": 0,
+          "rcode_name": "NOERROR",
+          "flags": 33792,
+          "retries": 0,
+          "attempts": [
+            {
+              "transport": "udp",
+              "edns": 1232,
+              "error": false,
+              "elapsed_ms": 16.62
+            }
+          ],
+          "elapsed_ms": 16.62,
+          "fallback_used": false
+        }
+      },
+      {
+        "name": "cloudflare.com",
+        "rtype": "SOA",
+        "resolver_id": "auth:ns7.cloudflare.com@2400:cb00:2049:1::a29f:606",
+        "ttl": 300,
+        "answers": [
+          "ns3.cloudflare.com. dns.cloudflare.com. 2387738886 10000 2400 604800 300"
+        ],
+        "status": "OK",
+        "error": null,
+        "diagnostics": {
+          "transport": "udp",
+          "edns": 1232,
+          "rcode": 0,
+          "rcode_name": "NOERROR",
+          "flags": 33792,
+          "retries": 0,
+          "attempts": [
+            {
+              "transport": "udp",
+              "edns": 1232,
+              "error": false,
+              "elapsed_ms": 14.13
+            }
+          ],
+          "elapsed_ms": 14.13,
+          "fallback_used": false
+        }
+      },
+      {
+        "name": "cloudflare.com",
+        "rtype": "TXT",
+        "resolver_id": "auth:ns7.cloudflare.com@2400:cb00:2049:1::a29f:606",
+        "ttl": 300,
+        "answers": [
+          "\"MS=ms70274184\"",
+          "\"ZOOM_verify_7LFBvOO9SIigypFG2xRlMA\"",
+          "\"_neqmkgaq1lq9it5s8qmetrhbnu121wb\"",
+          "\"_saml-domain-challenge.2dc00405-79cd-457b-b288-a119c6f0c7b7.71996d53-d178-4ba9-bef4-7f7e46edab74.cloudflare.com=1c8736fd-84b2-4197-985f-3fb2852f2457\"",
+          "\"apple-domain-verification=DNnWJoArJobFJKhJ\"",
+          "\"asv=894f6d1f9f83bcf44e4b1bc40bc1c4aa\"",
+          "\"atlassian-domain-verification=WxxKyN9aLnjEsoOjUYI6T0bb5vcqmKzaIkC9Rx2QkNb751G3LL/cus8/ZDOgh8xB\"",
+          "\"canva-site-verification=oOyaVnHC-OiFoR1BPvetNA\"",
+          "\"cisco-ci-domain-verification=27e926884619804ef987ae4aa1c4168f6b152ada84f4c8bfc74eb2bd2912ad72\"",
+          "\"creatopy-domain-verification=97d2ca50-9b6f-4a21-9bdb-fbb630e4cec7\"",
+          "\"docker-verification=c578e21c-34fb-4474-9b90-d55ee4cba10c\"",
+          "\"drift-domain-verification=f037808a26ae8b25bc13b1f1f2b4c3e0f78c03e67f24cefdd4ec520efa8e719f\"",
+          "\"facebook-domain-verification=h9mm6zopj6p2po54woa16m5bskm6oo\"",
+          "\"google-site-verification=C7thfNeXVahkVhniiqTI1iSVnElKR_kBBtnEHkeGDlo\"",
+          "\"google-site-verification=ZdlQZLBBAPkxeFTCM1rpiB_ibtGff_JF5KllNKwDR9I\"",
+          "\"liveramp-site-verification=EhH1MqgwbndTWl1AN64hOTKz7hc1s80yUpchLbgpfY0\"",
+          "\"logmein-verification-code=b3433c86-3823-4808-8a7e-58042469f654\"",
+          "\"miro-verification=bdd7dfa0a49adfb43ad6ddfaf797633246c07356\"",
+          "\"onetrust-domain-verification=bd5cd08a1e9644799fdb98ed7d60c9cb\"",
+          "\"status-page-domain-verification=r14frwljwbxs\"",
+          "\"stripe-verification=5096d01ff2cf194285dd51cae18f24fa9c26dc928cebac3636d462b4c6925623\"",
+          "\"stripe-verification=bf1a94e6b16ace2502a4a7fff574a25c8a45291054960c883c59be39d1788db9\"",
+          "\"uber-domain-verification=58086039-150a-42a4-a4be-b4032921aa0f\"",
+          "\"v=spf1 ip4:199.15.212.0/22 ip4:173.245.48.0/20 include:_spf.google.com include:spf1.mcsv.net include:spf.mandrillapp.com include:mail.zendesk.com include:stspg-customer.com include:_spf.salesforce.com -all\""
+        ],
+        "status": "OK",
+        "error": null,
+        "diagnostics": {
+          "transport": "udp",
+          "edns": 1232,
+          "rcode": 0,
+          "rcode_name": "NOERROR",
+          "flags": 33792,
+          "retries": 0,
+          "attempts": [
+            {
+              "transport": "udp",
+              "edns": 1232,
+              "error": false,
+              "elapsed_ms": 120.29
+            }
+          ],
+          "elapsed_ms": 120.29,
+          "fallback_used": false
+        }
+      }
+    ],
+    "consistency": {
+      "cloudflare.com A": "CONSISTENT",
+      "cloudflare.com AAAA": "CONSISTENT",
+      "cloudflare.com CNAME": "CONSISTENT",
+      "cloudflare.com MX": "CONSISTENT",
+      "cloudflare.com NS": "CONSISTENT",
+      "cloudflare.com SOA": "CONSISTENT",
+      "cloudflare.com TXT": "CONSISTENT"
+    },
+    "weak_ttl": [],
+    "per_rr_verdict": {
+      "cloudflare.com A": "PASS",
+      "cloudflare.com AAAA": "PASS",
+      "cloudflare.com CNAME": "PASS",
+      "cloudflare.com MX": "PASS",
+      "cloudflare.com NS": "PASS",
+      "cloudflare.com SOA": "PASS",
+      "cloudflare.com TXT": "PASS"
+    },
+    "variance_note": null,
+    "auth_ttl_by_rr": {
+      "cloudflare.com A": 300,
+      "cloudflare.com AAAA": 300,
+      "cloudflare.com CNAME": null,
+      "cloudflare.com MX": 1800,
+      "cloudflare.com NS": 86400,
+      "cloudflare.com SOA": 300,
+      "cloudflare.com TXT": 300
+    },
+    "auth_union_present": true,
+    "auth_union_by_rr": {
+      "cloudflare.com A": [
+        "104.16.132.229",
+        "104.16.133.229"
+      ],
+      "cloudflare.com AAAA": [
+        "2606:4700::6810:84e5",
+        "2606:4700::6810:85e5"
+      ],
+      "cloudflare.com MX": [
+        "10 mxa.global.inbound.cf-emailsecurity.net.",
+        "10 mxb.global.inbound.cf-emailsecurity.net.",
+        "5 mxa-canary.global.inbound.cf-emailsecurity.net.",
+        "5 mxb-canary.global.inbound.cf-emailsecurity.net."
+      ],
+      "cloudflare.com TXT": [
+        "\"MS=ms70274184\"",
+        "\"ZOOM_verify_7LFBvOO9SIigypFG2xRlMA\"",
+        "\"_neqmkgaq1lq9it5s8qmetrhbnu121wb\"",
+        "\"_saml-domain-challenge.2dc00405-79cd-457b-b288-a119c6f0c7b7.71996d53-d178-4ba9-bef4-7f7e46edab74.cloudflare.com=1c8736fd-84b2-4197-985f-3fb2852f2457\"",
+        "\"apple-domain-verification=DNnWJoArJobFJKhJ\"",
+        "\"asv=894f6d1f9f83bcf44e4b1bc40bc1c4aa\"",
+        "\"atlassian-domain-verification=WxxKyN9aLnjEsoOjUYI6T0bb5vcqmKzaIkC9Rx2QkNb751G3LL/cus8/ZDOgh8xB\"",
+        "\"canva-site-verification=oOyaVnHC-OiFoR1BPvetNA\"",
+        "\"cisco-ci-domain-verification=27e926884619804ef987ae4aa1c4168f6b152ada84f4c8bfc74eb2bd2912ad72\"",
+        "\"creatopy-domain-verification=97d2ca50-9b6f-4a21-9bdb-fbb630e4cec7\"",
+        "\"docker-verification=c578e21c-34fb-4474-9b90-d55ee4cba10c\"",
+        "\"drift-domain-verification=f037808a26ae8b25bc13b1f1f2b4c3e0f78c03e67f24cefdd4ec520efa8e719f\"",
+        "\"facebook-domain-verification=h9mm6zopj6p2po54woa16m5bskm6oo\"",
+        "\"google-site-verification=C7thfNeXVahkVhniiqTI1iSVnElKR_kBBtnEHkeGDlo\"",
+        "\"google-site-verification=ZdlQZLBBAPkxeFTCM1rpiB_ibtGff_JF5KllNKwDR9I\"",
+        "\"liveramp-site-verification=EhH1MqgwbndTWl1AN64hOTKz7hc1s80yUpchLbgpfY0\"",
+        "\"logmein-verification-code=b3433c86-3823-4808-8a7e-58042469f654\"",
+        "\"miro-verification=bdd7dfa0a49adfb43ad6ddfaf797633246c07356\"",
+        "\"onetrust-domain-verification=bd5cd08a1e9644799fdb98ed7d60c9cb\"",
+        "\"status-page-domain-verification=r14frwljwbxs\"",
+        "\"stripe-verification=5096d01ff2cf194285dd51cae18f24fa9c26dc928cebac3636d462b4c6925623\"",
+        "\"stripe-verification=bf1a94e6b16ace2502a4a7fff574a25c8a45291054960c883c59be39d1788db9\"",
+        "\"uber-domain-verification=58086039-150a-42a4-a4be-b4032921aa0f\"",
+        "\"v=spf1 ip4:199.15.212.0/22 ip4:173.245.48.0/20 include:_spf.google.com include:spf1.mcsv.net include:spf.mandrillapp.com include:mail.zendesk.com include:stspg-customer.com include:_spf.salesforce.com -all\""
+      ],
+      "cloudflare.com NS": [
+        "ns3.cloudflare.com.",
+        "ns4.cloudflare.com.",
+        "ns5.cloudflare.com.",
+        "ns6.cloudflare.com.",
+        "ns7.cloudflare.com."
+      ],
+      "cloudflare.com SOA": [
+        "ns3.cloudflare.com. dns.cloudflare.com. 2387738886 10000 2400 604800 300"
+      ]
+    },
+    "auth_union_size_by_rr": {
+      "cloudflare.com A": 2,
+      "cloudflare.com AAAA": 2,
+      "cloudflare.com MX": 4,
+      "cloudflare.com TXT": 24,
+      "cloudflare.com NS": 5,
+      "cloudflare.com SOA": 1
+    },
+    "nxdomain_hotspots": [
+      {
+        "label": "cloudflare.com",
+        "rtype": "CNAME",
+        "resolver_id": "1.1.1.1",
+        "count": 1,
+        "last_rcode": "NODATA",
+        "last_seen_ts": 1762760064.6136138
+      },
+      {
+        "label": "cloudflare.com",
+        "rtype": "CNAME",
+        "resolver_id": "8.8.8.8",
+        "count": 1,
+        "last_rcode": "NODATA",
+        "last_seen_ts": 1762760064.6136138
+      },
+      {
+        "label": "cloudflare.com",
+        "rtype": "CNAME",
+        "resolver_id": "9.9.9.9",
+        "count": 1,
+        "last_rcode": "NODATA",
+        "last_seen_ts": 1762760064.6136138
+      },
+      {
+        "label": "cloudflare.com",
+        "rtype": "CNAME",
+        "resolver_id": "auth:ns3.cloudflare.com@162.159.0.33",
+        "count": 1,
+        "last_rcode": "NODATA",
+        "last_seen_ts": 1762760064.6136138
+      },
+      {
+        "label": "cloudflare.com",
+        "rtype": "CNAME",
+        "resolver_id": "auth:ns3.cloudflare.com@162.159.7.226",
+        "count": 1,
+        "last_rcode": "NODATA",
+        "last_seen_ts": 1762760064.6136138
+      },
+      {
+        "label": "cloudflare.com",
+        "rtype": "CNAME",
+        "resolver_id": "auth:ns3.cloudflare.com@2400:cb00:2049:1::a29f:21",
+        "count": 1,
+        "last_rcode": "NODATA",
+        "last_seen_ts": 1762760064.6136138
+      },
+      {
+        "label": "cloudflare.com",
+        "rtype": "CNAME",
+        "resolver_id": "auth:ns3.cloudflare.com@2400:cb00:2049:1::a29f:7e2",
+        "count": 1,
+        "last_rcode": "NODATA",
+        "last_seen_ts": 1762760064.6136138
+      },
+      {
+        "label": "cloudflare.com",
+        "rtype": "CNAME",
+        "resolver_id": "auth:ns4.cloudflare.com@162.159.1.33",
+        "count": 1,
+        "last_rcode": "NODATA",
+        "last_seen_ts": 1762760064.6136138
+      },
+      {
+        "label": "cloudflare.com",
+        "rtype": "CNAME",
+        "resolver_id": "auth:ns4.cloudflare.com@162.159.8.55",
+        "count": 1,
+        "last_rcode": "NODATA",
+        "last_seen_ts": 1762760064.6136138
+      },
+      {
+        "label": "cloudflare.com",
+        "rtype": "CNAME",
+        "resolver_id": "auth:ns4.cloudflare.com@2400:cb00:2049:1::a29f:121",
+        "count": 1,
+        "last_rcode": "NODATA",
+        "last_seen_ts": 1762760064.6136138
+      },
+      {
+        "label": "cloudflare.com",
+        "rtype": "CNAME",
+        "resolver_id": "auth:ns4.cloudflare.com@2400:cb00:2049:1::a29f:837",
+        "count": 1,
+        "last_rcode": "NODATA",
+        "last_seen_ts": 1762760064.6136138
+      },
+      {
+        "label": "cloudflare.com",
+        "rtype": "CNAME",
+        "resolver_id": "auth:ns5.cloudflare.com@162.159.2.9",
+        "count": 1,
+        "last_rcode": "NODATA",
+        "last_seen_ts": 1762760064.6136138
+      },
+      {
+        "label": "cloudflare.com",
+        "rtype": "CNAME",
+        "resolver_id": "auth:ns5.cloudflare.com@162.159.9.55",
+        "count": 1,
+        "last_rcode": "NODATA",
+        "last_seen_ts": 1762760064.6136138
+      },
+      {
+        "label": "cloudflare.com",
+        "rtype": "CNAME",
+        "resolver_id": "auth:ns5.cloudflare.com@2400:cb00:2049:1::a29f:209",
+        "count": 1,
+        "last_rcode": "NODATA",
+        "last_seen_ts": 1762760064.6136138
+      },
+      {
+        "label": "cloudflare.com",
+        "rtype": "CNAME",
+        "resolver_id": "auth:ns5.cloudflare.com@2400:cb00:2049:1::a29f:937",
+        "count": 1,
+        "last_rcode": "NODATA",
+        "last_seen_ts": 1762760064.6136138
+      },
+      {
+        "label": "cloudflare.com",
+        "rtype": "CNAME",
+        "resolver_id": "auth:ns6.cloudflare.com@162.159.3.11",
+        "count": 1,
+        "last_rcode": "NODATA",
+        "last_seen_ts": 1762760064.6136138
+      },
+      {
+        "label": "cloudflare.com",
+        "rtype": "CNAME",
+        "resolver_id": "auth:ns6.cloudflare.com@162.159.5.6",
+        "count": 1,
+        "last_rcode": "NODATA",
+        "last_seen_ts": 1762760064.6136138
+      },
+      {
+        "label": "cloudflare.com",
+        "rtype": "CNAME",
+        "resolver_id": "auth:ns6.cloudflare.com@2400:cb00:2049:1::a29f:30b",
+        "count": 1,
+        "last_rcode": "NODATA",
+        "last_seen_ts": 1762760064.6136138
+      },
+      {
+        "label": "cloudflare.com",
+        "rtype": "CNAME",
+        "resolver_id": "auth:ns6.cloudflare.com@2400:cb00:2049:1::a29f:506",
+        "count": 1,
+        "last_rcode": "NODATA",
+        "last_seen_ts": 1762760064.6136138
+      },
+      {
+        "label": "cloudflare.com",
+        "rtype": "CNAME",
+        "resolver_id": "auth:ns7.cloudflare.com@162.159.4.8",
+        "count": 1,
+        "last_rcode": "NODATA",
+        "last_seen_ts": 1762760064.6136138
+      },
+      {
+        "label": "cloudflare.com",
+        "rtype": "CNAME",
+        "resolver_id": "auth:ns7.cloudflare.com@162.159.6.6",
+        "count": 1,
+        "last_rcode": "NODATA",
+        "last_seen_ts": 1762760064.6136138
+      },
+      {
+        "label": "cloudflare.com",
+        "rtype": "CNAME",
+        "resolver_id": "auth:ns7.cloudflare.com@2400:cb00:2049:1::a29f:408",
+        "count": 1,
+        "last_rcode": "NODATA",
+        "last_seen_ts": 1762760064.6136138
+      },
+      {
+        "label": "cloudflare.com",
+        "rtype": "CNAME",
+        "resolver_id": "auth:ns7.cloudflare.com@2400:cb00:2049:1::a29f:606",
+        "count": 1,
+        "last_rcode": "NODATA",
+        "last_seen_ts": 1762760064.6136138
+      }
+    ]
+  },
+  "dnssec": {
+    "ds_present": true,
+    "ds_match": true,
+    "dnskey_rrsig_valid": true,
+    "rrsig_expiry_hours": 909.3430555555556,
+    "nsec_present": false,
+    "issues": [
+      "Advisory: negative proof (NSEC/NSEC3) not observed in synthetic NXDOMAIN probe."
+    ],
+    "state": "SIGNED_VALID",
+    "summary": "PASS",
+    "probe_log": [
+      {
+        "ns_ip": "2400:cb00:2049:1::a29f:21",
+        "transport": "udp",
+        "edns": true,
+        "edns_bufsize": 1232,
+        "do": true,
+        "rcode": "NOERROR",
+        "tc": false,
+        "flags": [
+          "aa",
+          "qr"
+        ],
+        "elapsed_ms": 47,
+        "attempt_no": 1,
+        "exception": null
+      }
+    ]
+  },
+  "drift": {
+    "score": 0,
+    "added": {},
+    "removed": {},
+    "modified": {},
+    "diff_rows": []
+  },
+  "ns_health": {
+    "ns": [
+      {
+        "ns_name": "ns3.cloudflare.com",
+        "ip": "162.159.0.33",
+        "family": "IPv4",
+        "health_score": 100.0,
+        "latency_ms_p95": 84.6,
+        "error_rate": 0.0,
+        "fallback_used": false
+      },
+      {
+        "ns_name": "ns3.cloudflare.com",
+        "ip": "162.159.7.226",
+        "family": "IPv4",
+        "health_score": 100.0,
+        "latency_ms_p95": 78.5,
+        "error_rate": 0.0,
+        "fallback_used": false
+      },
+      {
+        "ns_name": "ns3.cloudflare.com",
+        "ip": "2400:cb00:2049:1::a29f:21",
+        "family": "IPv6",
+        "health_score": 100.0,
+        "latency_ms_p95": 40.0,
+        "error_rate": 0.0,
+        "fallback_used": false
+      },
+      {
+        "ns_name": "ns3.cloudflare.com",
+        "ip": "2400:cb00:2049:1::a29f:7e2",
+        "family": "IPv6",
+        "health_score": 100.0,
+        "latency_ms_p95": 42.3,
+        "error_rate": 0.0,
+        "fallback_used": false
+      },
+      {
+        "ns_name": "ns4.cloudflare.com",
+        "ip": "162.159.1.33",
+        "family": "IPv4",
+        "health_score": 100.0,
+        "latency_ms_p95": 46.6,
+        "error_rate": 0.0,
+        "fallback_used": false
+      },
+      {
+        "ns_name": "ns4.cloudflare.com",
+        "ip": "162.159.8.55",
+        "family": "IPv4",
+        "health_score": 100.0,
+        "latency_ms_p95": 37.6,
+        "error_rate": 0.0,
+        "fallback_used": false
+      },
+      {
+        "ns_name": "ns4.cloudflare.com",
+        "ip": "2400:cb00:2049:1::a29f:121",
+        "family": "IPv6",
+        "health_score": 100.0,
+        "latency_ms_p95": 46.1,
+        "error_rate": 0.0,
+        "fallback_used": false
+      },
+      {
+        "ns_name": "ns4.cloudflare.com",
+        "ip": "2400:cb00:2049:1::a29f:837",
+        "family": "IPv6",
+        "health_score": 100.0,
+        "latency_ms_p95": 45.0,
+        "error_rate": 0.0,
+        "fallback_used": false
+      },
+      {
+        "ns_name": "ns5.cloudflare.com",
+        "ip": "162.159.2.9",
+        "family": "IPv4",
+        "health_score": 100.0,
+        "latency_ms_p95": 48.5,
+        "error_rate": 0.0,
+        "fallback_used": false
+      },
+      {
+        "ns_name": "ns5.cloudflare.com",
+        "ip": "162.159.9.55",
+        "family": "IPv4",
+        "health_score": 100.0,
+        "latency_ms_p95": 49.4,
+        "error_rate": 0.0,
+        "fallback_used": false
+      },
+      {
+        "ns_name": "ns5.cloudflare.com",
+        "ip": "2400:cb00:2049:1::a29f:209",
+        "family": "IPv6",
+        "health_score": 100.0,
+        "latency_ms_p95": 52.0,
+        "error_rate": 0.0,
+        "fallback_used": false
+      },
+      {
+        "ns_name": "ns5.cloudflare.com",
+        "ip": "2400:cb00:2049:1::a29f:937",
+        "family": "IPv6",
+        "health_score": 100.0,
+        "latency_ms_p95": 51.4,
+        "error_rate": 0.0,
+        "fallback_used": false
+      },
+      {
+        "ns_name": "ns6.cloudflare.com",
+        "ip": "162.159.3.11",
+        "family": "IPv4",
+        "health_score": 100.0,
+        "latency_ms_p95": 44.5,
+        "error_rate": 0.0,
+        "fallback_used": false
+      },
+      {
+        "ns_name": "ns6.cloudflare.com",
+        "ip": "162.159.5.6",
+        "family": "IPv4",
+        "health_score": 100.0,
+        "latency_ms_p95": 44.4,
+        "error_rate": 0.0,
+        "fallback_used": false
+      },
+      {
+        "ns_name": "ns6.cloudflare.com",
+        "ip": "2400:cb00:2049:1::a29f:30b",
+        "family": "IPv6",
+        "health_score": 100.0,
+        "latency_ms_p95": 39.9,
+        "error_rate": 0.0,
+        "fallback_used": false
+      },
+      {
+        "ns_name": "ns6.cloudflare.com",
+        "ip": "2400:cb00:2049:1::a29f:506",
+        "family": "IPv6",
+        "health_score": 100.0,
+        "latency_ms_p95": 46.9,
+        "error_rate": 0.0,
+        "fallback_used": false
+      },
+      {
+        "ns_name": "ns7.cloudflare.com",
+        "ip": "162.159.4.8",
+        "family": "IPv4",
+        "health_score": 100.0,
+        "latency_ms_p95": 51.8,
+        "error_rate": 0.0,
+        "fallback_used": false
+      },
+      {
+        "ns_name": "ns7.cloudflare.com",
+        "ip": "162.159.6.6",
+        "family": "IPv4",
+        "health_score": 100.0,
+        "latency_ms_p95": 36.7,
+        "error_rate": 0.0,
+        "fallback_used": false
+      },
+      {
+        "ns_name": "ns7.cloudflare.com",
+        "ip": "2400:cb00:2049:1::a29f:408",
+        "family": "IPv6",
+        "health_score": 100.0,
+        "latency_ms_p95": 92.1,
+        "error_rate": 0.0,
+        "fallback_used": false
+      },
+      {
+        "ns_name": "ns7.cloudflare.com",
+        "ip": "2400:cb00:2049:1::a29f:606",
+        "family": "IPv6",
+        "health_score": 100.0,
+        "latency_ms_p95": 89.2,
+        "error_rate": 0.0,
+        "fallback_used": false
+      }
+    ]
+  },
+  "summary": {
+    "pass_count": 8,
+    "warn_count": 0,
+    "fail_count": 0,
+    "started_at": 1762760061.541439,
+    "duration_sec": 3.137498617172241,
+    "resolver_count": 23,
+    "records_scanned": 161
+  },
+  "errors": [],
+  "axfr_results": [],
+  "schema_version": "1.3",
+  "generator": "dns-navigator",
+  "run": {
+    "domain": "cloudflare.com",
+    "timestamp_utc": "2025-11-10T07:34:24Z",
+    "resolvers": [
+      "1.1.1.1",
+      "8.8.8.8",
+      "9.9.9.9",
+      "authoritative"
+    ],
+    "record_types": [
+      "A",
+      "AAAA",
+      "CNAME",
+      "MX",
+      "TXT",
+      "NS",
+      "SOA"
+    ],
+    "dnssec": {
+      "do": true,
+      "strict_alg": false
+    },
+    "timeouts": {
+      "connect_ms": 500,
+      "read_ms": 1500
+    },
+    "retries": 1,
+    "feature": {
+      "auth_union": true
+    },
+    "policy": {
+      "min_ttl": {
+        "A": 300,
+        "AAAA": 300,
+        "MX": 600,
+        "TXT": 300,
+        "NS": 86400,
+        "SOA": 300
+      },
+      "weights": {
+        "A": 2,
+        "AAAA": 2,
+        "SOA": 2,
+        "MX": 1,
+        "TXT": 1,
+        "NS": 1
+      },
+      "warn_labels": {
+        "weak_ttl": true,
+        "cdn_variance": true
+      }
+    },
+    "axfr": {
+      "enabled": false,
+      "timeout_sec": 8.0
+    }
+  }
+}
